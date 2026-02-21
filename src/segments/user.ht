@@ -1,64 +1,88 @@
 import { SpotifyGqlApi } from '../../dependencies/hetu_spotify_gql_client/lib/assets/hetu/spotify_gql_api_client.ht'
 import { Converters } from '../converter/converter.ht'
+import { SpotifyAuthEndpoint } from "./auth.ht"
+import { SafeCaller } from "../utils/safe_caller.ht"
 
 class UserEndpoint {
   var client: SpotifyGqlApi
+  var auth: SpotifyAuthEndpoint
+  var caller: SafeCaller
 
-  construct (this.client)
-  
+  construct (this.client, this.auth) {
+    caller = SafeCaller(auth)
+  }
+
   fun me() {
-    return client.user.me().then((data){
-      return Converters.simpleUser(data)
+    return caller.call(() async {
+      return await client.user.me().then((data){
+        return Converters.simpleUser(data)
+      })
     })
   }
 
   fun savedTracks({ offset: int, limit: int }) {
-    return client.user.savedTracks(offset: offset, limit: limit).then(
-      (data) => Converters.paginated(data, (items) => Converters.fullTracks(items))
-    )
+    return caller.call(() async {
+      return await client.user.savedTracks(offset: offset, limit: limit).then(
+        (data) => Converters.paginated(data, (items) => Converters.fullTracks(items))
+      )
+    })
   }
 
   fun savedPlaylists({ offset: int, limit: int }) {
-    return client.user.savedPlaylists(offset: offset, limit: limit).then((data){           
-      return Converters.paginated(
-        data, 
-        (items) => Converters.simplePlaylistsFromLibraryV3(data["items"])
-      )
+    return caller.call(() async {
+      return await client.user.savedPlaylists(offset: offset, limit: limit).then((data){
+        return Converters.paginated(
+          data,
+          (items) => Converters.simplePlaylistsFromLibraryV3(data["items"])
+        )
+      })
     })
   }
 
   fun savedAlbums({ offset: int, limit: int }) {
-    return client.user.savedAlbums(offset: offset, limit: limit).then((data){
-      return Converters.paginated(
-        data, 
-        (items) => Converters.simpleAlbums(items)
-      )
+    return caller.call(() async {
+      return await client.user.savedAlbums(offset: offset, limit: limit).then((data){
+        return Converters.paginated(
+          data,
+          (items) => Converters.simpleAlbums(items)
+        )
+      })
     })
   }
 
   fun savedArtists({ offset: int, limit: int }) {
-    return client.user.savedArtists(offset: offset, limit: limit).then((data){
-      return Converters.paginated(
-        data, 
-        (items) => Converters.fullArtists(items)
-      )
+    return caller.call(() async {
+      return await client.user.savedArtists(offset: offset, limit: limit).then((data){
+        return Converters.paginated(
+          data,
+          (items) => Converters.fullArtists(items)
+        )
+      })
     })
   }
 
   fun isSavedPlaylist(playlistId: string) { // Future<bool>
-    return client.user.isPlaylistSaved(playlistId)
+    return caller.call(() async {
+      return await client.user.isPlaylistSaved(playlistId)
+    })
   }
 
   fun isSavedTracks(trackIds: List) { // Future<List<bool>>
-    return client.user.isTracksSaved(trackIds)
+    return caller.call(() async {
+      return await client.user.isTracksSaved(trackIds)
+    })
   }
 
   fun isSavedAlbums(albumIds: List) { // Future<List<bool>>
-    return client.user.isInLibrary(albumIds, itemType: "album")
+    return caller.call(() {
+      return client.user.isInLibrary(albumIds, itemType: "album")
+    })
   }
 
   fun isSavedArtists(artistIds: List) { // Future<List<bool>>
-    return client.user.isInLibrary(artistIds, itemType: "artist")
+    return caller.call(() {
+      return client.user.isInLibrary(artistIds, itemType: "artist")
+    })
   }
 }
 

@@ -27,18 +27,19 @@ class SpotifyMetadataProviderPlugin {
   var track: TrackEndpoint
   var user: UserEndpoint
   var core: CorePlugin
-  
+
   construct (){
     api = SpotifyGqlApi()
     auth = SpotifyAuthEndpoint()
 
-    album = AlbumEndpoint(api)
-    artist = ArtistEndpoint(api)
+    album = AlbumEndpoint(api, auth)
+    artist = ArtistEndpoint(api, auth)
     browse = BrowseEndpoint(api, auth)
-    playlist = PlaylistEndpoint(api)
-    search = SearchEndpoint(api)
-    track = TrackEndpoint(api)
-    user = UserEndpoint(api)
+    playlist = PlaylistEndpoint(api, auth)
+    search = SearchEndpoint(api, auth)
+    track = TrackEndpoint(api, auth)
+    user = UserEndpoint(api, auth)
+
     core = CorePlugin()
 
     auth.authStateStream.listen((event) {

@@ -1,0 +1,31 @@
+import { SpotifyAuthEndpoint } from "../segments/auth.ht"
+
+class SafeCaller {
+  var auth: SpotifyAuthEndpoint
+
+  construct (this.auth)
+
+  fun call(callback) {
+    return callback().then(
+      (value) {
+        return value
+      },
+      catchError: (e) {
+        var errStr = e.toString()
+        if (errStr.contains("401") || errStr.contains("Unauthorized")) {
+          print("[SafeCaller] Token expired (401). Refreshing credentials...")
+
+          return auth.refreshCredentials().then((_) {
+            print("[SafeCaller] Token refreshed. Retrying request...")
+
+            return callback()
+          })
+        } else {
+          throw e
+        }
+      }
+    )
+  }
+}
+
+export { SafeCaller }

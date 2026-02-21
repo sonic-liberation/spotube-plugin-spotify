@@ -1,10 +1,16 @@
 import { SpotifyGqlApi } from '../../dependencies/hetu_spotify_gql_client/lib/assets/hetu/spotify_gql_api_client.ht'
 import { Converters } from '../converter/converter.ht'
+import { SpotifyAuthEndpoint } from "./auth.ht"
+import { SafeCaller } from "../utils/safe_caller.ht"
 
 class SearchEndpoint {
   var client: SpotifyGqlApi
+  var auth: SpotifyAuthEndpoint
+  var caller: SafeCaller
 
-  construct (this.client)
+  construct (this.client, this.auth) {
+    caller = SafeCaller(auth)
+  }
 
   get chips -> List { // Set<string>
     // can be tracks, playlists, artists, albums and all
@@ -12,51 +18,61 @@ class SearchEndpoint {
   }
 
   fun all(query: string) {
-    return client.search.all(
-      query,
-      limit: 20
-    ).then((data){
-      var result = {
-        artists: Converters.simpleArtists(data["artists"]),
-        albums: Converters.simpleAlbums(data["albums"]),
-        tracks: Converters.fullTracks(data["tracks"]),
-        playlists: Converters.simplePlaylistsFromLibraryV3(data["playlists"]),
-      }.toJson()
+    return caller.call(() async {
+      return await client.search.all(
+        query,
+        limit: 20
+      ).then((data){
+        var result = {
+          artists: Converters.simpleArtists(data["artists"]),
+          albums: Converters.simpleAlbums(data["albums"]),
+          tracks: Converters.fullTracks(data["tracks"]),
+          playlists: Converters.simplePlaylistsFromLibraryV3(data["playlists"]),
+        }.toJson()
 
-      return result
+        return result
+      })
     })
   }
 
   fun albums(query: string, {offset: int, limit: int}) {
-    return client.search.albums(
-      query,
-      offset: offset,
-      limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.simpleAlbums(items)))
+    return caller.call(() async {
+      return await client.search.albums(
+        query,
+        offset: offset,
+        limit: limit
+      ).then((data) => Converters.paginated(data, (items) => Converters.simpleAlbums(items)))
+    })
   }
 
   fun artists(query: string, {offset: int, limit: int}) {
-    return client.search.artists(
-      query,
-      offset: offset,
-      limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.simpleArtists(items)))
+    return caller.call(() async {
+      return await client.search.artists(
+        query,
+        offset: offset,
+        limit: limit
+      ).then((data) => Converters.paginated(data, (items) => Converters.simpleArtists(items)))
+    })
   }
 
   fun tracks(query: string, {offset: int, limit: int}) {
-    return client.search.tracks(
-      query,
-      offset: offset,
-      limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.fullTracks(items)))
+    return caller.call(() async {
+      return await client.search.tracks(
+        query,
+        offset: offset,
+        limit: limit
+      ).then((data) => Converters.paginated(data, (items) => Converters.fullTracks(items)))
+    })
   }
 
   fun playlists(query: string, {offset: int, limit: int}) {
-    return client.search.playlists(
-      query,
-      offset: offset,
-      limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.simplePlaylistsFromLibraryV3(items)))
+    return caller.call(() async {
+      return await client.search.playlists(
+        query,
+        offset: offset,
+        limit: limit
+      ).then((data) => Converters.paginated(data, (items) => Converters.simplePlaylistsFromLibraryV3(items)))
+    })
   }
 }
 

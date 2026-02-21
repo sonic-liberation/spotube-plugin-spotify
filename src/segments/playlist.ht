@@ -1,29 +1,39 @@
 import { SpotifyGqlApi } from '../../dependencies/hetu_spotify_gql_client/lib/assets/hetu/spotify_gql_api_client.ht'
 import { Converters } from '../converter/converter.ht'
+import { SpotifyAuthEndpoint } from "./auth.ht"
+import { SafeCaller } from "../utils/safe_caller.ht"
 
 class PlaylistEndpoint {
   var client: SpotifyGqlApi
+  var auth: SpotifyAuthEndpoint
+  var caller: SafeCaller
 
-  construct (this.client)
+  construct (this.client, this.auth) {
+    caller = SafeCaller(auth)
+  }
 
   fun getPlaylist(id: string) {
-    return client.playlist.getPlaylist(id).then((data) {
-      return Converters.fullPlaylists([data])[0]
+    return caller.call(() async {
+      return await client.playlist.getPlaylist(id).then((data) {
+        return Converters.fullPlaylists([data])[0]
+      })
     })
   }
 
   fun tracks(id: string, { offset: int, limit: int }) {
-    return client.playlist.tracks(id, offset: offset, limit: limit).then((data) {
-      var paginated = Converters.paginated(
-        data, 
-        (items) => Converters.fullTracks(items)
-      )
+    return caller.call(() async {
+      return await client.playlist.tracks(id, offset: offset, limit: limit).then((data) {
+        var paginated = Converters.paginated(
+          data,
+          (items) => Converters.fullTracks(items)
+        )
 
-      // Spotify playlists can contain local tracks which do not have an ID and cannot be played
-      // We filter them out here to avoid issues in the client
-      paginated["items"] = paginated["items"].where((item) => item != null && item["id"] != null).toList()
+        // Spotify playlists can contain local tracks which do not have an ID and cannot be played
+        // We filter them out here to avoid issues in the client
+        paginated["items"] = paginated["items"].where((item) => item != null && item["id"] != null).toList()
 
-      return paginated
+        return paginated
+      })
     })
   }
 
@@ -33,14 +43,16 @@ class PlaylistEndpoint {
     public: bool,
     collaborative: bool
   }) {
-    return client.playlist.create(
-      userId,
-      name: name,
-      description: description,
-      public: public,
-      collaborative: collaborative
-    ).then((data) {
-      return Converters.fullPlaylists([data])[0]
+    return caller.call(() async {
+      return await client.playlist.create(
+        userId,
+        name: name,
+        description: description,
+        public: public,
+        collaborative: collaborative
+      ).then((data) {
+        return Converters.fullPlaylists([data])[0]
+      })
     })
   }
 
@@ -50,41 +62,53 @@ class PlaylistEndpoint {
     public: bool,
     collaborative: bool
   }) {
-    return client.playlist.update(
-      playlistId,
-      name: name,
-      description: description,
-      public: public,
-      collaborative: collaborative
-    )
+    return caller.call(() async {
+      return await client.playlist.update(
+        playlistId,
+        name: name,
+        description: description,
+        public: public,
+        collaborative: collaborative
+      )
+    })
   }
 
   fun deletePlaylist(playlistId: string) {
-    return this.unsave(playlistId)
+    return caller.call(() async {
+      return await this.unsave(playlistId)
+    })
   }
 
   fun addTracks(playlistId: string, { trackIds: List, position: int }) {
-    return client.playlist.addTracks(
-      playlistId,
-      uris: trackIds.map((id)=>"spotify:track:${id}").toList(),
-      position: position
-    )
+    return caller.call(() async {
+      return await client.playlist.addTracks(
+        playlistId,
+        uris: trackIds.map((id)=>"spotify:track:${id}").toList(),
+        position: position
+      )
+    })
   }
 
 
   fun removeTracks(playlistId: string, { trackIds: List }) {
-    return client.playlist.removeTracks(
-      playlistId, 
-      uris: trackIds.map((id)=>"spotify:track:${id}").toList()
-    )
+    return caller.call(() {
+      return client.playlist.removeTracks(
+        playlistId,
+        uris: trackIds.map((id)=>"spotify:track:${id}").toList()
+      )
+    })
   }
 
   fun save(playlistId: string) {
-    return client.playlist.follow(playlistId)
+    return caller.call(() async {
+      return await client.playlist.follow(playlistId)
+    })
   }
 
   fun unsave(playlistId: string) {
-    return client.playlist.unfollow(playlistId)
+    return caller.call(() async {
+      return await client.playlist.unfollow(playlistId)
+    })
   }
 }
 
