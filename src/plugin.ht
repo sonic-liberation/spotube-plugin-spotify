@@ -1,7 +1,7 @@
 import "module:std" as std
 import "module:spotube_plugin" as spotube
-import { SpotifyGqlApi } from '../dependencies/hetu_spotify_gql_client/lib/assets/hetu/spotify_gql_api_client.ht'
 
+import { SpotifyGqlApi } from '../dependencies/hetu_spotify_gql_client/lib/assets/hetu/spotify_gql_api_client.ht'
 import { SpotifyAuthEndpoint } from './segments/auth.ht'
 import { AlbumEndpoint } from "./segments/album.ht"
 import { ArtistEndpoint } from "./segments/artist.ht"
@@ -27,10 +27,15 @@ class SpotifyMetadataProviderPlugin {
   var track: TrackEndpoint
   var user: UserEndpoint
   var core: CorePlugin
-  
-  construct (){
-    api = SpotifyGqlApi()
-    auth = SpotifyAuthEndpoint()
+
+  construct () {
+    // Initialize API with empty token first (will be updated when auth is ready)
+    api = SpotifyGqlApi("")
+
+    // Initialize auth with callback to update API token
+    auth = SpotifyAuthEndpoint((event) {
+      _updateApiToken()
+    })
 
     album = AlbumEndpoint(api)
     artist = ArtistEndpoint(api)
@@ -41,9 +46,27 @@ class SpotifyMetadataProviderPlugin {
     user = UserEndpoint(api)
     core = CorePlugin()
 
+    // Listen to auth state changes to update token
     auth.authStateStream.listen((event) {
-      api.setAccessToken(auth.credentials["accessToken"])
+      _updateApiToken()
     })
+  }
+
+  fun _updateApiToken() {
+    if (auth != null && auth.credentials != null && auth.credentials["accessToken"] != null) {
+      var token = auth.credentials["accessToken"]
+      if (token != null && token.length > 0) {
+        api.setAccessToken(token)
+        // Re-initialize endpoints with updated API client
+        album = AlbumEndpoint(api)
+        artist = ArtistEndpoint(api)
+        browse = BrowseEndpoint(api, auth)
+        playlist = PlaylistEndpoint(api)
+        search = SearchEndpoint(api)
+        track = TrackEndpoint(api)
+        user = UserEndpoint(api)
+      }
+    }
   }
 }
 

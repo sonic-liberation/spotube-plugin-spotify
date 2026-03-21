@@ -3,4 +3,4 @@
 	url = https://github.com/hetu-community/hetu_otp_util.git
 [submodule "dependencies/hetu_spotify_gql_client"]
 	path = dependencies/hetu_spotify_gql_client
-	url = git@github.com:sonic-liberation/hetu_spotify_gql_client.git
+	url = https://github.com/sonic-liberation/hetu_spotify_gql_client.git

@@ -7,21 +7,65 @@ class PlaylistEndpoint {
   construct (this.client)
 
   fun getPlaylist(id: string) {
+    if (id == null || id.isEmpty) {
+      return null
+    }
+
     return client.playlist.getPlaylist(id).then((data) {
-      return Converters.fullPlaylists([data])[0]
+      if (data == null) {
+        return null
+      }
+      var converted = Converters.fullPlaylists([data])
+      return converted.isNotEmpty ? converted[0] : null
     })
   }
 
   fun tracks(id: string, { offset: int, limit: int }) {
+    if (id == null || id.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.playlist.tracks(id, offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+
+      // Extract track objects from playlist items (they're wrapped with metadata)
+      var trackItems = (data["items"] ?? [])
+        .where((item) => item != null && item["track"] != null)
+        .map((item) => item["track"])
+        .toList()
+
+      // Create modified data with extracted tracks for pagination
+      var modifiedData = {
+        items: trackItems,
+        total: data["total"] ?? trackItems.length,
+        offset: data["offset"] ?? offset ?? 0,
+        limit: data["limit"] ?? limit ?? 20
+      }
+
       var paginated = Converters.paginated(
-        data, 
+        modifiedData,
         (items) => Converters.fullTracks(items)
       )
 
       // Spotify playlists can contain local tracks which do not have an ID and cannot be played
       // We filter them out here to avoid issues in the client
-      paginated["items"] = paginated["items"].where((item) => item != null && item["id"] != null).toList()
+      paginated["items"] = paginated["items"]
+        .where((item) => item != null && item["id"] != null)
+        .toList()
 
       return paginated
     })
@@ -33,14 +77,22 @@ class PlaylistEndpoint {
     public: bool,
     collaborative: bool
   }) {
+    if (userId == null || userId.isEmpty || name == null || name.isEmpty) {
+      return null
+    }
+
     return client.playlist.create(
       userId,
       name: name,
-      description: description,
-      public: public,
-      collaborative: collaborative
+      description: description ?? "",
+      public: public ?? true,
+      collaborative: collaborative ?? false
     ).then((data) {
-      return Converters.fullPlaylists([data])[0]
+      if (data == null) {
+        return null
+      }
+      var converted = Converters.fullPlaylists([data])
+      return converted.isNotEmpty ? converted[0] : null
     })
   }
 
@@ -50,13 +102,17 @@ class PlaylistEndpoint {
     public: bool,
     collaborative: bool
   }) {
+    if (playlistId == null || playlistId.isEmpty) {
+      return false
+    }
+
     return client.playlist.update(
       playlistId,
       name: name,
       description: description,
       public: public,
       collaborative: collaborative
-    )
+    ).then(() => true)
   }
 
   fun deletePlaylist(playlistId: string) {
@@ -64,27 +120,40 @@ class PlaylistEndpoint {
   }
 
   fun addTracks(playlistId: string, { trackIds: List, position: int }) {
+    if (playlistId == null || playlistId.isEmpty || trackIds == null || trackIds.isEmpty) {
+      return false
+    }
+
     return client.playlist.addTracks(
       playlistId,
-      uris: trackIds.map((id)=>"spotify:track:${id}").toList(),
+      uris: trackIds.map((id) => "spotify:track:${id}").toList(),
       position: position
-    )
+    ).then(() => true)
   }
 
-
   fun removeTracks(playlistId: string, { trackIds: List }) {
+    if (playlistId == null || playlistId.isEmpty || trackIds == null || trackIds.isEmpty) {
+      return false
+    }
+
     return client.playlist.removeTracks(
-      playlistId, 
-      uris: trackIds.map((id)=>"spotify:track:${id}").toList()
-    )
+      playlistId,
+      uris: trackIds.map((id) => "spotify:track:${id}").toList()
+    ).then(() => true)
   }
 
   fun save(playlistId: string) {
-    return client.playlist.follow(playlistId)
+    if (playlistId == null || playlistId.isEmpty) {
+      return false
+    }
+    return client.playlist.follow(playlistId).then(() => true)
   }
 
   fun unsave(playlistId: string) {
-    return client.playlist.unfollow(playlistId)
+    if (playlistId == null || playlistId.isEmpty) {
+      return false
+    }
+    return client.playlist.unfollow(playlistId).then(() => true)
   }
 }
 

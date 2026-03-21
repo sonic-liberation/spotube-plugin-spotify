@@ -5,59 +5,162 @@ class UserEndpoint {
   var client: SpotifyGqlApi
 
   construct (this.client)
-  
+
   fun me() {
-    return client.user.me().then((data){
+    return client.user.me().then((data) {
+      if (data == null) {
+        return {
+          id: "",
+          name: "Unknown User",
+          images: [],
+          externalUri: "",
+        }.toJson()
+      }
       return Converters.simpleUser(data)
     })
   }
 
   fun savedTracks({ offset: int, limit: int }) {
-    return client.user.savedTracks(offset: offset, limit: limit).then(
-      (data) => Converters.paginated(data, (items) => Converters.fullTracks(items))
-    )
+    return client.user.savedTracks(offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+
+      // Extract track objects from saved track items (they're wrapped with added_at metadata)
+      var trackItems = (data["items"] ?? [])
+        .where((item) => item != null && item["track"] != null)
+        .map((item) => item["track"])
+        .toList()
+
+      var modifiedData = {
+        items: trackItems,
+        total: data["total"] ?? trackItems.length,
+        offset: data["offset"] ?? offset ?? 0,
+        limit: data["limit"] ?? limit ?? 20
+      }
+
+      return Converters.paginated(modifiedData, (items) => Converters.fullTracks(items))
+    })
   }
 
   fun savedPlaylists({ offset: int, limit: int }) {
-    return client.user.savedPlaylists(offset: offset, limit: limit).then((data){           
+    return client.user.savedPlaylists(offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
       return Converters.paginated(
-        data, 
-        (items) => Converters.simplePlaylistsFromLibraryV3(data["items"])
+        data,
+        (items) => Converters.simplePlaylistsFromLibraryV3(items)
       )
     })
   }
 
   fun savedAlbums({ offset: int, limit: int }) {
-    return client.user.savedAlbums(offset: offset, limit: limit).then((data){
+    return client.user.savedAlbums(offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+
+      // Extract album objects from saved album items (they're wrapped with added_at metadata)
+      var albumItems = (data["items"] ?? [])
+        .where((item) => item != null && item["album"] != null)
+        .map((item) => item["album"])
+        .toList()
+
+      var modifiedData = {
+        items: albumItems,
+        total: data["total"] ?? albumItems.length,
+        offset: data["offset"] ?? offset ?? 0,
+        limit: data["limit"] ?? limit ?? 20
+      }
+
       return Converters.paginated(
-        data, 
+        modifiedData,
         (items) => Converters.simpleAlbums(items)
       )
     })
   }
 
   fun savedArtists({ offset: int, limit: int }) {
-    return client.user.savedArtists(offset: offset, limit: limit).then((data){
+    return client.user.savedArtists(offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+
+      // Extract artist objects from saved artist items (they're wrapped with metadata)
+      var artistItems = (data["items"] ?? [])
+        .where((item) => item != null && item["artist"] != null)
+        .map((item) => item["artist"])
+        .toList()
+
+      // If no wrapping, use items directly
+      if (artistItems.isEmpty && data["items"] != null && data["items"].isNotEmpty) {
+        artistItems = data["items"]
+      }
+
+      var modifiedData = {
+        items: artistItems,
+        total: data["total"] ?? artistItems.length,
+        offset: data["offset"] ?? offset ?? 0,
+        limit: data["limit"] ?? limit ?? 20
+      }
+
       return Converters.paginated(
-        data, 
+        modifiedData,
         (items) => Converters.fullArtists(items)
       )
     })
   }
 
-  fun isSavedPlaylist(playlistId: string) { // Future<bool>
+  fun isSavedPlaylist(playlistId: string) {
+    if (playlistId == null || playlistId.isEmpty) {
+      return false
+    }
     return client.user.isPlaylistSaved(playlistId)
   }
 
-  fun isSavedTracks(trackIds: List) { // Future<List<bool>>
+  fun isSavedTracks(trackIds: List) {
+    if (trackIds == null || trackIds.isEmpty) {
+      return []
+    }
     return client.user.isTracksSaved(trackIds)
   }
 
-  fun isSavedAlbums(albumIds: List) { // Future<List<bool>>
+  fun isSavedAlbums(albumIds: List) {
+    if (albumIds == null || albumIds.isEmpty) {
+      return []
+    }
     return client.user.isInLibrary(albumIds, itemType: "album")
   }
 
-  fun isSavedArtists(artistIds: List) { // Future<List<bool>>
+  fun isSavedArtists(artistIds: List) {
+    if (artistIds == null || artistIds.isEmpty) {
+      return []
+    }
     return client.user.isInLibrary(artistIds, itemType: "artist")
   }
 }

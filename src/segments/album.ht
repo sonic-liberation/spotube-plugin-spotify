@@ -7,28 +7,85 @@ class AlbumEndpoint {
   construct (this.client)
 
   fun getAlbum(id: string) {
+    if (id == null || id.isEmpty) {
+      return null
+    }
+
     return client.album.getAlbum(id).then((album) {
-      return Converters.fullAlbums([album])[0]
+      if (album == null) {
+        return null
+      }
+      var converted = Converters.fullAlbums([album])
+      return converted.isNotEmpty ? converted[0] : null
+    })
+  }
+
+  fun getAlbums(ids: List) {
+    if (ids == null || ids.isEmpty) {
+      return []
+    }
+
+    return client.album.getAlbums(ids).then((albums) {
+      if (albums == null) {
+        return []
+      }
+      return Converters.fullAlbums(albums)
     })
   }
 
   fun tracks(id: string, {offset: int, limit: int}) {
+    if (id == null || id.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.album.tracks(id, offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
       return Converters.paginated(data, (items) => Converters.fullTracks(items))
     })
   }
 
   fun releases({offset: int, limit: int}) {
-    return client.album.releases(offset: offset, limit: limit).then((data){
-      return Converters.paginated(data, (items)=> Converters.simpleAlbums(items))
+    return client.album.releases(offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+      return Converters.paginated(data, (items) => Converters.simpleAlbums(items))
     })
   }
 
   fun save(albumIds: List) {
-    return client.album.save(albumIds)
+    if (albumIds == null || albumIds.isEmpty) {
+      return false
+    }
+    return client.album.save(albumIds).then(() => true)
   }
 
   fun unsave(albumIds: List) {
-    return client.album.unsave(albumIds)
+    if (albumIds == null || albumIds.isEmpty) {
+      return false
+    }
+    return client.album.unsave(albumIds).then(() => true)
   }
 }
+
+export { AlbumEndpoint }

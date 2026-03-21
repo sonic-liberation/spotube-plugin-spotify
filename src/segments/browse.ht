@@ -12,27 +12,63 @@ class BrowseEndpoint {
 
   construct (this.client, this.auth)
 
+  fun _getSpTCookie() -> string {
+    if (auth == null || auth.credentials == null || auth.credentials["cookies"] == null) {
+      return ""
+    }
+
+    var cookies = auth.credentials["cookies"]
+    var spTCookie = cookies.where((c) => c != null && c["name"] == "sp_t").toList()
+
+    if (spTCookie.isEmpty) {
+      return ""
+    }
+
+    return spTCookie[0]["value"] ?? ""
+  }
+
   fun sections({offset: int, limit: int}) {
+    if (auth == null || auth.credentials == null) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return Timezone.getLocalTimeZone().then((timeZone){
       return client.browse.home(
         timeZone: timeZone,
-        spTCookie: auth.credentials["cookies"].where((c)=>c["name"] == "sp_t").elementAt(0)["value"]
+        spTCookie: _getSpTCookie(),
         limit: limit,
       ).then((sections){
+        if (sections == null || sections.isEmpty) {
+          return {
+            limit: limit ?? 20,
+            nextOffset: null,
+            hasMore: false,
+            total: 0,
+            items: []
+          }.toJson()
+        }
+
         return {
           limit: limit ?? 20,
           nextOffset: null,
           hasMore: false,
           total: sections.length,
-          items: sections.map((section) {            
-            var playlists = section["items"].where((item) => item["objectType"] == "Playlist").toList()
-            var albums = section["items"].where((item) => item["objectType"] == "Album").toList()
-            var artists = section["items"].where((item) => item["objectType"] == "Artist").toList()
-            
+          items: sections.map((section) {
+            var sectionItems = section["items"] ?? []
+            var playlists = sectionItems.where((item) => item != null && item["objectType"] == "Playlist").toList()
+            var albums = sectionItems.where((item) => item != null && item["objectType"] == "Album").toList()
+            var artists = sectionItems.where((item) => item != null && item["objectType"] == "Artist").toList()
+
             return {
               id: section["id"],
               title: section["title"],
-              externalUri: section["external_urls"]["spotify"] ?? "https://open.spotify.com/section/${section["id"]}",
+              externalUri: section["external_urls"]?["spotify"] ?? "https://open.spotify.com/section/${section["id"]}",
               browseMore: true,
               items: [
                 ...Converters.simplePlaylistsFromLibraryV3(playlists),
@@ -47,20 +83,40 @@ class BrowseEndpoint {
   }
 
   fun sectionItems(id: string, {offset: int, limit: int}) {
+    if (auth == null || auth.credentials == null) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return Timezone.getLocalTimeZone().then((timeZone) {
       return client.browse.homeSection(
-        id, 
+        id,
         timeZone: timeZone,
-        spTCookie: auth.credentials["cookies"].where((c)=>c["name"] == "sp_t").elementAt(0)["value"],
+        spTCookie: _getSpTCookie(),
         offset: offset,
         limit: limit,
       ).then((section){
+        if (section == null) {
+          return {
+            limit: limit ?? 20,
+            nextOffset: null,
+            hasMore: false,
+            total: 0,
+            items: []
+          }.toJson()
+        }
+
         return Converters.paginated(
           section,
           (items) {
-            var playlists = section["items"].where((item) => item["objectType"] == "Playlist").toList()
-            var albums = section["items"].where((item) => item["objectType"] == "Album").toList()
-            var artists = section["items"].where((item) => item["objectType"] == "Artist").toList()
+            var playlists = items.where((item) => item != null && item["objectType"] == "Playlist").toList()
+            var albums = items.where((item) => item != null && item["objectType"] == "Album").toList()
+            var artists = items.where((item) => item != null && item["objectType"] == "Artist").toList()
 
             return [
                 ...Converters.simplePlaylistsFromLibraryV3(playlists),
@@ -73,3 +129,5 @@ class BrowseEndpoint {
     })
   }
 }
+
+export { BrowseEndpoint }

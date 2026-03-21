@@ -7,37 +7,84 @@ class TrackEndpoint {
   construct (this.client)
 
   fun getTrack(id: string) {
-    return client.track.getTrack(id).then((data) {
-      return Converters.fullTracks([data])[0]
+    return client.track.getTrack(id).then((trackData) {
+      if (trackData == null) {
+        return null
+      }
+      var converted = Converters.fullTracks([trackData])
+      return converted.isNotEmpty ? converted[0] : null
+    })
+  }
+
+  fun getTracks(ids: List) {
+    return client.track.getTracks(ids).then((tracksData) {
+      if (tracksData == null) {
+        return []
+      }
+      return Converters.fullTracks(tracksData)
     })
   }
 
   fun save(trackIds: List) async {
+    if (trackIds == null || trackIds.isEmpty) {
+      return false
+    }
     await client.track.save(trackIds)
     return true
   }
 
   fun unsave(trackIds: List) async {
+    if (trackIds == null || trackIds.isEmpty) {
+      return false
+    }
     await client.track.unsave(trackIds)
     return true
   }
 
   fun radio(trackId: string) {
-    return client.track.getTrack(trackId).then((data){
-      var query = "${data['name']} Radio"
-      return client.search.playlists(query, limit: 20).then((data) {
-        var playlists = data["items"];
-        var radioPlaylist = playlists.firstWhere((playlist) => playlist["name"] == query, orElse: () => null);
+    if (trackId == null || trackId.isEmpty) {
+      return []
+    }
+
+    return client.track.getTrack(trackId).then((trackData) {
+      if (trackData == null || trackData["name"] == null) {
+        return []
+      }
+
+      var query = "${trackData['name']} Radio"
+
+      return client.search.playlists(query, limit: 20).then((searchResult) {
+        if (searchResult == null || searchResult["items"] == null) {
+          return []
+        }
+
+        var playlists = searchResult["items"]
+        var radioPlaylist = playlists.firstWhere(
+          (playlist) => playlist != null && playlist["name"] == query,
+          orElse: () => null
+        )
+
+        if (radioPlaylist == null || radioPlaylist["id"] == null) {
+          return []
+        }
+
         return client.playlist.tracks(radioPlaylist["id"], offset: 0, limit: 50)
-          .then((data) {
-            var tracks = data["items"].map((item){
-              item["track"]["available_markets"] = null
-              return item["track"]
-            })
-            .toList()
+          .then((playlistData) {
+            if (playlistData == null || playlistData["items"] == null) {
+              return []
+            }
+
+            var tracks = playlistData["items"]
+              .where((item) => item != null && item["track"] != null)
+              .map((item) {
+                var track = item["track"]
+                track["available_markets"] = null
+                return track
+              })
+              .toList()
 
             return Converters.fullTracks(tracks)
-          });
+          })
       })
     })
   }
