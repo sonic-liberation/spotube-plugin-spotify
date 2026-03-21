@@ -1,8 +1,8 @@
 {
-  "version": "0.2.2",
+  "version": "0.3.0",
   "name": "Spotify",
   "author": "Sonic Liberation",
-  "description": "Spotube plugin for Spotify metadata",
+  "description": "Spotube plugin for Spotify metadata - Enhanced with comprehensive null safety and bug fixes",
   "entryPoint": "SpotifyMetadataProviderPlugin",
   "apis": ["webview", "localstorage", "timezone"],
   "abilities": ["authentication", "metadata"],
