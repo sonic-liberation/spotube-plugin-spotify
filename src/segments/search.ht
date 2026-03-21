@@ -6,57 +6,157 @@ class SearchEndpoint {
 
   construct (this.client)
 
-  get chips -> List { // Set<string>
+  get chips -> List {
     // can be tracks, playlists, artists, albums and all
     return ["all", "tracks", "albums", "artists", "playlists"]
   }
 
   fun all(query: string) {
+    if (query == null || query.isEmpty) {
+      return {
+        artists: [],
+        albums: [],
+        tracks: [],
+        playlists: [],
+      }.toJson()
+    }
+
     return client.search.all(
       query,
       limit: 20
-    ).then((data){
-      var result = {
-        artists: Converters.simpleArtists(data["artists"]),
-        albums: Converters.simpleAlbums(data["albums"]),
-        tracks: Converters.fullTracks(data["tracks"]),
-        playlists: Converters.simplePlaylistsFromLibraryV3(data["playlists"]),
-      }.toJson()
+    ).then((data) {
+      if (data == null) {
+        return {
+          artists: [],
+          albums: [],
+          tracks: [],
+          playlists: [],
+        }.toJson()
+      }
 
-      return result
+      return {
+        artists: Converters.simpleArtists(data["artists"] ?? []),
+        albums: Converters.simpleAlbums(data["albums"] ?? []),
+        tracks: Converters.fullTracks(data["tracks"] ?? []),
+        playlists: Converters.simplePlaylistsFromLibraryV3(data["playlists"] ?? []),
+      }.toJson()
     })
   }
 
   fun albums(query: string, {offset: int, limit: int}) {
+    if (query == null || query.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.search.albums(
       query,
       offset: offset,
       limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.simpleAlbums(items)))
+    ).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+      return Converters.paginated(data, (items) => Converters.simpleAlbums(items))
+    })
   }
 
   fun artists(query: string, {offset: int, limit: int}) {
+    if (query == null || query.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.search.artists(
       query,
       offset: offset,
       limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.simpleArtists(items)))
+    ).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+      return Converters.paginated(data, (items) => Converters.simpleArtists(items))
+    })
   }
 
   fun tracks(query: string, {offset: int, limit: int}) {
+    if (query == null || query.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.search.tracks(
       query,
       offset: offset,
       limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.fullTracks(items)))
+    ).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+      return Converters.paginated(data, (items) => Converters.fullTracks(items))
+    })
   }
 
   fun playlists(query: string, {offset: int, limit: int}) {
+    if (query == null || query.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.search.playlists(
       query,
       offset: offset,
       limit: limit
-    ).then((data) => Converters.paginated(data, (items) => Converters.simplePlaylistsFromLibraryV3(items)))
+    ).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
+      return Converters.paginated(data, (items) => Converters.simplePlaylistsFromLibraryV3(items))
+    })
   }
 }
 

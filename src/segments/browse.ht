@@ -16,18 +16,29 @@ class BrowseEndpoint {
     return Timezone.getLocalTimeZone().then((timeZone){
       return client.browse.home(
         timeZone: timeZone,
-        spTCookie: auth.credentials["cookies"].where((c)=>c["name"] == "sp_t").elementAt(0)["value"]
+        spTCookie: auth.credentials["cookies"].where((c)=>c["name"] == "sp_t").elementAt(0)["value"],
         limit: limit,
       ).then((sections){
+        if (sections == null || sections.isEmpty) {
+          return {
+            limit: limit ?? 20,
+            nextOffset: null,
+            hasMore: false,
+            total: 0,
+            items: []
+          }.toJson()
+        }
+
         return {
           limit: limit ?? 20,
           nextOffset: null,
           hasMore: false,
           total: sections.length,
-          items: sections.map((section) {            
-            var playlists = section["items"].where((item) => item["objectType"] == "Playlist").toList()
-            var albums = section["items"].where((item) => item["objectType"] == "Album").toList()
-            var artists = section["items"].where((item) => item["objectType"] == "Artist").toList()
+          items: sections.map((section) {
+            var sectionItems = section["items"] ?? []
+            var playlists = sectionItems.where((item) => item != null && item["objectType"] == "Playlist").toList()
+            var albums = sectionItems.where((item) => item != null && item["objectType"] == "Album").toList()
+            var artists = sectionItems.where((item) => item != null && item["objectType"] == "Artist").toList()
             
             return {
               id: section["id"],
@@ -49,7 +60,7 @@ class BrowseEndpoint {
   fun sectionItems(id: string, {offset: int, limit: int}) {
     return Timezone.getLocalTimeZone().then((timeZone) {
       return client.browse.homeSection(
-        id, 
+        id,
         timeZone: timeZone,
         spTCookie: auth.credentials["cookies"].where((c)=>c["name"] == "sp_t").elementAt(0)["value"],
         offset: offset,
@@ -58,9 +69,9 @@ class BrowseEndpoint {
         return Converters.paginated(
           section,
           (items) {
-            var playlists = section["items"].where((item) => item["objectType"] == "Playlist").toList()
-            var albums = section["items"].where((item) => item["objectType"] == "Album").toList()
-            var artists = section["items"].where((item) => item["objectType"] == "Artist").toList()
+            var playlists = items.where((item) => item != null && item["objectType"] == "Playlist").toList()
+            var albums = items.where((item) => item != null && item["objectType"] == "Album").toList()
+            var artists = items.where((item) => item != null && item["objectType"] == "Artist").toList()
 
             return [
                 ...Converters.simplePlaylistsFromLibraryV3(playlists),
@@ -73,3 +84,5 @@ class BrowseEndpoint {
     })
   }
 }
+
+export { BrowseEndpoint }

@@ -122,10 +122,11 @@ class SpotifyAuthEndpoint {
     for (int i = 0; i < length; i++) {
       bytes.add(Random().nextInt(256).toString())
     }
+
+    return bytes.join("")
   }
 
   fun getToken({
-		mode = "transport",
 		timestamp: DateTime,
 		totp: string,
 		spDc: string,
@@ -194,9 +195,9 @@ class SpotifyAuthEndpoint {
 	}
 
 	fun refreshCredentials() -> Future {
-		if (credentials["cookies"] == null) {
+		if (credentials == null || credentials["cookies"] == null) {
 			print(
-				"[refreshCredentials] No cookie found. Cannot refresh credentials.",
+				"[refreshCredentials] No credentials or cookie found. Cannot refresh credentials.",
 			);
 			return;
 		}

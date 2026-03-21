@@ -7,45 +7,133 @@ class ArtistEndpoint {
   construct (this.client)
 
   fun getArtist(id: string) {
+    if (id == null || id.isEmpty) {
+      return null
+    }
+
     return client.artist.getArtist(id).then((data) {
-      return Converters.fullArtists([data])[0]
+      if (data == null) {
+        return null
+      }
+      var converted = Converters.fullArtists([data])
+      return converted.isNotEmpty ? converted[0] : null
+    })
+  }
+
+  fun getArtists(ids: List) {
+    if (ids == null || ids.isEmpty) {
+      return []
+    }
+
+    return client.artist.getArtists(ids).then((data) {
+      if (data == null) {
+        return []
+      }
+      return Converters.fullArtists(data)
     })
   }
 
   fun topTracks(id: string, {limit: int, offset: int}) {
-    return client.artist.topTracks(id, limit: limit, offset: offset).then((data) {
+    if (id == null || id.isEmpty) {
       return {
-        total: data["tracks"].length,
+        total: 0,
         limit: limit ?? 20,
-        nextOffset: (offset ?? 0) + (limit ?? 20),
+        nextOffset: null,
         hasMore: false,
-        items: Converters.fullTracks(data["tracks"])
+        items: []
+      }.toJson()
+    }
+
+    return client.artist.topTracks(id, limit: limit, offset: offset).then((data) {
+      if (data == null || data["tracks"] == null) {
+        return {
+          total: 0,
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          items: []
+        }.toJson()
+      }
+
+      var tracks = data["tracks"] ?? []
+
+      return {
+        total: tracks.length,
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        items: Converters.fullTracks(tracks)
       }.toJson()
     })
   }
 
   fun albums(id: string, {offset: int, limit: int}) {
+    if (id == null || id.isEmpty) {
+      return {
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        total: 0,
+        items: []
+      }.toJson()
+    }
+
     return client.artist.albums(id, offset: offset, limit: limit).then((data) {
+      if (data == null) {
+        return {
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          total: 0,
+          items: []
+        }.toJson()
+      }
       return Converters.paginated(data, (items) => Converters.simpleAlbums(items))
     })
   }
 
   fun save(artistIds: List) {
+    if (artistIds == null || artistIds.isEmpty) {
+      return false
+    }
     return client.artist.follow(artistIds).then(() => true)
   }
 
   fun unsave(artistIds: List) {
+    if (artistIds == null || artistIds.isEmpty) {
+      return false
+    }
     return client.artist.unfollow(artistIds).then(() => true)
   }
 
   fun related(id: string, {offset: int, limit: int}) {
+    if (id == null || id.isEmpty) {
+      return {
+        total: 0,
+        limit: limit ?? 20,
+        nextOffset: null,
+        hasMore: false,
+        items: []
+      }.toJson()
+    }
+
     return client.artist.related(id).then((data) {
+      if (data == null || data["artists"] == null) {
+        return {
+          total: 0,
+          limit: limit ?? 20,
+          nextOffset: null,
+          hasMore: false,
+          items: []
+        }.toJson()
+      }
+
       var artists = Converters.fullArtists(data["artists"])
 
       return {
         total: artists.length,
         limit: limit ?? 20,
-        nextOffset: (offset ?? 0) + (limit ?? 20),
+        nextOffset: null,
         hasMore: false,
         items: artists
       }.toJson()
