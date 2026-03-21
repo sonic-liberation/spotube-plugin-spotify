@@ -13,6 +13,7 @@ var RequestOptions = std.RequestOptions
 var Timer = std.Timer
 var JSON = std.JSON
 var Regex = std.Regex
+var Random = std.Random
 var LocalStorage = spotube.LocalStorage
 var Webview = spotube.Webview
 var Cookie = spotube.Cookie
@@ -37,7 +38,7 @@ class SpotifyAuthEndpoint {
       if(onEvent != null) {
         onEvent(event)
       }
-      if(event["type"] == "recovered" || event["type"] == "login") {
+      if(event["type"] == "recovered" || event["type"] == "login" || event["type"] == "refreshed") {
         _timer?.cancel()
         _timer = Timer.periodic(getExpirationDuration(), (cancel){
           refreshCredentials()
@@ -49,57 +50,77 @@ class SpotifyAuthEndpoint {
   }
 
   fun isExpired() -> bool {
-		if (credentials == null) {
-			return true
-		}
+    if (credentials == null || credentials["expiration"] == null) {
+      return true
+    }
 
-		final currentTime = DateTime.now()
+    final currentTime = DateTime.now()
+    final expirationTime = DateTime.fromMillisecondsSinceEpoch(credentials["expiration"])
 
-		final expirationTime = DateTime.fromMillisecondsSinceEpoch(credentials["expiration"])
-
-		return currentTime.isAfter(expirationTime)
-	}
+    return currentTime.isAfter(expirationTime)
+  }
 
   fun getExpirationDuration() -> Duration {
-		if (credentials == null) {
-			return 0;
-		}
+    if (credentials == null || credentials["expiration"] == null) {
+      return Duration(minutes: 30)
+    }
 
-		final currentTime = DateTime.now()
+    final currentTime = DateTime.now()
+    final expirationTime = DateTime.fromMillisecondsSinceEpoch(credentials["expiration"])
 
-		final expirationTime = DateTime.fromMillisecondsSinceEpoch(credentials["expiration"])
-
-		return expirationTime.difference(currentTime)
-	}
+    var diff = expirationTime.difference(currentTime)
+    // If already expired or about to expire, refresh in 1 minute
+    if (diff.inMilliseconds <= 0) {
+      return Duration(minutes: 1)
+    }
+    return diff
+  }
 
 
   fun initializeFromLocalStorage() {
-		LocalStorage.getString("credentials").then((credentialsStr){
-      if (credentialsStr != null) {
-        credentials = JSON.decode(credentialsStr);
-        if (isExpired()) {
-          refreshCredentials()
-        } else {
-          controller.add({ type: "recovered" }.toJson())
+    LocalStorage.getString("credentials").then((credentialsStr){
+      if (credentialsStr != null && credentialsStr.length > 0) {
+        try {
+          credentials = JSON.decode(credentialsStr)
+          if (credentials != null && credentials["accessToken"] != null) {
+            if (isExpired()) {
+              refreshCredentials()
+            } else {
+              controller.add({ "type": "recovered" }.toJson())
+            }
+          }
+        } catch (e) {
+          print("[initializeFromLocalStorage] Error parsing credentials: ${e}")
         }
       }
     })
-	}
+  }
 
   fun getLatestNuance() -> Future { // Future<{v: int, s: string}>
     return client.get_req(
       "https://api.github.com/gists/22ed9c6ba463899e933427f7de1f0eef"
     ).then((res) {
-      var data = JSON.decode(JSON.decode(res.data)["files"]["nuances.json"]["content"]);
-      data.sort((a, b) => b["v"].compareTo(a["v"]))
-      return data.first
+      var rawData = res.data
+      if (rawData is String) {
+        rawData = JSON.decode(rawData)
+      }
+      var content = rawData["files"]["nuances.json"]["content"]
+      if (content is String) {
+        content = JSON.decode(content)
+      }
+      content.sort((a, b) => b["v"].compareTo(a["v"]))
+      return content.first
     })
   }
 
   fun generateTimedOnTimePassword(secret: string) -> Future {
-		return client.get_req("https://open.spotify.com/api/server-time")
+    return client.get_req("https://open.spotify.com/api/server-time")
     .then((res) {
-      final timestampSeconds = res.data["serverTime"]
+      var data = res.data
+      if (data is String) {
+        data = JSON.decode(data)
+      }
+      final timestampSeconds = data["serverTime"]
 
       final totp = TOTP(
         secret: secret,
@@ -114,47 +135,60 @@ class SpotifyAuthEndpoint {
         )
       )
     })
-	}
+  }
 
   fun randomBytesFromMath(length: int) -> string {
     var bytes = List()
+    var random = Random()
 
     for (int i = 0; i < length; i++) {
-      bytes.add(Random().nextInt(256).toString())
+      bytes.add(random.nextInt(256).toString())
     }
 
     return bytes.join("")
   }
 
   fun getToken({
-		timestamp: DateTime,
-		totp: string,
-		spDc: string,
+    timestamp: DateTime,
+    totp: string,
+    spDc: string,
     mode: string,
     totpVer: int
-	}) -> Future {
+  }) -> Future {
     print("Timestamp: ${timestamp}, TOTP: ${totp}, Mode: ${mode}, spDc: ${spDc}")
     final timestampSeconds = (timestamp.millisecondsSinceEpoch / 1000).floor()
-		final accessTokenUrl = "https://open.spotify.com/api/token?reason=${mode}&productType=web-player&totp=${totp}&totpServer=${totp}&totpVer=${totpVer}"
+    final accessTokenUrl = "https://open.spotify.com/api/token?reason=${mode ?? 'transport'}&productType=web-player&totp=${totp}&totpServer=${totp}&totpVer=${totpVer}"
 
-		final userAgent = "${DateTime.now().millisecondsSinceEpoch}${Random().nextInt(100) * 1000}${randomBytesFromMath(16)}"
-    .split("").join("")
+    var random = Random()
+    final userAgent = "${DateTime.now().millisecondsSinceEpoch}${random.nextInt(100) * 1000}${randomBytesFromMath(16)}"
 
-		return client.get_req(
+    return client.get_req(
       accessTokenUrl,
       options: RequestOptions(
         headers: {
-          Cookie: spDc ?? "",
+          "Cookie": spDc ?? "",
           "User-Agent": userAgent,
         }.toJson(),
       )
     ).then((res){
-      return { body: res.data, headers: res.headers }
+      var body = res.data
+      if (body is String) {
+        body = JSON.decode(body)
+      }
+      return { "body": body, "headers": res.headers }
     })
-	}
+  }
 
   fun credentialsFromCookie(cookies: List) -> Future {
-		final spDc = cookies.where((c) => c["name"] == "sp_dc").first?["value"];
+    if (cookies == null || cookies.isEmpty) {
+      throw "No cookies provided"
+    }
+
+    var spDcCookies = cookies.where((c) => c != null && c["name"] == "sp_dc").toList()
+    if (spDcCookies.isEmpty) {
+      throw "sp_dc cookie not found"
+    }
+    final spDc = spDcCookies[0]["value"]
 
     return getLatestNuance().then((nuance){
       return generateTimedOnTimePassword(nuance["s"]).then((totp){
@@ -165,48 +199,51 @@ class SpotifyAuthEndpoint {
           mode: "transport",
           totpVer: nuance["v"],
         ).then((res){
-          if (res.body["accessToken"] == null) {
+          var accessToken = res["body"]["accessToken"]
+          var expiration = res["body"]["accessTokenExpirationTimestampMs"]
+
+          if (accessToken == null || accessToken.length < 100) {
             print(
-              "The access token is only ${res.body["accessToken"]?.length} characters long instead of 374. Your authentication probably doesn't work",
-            );
+              "[credentialsFromCookie] Invalid access token received. Length: ${accessToken?.length ?? 0}",
+            )
           }
 
           return {
-            cookies: cookies,
-            accessToken: res.body["accessToken"],
-            expiration: res.body["accessTokenExpirationTimestampMs"],
+            "cookies": cookies,
+            "accessToken": accessToken,
+            "expiration": expiration,
           }
         })
       })
     })
-	}
+  }
 
   fun isAuthenticated() -> bool {
-    return credentials != null && !isExpired()
+    return credentials != null && credentials["accessToken"] != null && !isExpired()
   }
 
   fun login(cookies: List) -> Future {
-		return this.credentialsFromCookie(cookies).then((creds){
-      LocalStorage.setString("credentials", JSON.encode(creds.toJson()));
-      credentials = creds;
+    return this.credentialsFromCookie(cookies).then((creds){
+      LocalStorage.setString("credentials", JSON.encode(creds.toJson()))
+      credentials = creds
 
-      controller.add({type: "login"}.toJson());
+      controller.add({"type": "login"}.toJson())
     })
-	}
+  }
 
-	fun refreshCredentials() -> Future {
-		if (credentials == null || credentials["cookies"] == null) {
-			print(
-				"[refreshCredentials] No credentials or cookie found. Cannot refresh credentials.",
-			);
-			return;
-		}
-		return this.credentialsFromCookie(credentials["cookies"]).then((creds){
-      LocalStorage.setString("credentials", JSON.encode(creds.toJson()));
-      credentials = creds;
-      controller.add({ type: "refreshed" }.toJson())
+  fun refreshCredentials() -> Future {
+    if (credentials == null || credentials["cookies"] == null) {
+      print(
+        "[refreshCredentials] No credentials or cookie found. Cannot refresh credentials.",
+      )
+      return
+    }
+    return this.credentialsFromCookie(credentials["cookies"]).then((creds){
+      LocalStorage.setString("credentials", JSON.encode(creds.toJson()))
+      credentials = creds
+      controller.add({ "type": "refreshed" }.toJson())
     })
-	}
+  }
 
   fun authenticate() -> Future {
     var webview = Webview(uri: "https://accounts.spotify.com/")
@@ -226,11 +263,11 @@ class SpotifyAuthEndpoint {
     return webview.open()
   }
 
-	fun logout() {
-		credentials = null;
-		LocalStorage.remove("credentials");
-		controller.add({type: "logout"}.toJson());
-	}
+  fun logout() {
+    credentials = null
+    LocalStorage.remove("credentials")
+    controller.add({"type": "logout"}.toJson())
+  }
 }
 
 export { SpotifyAuthEndpoint }
