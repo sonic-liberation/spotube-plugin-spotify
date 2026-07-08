@@ -20,6 +20,11 @@ var Cookie = spotube.Cookie
 class SpotifyAuthEndpoint {
   final controller: StreamController
   var _timer: Timer
+  // Single-flight guard: holds the in-flight refresh Future so that a burst of
+  // concurrent requests (e.g. the whole home screen at startup) share ONE token
+  // refresh instead of each firing its own — which caused a ~11x token storm and
+  // a client-rebuild race that returned null responses.
+  var _refreshInFlight
   /// Map of:
   /// - `cookies`: Map of cookies from <Cookie>.toJson()
   /// - `accessToken`: The access token string
@@ -90,7 +95,12 @@ class SpotifyAuthEndpoint {
     return client.get_req(
       "https://api.github.com/gists/22ed9c6ba463899e933427f7de1f0eef"
     ).then((res) {
-      var data = JSON.decode(JSON.decode(res.data)["files"]["nuances.json"]["content"]);
+      // res.data is already a decoded Map here (dio auto-parses the GitHub API
+      // JSON response). The original code did JSON.decode(res.data) which threw
+      // "_Map is not a subtype of String" and aborted the whole token refresh
+      // (the real cause of the never-refreshing 401). Index the Map directly and
+      // only JSON.decode the inner file content, which is a raw JSON string.
+      var data = JSON.decode(res.data["files"]["nuances.json"]["content"])
       data.sort((a, b) => b["v"].compareTo(a["v"]))
       return data.first
     })
@@ -200,11 +210,17 @@ class SpotifyAuthEndpoint {
 			);
 			return;
 		}
-		return this.credentialsFromCookie(credentials["cookies"]).then((creds){
+		// If a refresh is already running, join it instead of starting another.
+		if (_refreshInFlight != null) {
+			return _refreshInFlight
+		}
+		_refreshInFlight = this.credentialsFromCookie(credentials["cookies"]).then((creds){
       LocalStorage.setString("credentials", JSON.encode(creds.toJson()));
       credentials = creds;
+      _refreshInFlight = null;
       controller.add({ type: "refreshed" }.toJson())
     })
+		return _refreshInFlight
 	}
 
   fun authenticate() -> Future {
