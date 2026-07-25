@@ -1,0 +1,1163 @@
+{
+    "data": {
+        "searchV2": {
+            "artists": {
+                "items": [
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Twenty One Pilots",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#DD3728",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb61a7ea26d33ded218cd1e59d",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f17861a7ea26d33ded218cd1e59d",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab6761610000517461a7ea26d33ded218cd1e59d",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Tahsan",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:69Tu9c0t0IOf0ipXnE74sQ",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#347EA3",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb142f0f2b9f1cbce495d36882",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178142f0f2b9f1cbce495d36882",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174142f0f2b9f1cbce495d36882",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "HIGHWAY",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:62mZpB59RHyxLGNesP78Vg",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#767676",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebf6a2082c9fcf1d115656ce7b",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178f6a2082c9fcf1d115656ce7b",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174f6a2082c9fcf1d115656ce7b",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Blue Jeans",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:7LNEwdMBXgeD4BeyaPW7JA",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#385878",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebe54dd3fecd4e379448781a86",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178e54dd3fecd4e379448781a86",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174e54dd3fecd4e379448781a86",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Fuad",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:3my0yG4y3f4CnxDiFzApeD",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#06848A",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb64628122521bdd06e32a530e",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f17864628122521bdd06e32a530e",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab6761610000517464628122521bdd06e32a530e",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Warfaze",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:06eRdiCBgFUhiuFjei0eH2",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#087828",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab67616d0000b273bc6d136d5d9ebdcd5db4bca7",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 64,
+                                            "url": "https://i.scdn.co/image/ab67616d00004851863a8067cc2adad1b1fa2aef",
+                                            "width": 64
+                                        },
+                                        {
+                                            "height": 300,
+                                            "url": "https://i.scdn.co/image/ab67616d00001e02bc6d136d5d9ebdcd5db4bca7",
+                                            "width": 300
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Arnob",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:3DeHMjvYP73Pycy8va8RKY",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#535353",
+                                            "isFallback": true
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb7e509af8bbc3833a2b116f6f",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1787e509af8bbc3833a2b116f6f",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051747e509af8bbc3833a2b116f6f",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Odd Signature",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:4j8byCgeZUKS1oeXdwD1GC",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#318378",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebf6f119607237b114fd37fada",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178f6f119607237b114fd37fada",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174f6f119607237b114fd37fada",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Karnival",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:6xArchxfpOsC8rvclgSeAl",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#487AAC",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab67616d0000b27392b267037c31cd5ffcafed2e",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 64,
+                                            "url": "https://i.scdn.co/image/ab67616d0000485192b267037c31cd5ffcafed2e",
+                                            "width": 64
+                                        },
+                                        {
+                                            "height": 300,
+                                            "url": "https://i.scdn.co/image/ab67616d00001e0292b267037c31cd5ffcafed2e",
+                                            "width": 300
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Level Five",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:0wf0kncEWHLMGqYqXgZql8",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#535353",
+                                            "isFallback": true
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb8bb57badc52a082653137635",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1788bb57badc52a082653137635",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051748bb57badc52a082653137635",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Nancy",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:6tWikeOxr6awcL0rmWQkfw",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#C84838",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb43f553b389821c1bd404b170",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f17843f553b389821c1bd404b170",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab6761610000517443f553b389821c1bd404b170",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Habib Wahid",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:60jYUgQzKAtnJoXKGk1GNn",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#9F6777",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebf0a1d189da0f9be0977123fe",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178f0a1d189da0f9be0977123fe",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174f0a1d189da0f9be0977123fe",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Tanveer Evan",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:4OUraoZcwg1SsMHFjuaajw",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#128572",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebfb7e576551e4ed22bf8175f3",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178fb7e576551e4ed22bf8175f3",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174fb7e576551e4ed22bf8175f3",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Ashes Bangladesh",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:7dHv80FOCQj8SoWjREiojc",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#535353",
+                                            "isFallback": true
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb35ac6198a5574f508bd64b97",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f17835ac6198a5574f508bd64b97",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab6761610000517435ac6198a5574f508bd64b97",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "AvoidRafa",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:0j4Xv6B3jAu40gzdooipIB",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#535353",
+                                            "isFallback": true
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb483b58e51fd48ee59333e3f9",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178483b58e51fd48ee59333e3f9",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174483b58e51fd48ee59333e3f9",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Shironamhin",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:3zoceu8YD9dVjL4jaleJLg",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#986B63",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb570c805fb4f2dba06153ccba",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178570c805fb4f2dba06153ccba",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174570c805fb4f2dba06153ccba",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Pritom Hasan",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:037oCHf26WEq5mR05NoOO7",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#597C81",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebb182c7cd544f1c5b02ddcaf7",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178b182c7cd544f1c5b02ddcaf7",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174b182c7cd544f1c5b02ddcaf7",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Muza",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:79jA5f2Sa3pgRT0ZTtYplo",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#906860",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb18e1b9beba3966eeccdd3336",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f17818e1b9beba3966eeccdd3336",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab6761610000517418e1b9beba3966eeccdd3336",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "BAGDHARA",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:7uiRC0NlNdHQKVhjTztgrg",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#186838",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb2b631d4323d4f66f60863429",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1782b631d4323d4f66f60863429",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051742b631d4323d4f66f60863429",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Artcell",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:5ThqNILsplOvwjj9kx0Hnt",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#303038",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebbc6d3030e8b02d1f123b87a7",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178bc6d3030e8b02d1f123b87a7",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174bc6d3030e8b02d1f123b87a7",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Kaaktaal",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:7fhlWsdi6oTTxj8d3uYIAn",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#D81018",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebfc2aae5c20b0524f3af0b172",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178fc2aae5c20b0524f3af0b172",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174fc2aae5c20b0524f3af0b172",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Meghdol",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:0WBg7b6KiPmfh7lI5vbFKC",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#278194",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb0f7bf4c03890e1099244a852",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1780f7bf4c03890e1099244a852",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051740f7bf4c03890e1099244a852",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Miles",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:6Q3N4VeQYqEzVDcYEfe5hh",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#C74F4F",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb0ba32d8c866344140d97094a",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1780ba32d8c866344140d97094a",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051740ba32d8c866344140d97094a",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Minar Rahman",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:39b8vxAORVsBRK782WLYSe",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#0858A8",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebcd645ef4132de4fcfef3c93c",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178cd645ef4132de4fcfef3c93c",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174cd645ef4132de4fcfef3c93c",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Popeye Bangladesh",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:1tOl4RqWQOpbUiKqnP14GF",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#5C77A8",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb3feabc8d5492e175e8816464",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1783feabc8d5492e175e8816464",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051743feabc8d5492e175e8816464",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Aftermath",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:79iOqoOkavfzftyQjx21qp",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#BC556D",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb9201bfc957c60107f2b537cc",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1789201bfc957c60107f2b537cc",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051749201bfc957c60107f2b537cc",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "SHEZAN",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:3YHpzgxae4iDauZ6iG7AJn",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#535353",
+                                            "isFallback": true
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eb6056e3bba50b17e2a27191d7",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f1786056e3bba50b17e2a27191d7",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab676161000051746056e3bba50b17e2a27191d7",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Tanjib Sarowar",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:1HIMUuiAPvtlEOsDdlyHsD",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#405030",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab67616d0000b2731fbada1521009d1d29b0d90c",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 64,
+                                            "url": "https://i.scdn.co/image/ab67616d000048511fbada1521009d1d29b0d90c",
+                                            "width": 64
+                                        },
+                                        {
+                                            "height": 300,
+                                            "url": "https://i.scdn.co/image/ab67616d00001e021fbada1521009d1d29b0d90c",
+                                            "width": 300
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Encore",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:3HFhu4Eq2qOPEnISUen3M7",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#602020",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5ebc31094cf96a4508e25b72137",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178c31094cf96a4508e25b72137",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174c31094cf96a4508e25b72137",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "__typename": "ArtistResponseWrapper",
+                        "data": {
+                            "__typename": "Artist",
+                            "profile": {
+                                "name": "Topu",
+                                "verified": true
+                            },
+                            "uri": "spotify:artist:73TX1tJowmhavo6pbPB2my",
+                            "visuals": {
+                                "avatarImage": {
+                                    "extractedColors": {
+                                        "colorDark": {
+                                            "hex": "#5D78A0",
+                                            "isFallback": false
+                                        }
+                                    },
+                                    "sources": [
+                                        {
+                                            "height": 640,
+                                            "url": "https://i.scdn.co/image/ab6761610000e5eba352ce8c086a00cf76a0fb8b",
+                                            "width": 640
+                                        },
+                                        {
+                                            "height": 160,
+                                            "url": "https://i.scdn.co/image/ab6761610000f178a352ce8c086a00cf76a0fb8b",
+                                            "width": 160
+                                        },
+                                        {
+                                            "height": 320,
+                                            "url": "https://i.scdn.co/image/ab67616100005174a352ce8c086a00cf76a0fb8b",
+                                            "width": 320
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "pagingInfo": {
+                    "limit": 30,
+                    "nextOffset": 30
+                },
+                "totalCount": 800
+            },
+            "query": "twenty+one+pilots"
+        }
+    },
+    "extensions": {
+        "requestIds": {
+            "/searchV2": {
+                "search-api": "cc6f2d0f-c4f1-fdfc-a7dc-d538a2c42298/wcm3"
+            }
+        }
+    }
+}

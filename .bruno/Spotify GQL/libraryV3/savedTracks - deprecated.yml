@@ -1,0 +1,390 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: savedTracks - deprecated
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+          "variables": {
+              "offset": 0,
+              "limit": 50
+          },
+          "operationName": "fetchLibraryTracks",
+          "extensions": {
+              "persistedQuery": {
+                  "version": 1,
+                  "sha256Hash": "087278b20b743578a6262c2b0b4bcd20d879c503cc359a2285baf083ef944240"
+              }
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: savedTracks
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "offset": 0,
+                  "limit": 50
+              },
+              "operationName": "fetchLibraryTracks",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "087278b20b743578a6262c2b0b4bcd20d879c503cc359a2285baf083ef944240"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: access-control-allow-origin
+          value: "*"
+        - name: access-control-allow-headers
+          value: Accept, App-Platform, Authorization, client-token, content-access-token, Content-Type, Origin, Retry-After, SPA-Preferred-Publisher, Spotify-App, Spotify-App-Version, spotify-org-uri, X-ClientAttribute-Version, X-Client-Id, x-cloud-trace-context, X-Cloud-Trace-Context, X-Geo-Country, X-Installation-Id, x-permission-grant-token, X-Spotify-Additional-Idp, X-Spotify-Connection-Id, X-Spotify-Quicksilver-Uri, x-twitch-jwt
+        - name: access-control-allow-methods
+          value: POST, GET, OPTIONS, PUT, HEAD, DELETE, PATCH
+        - name: access-control-allow-credentials
+          value: "true"
+        - name: access-control-max-age
+          value: "604800"
+        - name: content-encoding
+          value: gzip
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: date
+          value: Tue, 27 May 2025 16:33:24 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: Transfer-Encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "me": {
+                      "library": {
+                          "tracks": {
+                              "__typename": "UserLibraryTrackPage",
+                              "items": [
+                                  {
+                                      "__typename": "UserLibraryTrackResponse",
+                                      "addedAt": {
+                                          "isoString": "2025-05-01T18:03:41Z"
+                                      },
+                                      "track": {
+                                          "_uri": "spotify:track:7GVQS66ukm48XZVymA3ZUg",
+                                          "data": {
+                                              "__typename": "Track",
+                                              "albumOfTrack": {
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Twenty One Pilots"
+                                                              },
+                                                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Clancy",
+                                                  "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                                              },
+                                              "artists": {
+                                                  "items": [
+                                                      {
+                                                          "profile": {
+                                                              "name": "Twenty One Pilots"
+                                                          },
+                                                          "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                                      }
+                                                  ]
+                                              },
+                                              "associationsV3": {
+                                                  "audioAssociations": {
+                                                      "totalCount": 0
+                                                  },
+                                                  "videoAssociations": {
+                                                      "totalCount": 0
+                                                  }
+                                              },
+                                              "contentRating": {
+                                                  "label": "NONE"
+                                              },
+                                              "discNumber": 1,
+                                              "duration": {
+                                                  "totalMilliseconds": 196266
+                                              },
+                                              "mediaType": "UNKNOWN",
+                                              "name": "Midwest Indigo",
+                                              "playability": {
+                                                  "playable": true
+                                              },
+                                              "trackNumber": 4
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "__typename": "UserLibraryTrackResponse",
+                                      "addedAt": {
+                                          "isoString": "2022-01-16T06:15:38Z"
+                                      },
+                                      "track": {
+                                          "_uri": "spotify:track:4qu63nuBpdn0qHUHuObEj1",
+                                          "data": {
+                                              "__typename": "Track",
+                                              "albumOfTrack": {
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Marshmello"
+                                                              },
+                                                              "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Jonas Brothers"
+                                                              },
+                                                              "uri": "spotify:artist:7gOdHgIoIKoe4i9Tta6qdD"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02ae40468931087f78919b86ce",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851ae40468931087f78919b86ce",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273ae40468931087f78919b86ce",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Leave Before You Love Me",
+                                                  "uri": "spotify:album:66JuK41D3LpkbX3HCTGcQk"
+                                              },
+                                              "artists": {
+                                                  "items": [
+                                                      {
+                                                          "profile": {
+                                                              "name": "Marshmello"
+                                                          },
+                                                          "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+                                                      },
+                                                      {
+                                                          "profile": {
+                                                              "name": "Jonas Brothers"
+                                                          },
+                                                          "uri": "spotify:artist:7gOdHgIoIKoe4i9Tta6qdD"
+                                                      }
+                                                  ]
+                                              },
+                                              "associationsV3": {
+                                                  "audioAssociations": {
+                                                      "totalCount": 0
+                                                  },
+                                                  "videoAssociations": {
+                                                      "totalCount": 0
+                                                  }
+                                              },
+                                              "contentRating": {
+                                                  "label": "NONE"
+                                              },
+                                              "discNumber": 1,
+                                              "duration": {
+                                                  "totalMilliseconds": 154983
+                                              },
+                                              "mediaType": "UNKNOWN",
+                                              "name": "Leave Before You Love Me (with Jonas Brothers)",
+                                              "playability": {
+                                                  "playable": true
+                                              },
+                                              "trackNumber": 1
+                                          }
+                                      }
+                                  },
+                                  {
+                                      "__typename": "UserLibraryTrackResponse",
+                                      "addedAt": {
+                                          "isoString": "2022-01-16T06:13:13Z"
+                                      },
+                                      "track": {
+                                          "_uri": "spotify:track:0z8hI3OPS8ADPWtoCjjLl6",
+                                          "data": {
+                                              "__typename": "Track",
+                                              "albumOfTrack": {
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Shawn Mendes"
+                                                              },
+                                                              "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Tainy"
+                                                              },
+                                                              "uri": "spotify:artist:0GM7qgcRCORpGnfcN2tCiB"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02a111c87c210cc9bff93948bd",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851a111c87c210cc9bff93948bd",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273a111c87c210cc9bff93948bd",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Summer Of Love",
+                                                  "uri": "spotify:album:4nProAxFavzKkbaRQ2Otyk"
+                                              },
+                                              "artists": {
+                                                  "items": [
+                                                      {
+                                                          "profile": {
+                                                              "name": "Shawn Mendes"
+                                                          },
+                                                          "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+                                                      },
+                                                      {
+                                                          "profile": {
+                                                              "name": "Tainy"
+                                                          },
+                                                          "uri": "spotify:artist:0GM7qgcRCORpGnfcN2tCiB"
+                                                      }
+                                                  ]
+                                              },
+                                              "associationsV3": {
+                                                  "audioAssociations": {
+                                                      "totalCount": 0
+                                                  },
+                                                  "videoAssociations": {
+                                                      "totalCount": 0
+                                                  }
+                                              },
+                                              "contentRating": {
+                                                  "label": "NONE"
+                                              },
+                                              "discNumber": 1,
+                                              "duration": {
+                                                  "totalMilliseconds": 184104
+                                              },
+                                              "mediaType": "UNKNOWN",
+                                              "name": "Summer of Love (Shawn Mendes & Tainy)",
+                                              "playability": {
+                                                  "playable": true
+                                              },
+                                              "trackNumber": 1
+                                          }
+                                      }
+                                  }
+                              ],
+                              "pagingInfo": {
+                                  "limit": 50,
+                                  "offset": 0
+                              },
+                              "totalCount": 3
+                          }
+                      }
+                  }
+              },
+              "extensions": {}
+          }

@@ -1,0 +1,153 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: change-permission
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{base_rest_url}}/playlist/v2/user/:user_id/rootlist/changes?format=json"
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  params:
+    - name: format
+      value: json
+      type: query
+    - name: user_id
+      value: zwp96b5ec9w7mjun9duxt6oui
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "deltas": [
+          {
+            "ops": [
+              {
+                "kind": "UPDATE_ITEM_ATTRIBUTES",
+                "updateItemAttributes": {
+                  "newAttributes": {
+                    "values": {
+                      "public": true
+                    }
+                  },
+                  "item": {
+                    "uri": "spotify:playlist:7HJcrk1pwIPOkjfnEWRcF7"
+                  }
+                }
+              }
+            ],
+            "info": {
+              "source": {
+                "client": "WEBPLAYER"
+              }
+            }
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_rest_url}}/playlist/v2/user/:user_id/rootlist/changes?format=json"
+      method: POST
+      headers:
+        - name: User-Agent
+          value: "{{userAgent}}"
+      params:
+        - name: format
+          value: json
+          type: query
+        - name: user_id
+          value: zwp96b5ec9w7mjun9duxt6oui
+          type: path
+      body:
+        type: json
+        data: |-
+          {
+            "deltas": [
+              {
+                "ops": [
+                  {
+                    "kind": "UPDATE_ITEM_ATTRIBUTES",
+                    "updateItemAttributes": {
+                      "newAttributes": {
+                        "values": {
+                          "public": true
+                        }
+                      },
+                      "item": {
+                        "uri": "spotify:playlist:7HJcrk1pwIPOkjfnEWRcF7"
+                      }
+                    }
+                  }
+                ],
+                "info": {
+                  "source": {
+                    "client": "WEBPLAYER"
+                  }
+                }
+              }
+            ]
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: cache-control
+          value: private, max-age=0
+        - name: server-timing
+          value: edge;dur=21
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 01 May 2026 10:28:31 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "revision": "AAABk1gwlScC+23Pn5exW5NkkDKL+mfD",
+            "syncResult": {
+              "fromRevision": "AAABk1gwlScC+23Pn5exW5NkkDKL+mfD",
+              "toRevision": "AAABk1gwlScC+23Pn5exW5NkkDKL+mfD"
+            },
+            "resultingRevisions": [
+              "AAABk1gwlScC+23Pn5exW5NkkDKL+mfD"
+            ],
+            "multipleHeads": false,
+            "changesRequireResync": false
+          }

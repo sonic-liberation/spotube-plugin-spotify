@@ -1,0 +1,244 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: albums
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+          "variables": {
+              "filters": [
+                  "Albums"
+              ],
+              "order": null,
+              "textFilter": "",
+              "features": [
+                  "LIKED_SONGS",
+                  "YOUR_EPISODES_V2",
+                  "PRERELEASES",
+                  "EVENTS"
+              ],
+              "limit": 50,
+              "offset": 0,
+              "flatten": false,
+              "expandedFolders": [],
+              "folderUri": null,
+              "includeFoldersWhenFlattening": true
+          },
+          "operationName": "libraryV3",
+          "extensions": {
+              "persistedQuery": {
+                  "version": 1,
+                  "sha256Hash": "0082bf82412db50128add72dbdb73e2961d59100b9cbf41fb25c568bd8bc358b"
+              }
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: albums
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "filters": [
+                      "Albums"
+                  ],
+                  "order": null,
+                  "textFilter": "",
+                  "features": [
+                      "LIKED_SONGS",
+                      "YOUR_EPISODES_V2",
+                      "PRERELEASES",
+                      "EVENTS"
+                  ],
+                  "limit": 50,
+                  "offset": 0,
+                  "flatten": false,
+                  "expandedFolders": [],
+                  "folderUri": null,
+                  "includeFoldersWhenFlattening": true
+              },
+              "operationName": "libraryV3",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "0082bf82412db50128add72dbdb73e2961d59100b9cbf41fb25c568bd8bc358b"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: content-encoding
+          value: gzip
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: date
+          value: Thu, 29 May 2025 11:13:39 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: Transfer-Encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "me": {
+                      "libraryV3": {
+                          "__typename": "LibraryPage",
+                          "availableFilters": [],
+                          "availableSortOrders": [
+                              {
+                                  "id": "Recents",
+                                  "name": "Recents"
+                              },
+                              {
+                                  "id": "Recently Added",
+                                  "name": "Recently Added"
+                              },
+                              {
+                                  "id": "Alphabetical",
+                                  "name": "Alphabetical"
+                              },
+                              {
+                                  "id": "Creator",
+                                  "name": "Creator"
+                              }
+                          ],
+                          "breadcrumbs": [],
+                          "items": [
+                              {
+                                  "addedAt": {
+                                      "isoString": "2025-05-27T16:28:08Z"
+                                  },
+                                  "depth": 0,
+                                  "item": {
+                                      "__typename": "AlbumResponseWrapper",
+                                      "_uri": "spotify:album:6arzq3H2uuaYsfBBe2BYC3",
+                                      "data": {
+                                          "__typename": "Album",
+                                          "artists": {
+                                              "items": [
+                                                  {
+                                                      "profile": {
+                                                          "name": "Warfaze"
+                                                      },
+                                                      "uri": "spotify:artist:06eRdiCBgFUhiuFjei0eH2"
+                                                  }
+                                              ]
+                                          },
+                                          "coverArt": {
+                                              "extractedColors": {
+                                                  "colorDark": {
+                                                      "hex": "#087828",
+                                                      "isFallback": false
+                                                  }
+                                              },
+                                              "sources": [
+                                                  {
+                                                      "height": 300,
+                                                      "url": "https://i.scdn.co/image/ab67616d00001e02bc6d136d5d9ebdcd5db4bca7",
+                                                      "width": 300
+                                                  },
+                                                  {
+                                                      "height": 64,
+                                                      "url": "https://i.scdn.co/image/ab67616d00004851bc6d136d5d9ebdcd5db4bca7",
+                                                      "width": 64
+                                                  },
+                                                  {
+                                                      "height": 640,
+                                                      "url": "https://i.scdn.co/image/ab67616d0000b273bc6d136d5d9ebdcd5db4bca7",
+                                                      "width": 640
+                                                  }
+                                              ]
+                                          },
+                                          "date": {
+                                              "isoString": "2012-10-12T00:00:00Z",
+                                              "precision": "DAY"
+                                          },
+                                          "name": "Shotto",
+                                          "playability": {
+                                              "playable": true,
+                                              "reason": "PLAYABLE"
+                                          },
+                                          "type": "ALBUM",
+                                          "uri": "spotify:album:6arzq3H2uuaYsfBBe2BYC3"
+                                      }
+                                  },
+                                  "pinnable": true,
+                                  "pinned": false,
+                                  "playedAt": null
+                              }
+                          ],
+                          "pagingInfo": {
+                              "limit": 50,
+                              "offset": 0
+                          },
+                          "selectedFilters": [
+                              {
+                                  "id": "Albums",
+                                  "name": "Albums"
+                              }
+                          ],
+                          "selectedSortOrder": {
+                              "id": "Recents",
+                              "name": "Recents"
+                          },
+                          "totalCount": 1
+                      }
+                  }
+              },
+              "extensions": {}
+          }

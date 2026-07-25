@@ -1,0 +1,255 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{base_rest_url}}/playlist/v2/playlist/:id/changes?format=json"
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  params:
+    - name: format
+      value: json
+      type: query
+    - name: id
+      value: 34bc8BvPoIyXEk24bZjizQ
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "deltas": [
+          {
+            "ops": [
+              {
+                "kind": "UPDATE_LIST_ATTRIBUTES",
+                "updateListAttributes": {
+                  "newAttributes": {
+                    "values": {
+                      "name": "Very new Playlist #2",
+                      "description": "HAHAHAHA"
+                    }
+                  }
+                }
+              }
+            ],
+            "info": {
+              "source": {
+                "client": "WEBPLAYER"
+              }
+            }
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_rest_url}}/playlist/v2/playlist/:id/changes?format=json"
+      method: POST
+      headers:
+        - name: User-Agent
+          value: "{{userAgent}}"
+      params:
+        - name: format
+          value: json
+          type: query
+        - name: id
+          value: 34bc8BvPoIyXEk24bZjizQ
+          type: path
+      body:
+        type: json
+        data: |-
+          {
+            "deltas": [
+              {
+                "ops": [
+                  {
+                    "kind": "UPDATE_LIST_ATTRIBUTES",
+                    "updateListAttributes": {
+                      "newAttributes": {
+                        "values": {
+                          "name": "Very new Playlist #2",
+                          "description": "HAHAHAHA"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "info": {
+                  "source": {
+                    "client": "WEBPLAYER"
+                  }
+                }
+              }
+            ]
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: cache-control
+          value: private, max-age=0
+        - name: server-timing
+          value: edge;dur=71
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 01 May 2026 10:25:42 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "revision": "AAAAAiIAYKbF42kk3PfMtJd7YQqjivk4",
+            "syncResult": {
+              "fromRevision": "AAAAAiIAYKbF42kk3PfMtJd7YQqjivk4",
+              "toRevision": "AAAAAiIAYKbF42kk3PfMtJd7YQqjivk4"
+            },
+            "resultingRevisions": [
+              "AAAAAiIAYKbF42kk3PfMtJd7YQqjivk4"
+            ],
+            "multipleHeads": false,
+            "capabilities": {
+              "canView": true,
+              "canAdministratePermissions": true,
+              "grantableLevel": [
+                "BLOCKED",
+                "VIEWER",
+                "CONTRIBUTOR"
+              ],
+              "canEditMetadata": true,
+              "canEditItems": true,
+              "canCancelMembership": false,
+              "grantableLevels": {
+                "base": [
+                  "BLOCKED",
+                  "VIEWER",
+                  "CONTRIBUTOR"
+                ],
+                "member": [
+                  "BLOCKED",
+                  "VIEWER",
+                  "CONTRIBUTOR"
+                ]
+              },
+              "listAttributeCapabilities": {
+                "name": {
+                  "canEdit": true
+                },
+                "description": {
+                  "canEdit": true
+                },
+                "picture": {
+                  "canEdit": true
+                },
+                "collaborative": {
+                  "canEdit": true
+                },
+                "deletedByOwner": {
+                  "canEdit": true
+                },
+                "aiCurationReferenceId": {
+                  "canEdit": true
+                }
+              },
+              "attributeKindCapabilities": [
+                {
+                  "attributeKind": "KIND_NAME",
+                  "capabilities": {
+                    "canEdit": true
+                  }
+                },
+                {
+                  "attributeKind": "KIND_DESCRIPTION",
+                  "capabilities": {
+                    "canEdit": true
+                  }
+                },
+                {
+                  "attributeKind": "KIND_AI_CURATION",
+                  "capabilities": {
+                    "canEdit": true
+                  }
+                },
+                {
+                  "attributeKind": "KIND_DELETED_BY_OWNER",
+                  "capabilities": {
+                    "canEdit": true
+                  }
+                },
+                {
+                  "attributeKind": "KIND_PICTURE_FILE_ID",
+                  "capabilities": {
+                    "canEdit": true
+                  }
+                }
+              ],
+              "canMixPlaylist": true,
+              "administratePermissionKindCapabilities": {
+                "base": {
+                  "canSet": true,
+                  "canRemove": true,
+                  "canRemoveOwn": true
+                },
+                "member": {
+                  "canSet": true,
+                  "canRemove": true,
+                  "canRemoveOwn": true
+                },
+                "grant": {
+                  "canSet": true,
+                  "canRemove": true,
+                  "canRemoveOwn": true
+                }
+              },
+              "canDelete": true,
+              "canAbuseReport": false,
+              "canPublishToProfile": true,
+              "contributionKindCapabilities": {
+                "notes": {
+                  "canCreate": true,
+                  "canEdit": true,
+                  "canRemove": true,
+                  "canView": true
+                }
+              },
+              "canModifySpeedPlaylist": true
+            },
+            "changesRequireResync": false
+          }

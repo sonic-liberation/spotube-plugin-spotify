@@ -1,0 +1,391 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: playlists
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "order": null,
+          "textFilter": "",
+          "features": [
+            "LIKED_SONGS",
+            "YOUR_EPISODES_V2",
+            "PRERELEASES",
+            "PRERELEASES_V2",
+            "EVENTS"
+          ],
+          "filters": [
+            "Playlists"
+          ],
+          "limit": 50,
+          "offset": 0,
+          "flatten": false,
+          "expandedFolders": [],
+          "folderUri": null,
+          "includeFoldersWhenFlattening": true
+        },
+        "operationName": "libraryV3",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "973e511ca44261fda7eebac8b653155e7caee3675abb4fb110cc1b8c78b091c3"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: playlists
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "filters": [
+                      "Playlists"
+                  ],
+                  "order": null,
+                  "textFilter": "",
+                  "features": [
+                      "LIKED_SONGS",
+                      "YOUR_EPISODES_V2",
+                      "PRERELEASES",
+                      "EVENTS"
+                  ],
+                  "limit": 50,
+                  "offset": 0,
+                  "flatten": false,
+                  "expandedFolders": [],
+                  "folderUri": null,
+                  "includeFoldersWhenFlattening": true
+              },
+              "operationName": "libraryV3",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "0082bf82412db50128add72dbdb73e2961d59100b9cbf41fb25c568bd8bc358b"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: access-control-allow-origin
+          value: "*"
+        - name: access-control-allow-headers
+          value: Accept, App-Platform, Authorization, client-token, content-access-token, Content-Type, Origin, Retry-After, SPA-Preferred-Publisher, Spotify-App, Spotify-App-Version, spotify-org-uri, X-ClientAttribute-Version, X-Client-Id, x-cloud-trace-context, X-Cloud-Trace-Context, X-Geo-Country, X-Installation-Id, x-permission-grant-token, X-Spotify-Additional-Idp, X-Spotify-Connection-Id, X-Spotify-Quicksilver-Uri, x-twitch-jwt
+        - name: access-control-allow-methods
+          value: POST, GET, OPTIONS, PUT, HEAD, DELETE, PATCH
+        - name: access-control-allow-credentials
+          value: "true"
+        - name: access-control-max-age
+          value: "604800"
+        - name: content-encoding
+          value: gzip
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: date
+          value: Thu, 29 May 2025 10:34:30 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: Transfer-Encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "me": {
+                      "libraryV3": {
+                          "__typename": "LibraryPage",
+                          "availableFilters": [
+                              {
+                                  "id": "By Spotify",
+                                  "name": "By Spotify"
+                              },
+                              {
+                                  "id": "By you",
+                                  "name": "By you"
+                              },
+                              {
+                                  "id": "Writable",
+                                  "name": "Writable"
+                              }
+                          ],
+                          "availableSortOrders": [
+                              {
+                                  "id": "Recents",
+                                  "name": "Recents"
+                              },
+                              {
+                                  "id": "Recently Added",
+                                  "name": "Recently Added"
+                              },
+                              {
+                                  "id": "Alphabetical",
+                                  "name": "Alphabetical"
+                              },
+                              {
+                                  "id": "Creator",
+                                  "name": "Creator"
+                              },
+                              {
+                                  "id": "Custom Order",
+                                  "name": "Custom Order"
+                              }
+                          ],
+                          "breadcrumbs": [],
+                          "items": [
+                              {
+                                  "addedAt": {
+                                      "isoString": "1970-01-01T00:00:00Z"
+                                  },
+                                  "depth": 0,
+                                  "item": {
+                                      "__typename": "LibraryPseudoPlaylistResponseWrapper",
+                                      "_uri": "spotify:collection:tracks",
+                                      "data": {
+                                          "__typename": "PseudoPlaylist",
+                                          "count": 3,
+                                          "image": {
+                                              "extractedColors": {
+                                                  "colorDark": {
+                                                      "hex": "#5018F0",
+                                                      "isFallback": false
+                                                  }
+                                              },
+                                              "sources": [
+                                                  {
+                                                      "height": 64,
+                                                      "url": "https://misc.scdn.co/liked-songs/liked-songs-64.png",
+                                                      "width": 64
+                                                  },
+                                                  {
+                                                      "height": 300,
+                                                      "url": "https://misc.scdn.co/liked-songs/liked-songs-300.png",
+                                                      "width": 300
+                                                  },
+                                                  {
+                                                      "height": 640,
+                                                      "url": "https://misc.scdn.co/liked-songs/liked-songs-640.png",
+                                                      "width": 640
+                                                  }
+                                              ]
+                                          },
+                                          "name": "Liked Songs",
+                                          "uri": "spotify:collection:tracks"
+                                      }
+                                  },
+                                  "pinnable": true,
+                                  "pinned": true,
+                                  "playedAt": null
+                              },
+                              {
+                                  "addedAt": {
+                                      "isoString": "2022-06-14T16:13:04.660Z"
+                                  },
+                                  "depth": 0,
+                                  "item": {
+                                      "__typename": "PlaylistResponseWrapper",
+                                      "_uri": "spotify:playlist:37i9dQZF1DXbYM3nMM0oPk",
+                                      "data": {
+                                          "__typename": "Playlist",
+                                          "attributes": [
+                                              {
+                                                  "key": "request_id",
+                                                  "value": "ssp~063643d49e13de2a7d2a0017021cfd8b076f"
+                                              },
+                                              {
+                                                  "key": "uri",
+                                                  "value": "spotify:user:spotify:playlist:37i9dQZF1DXbYM3nMM0oPk"
+                                              },
+                                              {
+                                                  "key": "status",
+                                                  "value": "PUBLISHED"
+                                              },
+                                              {
+                                                  "key": "isAlgotorial",
+                                                  "value": "true"
+                                              },
+                                              {
+                                                  "key": "primary_color",
+                                                  "value": "#ffffff"
+                                              },
+                                              {
+                                                  "key": "autoplay",
+                                                  "value": "spotify:playlist:37i9dQZF1DX0s5kDXi1oC5"
+                                              },
+                                              {
+                                                  "key": "madeFor.username",
+                                                  "value": "31s6wf7qw4nhdqibvetysvx2rise"
+                                              },
+                                              {
+                                                  "key": "is_video_first",
+                                                  "value": "false"
+                                              },
+                                              {
+                                                  "key": "correlation-id",
+                                                  "value": "ssp~063643d49e13de2a7d2a0017021cfd8b076f"
+                                              }
+                                          ],
+                                          "currentUserCapabilities": {
+                                              "canEditItems": false,
+                                              "canView": true
+                                          },
+                                          "description": "A mega mix of 75 favorites from the last few years! ",
+                                          "images": {
+                                              "items": [
+                                                  {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#76767B",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": null,
+                                                              "url": "https://i.scdn.co/image/ab67706f000000023909428545db5e34677f01f0",
+                                                              "width": null
+                                                          }
+                                                      ]
+                                                  }
+                                              ]
+                                          },
+                                          "name": "Mega Hit Mix",
+                                          "ownerV2": {
+                                              "data": {
+                                                  "__typename": "User",
+                                                  "avatar": {
+                                                      "sources": [
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67757000003b8255c25988a6ac314394d3fbf5",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab6775700000ee8555c25988a6ac314394d3fbf5",
+                                                              "width": 300
+                                                          }
+                                                      ]
+                                                  },
+                                                  "id": "spotify",
+                                                  "name": "Spotify",
+                                                  "uri": "spotify:user:spotify",
+                                                  "username": "spotify"
+                                              }
+                                          },
+                                          "revisionId": "aCTWOQAAAABGa9mLS316yB6ENyMAlbCA",
+                                          "uri": "spotify:playlist:37i9dQZF1DXbYM3nMM0oPk"
+                                      }
+                                  },
+                                  "pinnable": true,
+                                  "pinned": false,
+                                  "playedAt": null
+                              },
+                              {
+                                  "addedAt": {
+                                      "isoString": "2022-06-14T15:54:57.545Z"
+                                  },
+                                  "depth": 0,
+                                  "item": {
+                                      "__typename": "PlaylistResponseWrapper",
+                                      "_uri": "spotify:playlist:29CZfDJfM2noNXuKm70Z2O",
+                                      "data": {
+                                          "__typename": "Playlist",
+                                          "attributes": [],
+                                          "currentUserCapabilities": {
+                                              "canEditItems": true,
+                                              "canView": true
+                                          },
+                                          "description": "Same",
+                                          "images": {
+                                              "items": []
+                                          },
+                                          "name": "Same",
+                                          "ownerV2": {
+                                              "data": {
+                                                  "__typename": "User",
+                                                  "avatar": null,
+                                                  "id": "31s6wf7qw4nhdqibvetysvx2rise",
+                                                  "name": "BD PRO SMP",
+                                                  "uri": "spotify:user:31s6wf7qw4nhdqibvetysvx2rise",
+                                                  "username": "31s6wf7qw4nhdqibvetysvx2rise"
+                                              }
+                                          },
+                                          "revisionId": "AAAAAhHJcfXoQtZAfinvbe0/Lq3/iWlH",
+                                          "uri": "spotify:playlist:29CZfDJfM2noNXuKm70Z2O"
+                                      }
+                                  },
+                                  "pinnable": true,
+                                  "pinned": false,
+                                  "playedAt": null
+                              }
+                          ],
+                          "pagingInfo": {
+                              "limit": 50,
+                              "offset": 0
+                          },
+                          "selectedFilters": [
+                              {
+                                  "id": "Playlists",
+                                  "name": "Playlists"
+                              }
+                          ],
+                          "selectedSortOrder": {
+                              "id": "Recents",
+                              "name": "Recents"
+                          },
+                          "totalCount": 3
+                      }
+                  }
+              },
+              "extensions": {}
+          }

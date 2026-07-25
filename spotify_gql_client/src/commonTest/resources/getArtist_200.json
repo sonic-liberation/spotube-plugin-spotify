@@ -1,0 +1,4985 @@
+{
+  "data": {
+    "artistUnion": {
+      "__typename": "Artist",
+      "discography": {
+        "albums": {
+          "items": [
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2025 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2025 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e029c5a3160cc1a6ef5efdaf80a",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048519c5a3160cc1a6ef5efdaf80a",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739c5a3160cc1a6ef5efdaf80a",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 12,
+                      "month": 9,
+                      "precision": "DAY",
+                      "year": 2025
+                    },
+                    "id": "1El3k8dU3sKyoGUeuyrolH",
+                    "label": "Fueled By Ramen",
+                    "name": "Breach",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "iQ8iOZQfR9i5kHhYmGT-XQ",
+                      "shareUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH?si=iQ8iOZQfR9i5kHhYmGT-XQ"
+                    },
+                    "tracks": {
+                      "totalCount": 13
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2024 Fueled By Ramen",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2024 Fueled By Ramen",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02cc94dd4730132ccfbd617bf9",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851cc94dd4730132ccfbd617bf9",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273cc94dd4730132ccfbd617bf9",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 24,
+                      "month": 5,
+                      "precision": "DAY",
+                      "year": 2024
+                    },
+                    "id": "1KFWgQTw3EMTQebaaepVBI",
+                    "label": "Fueled By Ramen",
+                    "name": "Clancy",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "SnDhaLRIRcyjVfm7OKtEDg",
+                      "shareUrl": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI?si=SnDhaLRIRcyjVfm7OKtEDg"
+                    },
+                    "tracks": {
+                      "totalCount": 13
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2023 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2023 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02092d4c1db629499ac92d4b5e",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851092d4c1db629499ac92d4b5e",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273092d4c1db629499ac92d4b5e",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 21,
+                      "month": 4,
+                      "precision": "DAY",
+                      "year": 2023
+                    },
+                    "id": "2kAer61g2HN6upL2zXAjzd",
+                    "label": "Fueled By Ramen",
+                    "name": "MTV Unplugged (Live)",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "Y6RtSYmkR8m-vPPirUILkg",
+                      "shareUrl": "https://open.spotify.com/album/2kAer61g2HN6upL2zXAjzd?si=Y6RtSYmkR8m-vPPirUILkg"
+                    },
+                    "tracks": {
+                      "totalCount": 7
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:2kAer61g2HN6upL2zXAjzd"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2021 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2021 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e024779225ee34403b3b393ddde",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048514779225ee34403b3b393ddde",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2734779225ee34403b3b393ddde",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 19,
+                      "month": 11,
+                      "precision": "DAY",
+                      "year": 2021
+                    },
+                    "id": "1B61NzknoGqafMfKLY7QtZ",
+                    "label": "Fueled By Ramen",
+                    "name": "Scaled And Icy (Livestream Version)",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "IxJ5gMtXSxeD_-Vy5-fBCQ",
+                      "shareUrl": "https://open.spotify.com/album/1B61NzknoGqafMfKLY7QtZ?si=IxJ5gMtXSxeD_-Vy5-fBCQ"
+                    },
+                    "tracks": {
+                      "totalCount": 21
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:1B61NzknoGqafMfKLY7QtZ"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2021 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2021 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e027c693d6ed6dff0d48cf15c23",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048517c693d6ed6dff0d48cf15c23",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2737c693d6ed6dff0d48cf15c23",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 21,
+                      "month": 5,
+                      "precision": "DAY",
+                      "year": 2021
+                    },
+                    "id": "0Q5XBpCYFgUWiG9DUWyAmJ",
+                    "label": "Fueled By Ramen",
+                    "name": "Scaled And Icy",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "FKpZeTggQJ2SNkQxGFl-zQ",
+                      "shareUrl": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ?si=FKpZeTggQJ2SNkQxGFl-zQ"
+                    },
+                    "tracks": {
+                      "totalCount": 11
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:0Q5XBpCYFgUWiG9DUWyAmJ"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2018 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2018 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 5,
+                      "month": 10,
+                      "precision": "DAY",
+                      "year": 2018
+                    },
+                    "id": "621cXqrTSSJi1WqDMSLmbL",
+                    "label": "Fueled By Ramen",
+                    "name": "Trench",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "YTJAFXaYQHyDC0NZ-SiVdw",
+                      "shareUrl": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL?si=YTJAFXaYQHyDC0NZ-SiVdw"
+                    },
+                    "tracks": {
+                      "totalCount": 14
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2015 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2015 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 15,
+                      "month": 5,
+                      "precision": "DAY",
+                      "year": 2015
+                    },
+                    "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                    "label": "Fueled By Ramen",
+                    "name": "Blurryface",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "YllWpysTQRSfNhnFMBx_AA",
+                      "shareUrl": "https://open.spotify.com/album/3cQO7jp5S9qLBoIVtbkSM1?si=YllWpysTQRSfNhnFMBx_AA"
+                    },
+                    "tracks": {
+                      "totalCount": 14
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2012 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States.",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2012 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States.",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e026caad685af37c08063be928d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048516caad685af37c08063be928d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2736caad685af37c08063be928d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 8,
+                      "month": 1,
+                      "precision": "DAY",
+                      "year": 2013
+                    },
+                    "id": "2r2r78NE05YjyHyVbVgqFn",
+                    "label": "Fueled By Ramen",
+                    "name": "Vessel",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "ePXmErMlSF6EvDJrMwdlNQ",
+                      "shareUrl": "https://open.spotify.com/album/2r2r78NE05YjyHyVbVgqFn?si=ePXmErMlSF6EvDJrMwdlNQ"
+                    },
+                    "tracks": {
+                      "totalCount": 12
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:2r2r78NE05YjyHyVbVgqFn"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "2009 Twenty One Pilots",
+                          "type": "C"
+                        },
+                        {
+                          "text": "2009 Twenty One Pilots",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851c349390bd863bf173eb077e9",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273c349390bd863bf173eb077e9",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 29,
+                      "month": 12,
+                      "precision": "DAY",
+                      "year": 2009
+                    },
+                    "id": "6rgWZP4QFBjEFF0n6JWEOa",
+                    "label": "Twenty One Pilots",
+                    "name": "Twenty One Pilots",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "D_AQK9qwRmST51xBwoUYxA",
+                      "shareUrl": "https://open.spotify.com/album/6rgWZP4QFBjEFF0n6JWEOa?si=D_AQK9qwRmST51xBwoUYxA"
+                    },
+                    "tracks": {
+                      "totalCount": 14
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:6rgWZP4QFBjEFF0n6JWEOa"
+                  }
+                ]
+              }
+            }
+          ],
+          "totalCount": 9
+        },
+        "compilations": {
+          "items": [],
+          "totalCount": 0
+        },
+        "latest": {
+          "copyright": {
+            "items": [
+              {
+                "text": "© 2026 Fueled By Ramen LLC",
+                "type": "C"
+              },
+              {
+                "text": "℗ 2026 Fueled By Ramen LLC",
+                "type": "P"
+              }
+            ]
+          },
+          "coverArt": {
+            "sources": [
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02b5b991fd65053a3acb8c2db2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851b5b991fd65053a3acb8c2db2",
+                "width": 64
+              },
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273b5b991fd65053a3acb8c2db2",
+                "width": 640
+              }
+            ]
+          },
+          "date": {
+            "day": 17,
+            "month": 2,
+            "precision": "DAY",
+            "year": 2026
+          },
+          "id": "27KwvdCscr3IQtSbnyAZpo",
+          "label": "Fueled By Ramen",
+          "name": "Drag Path",
+          "playability": {
+            "playable": true,
+            "reason": "PLAYABLE"
+          },
+          "sharingInfo": {
+            "shareId": "u8wRiPU7Sz6fm3Xiym82_Q",
+            "shareUrl": "https://open.spotify.com/album/27KwvdCscr3IQtSbnyAZpo?si=u8wRiPU7Sz6fm3Xiym82_Q"
+          },
+          "tracks": {
+            "totalCount": 1
+          },
+          "type": "SINGLE",
+          "uri": "spotify:album:27KwvdCscr3IQtSbnyAZpo"
+        },
+        "popularReleasesAlbums": {
+          "items": [
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2015 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2015 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 15,
+                "month": 5,
+                "precision": "DAY",
+                "year": 2015
+              },
+              "id": "3cQO7jp5S9qLBoIVtbkSM1",
+              "label": "Fueled By Ramen",
+              "name": "Blurryface",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "tatmTXpSTBS768-gLPRsZw",
+                "shareUrl": "https://open.spotify.com/album/3cQO7jp5S9qLBoIVtbkSM1?si=tatmTXpSTBS768-gLPRsZw"
+              },
+              "tracks": {
+                "totalCount": 14
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2025 Fueled By Ramen LLC",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2025 Fueled By Ramen LLC",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e029c5a3160cc1a6ef5efdaf80a",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048519c5a3160cc1a6ef5efdaf80a",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2739c5a3160cc1a6ef5efdaf80a",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 12,
+                "month": 9,
+                "precision": "DAY",
+                "year": 2025
+              },
+              "id": "1El3k8dU3sKyoGUeuyrolH",
+              "label": "Fueled By Ramen",
+              "name": "Breach",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "DL3Nzk8eRGW3vtAzwesV1w",
+                "shareUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH?si=DL3Nzk8eRGW3vtAzwesV1w"
+              },
+              "tracks": {
+                "totalCount": 13
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2024 Fueled By Ramen",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2024 Fueled By Ramen",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02cc94dd4730132ccfbd617bf9",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851cc94dd4730132ccfbd617bf9",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273cc94dd4730132ccfbd617bf9",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 24,
+                "month": 5,
+                "precision": "DAY",
+                "year": 2024
+              },
+              "id": "1KFWgQTw3EMTQebaaepVBI",
+              "label": "Fueled By Ramen",
+              "name": "Clancy",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "HMVGw1PSRX2T6nMsERNS9g",
+                "shareUrl": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI?si=HMVGw1PSRX2T6nMsERNS9g"
+              },
+              "tracks": {
+                "totalCount": 13
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2018 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2018 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 5,
+                "month": 10,
+                "precision": "DAY",
+                "year": 2018
+              },
+              "id": "621cXqrTSSJi1WqDMSLmbL",
+              "label": "Fueled By Ramen",
+              "name": "Trench",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "JYvx4JIMRI2ySUmdwcMTDA",
+                "shareUrl": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL?si=JYvx4JIMRI2ySUmdwcMTDA"
+              },
+              "tracks": {
+                "totalCount": 14
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2026 Fueled By Ramen LLC",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2026 Fueled By Ramen LLC",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02b5b991fd65053a3acb8c2db2",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851b5b991fd65053a3acb8c2db2",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273b5b991fd65053a3acb8c2db2",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 17,
+                "month": 2,
+                "precision": "DAY",
+                "year": 2026
+              },
+              "id": "27KwvdCscr3IQtSbnyAZpo",
+              "label": "Fueled By Ramen",
+              "name": "Drag Path",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "AwKe1I_FS5yeAaXtCc3zlw",
+                "shareUrl": "https://open.spotify.com/album/27KwvdCscr3IQtSbnyAZpo?si=AwKe1I_FS5yeAaXtCc3zlw"
+              },
+              "tracks": {
+                "totalCount": 1
+              },
+              "type": "SINGLE",
+              "uri": "spotify:album:27KwvdCscr3IQtSbnyAZpo"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2016 Atlantic Recording Corporation & Warner Bros. Entertainment Inc.",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2016 Atlantic Recording Corporation & Warner Bros. Entertainment Inc.",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e022ca3ba8f334ca5a5f0312efb",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048512ca3ba8f334ca5a5f0312efb",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2732ca3ba8f334ca5a5f0312efb",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 16,
+                "month": 6,
+                "precision": "DAY",
+                "year": 2016
+              },
+              "id": "3J8W9AOjQhnBLCX33m3atT",
+              "label": "Atlantic Records",
+              "name": "Heathens",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "Lu0hcXl2TM6yEYrB2UatVg",
+                "shareUrl": "https://open.spotify.com/album/3J8W9AOjQhnBLCX33m3atT?si=Lu0hcXl2TM6yEYrB2UatVg"
+              },
+              "tracks": {
+                "totalCount": 1
+              },
+              "type": "SINGLE",
+              "uri": "spotify:album:3J8W9AOjQhnBLCX33m3atT"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2012 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States.",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2012 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States.",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e026caad685af37c08063be928d",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048516caad685af37c08063be928d",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2736caad685af37c08063be928d",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 8,
+                "month": 1,
+                "precision": "DAY",
+                "year": 2013
+              },
+              "id": "2r2r78NE05YjyHyVbVgqFn",
+              "label": "Fueled By Ramen",
+              "name": "Vessel",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "3HI2DowASrqIAAkAMorp4g",
+                "shareUrl": "https://open.spotify.com/album/2r2r78NE05YjyHyVbVgqFn?si=3HI2DowASrqIAAkAMorp4g"
+              },
+              "tracks": {
+                "totalCount": 12
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:2r2r78NE05YjyHyVbVgqFn"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2021 Fueled By Ramen LLC",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2021 Fueled By Ramen LLC",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e027c693d6ed6dff0d48cf15c23",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048517c693d6ed6dff0d48cf15c23",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2737c693d6ed6dff0d48cf15c23",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 21,
+                "month": 5,
+                "precision": "DAY",
+                "year": 2021
+              },
+              "id": "0Q5XBpCYFgUWiG9DUWyAmJ",
+              "label": "Fueled By Ramen",
+              "name": "Scaled And Icy",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "35n5cwCaTKiORcg5qJafcQ",
+                "shareUrl": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ?si=35n5cwCaTKiORcg5qJafcQ"
+              },
+              "tracks": {
+                "totalCount": 11
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:0Q5XBpCYFgUWiG9DUWyAmJ"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "2009 Twenty One Pilots",
+                    "type": "C"
+                  },
+                  {
+                    "text": "2009 Twenty One Pilots",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02c349390bd863bf173eb077e9",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851c349390bd863bf173eb077e9",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273c349390bd863bf173eb077e9",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 29,
+                "month": 12,
+                "precision": "DAY",
+                "year": 2009
+              },
+              "id": "6rgWZP4QFBjEFF0n6JWEOa",
+              "label": "Twenty One Pilots",
+              "name": "Twenty One Pilots",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "pgOlSXnHRIuXdwY3NXOfqw",
+                "shareUrl": "https://open.spotify.com/album/6rgWZP4QFBjEFF0n6JWEOa?si=pgOlSXnHRIuXdwY3NXOfqw"
+              },
+              "tracks": {
+                "totalCount": 14
+              },
+              "type": "ALBUM",
+              "uri": "spotify:album:6rgWZP4QFBjEFF0n6JWEOa"
+            },
+            {
+              "copyright": {
+                "items": [
+                  {
+                    "text": "© 2025 Fueled By Ramen LLC",
+                    "type": "C"
+                  },
+                  {
+                    "text": "℗ 2025 Fueled By Ramen LLC",
+                    "type": "P"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0298e1032a1e26048dd4e3bd52",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485198e1032a1e26048dd4e3bd52",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27398e1032a1e26048dd4e3bd52",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "day": 9,
+                "month": 4,
+                "precision": "DAY",
+                "year": 2025
+              },
+              "id": "5qkGe4UpUa8dsokzuroQ72",
+              "label": "Fueled By Ramen",
+              "name": "Doubt (demo)",
+              "playability": {
+                "playable": true,
+                "reason": "PLAYABLE"
+              },
+              "sharingInfo": {
+                "shareId": "HSI2MFYaTxyb8tg6z9fUlA",
+                "shareUrl": "https://open.spotify.com/album/5qkGe4UpUa8dsokzuroQ72?si=HSI2MFYaTxyb8tg6z9fUlA"
+              },
+              "tracks": {
+                "totalCount": 1
+              },
+              "type": "SINGLE",
+              "uri": "spotify:album:5qkGe4UpUa8dsokzuroQ72"
+            }
+          ],
+          "totalCount": 20
+        },
+        "singles": {
+          "items": [
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2026 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2026 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b5b991fd65053a3acb8c2db2",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b5b991fd65053a3acb8c2db2",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b5b991fd65053a3acb8c2db2",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 17,
+                      "month": 2,
+                      "precision": "DAY",
+                      "year": 2026
+                    },
+                    "id": "27KwvdCscr3IQtSbnyAZpo",
+                    "label": "Fueled By Ramen",
+                    "name": "Drag Path",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "jXmaIKVVQSqBwghCRoJhhA",
+                      "shareUrl": "https://open.spotify.com/album/27KwvdCscr3IQtSbnyAZpo?si=jXmaIKVVQSqBwghCRoJhhA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:27KwvdCscr3IQtSbnyAZpo"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2025 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2025 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e020d6ca0fa9d9f97b4b61077da",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048510d6ca0fa9d9f97b4b61077da",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2730d6ca0fa9d9f97b4b61077da",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 18,
+                      "month": 8,
+                      "precision": "DAY",
+                      "year": 2025
+                    },
+                    "id": "2ua0DTF9uqI0AugOvNrumo",
+                    "label": "Fueled By Ramen",
+                    "name": "Drum Show",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "74cy0z4hQTicnmkrUsUAgw",
+                      "shareUrl": "https://open.spotify.com/album/2ua0DTF9uqI0AugOvNrumo?si=74cy0z4hQTicnmkrUsUAgw"
+                    },
+                    "tracks": {
+                      "totalCount": 2
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:2ua0DTF9uqI0AugOvNrumo"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2025 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2025 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b31e1391eee9f695a6ba929d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b31e1391eee9f695a6ba929d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b31e1391eee9f695a6ba929d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 12,
+                      "month": 6,
+                      "precision": "DAY",
+                      "year": 2025
+                    },
+                    "id": "2VHIo87YnEergnRfHnQN3J",
+                    "label": "Fueled By Ramen",
+                    "name": "The Contract",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "3YTEzC4RS6yR3e2RDOYI-g",
+                      "shareUrl": "https://open.spotify.com/album/2VHIo87YnEergnRfHnQN3J?si=3YTEzC4RS6yR3e2RDOYI-g"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:2VHIo87YnEergnRfHnQN3J"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2025 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2025 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0298e1032a1e26048dd4e3bd52",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485198e1032a1e26048dd4e3bd52",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27398e1032a1e26048dd4e3bd52",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 9,
+                      "month": 4,
+                      "precision": "DAY",
+                      "year": 2025
+                    },
+                    "id": "5qkGe4UpUa8dsokzuroQ72",
+                    "label": "Fueled By Ramen",
+                    "name": "Doubt (demo)",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "x42VblKYTMaDQXrWKmQndg",
+                      "shareUrl": "https://open.spotify.com/album/5qkGe4UpUa8dsokzuroQ72?si=x42VblKYTMaDQXrWKmQndg"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:5qkGe4UpUa8dsokzuroQ72"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2024 Riot Games",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2024 Riot Games",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e028a577010b0baa62c836e330b",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048518a577010b0baa62c836e330b",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2738a577010b0baa62c836e330b",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 22,
+                      "month": 11,
+                      "precision": "DAY",
+                      "year": 2024
+                    },
+                    "id": "4aE8ZrEif8MgWvFNIbz8I6",
+                    "label": "Riot Games",
+                    "name": "The Line (from the series Arcane League of Legends)",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "O4_DgYJVQ1CaXsN-kreKUA",
+                      "shareUrl": "https://open.spotify.com/album/4aE8ZrEif8MgWvFNIbz8I6?si=O4_DgYJVQ1CaXsN-kreKUA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:4aE8ZrEif8MgWvFNIbz8I6"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2024 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2024 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d26fe1e29c8ccb9f5ccb4709",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851d26fe1e29c8ccb9f5ccb4709",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d26fe1e29c8ccb9f5ccb4709",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 22,
+                      "month": 5,
+                      "precision": "DAY",
+                      "year": 2024
+                    },
+                    "id": "7K7eWZNR5t9UBlrN2ltzLI",
+                    "label": "Fueled By Ramen",
+                    "name": "The Craving",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "k6BMiOzVS1yYUx0EzMAyLQ",
+                      "shareUrl": "https://open.spotify.com/album/7K7eWZNR5t9UBlrN2ltzLI?si=k6BMiOzVS1yYUx0EzMAyLQ"
+                    },
+                    "tracks": {
+                      "totalCount": 4
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:7K7eWZNR5t9UBlrN2ltzLI"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2024 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2024 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e023391c2c087c77ae353dfdb04",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048513391c2c087c77ae353dfdb04",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2733391c2c087c77ae353dfdb04",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 29,
+                      "month": 2,
+                      "precision": "DAY",
+                      "year": 2024
+                    },
+                    "id": "5ZSqGFLuXUJUlIObSkN0Bz",
+                    "label": "Fueled By Ramen",
+                    "name": "Overcompensate",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "NKrMyU9xQdCIkgTn6x6XLg",
+                      "shareUrl": "https://open.spotify.com/album/5ZSqGFLuXUJUlIObSkN0Bz?si=NKrMyU9xQdCIkgTn6x6XLg"
+                    },
+                    "tracks": {
+                      "totalCount": 2
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:5ZSqGFLuXUJUlIObSkN0Bz"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2021 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2021 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e025769c2e4b858fab5fa07152b",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048515769c2e4b858fab5fa07152b",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2735769c2e4b858fab5fa07152b",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 10,
+                      "month": 9,
+                      "precision": "DAY",
+                      "year": 2021
+                    },
+                    "id": "12ElyiIcWOKdZXOgPxJwPN",
+                    "label": "Fueled By Ramen",
+                    "name": "Heathens / Trees (Livestream Version)",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "bEpuPFTTRPSq3MkaaITVSA",
+                      "shareUrl": "https://open.spotify.com/album/12ElyiIcWOKdZXOgPxJwPN?si=bEpuPFTTRPSq3MkaaITVSA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:12ElyiIcWOKdZXOgPxJwPN"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2021 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2021 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ece01469e9263a14ffdf522a",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ece01469e9263a14ffdf522a",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ece01469e9263a14ffdf522a",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 11,
+                      "month": 6,
+                      "precision": "DAY",
+                      "year": 2021
+                    },
+                    "id": "3lXhr0xJlvW6UUuUAM9hb2",
+                    "label": "Fueled By Ramen",
+                    "name": "Shy Away (Livestream Version)",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "DDnsXrPuSSK9ec8Adf2e1A",
+                      "shareUrl": "https://open.spotify.com/album/3lXhr0xJlvW6UUuUAM9hb2?si=DDnsXrPuSSK9ec8Adf2e1A"
+                    },
+                    "tracks": {
+                      "totalCount": 2
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:3lXhr0xJlvW6UUuUAM9hb2"
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "copyright": {
+                      "items": [
+                        {
+                          "text": "© 2020 Fueled By Ramen LLC",
+                          "type": "C"
+                        },
+                        {
+                          "text": "℗ 2020 Fueled By Ramen LLC",
+                          "type": "P"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02958829fada56d73a6a35852d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851958829fada56d73a6a35852d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273958829fada56d73a6a35852d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "day": 8,
+                      "month": 12,
+                      "precision": "DAY",
+                      "year": 2020
+                    },
+                    "id": "5bh5kgZddiyd5ObXOP9Exu",
+                    "label": "Fueled By Ramen",
+                    "name": "Christmas Saves The Year",
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "2NoEzqhiSbaQa8IBIyYM7A",
+                      "shareUrl": "https://open.spotify.com/album/5bh5kgZddiyd5ObXOP9Exu?si=2NoEzqhiSbaQa8IBIyYM7A"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    },
+                    "type": "SINGLE",
+                    "uri": "spotify:album:5bh5kgZddiyd5ObXOP9Exu"
+                  }
+                ]
+              }
+            }
+          ],
+          "totalCount": 26
+        },
+        "topTracks": {
+          "items": [
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 202333
+                },
+                "id": "3CRDbSIZ4r5MsZ0YwxuEkn",
+                "name": "Stressed Out",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "3014299499",
+                "uri": "spotify:track:3CRDbSIZ4r5MsZ0YwxuEkn"
+              },
+              "uid": "f804d167d21db4ee0a81"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 214506
+                },
+                "id": "2Z8WuEywRWYTKe1NybPQEW",
+                "name": "Ride",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2252179409",
+                "uri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW"
+              },
+              "uid": "7a73fda12ba2bb7ad67e"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02b5b991fd65053a3acb8c2db2"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851b5b991fd65053a3acb8c2db2"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273b5b991fd65053a3acb8c2db2"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:27KwvdCscr3IQtSbnyAZpo"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 224000
+                },
+                "id": "0TlcczkVTGpinpkGJpT81L",
+                "name": "Drag Path",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "73562433",
+                "uri": "spotify:track:0TlcczkVTGpinpkGJpT81L"
+              },
+              "uid": "26df3bc415d501829c3e"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022ca3ba8f334ca5a5f0312efb"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512ca3ba8f334ca5a5f0312efb"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732ca3ba8f334ca5a5f0312efb"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:3J8W9AOjQhnBLCX33m3atT"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 195920
+                },
+                "id": "6i0V12jOa3mr6uu4WYhUBr",
+                "name": "Heathens",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2230339772",
+                "uri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+              },
+              "uid": "ba224944a01d365613a3"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 191493
+                },
+                "id": "57yL3161hUMuw06zzzUCHi",
+                "name": "Doubt",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "485834206",
+                "uri": "spotify:track:57yL3161hUMuw06zzzUCHi"
+              },
+              "uid": "c7450b525372908bfcf3"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 324466
+                },
+                "id": "23OXdR7YuUBVWh5hSnYJau",
+                "name": "Chlorine",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "670953120",
+                "uri": "spotify:track:23OXdR7YuUBVWh5hSnYJau"
+              },
+              "uid": "dd2d9a78878b56abf5e2"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 188493
+                },
+                "id": "3bnVBN67NBEzedqQuWrpP4",
+                "name": "Tear in My Heart",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "691721190",
+                "uri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+              },
+              "uid": "d6826b028d34414bdafc"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048514aaf2413384c1efcc38353c6"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2734aaf2413384c1efcc38353c6"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:2x6LWti2bjYS6AllSomoV7"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Arcane"
+                      },
+                      "uri": "spotify:artist:57nPqD7z62gDdq37US9XJR"
+                    },
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 192000
+                },
+                "id": "1QJbDTZAO8rpGOMG4UahFM",
+                "name": "The Line (from the series Arcane League of Legends)",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "246698867",
+                "uri": "spotify:track:1QJbDTZAO8rpGOMG4UahFM"
+              },
+              "uid": "de9bd46bd7a46dbd1ec1"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02cc94dd4730132ccfbd617bf9"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851cc94dd4730132ccfbd617bf9"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273cc94dd4730132ccfbd617bf9"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 202600
+                },
+                "id": "4bDIAWaOBGAAk95nyXI6zJ",
+                "name": "Routines In The Night",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "126982154",
+                "uri": "spotify:track:4bDIAWaOBGAAk95nyXI6zJ"
+              },
+              "uid": "c3068b652c4abcca9c32"
+            },
+            {
+              "track": {
+                "albumOfTrack": {
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7"
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7"
+                      }
+                    ]
+                  },
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "duration": {
+                  "totalMilliseconds": 234813
+                },
+                "id": "7i9763l5SSfOnqZ35VOcfy",
+                "name": "Heavydirtysoul",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "466442200",
+                "uri": "spotify:track:7i9763l5SSfOnqZ35VOcfy"
+              },
+              "uid": "65b4eaf3dff5aa413b46"
+            }
+          ]
+        }
+      },
+      "goods": {
+        "concerts": {
+          "items": [
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Landgraaf",
+                  "name": "Megaland"
+                },
+                "startDateIsoString": "2026-06-19T11:00+02:00",
+                "title": "Twenty One Pilots, Teddy Swims, Zara Larsson, Electric Callboy, Kingfishr, Natasha Bedingfield, The Pretty Reckless, Roxy Dekker, The Vaccines, Balu Brigada, The Beaches, The Plot In You, Ski Aggu, Sleep Theory, De Herfshane Band, Buffalo Traffic Jam, Ecca Vandal, Isabel van Gelder, Linka Moja, VOILÀ, Yong Yello",
+                "uri": "spotify:concert:3uWUGWFWaspjmjznTQd8tC"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "SCHEESSEL",
+                  "name": "Eichenring Scheeßel"
+                },
+                "startDateIsoString": "2026-06-19T12:00+02:00",
+                "title": "Donots, Papa Roach, Pennywise, The Offspring, Billy Talent, Bosse, Alexisonfire, Modeselektor, Skindred, The Ataris, zebrahead, Sondaschule, Natasha Bedingfield, A Day To Remember, All Time Low, Boys Noize, Florence + The Machine, Empire Of The Sun, Kraftklub, Modestep, Basement, Twenty One Pilots, SSIO, Wolf Alice, Nothing But Thieves, SOFT PLAY, YUNGBLUD, The Beaches, grandson, BHZ, Ecca Vandal, Leony, OG Keemo, FiNCH, Roy Bianco & Die Abbrunzati Boys, YONAKA, The Butcher Sisters, Provinz, Drei Meter Feldweg, Betterov, Edwin Rosen, KAFFKIEZ, Esther Graf, Just Mustard, Davina Michelle, Militarie Gun, PA69, Destroy Boys, Ritter Lean, SPRINTS, rosmarin, Anda Morts, Tors, Delilah Bon, Royel Otis, Paula Engels, ROYA, unpeople, Kayla Shyx, Kingfishr, David Puentez, Filow, Vicky, PRESIDENT, Florence Road, Tinlicker",
+                "uri": "spotify:concert:55nIEeBQ1QAeHUmwspdH3I"
+              }
+            },
+            {
+              "data": {
+                "__typename": "NotFound"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Lido Di Camaiore",
+                  "name": "Parco BussolaDomani"
+                },
+                "startDateIsoString": "2026-06-28T12:00+02:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:0zmBe5fSpX27eAIgv81SyJ"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Arras",
+                  "name": "LA CITADELLE - QUARTIER DE TURENNE"
+                },
+                "startDateIsoString": "2026-07-03T16:00+02:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:1CgyJz7qgRHDGoVbtUMhCB"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Werchter",
+                  "name": "Rock Werchter"
+                },
+                "startDateIsoString": "2026-07-04T12:00+02:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:4b8U6F7tj13lmb7lKTh2vK"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Arras",
+                  "name": "LA CITADELLE - QUARTIER DE TURENNE"
+                },
+                "startDateIsoString": "2026-07-04T14:30+02:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:3Bv0SYEwjf6tCtPz2pFVja"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Arras",
+                  "name": "Citadelle d'Arras"
+                },
+                "startDateIsoString": "2026-07-05T12:00+02:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:6yKr5zRW6MnmCveqJTKsp2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Arras",
+                  "name": "LA CITADELLE - QUARTIER DE TURENNE"
+                },
+                "startDateIsoString": "2026-07-05T14:30+02:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:7jFcSzUtUe1Lvn4CGLqsrL"
+              }
+            },
+            {
+              "data": {
+                "__typename": "ConcertV2",
+                "festival": false,
+                "location": {
+                  "city": "Oeiras",
+                  "name": "Passeio Marítimo de Algés"
+                },
+                "startDateIsoString": "2026-07-09T12:00+01:00",
+                "title": "Twenty One Pilots",
+                "uri": "spotify:concert:7mCRDzsKU7mKm8vTEUPB21"
+              }
+            }
+          ],
+          "totalCount": 16
+        },
+        "merch": {
+          "items": [
+            {
+              "description": "CELEBRATE “MORE THAN WE EVER IMAGINED” WITH THE EXCLUSIVE COLLECTION. T-SHIRT FEATURES IMAGERY ON THE FRONT. 100% RING-SPUN COTTON. TWENTY ONE PILOTS: MORE THAN WE EVER IMAGINED IN THEATERS WORLDWIDE FROM FEB 26. Product images are for illustrative purposes only and may differ from the actual product.",
+              "image": {
+                "sources": [
+                  {
+                    "url": "https://i.scdn.co/image/ab676d63000076a06ffe33b80e40648ceb0cc67d"
+                  }
+                ]
+              },
+              "nameV2": "“IMAGINED” SCRIPT PHOTO TEE",
+              "price": "$35.00",
+              "uri": "7eufkAdEY6fPIIZCjoo8bq",
+              "url": "https://shop.spotify.com/en/artist/3YQKmKGau1PzlVlkL1iodx/product/imagined-script-photo-tee?utm_source=spotify&utm_medium=app-artistprofile&utm_term=00a4665c415d30a17118d0d9ea385b2f8a9287812c914e381e3ea5"
+            },
+            {
+              "description": "CELEBRATE “MORE THAN WE EVER IMAGINED” WITH THE EXCLUSIVE COLLECTION. 18\"x32\" SPOT GLOSS POSTER.TWENTY ONE PILOTS: MORE THAN WE EVER IMAGINED IN THEATERS WORLDWIDE FROM FEB 26. Product images are for illustrative purposes only and may differ from the actual product.",
+              "image": {
+                "sources": [
+                  {
+                    "url": "https://i.scdn.co/image/ab676d63000076a06476f585eada229273ecff04"
+                  }
+                ]
+              },
+              "nameV2": "“IMAGINED” COMMEMORATIVE POSTER",
+              "price": "$25.00",
+              "uri": "39qKVUaIFBY1VSyKIBPTJz",
+              "url": "https://shop.spotify.com/en/artist/3YQKmKGau1PzlVlkL1iodx/product/imagined-commemorative-poster?utm_source=spotify&utm_medium=app-artistprofile&utm_term=00a4665c415d30a17118d0d9ea385b2f8a9287812c914e381e3ea5"
+            },
+            {
+              "description": "CELEBRATE “MORE THAN WE EVER IMAGINED” WITH THE EXCLUSIVE COLLECTION. T-SHIRT FEATURES IMAGERY ON THE FRONT AND BACK. 100% RING-SPUN COTTON. TWENTY ONE PILOTS: MORE THAN WE EVER IMAGINED IN THEATERS WORLDWIDE FROM FEB 26. Product images are for illustrative purposes only and may differ from the actual product.",
+              "image": {
+                "sources": [
+                  {
+                    "url": "https://i.scdn.co/image/ab676d63000076a013e4a1b8f3e940ca67933f70"
+                  }
+                ]
+              },
+              "nameV2": "“IMAGINED” BLACK TEE",
+              "price": "$35.00",
+              "uri": "0L32XZTto7sSth8fnxkuay",
+              "url": "https://shop.spotify.com/en/artist/3YQKmKGau1PzlVlkL1iodx/product/imagined-black-tee?utm_source=spotify&utm_medium=app-artistprofile&utm_term=00a4665c415d30a17118d0d9ea385b2f8a9287812c914e381e3ea5"
+            }
+          ]
+        }
+      },
+      "headerImage": {
+        "data": {
+          "__typename": "ImageV2",
+          "sources": [
+            {
+              "maxHeight": 1140,
+              "maxWidth": 2660,
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab676186000010168e0f61040db2ca0f3701f485"
+            },
+            {
+              "maxHeight": 1080,
+              "maxWidth": 1920,
+              "url": "https://i2o.scdn.co/image/ab676186000016668e0f61040db2ca0f3701f485"
+            },
+            {
+              "maxHeight": 1080,
+              "maxWidth": 1920,
+              "url": "https://i2o.scdn.co/image/ab676186000016668e0f61040db2ca0f3701f485"
+            },
+            {
+              "maxHeight": 640,
+              "maxWidth": 1494,
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761860000660e8e0f61040db2ca0f3701f485"
+            },
+            {
+              "maxHeight": 641,
+              "maxWidth": 1495,
+              "url": "https://image-cdn-ak.spotifycdn.com/image/ab67618600006fba8e0f61040db2ca0f3701f485"
+            }
+          ]
+        }
+      },
+      "id": "3YQKmKGau1PzlVlkL1iodx",
+      "onPlatformReputationTrait": {
+        "verification": {
+          "isRegistered": true,
+          "isVerified": true
+        }
+      },
+      "preRelease": null,
+      "profile": {
+        "biography": {
+          "text": "GRAMMY-Award winning band Twenty One Pilots have shifted music and culture as an incomparable creative force and with an ever-evolving vision. The Columbus, OH duo—Tyler Joseph and Josh Dun— have tallied over 34 billion global streams and counting, sold north of four million tickets worldwide, notched dozens of multi-Platinum certifications, and even claimed a spot in the Guinness® Book of World Records. On September 12, Twenty One Pilots unveiled their eighth studio album, Breach, which debuted at #1 on the Billboard 200 with 200k album equivalents and earned the biggest rock debut of the decade and the biggest week in vinyl sales for a rock record since tracking began in 1991. This was the band’s first #1 since 2015’s 6x-Platinum breakout LP, Blurryface, which was the first album to notch a RIAA Gold or Platinum certification for every single song, earning the same distinction shortly after for 2013’s Vessel. They also remain one of only 18 artists to earn multiple RIAA Diamond certifications with hits “Stressed Out” and “Heathens.” The band continued to dominate the charts with 2018’s Platinum-certified Trench, which featured GRAMMY-nominated track “Jumpsuit,” followed by 2021’s Scaled and Icy and 2024’s Clancy, which both marked the biggest rock debuts of their release years. Most recently, the band completed THE CLANCY TOUR: BREACH 2025, which saw them hit stadiums and amphitheatres across North America, closing with two sold-out nights at BMO Stadium in Los Angeles.",
+          "type": "AUTOBIOGRAPHY"
+        },
+        "externalLinks": {
+          "items": [
+            {
+              "name": "FACEBOOK",
+              "url": "https://facebook.com/twentyonepilots"
+            },
+            {
+              "name": "INSTAGRAM",
+              "url": "https://instagram.com/twentyonepilots"
+            },
+            {
+              "name": "TWITTER",
+              "url": "https://twitter.com/twentyonepilots"
+            }
+          ]
+        },
+        "name": "Twenty One Pilots",
+        "pinnedItem": null,
+        "playlistsV2": {
+          "items": [
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c3e059c4b3d2876956a959987",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Twenty One Pilots Playlist ",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Twenty One Pilots"
+                  }
+                },
+                "uri": "spotify:playlist:1WCRwQ0f4yT8tuIUUxP5m1"
+              }
+            }
+          ],
+          "totalCount": 1
+        }
+      },
+      "relatedContent": {
+        "appearsOn": {
+          "items": [
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02cb4ec52c48a6b071ed2ab6bc",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851cb4ec52c48a6b071ed2ab6bc",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273cb4ec52c48a6b071ed2ab6bc",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2016
+                    },
+                    "id": "5rOHrnrRomvSJhQLGVtfJ8",
+                    "name": "Suicide Squad: The Album",
+                    "sharingInfo": {
+                      "shareId": "I0FRUGjKQkmJQ8z9YRTFpA",
+                      "shareUrl": "https://open.spotify.com/album/5rOHrnrRomvSJhQLGVtfJ8?si=I0FRUGjKQkmJQ8z9YRTFpA"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:5rOHrnrRomvSJhQLGVtfJ8"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0258f9aad6bf6fcf19aee2874e",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485158f9aad6bf6fcf19aee2874e",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27358f9aad6bf6fcf19aee2874e",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2024
+                    },
+                    "id": "4hkDgVKWStOUopF7JERIW8",
+                    "name": "Top Motivation",
+                    "sharingInfo": {
+                      "shareId": "aCVywKM3S9-DrMIoofa6sQ",
+                      "shareUrl": "https://open.spotify.com/album/4hkDgVKWStOUopF7JERIW8?si=aCVywKM3S9-DrMIoofa6sQ"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:4hkDgVKWStOUopF7JERIW8"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e028fd3753c16c3992b8f401418",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048518fd3753c16c3992b8f401418",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2738fd3753c16c3992b8f401418",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2016
+                    },
+                    "id": "2t9pr5VGDNuKcf5PGpeNjV",
+                    "name": "Suicide Squad: The Album (Collector's Edition)",
+                    "sharingInfo": {
+                      "shareId": "nzonaBSGSZ2ZuBNNxj84Zw",
+                      "shareUrl": "https://open.spotify.com/album/2t9pr5VGDNuKcf5PGpeNjV?si=nzonaBSGSZ2ZuBNNxj84Zw"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:2t9pr5VGDNuKcf5PGpeNjV"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02f08ba00c2dc9cc9a871fa709",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851f08ba00c2dc9cc9a871fa709",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273f08ba00c2dc9cc9a871fa709",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2026
+                    },
+                    "id": "2WusKCS5Dhx69z3n4h16qB",
+                    "name": "The Current Pulse",
+                    "sharingInfo": {
+                      "shareId": "LULJjfubTUqD3GhJEFpqWg",
+                      "shareUrl": "https://open.spotify.com/album/2WusKCS5Dhx69z3n4h16qB?si=LULJjfubTUqD3GhJEFpqWg"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:2WusKCS5Dhx69z3n4h16qB"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Switchfoot"
+                          },
+                          "uri": "spotify:artist:6S58b0fr8TkWrEHOH4tRVu"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0243882fdb47a06d880f61efdc",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485143882fdb47a06d880f61efdc",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27343882fdb47a06d880f61efdc",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2023
+                    },
+                    "id": "5xxmevNUSUFEwao2H1CWlT",
+                    "name": "The Beautiful Letdown (Our Version) [Deluxe Edition]",
+                    "sharingInfo": {
+                      "shareId": "Ik1-sECcTCyddkXbT5Gd_Q",
+                      "shareUrl": "https://open.spotify.com/album/5xxmevNUSUFEwao2H1CWlT?si=Ik1-sECcTCyddkXbT5Gd_Q"
+                    },
+                    "type": "ALBUM",
+                    "uri": "spotify:album:5xxmevNUSUFEwao2H1CWlT"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e026671ddb504e94f9e26ae02e5",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048516671ddb504e94f9e26ae02e5",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2736671ddb504e94f9e26ae02e5",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2023
+                    },
+                    "id": "0y2iUL7aHpMSRhFujX35gH",
+                    "name": "2010s Mixtape: The Greatest Hits",
+                    "sharingInfo": {
+                      "shareId": "NYqRRvr5RbeAz6IR6rLDjg",
+                      "shareUrl": "https://open.spotify.com/album/0y2iUL7aHpMSRhFujX35gH?si=NYqRRvr5RbeAz6IR6rLDjg"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:0y2iUL7aHpMSRhFujX35gH"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02c863271113e85665d632e233",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851c863271113e85665d632e233",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273c863271113e85665d632e233",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2022
+                    },
+                    "id": "2qCO2u3dYKEjTIo683uV2V",
+                    "name": "Músicas Para Acordar",
+                    "sharingInfo": {
+                      "shareId": "y_FevyqZRoqETumWC8qnHQ",
+                      "shareUrl": "https://open.spotify.com/album/2qCO2u3dYKEjTIo683uV2V?si=y_FevyqZRoqETumWC8qnHQ"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:2qCO2u3dYKEjTIo683uV2V"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0256e5595a19507c66a46db9f2",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485156e5595a19507c66a46db9f2",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27356e5595a19507c66a46db9f2",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2026
+                    },
+                    "id": "3of9H9Lvy5oxl5iWnc4ChO",
+                    "name": "Pop Formula",
+                    "sharingInfo": {
+                      "shareId": "tmoFBLNjQHWRgd6eiws-eA",
+                      "shareUrl": "https://open.spotify.com/album/3of9H9Lvy5oxl5iWnc4ChO?si=tmoFBLNjQHWRgd6eiws-eA"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:3of9H9Lvy5oxl5iWnc4ChO"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0261ee1dcc63be20eed5cb546c",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485161ee1dcc63be20eed5cb546c",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27361ee1dcc63be20eed5cb546c",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2026
+                    },
+                    "id": "72TCH32FsKE7dbfUzXHiL7",
+                    "name": "Currents Only",
+                    "sharingInfo": {
+                      "shareId": "HReZRAThRuyZHA4UeVCFGQ",
+                      "shareUrl": "https://open.spotify.com/album/72TCH32FsKE7dbfUzXHiL7?si=HReZRAThRuyZHA4UeVCFGQ"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:72TCH32FsKE7dbfUzXHiL7"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e025bd4f5de6e2f93c01590176f",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048515bd4f5de6e2f93c01590176f",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2735bd4f5de6e2f93c01590176f",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2024
+                    },
+                    "id": "7lkAxtwV3vP6MkOjHO3XrE",
+                    "name": "Great Music - Good Songs",
+                    "sharingInfo": {
+                      "shareId": "8s6iqlnNSyCRcYkGHj72Jg",
+                      "shareUrl": "https://open.spotify.com/album/7lkAxtwV3vP6MkOjHO3XrE?si=8s6iqlnNSyCRcYkGHj72Jg"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:7lkAxtwV3vP6MkOjHO3XrE"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02c8370746adc43f7bf68c23d7",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851c8370746adc43f7bf68c23d7",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273c8370746adc43f7bf68c23d7",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2022
+                    },
+                    "id": "3aiPoSMYvvTEMFUf5TVf1f",
+                    "name": "Stranger Hits",
+                    "sharingInfo": {
+                      "shareId": "OvkTxcHhTCuggUfIc3RBIg",
+                      "shareUrl": "https://open.spotify.com/album/3aiPoSMYvvTEMFUf5TVf1f?si=OvkTxcHhTCuggUfIc3RBIg"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:3aiPoSMYvvTEMFUf5TVf1f"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b67c94d3937cccdf0d58311f",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b67c94d3937cccdf0d58311f",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b67c94d3937cccdf0d58311f",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2025
+                    },
+                    "id": "2xZ9BiHwvDqXU9lCMR0tAG",
+                    "name": "Viral Mode: On",
+                    "sharingInfo": {
+                      "shareId": "pI6zgzxKT3uSUG42D3s94w",
+                      "shareUrl": "https://open.spotify.com/album/2xZ9BiHwvDqXU9lCMR0tAG?si=pI6zgzxKT3uSUG42D3s94w"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:2xZ9BiHwvDqXU9lCMR0tAG"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e029bccd80dd267f537a3fa06b2",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048519bccd80dd267f537a3fa06b2",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739bccd80dd267f537a3fa06b2",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2021
+                    },
+                    "id": "59J2ovK5LMYXjV7Yba5GBG",
+                    "name": "Popowe hymny",
+                    "sharingInfo": {
+                      "shareId": "iPQzrQY_TySxzJm7NxOskQ",
+                      "shareUrl": "https://open.spotify.com/album/59J2ovK5LMYXjV7Yba5GBG?si=iPQzrQY_TySxzJm7NxOskQ"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:59J2ovK5LMYXjV7Yba5GBG"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e029728f3a18d239b7e42ff5366",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048519728f3a18d239b7e42ff5366",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739728f3a18d239b7e42ff5366",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2021
+                    },
+                    "id": "5UFAFRrRvIH1ZdAmxcPNRS",
+                    "name": "So Am I - 10's Anthems",
+                    "sharingInfo": {
+                      "shareId": "EFgVrslBSe6jizhuVNdbFQ",
+                      "shareUrl": "https://open.spotify.com/album/5UFAFRrRvIH1ZdAmxcPNRS?si=EFgVrslBSe6jizhuVNdbFQ"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:5UFAFRrRvIH1ZdAmxcPNRS"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02a21c56ca5167f7c1d9620d54",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851a21c56ca5167f7c1d9620d54",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273a21c56ca5167f7c1d9620d54",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2025
+                    },
+                    "id": "2xMqmLfew6bDYrrLbzq4rY",
+                    "name": "Pop Generation",
+                    "sharingInfo": {
+                      "shareId": "GZeXrB3PRyuErS8QpSJJIA",
+                      "shareUrl": "https://open.spotify.com/album/2xMqmLfew6bDYrrLbzq4rY?si=GZeXrB3PRyuErS8QpSJJIA"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:2xMqmLfew6bDYrrLbzq4rY"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02448406f9e7af7f1a0ca08ef4",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851448406f9e7af7f1a0ca08ef4",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273448406f9e7af7f1a0ca08ef4",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2021
+                    },
+                    "id": "1wuY8w6dlLmLx27iitbU3K",
+                    "name": "10's UK Hits",
+                    "sharingInfo": {
+                      "shareId": "uyylgJ9oSBmnKj-UQM0ECA",
+                      "shareUrl": "https://open.spotify.com/album/1wuY8w6dlLmLx27iitbU3K?si=uyylgJ9oSBmnKj-UQM0ECA"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:1wuY8w6dlLmLx27iitbU3K"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b839c2295195b6f709213057",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b839c2295195b6f709213057",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b839c2295195b6f709213057",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2023
+                    },
+                    "id": "0Ayf3OU9LKp5dfJ6NYwJh0",
+                    "name": "Trailrunning - Ultrarunning Focus",
+                    "sharingInfo": {
+                      "shareId": "7JTJwzRnTda0oFlOzYPKqA",
+                      "shareUrl": "https://open.spotify.com/album/0Ayf3OU9LKp5dfJ6NYwJh0?si=7JTJwzRnTda0oFlOzYPKqA"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:0Ayf3OU9LKp5dfJ6NYwJh0"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b6761ad8becc396e4f876562",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b6761ad8becc396e4f876562",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b6761ad8becc396e4f876562",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2024
+                    },
+                    "id": "53G4hvfTSZp7uckPGJNPKB",
+                    "name": "Rock Jukebox",
+                    "sharingInfo": {
+                      "shareId": "osotryG8QoiMGMyF6dJbsg",
+                      "shareUrl": "https://open.spotify.com/album/53G4hvfTSZp7uckPGJNPKB?si=osotryG8QoiMGMyF6dJbsg"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:53G4hvfTSZp7uckPGJNPKB"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02701c7a32d63f1597bd76847a",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851701c7a32d63f1597bd76847a",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273701c7a32d63f1597bd76847a",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2026
+                    },
+                    "id": "6v30kgsiL9XrXy8N3q8bjF",
+                    "name": "Tranquilas en Inglés",
+                    "sharingInfo": {
+                      "shareId": "Drzvi8kdRpSP6PYqgP80ow",
+                      "shareUrl": "https://open.spotify.com/album/6v30kgsiL9XrXy8N3q8bjF?si=Drzvi8kdRpSP6PYqgP80ow"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:6v30kgsiL9XrXy8N3q8bjF"
+                  }
+                ],
+                "totalCount": 1
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Various Artists"
+                          },
+                          "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e026aa118544c1c5f3db8c3485c",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048516aa118544c1c5f3db8c3485c",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2736aa118544c1c5f3db8c3485c",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "date": {
+                      "year": 2023
+                    },
+                    "id": "31PZzle2nuK0OlzRRhGlZw",
+                    "name": "Halloween Hits",
+                    "sharingInfo": {
+                      "shareId": "xz0gG331SxasgT6-9GxmKw",
+                      "shareUrl": "https://open.spotify.com/album/31PZzle2nuK0OlzRRhGlZw?si=xz0gG331SxasgT6-9GxmKw"
+                    },
+                    "type": "COMPILATION",
+                    "uri": "spotify:album:31PZzle2nuK0OlzRRhGlZw"
+                  }
+                ],
+                "totalCount": 1
+              }
+            }
+          ],
+          "totalCount": 1724
+        },
+        "discoveredOnV2": {
+          "items": [
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "This is Twenty One Pilots. The essential tracks, all in one playlist.",
+                "id": "37i9dQZF1DZ06evO2k3tf2",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/3YQKmKGau1PzlVlkL1iodx/en-GB",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "This Is Twenty One Pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DZ06evO2k3tf2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "id": "1WCRwQ0f4yT8tuIUUxP5m1",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c3e059c4b3d2876956a959987",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Twenty One Pilots Playlist ",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Twenty One Pilots"
+                  }
+                },
+                "uri": "spotify:playlist:1WCRwQ0f4yT8tuIUUxP5m1"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "This playlist includes every song by twenty one pilots :) @krbkjoshler on twt clikkietwt follow me",
+                "id": "2E6vAIGycJq6Oj8qixDEpa",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84b0f01d515d20b59ddeecd47a",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "twenty one pilots - all songs",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Canis Prime"
+                  }
+                },
+                "uri": "spotify:playlist:2E6vAIGycJq6Oj8qixDEpa"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Inst: kitchensinktom1",
+                "id": "1zGPBE4uqo3p825smzALc2",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c7b1f2b138e971c75cc1b707e",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "All twenty one pilots songs (no live, mtv etc)",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Kitchensinktom1"
+                  }
+                },
+                "uri": "spotify:playlist:1zGPBE4uqo3p825smzALc2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "21 21 21",
+                "id": "17bjIeMuccW9hTLB6C0cqp",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Best of 21 Pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "brassmaster"
+                  }
+                },
+                "uri": "spotify:playlist:17bjIeMuccW9hTLB6C0cqp"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The biggest songs of the 2010s. Cover: Justin Bieber",
+                "id": "37i9dQZF1DX5Ejj0EkURtP",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002ddeb90231491c14812b062ff",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "All Out 2010s",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX5Ejj0EkURtP"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Lo mejor en inglés de los últimos años. Para novedades, escucha <a href=\"spotify:playlist:37i9dQZF1DX6aTaZa0K6VA\">Pop Up</a>.",
+                "id": "37i9dQZF1DX1ngEVM0lKrb",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f0000000249e05c5a2e4e517d2599f30d",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Pop Internacional 2026",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX1ngEVM0lKrb"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The UK's biggest playlist. Cover: Noah Kahan",
+                "id": "37i9dQZF1DWY4lFlS4Pnso",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f3406be810f80915455cd2b3",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Hot Hits UK",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DWY4lFlS4Pnso"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "id": "3CdfoioAm3TCoieKyYPPys",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84fc1139d55164022b64c389aa",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "2016 vibes🫧",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "h"
+                  }
+                },
+                "uri": "spotify:playlist:3CdfoioAm3TCoieKyYPPys"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "La playlist survitaminée !",
+                "id": "37i9dQZF1DX8685vIIepKh",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000022c8c1bd4c38e8f2d2dbbbe71",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Garde la pêche !",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX8685vIIepKh"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "SING ALONG EVERYONE                                       #2010 #nostalgia",
+                "id": "5CcCaUYWYgrYebCC50SnEF",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cee060dba0b3d4ac759d4bf9c",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "SONGS WE ALL KNOW😛",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "ellie"
+                  }
+                },
+                "uri": "spotify:playlist:5CcCaUYWYgrYebCC50SnEF"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "old but gold, all the best throwback songs to new hits, pop, rnb, edm, rap, workout music and more! :)",
+                "id": "6mtYuOxzl58vSGnEDtZ9uB",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84a730bed7741fc8b1cc36b3f9",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Pop Hits 2000s – 2026",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "maka_97"
+                  }
+                },
+                "uri": "spotify:playlist:6mtYuOxzl58vSGnEDtZ9uB"
+              }
+            }
+          ],
+          "totalCount": 100
+        },
+        "featuringV2": {
+          "items": [
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "This is Twenty One Pilots. The essential tracks, all in one playlist.",
+                "id": "37i9dQZF1DZ06evO2k3tf2",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/3YQKmKGau1PzlVlkL1iodx/en-GB",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "This Is Twenty One Pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DZ06evO2k3tf2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "With Arctic Monkeys, Panic! At The Disco, The Neighbourhood and more",
+                "id": "37i9dQZF1E4yrYiQJfy370",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3YQKmKGau1PzlVlkL1iodx/en",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Twenty One Pilots Radio",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1E4yrYiQJfy370"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Celebrating all the songs with more than a billion streams on Spotify. Cover: Olivia Dean",
+                "id": "37i9dQZF1DX7iB3RCnBnN4",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002830108a17decb571ed2a5449",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "BILLIONS CLUB",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX7iB3RCnBnN4"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The indie viral hits you can't escape. Cover: Dominic Fike",
+                "id": "37i9dQZF1DXad2sxzzYX1N",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f00e06ec6eda5b0232da1a35",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Indie that hits different ",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DXad2sxzzYX1N"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "iykyk",
+                "id": "37i9dQZF1DX5Vy6DFOcx00",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000029caf3475274157254dab1dc2",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "big on the internet",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX5Vy6DFOcx00"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Rock & alternative classics and essential new cuts ft. Radiohead.",
+                "id": "37i9dQZF1DX49jUV2NfGku",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f11962ee086796626894f792",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Rock Solid",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX49jUV2NfGku"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Every legend has a beginning. Listen to music from Arcane, now streaming on Netflix. ",
+                "id": "37i9dQZF1DX3KVUsNUmJc2",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f2be5217998da0aa377b3657",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "Arcane Official Playlist",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX3KVUsNUmJc2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "rock never dies. Cover: Lip Critic",
+                "id": "37i9dQZF1DXcF6B6QPhFDv",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002217a2748a334987ec888e95b",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "name": "MARROW",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DXcF6B6QPhFDv"
+              }
+            }
+          ],
+          "totalCount": 8
+        },
+        "relatedArtists": {
+          "items": [
+            {
+              "id": "20JZFwl6HVl6yg8a4H3ZqK",
+              "profile": {
+                "name": "Panic! At The Disco"
+              },
+              "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebb256ae9a4b82bfff97776ae2",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178b256ae9a4b82bfff97776ae2",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174b256ae9a4b82bfff97776ae2",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "3AA28KZvwAUcZuOKwyblJQ",
+              "profile": {
+                "name": "Gorillaz"
+              },
+              "uri": "spotify:artist:3AA28KZvwAUcZuOKwyblJQ",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebdd5b57b40cf2aaeccd07835e",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178dd5b57b40cf2aaeccd07835e",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174dd5b57b40cf2aaeccd07835e",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "53XhwfbYqKCa1cC15pYq2q",
+              "profile": {
+                "name": "Imagine Dragons"
+              },
+              "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebab47d8dae2b24f5afe7f9d38",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178ab47d8dae2b24f5afe7f9d38",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174ab47d8dae2b24f5afe7f9d38",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "7Ln80lUS6He07XvHI8qqHH",
+              "profile": {
+                "name": "Arctic Monkeys"
+              },
+              "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f1787da39dea0a72f581535fb11f",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab676161000051747da39dea0a72f581535fb11f",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "4UXqAaa6dQYAk18Lv7PEgX",
+              "profile": {
+                "name": "Fall Out Boy"
+              },
+              "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb362011ebe6064c38e97e9aac",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178362011ebe6064c38e97e9aac",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174362011ebe6064c38e97e9aac",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "7gP3bB2nilZXLfPHJhMdvc",
+              "profile": {
+                "name": "Foster The People"
+              },
+              "uri": "spotify:artist:7gP3bB2nilZXLfPHJhMdvc",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb22b8e662f0cfdddac8ab22bb",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f17822b8e662f0cfdddac8ab22bb",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab6761610000517422b8e662f0cfdddac8ab22bb",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "26T3LtbuGT1Fu9m0eRq5X3",
+              "profile": {
+                "name": "Cage The Elephant"
+              },
+              "uri": "spotify:artist:26T3LtbuGT1Fu9m0eRq5X3",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb766df8f443e0160f7b35545d",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178766df8f443e0160f7b35545d",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174766df8f443e0160f7b35545d",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "77SW9BnxLY8rJ0RciFqkHh",
+              "profile": {
+                "name": "The Neighbourhood"
+              },
+              "uri": "spotify:artist:77SW9BnxLY8rJ0RciFqkHh",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebdf0b5ac84376a0a4b2166816",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178df0b5ac84376a0a4b2166816",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174df0b5ac84376a0a4b2166816",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "6XyY86QOPPrYVGvF9ch6wz",
+              "profile": {
+                "name": "Linkin Park"
+              },
+              "uri": "spotify:artist:6XyY86QOPPrYVGvF9ch6wz",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb527d95dabbe8b8b527e8136f",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178527d95dabbe8b8b527e8136f",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174527d95dabbe8b8b527e8136f",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "0C0XlULifJtAgn6ZNCW2eu",
+              "profile": {
+                "name": "The Killers"
+              },
+              "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb207b21f3ed0ee96adce3166a",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178207b21f3ed0ee96adce3166a",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174207b21f3ed0ee96adce3166a",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "5INjqkS1o8h1imAzPqGZBb",
+              "profile": {
+                "name": "Tame Impala"
+              },
+              "uri": "spotify:artist:5INjqkS1o8h1imAzPqGZBb",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174e412a782245eb20d9626c601",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "0SwO7SWeDHJijQ3XNS7xEE",
+              "profile": {
+                "name": "MGMT"
+              },
+              "uri": "spotify:artist:0SwO7SWeDHJijQ3XNS7xEE",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb9dccdc8f4087cbe2bdedc9d3",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f1789dccdc8f4087cbe2bdedc9d3",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab676161000051749dccdc8f4087cbe2bdedc9d3",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "4gzpq5DPGxSnKTe4SA8HAU",
+              "profile": {
+                "name": "Coldplay"
+              },
+              "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "4AcHt3JxKy59IX7JNNlZn4",
+              "profile": {
+                "name": "Fitz and The Tantrums"
+              },
+              "uri": "spotify:artist:4AcHt3JxKy59IX7JNNlZn4",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb756717e6695fbaeb236857a2",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178756717e6695fbaeb236857a2",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174756717e6695fbaeb236857a2",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "74XFHRwlV6OrjEM0A2NCMF",
+              "profile": {
+                "name": "Paramore"
+              },
+              "uri": "spotify:artist:74XFHRwlV6OrjEM0A2NCMF",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebb10c34546a4ca2d7faeb8865",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178b10c34546a4ca2d7faeb8865",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174b10c34546a4ca2d7faeb8865",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "7EQ0qTo7fWT7DPxmxtSYEc",
+              "profile": {
+                "name": "Bastille"
+              },
+              "uri": "spotify:artist:7EQ0qTo7fWT7DPxmxtSYEc",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebf357b48e4344812b4e3c336f",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178f357b48e4344812b4e3c336f",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174f357b48e4344812b4e3c336f",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "4yvcSjfu4PC0CYQyLy4wSq",
+              "profile": {
+                "name": "Glass Animals"
+              },
+              "uri": "spotify:artist:4yvcSjfu4PC0CYQyLy4wSq",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebeb2cc96b0ed023c5e3675b6f",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178eb2cc96b0ed023c5e3675b6f",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174eb2cc96b0ed023c5e3675b6f",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "2FXC3k01G6Gw61bmprjgqS",
+              "profile": {
+                "name": "Hozier"
+              },
+              "uri": "spotify:artist:2FXC3k01G6Gw61bmprjgqS",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5ebad85a585103dfc2f3439119a",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f178ad85a585103dfc2f3439119a",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab67616100005174ad85a585103dfc2f3439119a",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "7oPftvlwr6VrsViSDV7fJY",
+              "profile": {
+                "name": "Green Day"
+              },
+              "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb6ff0cd5ef2ecf733804984bb",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f1786ff0cd5ef2ecf733804984bb",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab676161000051746ff0cd5ef2ecf733804984bb",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "5Pwc4xIPtQLFEnJriah9YJ",
+              "profile": {
+                "name": "OneRepublic"
+              },
+              "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ",
+              "visuals": {
+                "avatarImage": {
+                  "sources": [
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab6761610000e5eb3202f1bcacc6d8f581f32ffd",
+                      "width": 640
+                    },
+                    {
+                      "height": 160,
+                      "url": "https://i.scdn.co/image/ab6761610000f1783202f1bcacc6d8f581f32ffd",
+                      "width": 160
+                    },
+                    {
+                      "height": 320,
+                      "url": "https://i.scdn.co/image/ab676161000051743202f1bcacc6d8f581f32ffd",
+                      "width": 320
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "totalCount": 40
+        }
+      },
+      "relatedMusicVideos": {
+        "__typename": "MusicVideosPage",
+        "items": [],
+        "pagingInfo": {
+          "nextOffset": null
+        },
+        "totalCount": 0
+      },
+      "saved": true,
+      "sharingInfo": {
+        "shareId": "Bh2jEl1jTqG54JTeYdOA6Q",
+        "shareUrl": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx?si=Bh2jEl1jTqG54JTeYdOA6Q"
+      },
+      "stats": {
+        "followers": 26404566,
+        "monthlyListeners": 38184134,
+        "topCities": {
+          "items": [
+            {
+              "city": "Mexico City",
+              "country": "MX",
+              "numberOfListeners": 758988,
+              "region": "CMX"
+            },
+            {
+              "city": "São Paulo",
+              "country": "BR",
+              "numberOfListeners": 515132,
+              "region": "SP"
+            },
+            {
+              "city": "London",
+              "country": "GB",
+              "numberOfListeners": 458040,
+              "region": "ENG"
+            },
+            {
+              "city": "Chicago",
+              "country": "US",
+              "numberOfListeners": 376569,
+              "region": "IL"
+            },
+            {
+              "city": "Santiago",
+              "country": "CL",
+              "numberOfListeners": 308808,
+              "region": "RM"
+            }
+          ]
+        },
+        "worldRank": 130
+      },
+      "unmappedMusicVideos": {
+        "__typename": "MusicVideosPage",
+        "items": [],
+        "pagingInfo": {
+          "nextOffset": null
+        },
+        "totalCount": 0
+      },
+      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+      "visualIdentity": {
+        "wideFullBleedImage": {
+          "__typename": "VisualIdentityImage",
+          "extractedColorSet": {
+            "encoreBaseSetTextColor": {
+              "alpha": 255,
+              "blue": 187,
+              "green": 187,
+              "red": 187
+            },
+            "highContrast": {
+              "backgroundBase": {
+                "alpha": 255,
+                "blue": 72,
+                "green": 72,
+                "red": 72
+              },
+              "backgroundTintedBase": {
+                "alpha": 255,
+                "blue": 33,
+                "green": 33,
+                "red": 33
+              },
+              "textBase": {
+                "alpha": 255,
+                "blue": 255,
+                "green": 255,
+                "red": 255
+              },
+              "textBrightAccent": {
+                "alpha": 255,
+                "blue": 255,
+                "green": 255,
+                "red": 255
+              },
+              "textSubdued": {
+                "alpha": 255,
+                "blue": 205,
+                "green": 205,
+                "red": 205
+              }
+            },
+            "higherContrast": {
+              "backgroundBase": {
+                "alpha": 255,
+                "blue": 53,
+                "green": 53,
+                "red": 53
+              },
+              "backgroundTintedBase": {
+                "alpha": 255,
+                "blue": 86,
+                "green": 86,
+                "red": 86
+              },
+              "textBase": {
+                "alpha": 255,
+                "blue": 255,
+                "green": 255,
+                "red": 255
+              },
+              "textBrightAccent": {
+                "alpha": 255,
+                "blue": 96,
+                "green": 215,
+                "red": 30
+              },
+              "textSubdued": {
+                "alpha": 255,
+                "blue": 205,
+                "green": 205,
+                "red": 205
+              }
+            },
+            "minContrast": {
+              "backgroundBase": {
+                "alpha": 255,
+                "blue": 72,
+                "green": 72,
+                "red": 72
+              },
+              "backgroundTintedBase": {
+                "alpha": 255,
+                "blue": 33,
+                "green": 33,
+                "red": 33
+              },
+              "textBase": {
+                "alpha": 255,
+                "blue": 255,
+                "green": 255,
+                "red": 255
+              },
+              "textBrightAccent": {
+                "alpha": 255,
+                "blue": 255,
+                "green": 255,
+                "red": 255
+              },
+              "textSubdued": {
+                "alpha": 255,
+                "blue": 255,
+                "green": 255,
+                "red": 255
+              }
+            }
+          }
+        }
+      },
+      "visuals": {
+        "avatarImage": {
+          "extractedColors": {
+            "colorRaw": {
+              "hex": "#E03828"
+            }
+          },
+          "sources": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb61a7ea26d33ded218cd1e59d",
+              "width": 640
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f17861a7ea26d33ded218cd1e59d",
+              "width": 160
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab6761610000517461a7ea26d33ded218cd1e59d",
+              "width": 320
+            }
+          ]
+        },
+        "gallery": {
+          "items": [
+            {
+              "sources": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab6761670000ecd4981c507d1818f911d74ef414",
+                  "width": 640
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "watchFeedEntrypoint": null
+    }
+  }
+}

@@ -1,0 +1,2390 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: appearsOnPlaylists
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+        },
+        "operationName": "queryArtistAppearsOn",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "9a4bb7a20d6720fe52d7b47bc001cfa91940ddf5e7113761460b4a288d18a4c1"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+            },
+            "operationName": "queryArtistAppearsOn",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "9a4bb7a20d6720fe52d7b47bc001cfa91940ddf5e7113761460b4a288d18a4c1"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: server-timing
+          value: edge;dur=198
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 01 May 2026 06:00:10 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "artistUnion": {
+                "__typename": "Artist",
+                "id": "3YQKmKGau1PzlVlkL1iodx",
+                "profile": {
+                  "name": "Twenty One Pilots"
+                },
+                "relatedContent": {
+                  "appearsOn": {
+                    "items": [
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02cb4ec52c48a6b071ed2ab6bc",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851cb4ec52c48a6b071ed2ab6bc",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273cb4ec52c48a6b071ed2ab6bc",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5rOHrnrRomvSJhQLGVtfJ8",
+                              "name": "Suicide Squad: The Album",
+                              "sharingInfo": {
+                                "shareId": "113j22ptS-qXUKtgyXTRpg",
+                                "shareUrl": "https://open.spotify.com/album/5rOHrnrRomvSJhQLGVtfJ8?si=113j22ptS-qXUKtgyXTRpg"
+                              },
+                              "uri": "spotify:album:5rOHrnrRomvSJhQLGVtfJ8"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0258f9aad6bf6fcf19aee2874e",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485158f9aad6bf6fcf19aee2874e",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27358f9aad6bf6fcf19aee2874e",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "4hkDgVKWStOUopF7JERIW8",
+                              "name": "Top Motivation",
+                              "sharingInfo": {
+                                "shareId": "1nPXugjdRAyadT3v5Emx9w",
+                                "shareUrl": "https://open.spotify.com/album/4hkDgVKWStOUopF7JERIW8?si=1nPXugjdRAyadT3v5Emx9w"
+                              },
+                              "uri": "spotify:album:4hkDgVKWStOUopF7JERIW8"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e028fd3753c16c3992b8f401418",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048518fd3753c16c3992b8f401418",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2738fd3753c16c3992b8f401418",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2t9pr5VGDNuKcf5PGpeNjV",
+                              "name": "Suicide Squad: The Album (Collector's Edition)",
+                              "sharingInfo": {
+                                "shareId": "j3lEXZHKRIi4x-aWXgFGcA",
+                                "shareUrl": "https://open.spotify.com/album/2t9pr5VGDNuKcf5PGpeNjV?si=j3lEXZHKRIi4x-aWXgFGcA"
+                              },
+                              "uri": "spotify:album:2t9pr5VGDNuKcf5PGpeNjV"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02f08ba00c2dc9cc9a871fa709",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851f08ba00c2dc9cc9a871fa709",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273f08ba00c2dc9cc9a871fa709",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2WusKCS5Dhx69z3n4h16qB",
+                              "name": "The Current Pulse",
+                              "sharingInfo": {
+                                "shareId": "5X1qQNj1ShWCf-X_Fldn8A",
+                                "shareUrl": "https://open.spotify.com/album/2WusKCS5Dhx69z3n4h16qB?si=5X1qQNj1ShWCf-X_Fldn8A"
+                              },
+                              "uri": "spotify:album:2WusKCS5Dhx69z3n4h16qB"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Switchfoot"
+                                    },
+                                    "uri": "spotify:artist:6S58b0fr8TkWrEHOH4tRVu"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0243882fdb47a06d880f61efdc",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485143882fdb47a06d880f61efdc",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27343882fdb47a06d880f61efdc",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5xxmevNUSUFEwao2H1CWlT",
+                              "name": "The Beautiful Letdown (Our Version) [Deluxe Edition]",
+                              "sharingInfo": {
+                                "shareId": "uxu-1zgOQd2bz87ORp2j3w",
+                                "shareUrl": "https://open.spotify.com/album/5xxmevNUSUFEwao2H1CWlT?si=uxu-1zgOQd2bz87ORp2j3w"
+                              },
+                              "uri": "spotify:album:5xxmevNUSUFEwao2H1CWlT"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e026671ddb504e94f9e26ae02e5",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048516671ddb504e94f9e26ae02e5",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2736671ddb504e94f9e26ae02e5",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "0y2iUL7aHpMSRhFujX35gH",
+                              "name": "2010s Mixtape: The Greatest Hits",
+                              "sharingInfo": {
+                                "shareId": "Mk7D67edR-a3ltgnrBwgfA",
+                                "shareUrl": "https://open.spotify.com/album/0y2iUL7aHpMSRhFujX35gH?si=Mk7D67edR-a3ltgnrBwgfA"
+                              },
+                              "uri": "spotify:album:0y2iUL7aHpMSRhFujX35gH"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02c863271113e85665d632e233",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851c863271113e85665d632e233",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273c863271113e85665d632e233",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2qCO2u3dYKEjTIo683uV2V",
+                              "name": "Músicas Para Acordar",
+                              "sharingInfo": {
+                                "shareId": "OozgfeazQU-VJNv7gQJDPg",
+                                "shareUrl": "https://open.spotify.com/album/2qCO2u3dYKEjTIo683uV2V?si=OozgfeazQU-VJNv7gQJDPg"
+                              },
+                              "uri": "spotify:album:2qCO2u3dYKEjTIo683uV2V"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0256e5595a19507c66a46db9f2",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485156e5595a19507c66a46db9f2",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27356e5595a19507c66a46db9f2",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "3of9H9Lvy5oxl5iWnc4ChO",
+                              "name": "Pop Formula",
+                              "sharingInfo": {
+                                "shareId": "FwkE22QyReyh3XSsDa5j3A",
+                                "shareUrl": "https://open.spotify.com/album/3of9H9Lvy5oxl5iWnc4ChO?si=FwkE22QyReyh3XSsDa5j3A"
+                              },
+                              "uri": "spotify:album:3of9H9Lvy5oxl5iWnc4ChO"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0261ee1dcc63be20eed5cb546c",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485161ee1dcc63be20eed5cb546c",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27361ee1dcc63be20eed5cb546c",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "72TCH32FsKE7dbfUzXHiL7",
+                              "name": "Currents Only",
+                              "sharingInfo": {
+                                "shareId": "99N-o9cdQdSLd4kZTBjmuA",
+                                "shareUrl": "https://open.spotify.com/album/72TCH32FsKE7dbfUzXHiL7?si=99N-o9cdQdSLd4kZTBjmuA"
+                              },
+                              "uri": "spotify:album:72TCH32FsKE7dbfUzXHiL7"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e025bd4f5de6e2f93c01590176f",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048515bd4f5de6e2f93c01590176f",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2735bd4f5de6e2f93c01590176f",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "7lkAxtwV3vP6MkOjHO3XrE",
+                              "name": "Great Music - Good Songs",
+                              "sharingInfo": {
+                                "shareId": "XXsajR1NQxqvaHdqzR_npQ",
+                                "shareUrl": "https://open.spotify.com/album/7lkAxtwV3vP6MkOjHO3XrE?si=XXsajR1NQxqvaHdqzR_npQ"
+                              },
+                              "uri": "spotify:album:7lkAxtwV3vP6MkOjHO3XrE"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02c8370746adc43f7bf68c23d7",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851c8370746adc43f7bf68c23d7",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273c8370746adc43f7bf68c23d7",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "3aiPoSMYvvTEMFUf5TVf1f",
+                              "name": "Stranger Hits",
+                              "sharingInfo": {
+                                "shareId": "_ZWIzYf3TT6ctQZ-VxKk8g",
+                                "shareUrl": "https://open.spotify.com/album/3aiPoSMYvvTEMFUf5TVf1f?si=_ZWIzYf3TT6ctQZ-VxKk8g"
+                              },
+                              "uri": "spotify:album:3aiPoSMYvvTEMFUf5TVf1f"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b67c94d3937cccdf0d58311f",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b67c94d3937cccdf0d58311f",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b67c94d3937cccdf0d58311f",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2xZ9BiHwvDqXU9lCMR0tAG",
+                              "name": "Viral Mode: On",
+                              "sharingInfo": {
+                                "shareId": "wD8qbSI_S0mMVOJXdbEN_w",
+                                "shareUrl": "https://open.spotify.com/album/2xZ9BiHwvDqXU9lCMR0tAG?si=wD8qbSI_S0mMVOJXdbEN_w"
+                              },
+                              "uri": "spotify:album:2xZ9BiHwvDqXU9lCMR0tAG"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e029bccd80dd267f537a3fa06b2",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048519bccd80dd267f537a3fa06b2",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2739bccd80dd267f537a3fa06b2",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "59J2ovK5LMYXjV7Yba5GBG",
+                              "name": "Popowe hymny",
+                              "sharingInfo": {
+                                "shareId": "KB6ZXwHrTMmI8kmqeT1lrA",
+                                "shareUrl": "https://open.spotify.com/album/59J2ovK5LMYXjV7Yba5GBG?si=KB6ZXwHrTMmI8kmqeT1lrA"
+                              },
+                              "uri": "spotify:album:59J2ovK5LMYXjV7Yba5GBG"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e029728f3a18d239b7e42ff5366",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048519728f3a18d239b7e42ff5366",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2739728f3a18d239b7e42ff5366",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5UFAFRrRvIH1ZdAmxcPNRS",
+                              "name": "So Am I - 10's Anthems",
+                              "sharingInfo": {
+                                "shareId": "-pubmIhuTpC6QbiCeEatfA",
+                                "shareUrl": "https://open.spotify.com/album/5UFAFRrRvIH1ZdAmxcPNRS?si=-pubmIhuTpC6QbiCeEatfA"
+                              },
+                              "uri": "spotify:album:5UFAFRrRvIH1ZdAmxcPNRS"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02a21c56ca5167f7c1d9620d54",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851a21c56ca5167f7c1d9620d54",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273a21c56ca5167f7c1d9620d54",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2xMqmLfew6bDYrrLbzq4rY",
+                              "name": "Pop Generation",
+                              "sharingInfo": {
+                                "shareId": "6f2kL2KKSmm35SlDMemtXQ",
+                                "shareUrl": "https://open.spotify.com/album/2xMqmLfew6bDYrrLbzq4rY?si=6f2kL2KKSmm35SlDMemtXQ"
+                              },
+                              "uri": "spotify:album:2xMqmLfew6bDYrrLbzq4rY"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02448406f9e7af7f1a0ca08ef4",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851448406f9e7af7f1a0ca08ef4",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273448406f9e7af7f1a0ca08ef4",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "1wuY8w6dlLmLx27iitbU3K",
+                              "name": "10's UK Hits",
+                              "sharingInfo": {
+                                "shareId": "UkByXTvqS82YXIutSlwURw",
+                                "shareUrl": "https://open.spotify.com/album/1wuY8w6dlLmLx27iitbU3K?si=UkByXTvqS82YXIutSlwURw"
+                              },
+                              "uri": "spotify:album:1wuY8w6dlLmLx27iitbU3K"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b839c2295195b6f709213057",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b839c2295195b6f709213057",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b839c2295195b6f709213057",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "0Ayf3OU9LKp5dfJ6NYwJh0",
+                              "name": "Trailrunning - Ultrarunning Focus",
+                              "sharingInfo": {
+                                "shareId": "3E5l2PrkQk2GA6T1KADldA",
+                                "shareUrl": "https://open.spotify.com/album/0Ayf3OU9LKp5dfJ6NYwJh0?si=3E5l2PrkQk2GA6T1KADldA"
+                              },
+                              "uri": "spotify:album:0Ayf3OU9LKp5dfJ6NYwJh0"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b6761ad8becc396e4f876562",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b6761ad8becc396e4f876562",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b6761ad8becc396e4f876562",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "53G4hvfTSZp7uckPGJNPKB",
+                              "name": "Rock Jukebox",
+                              "sharingInfo": {
+                                "shareId": "VEkHwhuvQgicXVbuaSOmUQ",
+                                "shareUrl": "https://open.spotify.com/album/53G4hvfTSZp7uckPGJNPKB?si=VEkHwhuvQgicXVbuaSOmUQ"
+                              },
+                              "uri": "spotify:album:53G4hvfTSZp7uckPGJNPKB"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02701c7a32d63f1597bd76847a",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851701c7a32d63f1597bd76847a",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273701c7a32d63f1597bd76847a",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "6v30kgsiL9XrXy8N3q8bjF",
+                              "name": "Tranquilas en Inglés",
+                              "sharingInfo": {
+                                "shareId": "9FLTS0NvTia48FimfdJwpA",
+                                "shareUrl": "https://open.spotify.com/album/6v30kgsiL9XrXy8N3q8bjF?si=9FLTS0NvTia48FimfdJwpA"
+                              },
+                              "uri": "spotify:album:6v30kgsiL9XrXy8N3q8bjF"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e026aa118544c1c5f3db8c3485c",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048516aa118544c1c5f3db8c3485c",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2736aa118544c1c5f3db8c3485c",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "31PZzle2nuK0OlzRRhGlZw",
+                              "name": "Halloween Hits",
+                              "sharingInfo": {
+                                "shareId": "n2jCeC4dS3OEsKgZ_BLIMA",
+                                "shareUrl": "https://open.spotify.com/album/31PZzle2nuK0OlzRRhGlZw?si=n2jCeC4dS3OEsKgZ_BLIMA"
+                              },
+                              "uri": "spotify:album:31PZzle2nuK0OlzRRhGlZw"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02960afd3075b2b1b1df198091",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851960afd3075b2b1b1df198091",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273960afd3075b2b1b1df198091",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5aVlfOUW79tmtl3MgHJYa7",
+                              "name": "Pop Forward",
+                              "sharingInfo": {
+                                "shareId": "gXiCDq3NQa6b1WRT1cy_Ew",
+                                "shareUrl": "https://open.spotify.com/album/5aVlfOUW79tmtl3MgHJYa7?si=gXiCDq3NQa6b1WRT1cy_Ew"
+                              },
+                              "uri": "spotify:album:5aVlfOUW79tmtl3MgHJYa7"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02ddf055ce6f8f10bbdb8ae8ef",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851ddf055ce6f8f10bbdb8ae8ef",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273ddf055ce6f8f10bbdb8ae8ef",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "67JQK955zIW2dfPHAWAPrZ",
+                              "name": "Hits 2026",
+                              "sharingInfo": {
+                                "shareId": "Gen3-OHxRaWiACPuJV2BxQ",
+                                "shareUrl": "https://open.spotify.com/album/67JQK955zIW2dfPHAWAPrZ?si=Gen3-OHxRaWiACPuJV2BxQ"
+                              },
+                              "uri": "spotify:album:67JQK955zIW2dfPHAWAPrZ"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02eb33724e3a37b622acb159a3",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851eb33724e3a37b622acb159a3",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273eb33724e3a37b622acb159a3",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "4SiNHFjVyoVqyMoWAKejh7",
+                              "name": "Hit Rewind",
+                              "sharingInfo": {
+                                "shareId": "ek8vD7nNQs2qE0nr2bCvnQ",
+                                "shareUrl": "https://open.spotify.com/album/4SiNHFjVyoVqyMoWAKejh7?si=ek8vD7nNQs2qE0nr2bCvnQ"
+                              },
+                              "uri": "spotify:album:4SiNHFjVyoVqyMoWAKejh7"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02439c5af8df336da87220e1b7",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851439c5af8df336da87220e1b7",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273439c5af8df336da87220e1b7",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "4mLKJKA718bklMVI91jQJq",
+                              "name": "Dance Monkey - 10's All Out",
+                              "sharingInfo": {
+                                "shareId": "A5k65DefSLavGuj6iIKFhA",
+                                "shareUrl": "https://open.spotify.com/album/4mLKJKA718bklMVI91jQJq?si=A5k65DefSLavGuj6iIKFhA"
+                              },
+                              "uri": "spotify:album:4mLKJKA718bklMVI91jQJq"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b8dd5ab9068ac5c944697d9d",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b8dd5ab9068ac5c944697d9d",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b8dd5ab9068ac5c944697d9d",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "51GZscDvuR37yJ3DgFq7e8",
+                              "name": "booktok songs",
+                              "sharingInfo": {
+                                "shareId": "ni8Rtq9sSTStxkzQ509psQ",
+                                "shareUrl": "https://open.spotify.com/album/51GZscDvuR37yJ3DgFq7e8?si=ni8Rtq9sSTStxkzQ509psQ"
+                              },
+                              "uri": "spotify:album:51GZscDvuR37yJ3DgFq7e8"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02f5ecf394e00fb805eb91f896",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851f5ecf394e00fb805eb91f896",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273f5ecf394e00fb805eb91f896",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2AoEf1rchLU5AB2huThrGM",
+                              "name": "Pop - Top Shelf",
+                              "sharingInfo": {
+                                "shareId": "EXAFkhunRNSkJHp_zBKuuQ",
+                                "shareUrl": "https://open.spotify.com/album/2AoEf1rchLU5AB2huThrGM?si=EXAFkhunRNSkJHp_zBKuuQ"
+                              },
+                              "uri": "spotify:album:2AoEf1rchLU5AB2huThrGM"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02129f476429965e291a7fc63b",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851129f476429965e291a7fc63b",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273129f476429965e291a7fc63b",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "4LZeB8vJUEI1B9G9LcqhKt",
+                              "name": "10's - Best of the Decade",
+                              "sharingInfo": {
+                                "shareId": "LfneTjRgRsKa2FnX-gr2dw",
+                                "shareUrl": "https://open.spotify.com/album/4LZeB8vJUEI1B9G9LcqhKt?si=LfneTjRgRsKa2FnX-gr2dw"
+                              },
+                              "uri": "spotify:album:4LZeB8vJUEI1B9G9LcqhKt"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02616f887779c389f6bcdbe36d",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851616f887779c389f6bcdbe36d",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273616f887779c389f6bcdbe36d",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "21jZmKTUzEELezdV62en72",
+                              "name": "Clean Pop Music",
+                              "sharingInfo": {
+                                "shareId": "cwL06dNPSOKZoNReGON-rg",
+                                "shareUrl": "https://open.spotify.com/album/21jZmKTUzEELezdV62en72?si=cwL06dNPSOKZoNReGON-rg"
+                              },
+                              "uri": "spotify:album:21jZmKTUzEELezdV62en72"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0254cb58cb86fd5116ec03d7c8",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485154cb58cb86fd5116ec03d7c8",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27354cb58cb86fd5116ec03d7c8",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "799N1u3Ou1CiujxkBNn4DR",
+                              "name": "Shiny New Pop",
+                              "sharingInfo": {
+                                "shareId": "qzjWs1BGT86tvXK4N3l3fQ",
+                                "shareUrl": "https://open.spotify.com/album/799N1u3Ou1CiujxkBNn4DR?si=qzjWs1BGT86tvXK4N3l3fQ"
+                              },
+                              "uri": "spotify:album:799N1u3Ou1CiujxkBNn4DR"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e024eac5919dccf51da2c337203",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048514eac5919dccf51da2c337203",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2734eac5919dccf51da2c337203",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "01LYgsK4d74gVvEYs8YtJf",
+                              "name": "Pop Buzz!",
+                              "sharingInfo": {
+                                "shareId": "Po6tpgImSxuT2e2cWxIabA",
+                                "shareUrl": "https://open.spotify.com/album/01LYgsK4d74gVvEYs8YtJf?si=Po6tpgImSxuT2e2cWxIabA"
+                              },
+                              "uri": "spotify:album:01LYgsK4d74gVvEYs8YtJf"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e022b2c678fe81ff5bfd6193d57",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048512b2c678fe81ff5bfd6193d57",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2732b2c678fe81ff5bfd6193d57",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5PTjj5K9HVdz71CcPpR4yn",
+                              "name": "Take a Look at My Girlfriend",
+                              "sharingInfo": {
+                                "shareId": "qLQtDx46RgOOC7VIGSPjOg",
+                                "shareUrl": "https://open.spotify.com/album/5PTjj5K9HVdz71CcPpR4yn?si=qLQtDx46RgOOC7VIGSPjOg"
+                              },
+                              "uri": "spotify:album:5PTjj5K9HVdz71CcPpR4yn"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02a5b688d0fbb1fe1a105798f5",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851a5b688d0fbb1fe1a105798f5",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273a5b688d0fbb1fe1a105798f5",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "1cKhNpDH8mFE78emqw5Zo0",
+                              "name": "Era of Hits",
+                              "sharingInfo": {
+                                "shareId": "Ed1DVNf3TyK57piWlda63w",
+                                "shareUrl": "https://open.spotify.com/album/1cKhNpDH8mFE78emqw5Zo0?si=Ed1DVNf3TyK57piWlda63w"
+                              },
+                              "uri": "spotify:album:1cKhNpDH8mFE78emqw5Zo0"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02164ecc94029ec8d55617d0cd",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851164ecc94029ec8d55617d0cd",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273164ecc94029ec8d55617d0cd",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "7fH7vGgrWNWlwShmNNV8gA",
+                              "name": "Esenciales en inglés",
+                              "sharingInfo": {
+                                "shareId": "FJqDUEPsS4-wyO6_L_LOyA",
+                                "shareUrl": "https://open.spotify.com/album/7fH7vGgrWNWlwShmNNV8gA?si=FJqDUEPsS4-wyO6_L_LOyA"
+                              },
+                              "uri": "spotify:album:7fH7vGgrWNWlwShmNNV8gA"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02f0c5265308560607491b7ec7",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851f0c5265308560607491b7ec7",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273f0c5265308560607491b7ec7",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "4eT2g8p04qyoqa3uTlAam7",
+                              "name": "The Hits 10s",
+                              "sharingInfo": {
+                                "shareId": "ZMPhaCd-RWK43wk5CdLIRg",
+                                "shareUrl": "https://open.spotify.com/album/4eT2g8p04qyoqa3uTlAam7?si=ZMPhaCd-RWK43wk5CdLIRg"
+                              },
+                              "uri": "spotify:album:4eT2g8p04qyoqa3uTlAam7"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0264d9071e10faea098f15a5cb",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485164d9071e10faea098f15a5cb",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27364d9071e10faea098f15a5cb",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "7qLZPab5UAG2K6vaf2R02b",
+                              "name": "Summer Hits on Repeat",
+                              "sharingInfo": {
+                                "shareId": "QAKa0siPR-uiOo-a8DV-mQ",
+                                "shareUrl": "https://open.spotify.com/album/7qLZPab5UAG2K6vaf2R02b?si=QAKa0siPR-uiOo-a8DV-mQ"
+                              },
+                              "uri": "spotify:album:7qLZPab5UAG2K6vaf2R02b"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02163b157579d1fc870902a98b",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851163b157579d1fc870902a98b",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273163b157579d1fc870902a98b",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "1z1i8hZf6mpNkh6nSYcjnS",
+                              "name": "From Y2K to Today",
+                              "sharingInfo": {
+                                "shareId": "uJx9wF0LS0-N4vy6CsP5NA",
+                                "shareUrl": "https://open.spotify.com/album/1z1i8hZf6mpNkh6nSYcjnS?si=uJx9wF0LS0-N4vy6CsP5NA"
+                              },
+                              "uri": "spotify:album:1z1i8hZf6mpNkh6nSYcjnS"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e025f05300bcff17498ef83201f",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048515f05300bcff17498ef83201f",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2735f05300bcff17498ef83201f",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "7sTGKmrjtSzzUU9bmw94Lu",
+                              "name": "Estar Living",
+                              "sharingInfo": {
+                                "shareId": "VpTeXnvITSCpcElMx3hpAw",
+                                "shareUrl": "https://open.spotify.com/album/7sTGKmrjtSzzUU9bmw94Lu?si=VpTeXnvITSCpcElMx3hpAw"
+                              },
+                              "uri": "spotify:album:7sTGKmrjtSzzUU9bmw94Lu"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0235d9a65a7b5936422a0e98d0",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485135d9a65a7b5936422a0e98d0",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27335d9a65a7b5936422a0e98d0",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "4JQkACEydBZp7pshJvHA00",
+                              "name": "POP BEST HITS 2010s",
+                              "sharingInfo": {
+                                "shareId": "2TQUPMt5R8aS9M7BwuMw4Q",
+                                "shareUrl": "https://open.spotify.com/album/4JQkACEydBZp7pshJvHA00?si=2TQUPMt5R8aS9M7BwuMw4Q"
+                              },
+                              "uri": "spotify:album:4JQkACEydBZp7pshJvHA00"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Arcane"
+                                    },
+                                    "uri": "spotify:artist:0sW6ukT5wAk67l1GHrXVPT"
+                                  },
+                                  {
+                                    "profile": {
+                                      "name": "Emilien Levistre"
+                                    },
+                                    "uri": "spotify:artist:6qQkxW7ZA01TQEQ4OEyr2c"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0280b95ec3a4bd86a6f0f1b438",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485180b95ec3a4bd86a6f0f1b438",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27380b95ec3a4bd86a6f0f1b438",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "1wC3nRacyROpbBeYdIYRPj",
+                              "name": "A Night in Piltover",
+                              "sharingInfo": {
+                                "shareId": "PJIm4xqTTw6bqvy00IqJTw",
+                                "shareUrl": "https://open.spotify.com/album/1wC3nRacyROpbBeYdIYRPj?si=PJIm4xqTTw6bqvy00IqJTw"
+                              },
+                              "uri": "spotify:album:1wC3nRacyROpbBeYdIYRPj"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e029d7a58fe9604f14f92557022",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048519d7a58fe9604f14f92557022",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2739d7a58fe9604f14f92557022",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "6zXmGM2NhYOnLbtvByRRRq",
+                              "name": "Pop Deluxe",
+                              "sharingInfo": {
+                                "shareId": "JEgvDlF2RbS6OiKxFfIO2g",
+                                "shareUrl": "https://open.spotify.com/album/6zXmGM2NhYOnLbtvByRRRq?si=JEgvDlF2RbS6OiKxFfIO2g"
+                              },
+                              "uri": "spotify:album:6zXmGM2NhYOnLbtvByRRRq"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e020b5378c6f8a464e708fa48fb",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048510b5378c6f8a464e708fa48fb",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2730b5378c6f8a464e708fa48fb",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5ZmGbMPsO0W88xuz6X45iF",
+                              "name": "Hits Noviembre 2023",
+                              "sharingInfo": {
+                                "shareId": "qxxztfq4TfaYP2Mq8UNcnw",
+                                "shareUrl": "https://open.spotify.com/album/5ZmGbMPsO0W88xuz6X45iF?si=qxxztfq4TfaYP2Mq8UNcnw"
+                              },
+                              "uri": "spotify:album:5ZmGbMPsO0W88xuz6X45iF"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Arcane"
+                                    },
+                                    "uri": "spotify:artist:57nPqD7z62gDdq37US9XJR"
+                                  },
+                                  {
+                                    "profile": {
+                                      "name": "League of Legends"
+                                    },
+                                    "uri": "spotify:artist:47mIJdHORyRerp4os813jD"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048514aaf2413384c1efcc38353c6",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2734aaf2413384c1efcc38353c6",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2x6LWti2bjYS6AllSomoV7",
+                              "name": "Arcane League of Legends: Season 2 (Soundtrack from the Animated Series)",
+                              "sharingInfo": {
+                                "shareId": "yrSjvT5JRRuAL-4ZbN_Dkw",
+                                "shareUrl": "https://open.spotify.com/album/2x6LWti2bjYS6AllSomoV7?si=yrSjvT5JRRuAL-4ZbN_Dkw"
+                              },
+                              "uri": "spotify:album:2x6LWti2bjYS6AllSomoV7"
+                            }
+                          ],
+                          "totalCount": 2
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02762286504dd1329c34bd226b",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851762286504dd1329c34bd226b",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273762286504dd1329c34bd226b",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "2jP0U2n6mUdOeGs1kMNCg3",
+                              "name": "Hits 2025",
+                              "sharingInfo": {
+                                "shareId": "W2pOtjC_SsWHXAvLMG1TpA",
+                                "shareUrl": "https://open.spotify.com/album/2jP0U2n6mUdOeGs1kMNCg3?si=W2pOtjC_SsWHXAvLMG1TpA"
+                              },
+                              "uri": "spotify:album:2jP0U2n6mUdOeGs1kMNCg3"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e026848f0ef61972e8a0bed53bd",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048516848f0ef61972e8a0bed53bd",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2736848f0ef61972e8a0bed53bd",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "75Nx7rxFxvnEmj0dY1jGpa",
+                              "name": "100 Most Uplifting Songs Ever",
+                              "sharingInfo": {
+                                "shareId": "QsWGjKBvSAuS6Y2p37paRQ",
+                                "shareUrl": "https://open.spotify.com/album/75Nx7rxFxvnEmj0dY1jGpa?si=QsWGjKBvSAuS6Y2p37paRQ"
+                              },
+                              "uri": "spotify:album:75Nx7rxFxvnEmj0dY1jGpa"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e028f066bd8b10b175c4c634bea",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048518f066bd8b10b175c4c634bea",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2738f066bd8b10b175c4c634bea",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "3k0twva3pLIh944hHAqjwn",
+                              "name": "Pop Hits 2000 - 2024 - 100 Best Songs",
+                              "sharingInfo": {
+                                "shareId": "P0TZ4xVIQUOG_EV6r59qCA",
+                                "shareUrl": "https://open.spotify.com/album/3k0twva3pLIh944hHAqjwn?si=P0TZ4xVIQUOG_EV6r59qCA"
+                              },
+                              "uri": "spotify:album:3k0twva3pLIh944hHAqjwn"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e021c524c57d77d92b6d96025c5",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048511c524c57d77d92b6d96025c5",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2731c524c57d77d92b6d96025c5",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "7tQ5tQIxDSQwZKvqb7wXtu",
+                              "name": "Pop in Motion",
+                              "sharingInfo": {
+                                "shareId": "p4S-PhS0TZO-Up7RGfE9Hw",
+                                "shareUrl": "https://open.spotify.com/album/7tQ5tQIxDSQwZKvqb7wXtu?si=p4S-PhS0TZO-Up7RGfE9Hw"
+                              },
+                              "uri": "spotify:album:7tQ5tQIxDSQwZKvqb7wXtu"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0229e6d6efebcd8a0729e5139d",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485129e6d6efebcd8a0729e5139d",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27329e6d6efebcd8a0729e5139d",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "54qvGhgjHV2DNib9ziJDvr",
+                              "name": "Platinum Pop",
+                              "sharingInfo": {
+                                "shareId": "cklOR6TIQsilbAxSB-0uiA",
+                                "shareUrl": "https://open.spotify.com/album/54qvGhgjHV2DNib9ziJDvr?si=cklOR6TIQsilbAxSB-0uiA"
+                              },
+                              "uri": "spotify:album:54qvGhgjHV2DNib9ziJDvr"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e027e297585ca3f57f0b847df53",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048517e297585ca3f57f0b847df53",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2737e297585ca3f57f0b847df53",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "5LYndXZWHipdKeGQ3JSBeS",
+                              "name": "New Pop Frequencies",
+                              "sharingInfo": {
+                                "shareId": "Q2FGpsRlRLW38hBO9257Uw",
+                                "shareUrl": "https://open.spotify.com/album/5LYndXZWHipdKeGQ3JSBeS?si=Q2FGpsRlRLW38hBO9257Uw"
+                              },
+                              "uri": "spotify:album:5LYndXZWHipdKeGQ3JSBeS"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e026a0bf3193f4a3013ee1d2f54",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048516a0bf3193f4a3013ee1d2f54",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2736a0bf3193f4a3013ee1d2f54",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "72BfPAOFEbl1BWILdPpUwQ",
+                              "name": "Hyperwave Pop",
+                              "sharingInfo": {
+                                "shareId": "3kIg-La-SZ2Ct9oo0AZMAg",
+                                "shareUrl": "https://open.spotify.com/album/72BfPAOFEbl1BWILdPpUwQ?si=3kIg-La-SZ2Ct9oo0AZMAg"
+                              },
+                              "uri": "spotify:album:72BfPAOFEbl1BWILdPpUwQ"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "artists": {
+                                "items": [
+                                  {
+                                    "profile": {
+                                      "name": "Various Artists"
+                                    },
+                                    "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                                  }
+                                ]
+                              },
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0243c2d8c8dbdad222e335a341",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485143c2d8c8dbdad222e335a341",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27343c2d8c8dbdad222e335a341",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "id": "00i7olh8WYBz80GYr1AQAz",
+                              "name": "HIT SONGS ONLY",
+                              "sharingInfo": {
+                                "shareId": "SSgabACJQra7w0QUi-hEag",
+                                "shareUrl": "https://open.spotify.com/album/00i7olh8WYBz80GYr1AQAz?si=SSgabACJQra7w0QUi-hEag"
+                              },
+                              "uri": "spotify:album:00i7olh8WYBz80GYr1AQAz"
+                            }
+                          ],
+                          "totalCount": 1
+                        }
+                      }
+                    ],
+                    "totalCount": 1724
+                  }
+                },
+                "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+              }
+            }
+          }

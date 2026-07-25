@@ -1,0 +1,87 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: Follow
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_gql_url}}"
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "playlistItemUris": [
+            "spotify:track:43ee3gqWBlPKe2MeGJ2S6I"
+          ],
+          "playlistUri": "spotify:playlist:26ElOYDflVLcKEH4ngO6Kj",
+          "newPosition": {
+            "moveType": "BOTTOM_OF_PLAYLIST",
+            "fromUid": null
+          }
+        },
+        "operationName": "addToPlaylist",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "47b2a1234b17748d332dd0431534f22450e9ecbb3d5ddcdacbd83368636a0990"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_gql_url}}"
+      method: POST
+      headers:
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uris": [
+                "spotify:playlist:37i9dQZF1E4oLwlqvXisyU"
+              ]
+            },
+            "operationName": "addItemsToRootlist",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "bd9c5cae1ee80ebca05d7ed12fd394216f49a20ce72d9dc762868df0f14522ea"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      body:
+        type: text
+        data: '{"data":{"addItemsToRootlist":{"__typename":"RootlistItemMutationResult"}}}'

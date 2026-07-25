@@ -1,0 +1,2304 @@
+{
+  "data": {
+    "playlistV2": {
+      "__typename": "Playlist",
+      "content": {
+        "__typename": "PlaylistItemsPage",
+        "items": [
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Twenty One Pilots"
+                        },
+                        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Blurryface",
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 214506
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Ride",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1991185676",
+                "trackNumber": 3,
+                "uri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW"
+              }
+            },
+            "uid": "65366334663265623737346263353761"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Arctic Monkeys"
+                        },
+                        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "AM",
+                  "uri": "spotify:album:78bpIziExqiI9qztvNFlQu"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Arctic Monkeys"
+                      },
+                      "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 183956
+                },
+                "mediaType": "UNKNOWN",
+                "name": "I Wanna Be Yours",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "3060888083",
+                "trackNumber": 12,
+                "uri": "spotify:track:5XeFesFbtLpXzIVDNQP22n"
+              }
+            },
+            "uid": "64356266613131396631373764326438"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Foster The People"
+                        },
+                        "uri": "spotify:artist:7gP3bB2nilZXLfPHJhMdvc"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02121d5f92cf90576907dfb1e5",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851121d5f92cf90576907dfb1e5",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273121d5f92cf90576907dfb1e5",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Torches",
+                  "uri": "spotify:album:7Kmmw7Z5D2UD5MVwdm10sT"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Foster The People"
+                      },
+                      "uri": "spotify:artist:7gP3bB2nilZXLfPHJhMdvc"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 239600
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Pumped Up Kicks",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2172576539",
+                "trackNumber": 2,
+                "uri": "spotify:track:7w87IxuO7BDcJ3YUqCyMTT"
+              }
+            },
+            "uid": "38323764363134356331363930643461"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Surf Curse"
+                        },
+                        "uri": "spotify:artist:1gl0S9pS0Zw0qfa14rDD3D"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e029efda673310de265a2c1cf1f",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048519efda673310de265a2c1cf1f",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739efda673310de265a2c1cf1f",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Freaks",
+                  "uri": "spotify:album:5WjaIWthUR3AjA0UYG3jR5"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Surf Curse"
+                      },
+                      "uri": "spotify:artist:1gl0S9pS0Zw0qfa14rDD3D"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 147062
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Freaks",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1424987579",
+                "trackNumber": 1,
+                "uri": "spotify:track:7EkWXAI1wn8Ii883ecd9xr"
+              }
+            },
+            "uid": "63323339336131643430656536383232"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Cage The Elephant"
+                        },
+                        "uri": "spotify:artist:26T3LtbuGT1Fu9m0eRq5X3"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02fb1cb900d28642e668d77b12",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851fb1cb900d28642e668d77b12",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Melophobia",
+                  "uri": "spotify:album:4EK8gtQfdVsmDTji7gBFlz"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Cage The Elephant"
+                      },
+                      "uri": "spotify:artist:26T3LtbuGT1Fu9m0eRq5X3"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 208760
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Cigarette Daydreams",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1191220671",
+                "trackNumber": 10,
+                "uri": "spotify:track:2tznHmp70DxMyr2XhWLOW0"
+              }
+            },
+            "uid": "66646562626439343939333030346561"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Twenty One Pilots"
+                        },
+                        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e022ca3ba8f334ca5a5f0312efb",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048512ca3ba8f334ca5a5f0312efb",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732ca3ba8f334ca5a5f0312efb",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Heathens",
+                  "uri": "spotify:album:3J8W9AOjQhnBLCX33m3atT"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 195920
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Heathens",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2011272346",
+                "trackNumber": 1,
+                "uri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+              }
+            },
+            "uid": "30636236333963353862303633303237"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Capital Cities"
+                        },
+                        "uri": "spotify:artist:4gwpcMTbLWtBUlOijbVpuu"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02b03e92f4e7dcd9db3a06c869",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851b03e92f4e7dcd9db3a06c869",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273b03e92f4e7dcd9db3a06c869",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "In A Tidal Wave of Mystery",
+                  "uri": "spotify:album:3rLiil7YBkoGXLrFtwYcju"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Capital Cities"
+                      },
+                      "uri": "spotify:artist:4gwpcMTbLWtBUlOijbVpuu"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 192789
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Safe and Sound",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1605887691",
+                "trackNumber": 1,
+                "uri": "spotify:track:5JVbvCHX10U2pLa5DEqGav"
+              }
+            },
+            "uid": "33363137343230366331303766643939"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Arctic Monkeys"
+                        },
+                        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02b1f8da74f225fa1225cdface",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851b1f8da74f225fa1225cdface",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273b1f8da74f225fa1225cdface",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Favourite Worst Nightmare",
+                  "uri": "spotify:album:1XkGORuUX2QGOEIL4EbJKm"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Arctic Monkeys"
+                      },
+                      "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 253586
+                },
+                "mediaType": "UNKNOWN",
+                "name": "505",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2243923730",
+                "trackNumber": 12,
+                "uri": "spotify:track:0BxE4FqsDD1Ot4YuBXwAPp"
+              }
+            },
+            "uid": "39373864626465636630333330393862"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Beach Weather"
+                        },
+                        "uri": "spotify:artist:7I3bkknknQkIiatWiupQgD"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02037e3cc2b0c60ecb5ee7eca5",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851037e3cc2b0c60ecb5ee7eca5",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273037e3cc2b0c60ecb5ee7eca5",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Pineapple Sunrise",
+                  "uri": "spotify:album:7gA8QSNSZvHUYC9feFpeLj"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Beach Weather"
+                      },
+                      "uri": "spotify:artist:7I3bkknknQkIiatWiupQgD"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 196784
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Sex, Drugs, Etc.",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1194139132",
+                "trackNumber": 11,
+                "uri": "spotify:track:7MlDNspYwfqnHxORufupwq"
+              }
+            },
+            "uid": "36653636376238353265353563356139"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "WALK THE MOON"
+                        },
+                        "uri": "spotify:artist:6DIS6PRrLS3wbnZsf7vYic"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0243294cfa2688055c9d821bf3",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485143294cfa2688055c9d821bf3",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27343294cfa2688055c9d821bf3",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "TALKING IS HARD",
+                  "uri": "spotify:album:3mNoFlD1wsoXfkljfFzExT"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "WALK THE MOON"
+                      },
+                      "uri": "spotify:artist:6DIS6PRrLS3wbnZsf7vYic"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 199080
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Shut Up and Dance",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2077640598",
+                "trackNumber": 3,
+                "uri": "spotify:track:4kbj5MwxO1bq9wjT5g9HaA"
+              }
+            },
+            "uid": "62623161353664633265613464646166"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Twenty One Pilots"
+                        },
+                        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Blurryface",
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 202333
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Stressed Out",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2664365704",
+                "trackNumber": 2,
+                "uri": "spotify:track:3CRDbSIZ4r5MsZ0YwxuEkn"
+              }
+            },
+            "uid": "65363232363032666262633637653262"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Fitz and The Tantrums"
+                        },
+                        "uri": "spotify:artist:4AcHt3JxKy59IX7JNNlZn4"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02504eb0a2e404c1e538cc6c29",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851504eb0a2e404c1e538cc6c29",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273504eb0a2e404c1e538cc6c29",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Out of My League",
+                  "uri": "spotify:album:5MAlo86ggKHtumwFZPdii2"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Fitz and The Tantrums"
+                      },
+                      "uri": "spotify:artist:4AcHt3JxKy59IX7JNNlZn4"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 209386
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Out of My League",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "909096092",
+                "trackNumber": 1,
+                "uri": "spotify:track:5qEn8c0MBzyRKgQq91Vevi"
+              }
+            },
+            "uid": "39313836666336313938333363393739"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Vance Joy"
+                        },
+                        "uri": "spotify:artist:10exVja0key0uqUkk6LJRT"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e027cffb8896928039a0a10e4e7",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048517cffb8896928039a0a10e4e7",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2737cffb8896928039a0a10e4e7",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Dream Your Life Away (Deluxe Edition)",
+                  "uri": "spotify:album:2biVG6BYnVVSwLYd1OjbPT"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Vance Joy"
+                      },
+                      "uri": "spotify:artist:10exVja0key0uqUkk6LJRT"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 204280
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Riptide",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "3115122936",
+                "trackNumber": 4,
+                "uri": "spotify:track:2uXlHCUbq9OMUwx3hrk06o"
+              }
+            },
+            "uid": "65306262303364376661323938326264"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "My Chemical Romance"
+                        },
+                        "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0217f77fab7e8f18d5f9fee4a1",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485117f77fab7e8f18d5f9fee4a1",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27317f77fab7e8f18d5f9fee4a1",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "The Black Parade",
+                  "uri": "spotify:album:0FZK97MXMm5mUQ8mtudjuK"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "My Chemical Romance"
+                      },
+                      "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 161920
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Teenagers",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1121279581",
+                "trackNumber": 11,
+                "uri": "spotify:track:7j31rVgGX9Q2blT92VBEA0"
+              }
+            },
+            "uid": "30373034663133613661376464613864"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Killers"
+                        },
+                        "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ccdddd46119a4ff53eaf1f5d",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851ccdddd46119a4ff53eaf1f5d",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ccdddd46119a4ff53eaf1f5d",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Hot Fuss",
+                  "uri": "spotify:album:4piJq7R3gjUOxnYs6lDCTg"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "The Killers"
+                      },
+                      "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 222973
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Mr. Brightside",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2637413389",
+                "trackNumber": 2,
+                "uri": "spotify:track:003vvx7Niy0yvhvHt4a68B"
+              }
+            },
+            "uid": "66336262326630383766633833636264"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Twenty One Pilots"
+                        },
+                        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Trench",
+                  "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 229120
+                },
+                "mediaType": "UNKNOWN",
+                "name": "My Blood",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "309980795",
+                "trackNumber": 4,
+                "uri": "spotify:track:5HeKOKc4phmLn8e4I7EkzD"
+              }
+            },
+            "uid": "66353865303062343762636136646231"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Coldplay"
+                        },
+                        "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851e21cc1db05580b6f2d2a3b6e",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Viva La Vida or Death and All His Friends",
+                  "uri": "spotify:album:1CEODgTmTwLyabvwd7HBty"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Coldplay"
+                      },
+                      "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 242373
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Viva La Vida",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2772335475",
+                "trackNumber": 7,
+                "uri": "spotify:track:1mea3bSkSGXuIRvnydlB5b"
+              }
+            },
+            "uid": "62343332653063666237663630303364"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "OneRepublic"
+                        },
+                        "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e029e2f95ae77cf436017ada9cb",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048519e2f95ae77cf436017ada9cb",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739e2f95ae77cf436017ada9cb",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Native",
+                  "uri": "spotify:album:20lOt6G8MHv8ZO7ViOmiP7"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "OneRepublic"
+                      },
+                      "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 257265
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Counting Stars",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2978555518",
+                "trackNumber": 1,
+                "uri": "spotify:track:2tpWsVSb9UEmDRxAl1zhX1"
+              }
+            },
+            "uid": "65346138626639353162366363663366"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Arctic Monkeys"
+                        },
+                        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "AM",
+                  "uri": "spotify:album:78bpIziExqiI9qztvNFlQu"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Arctic Monkeys"
+                      },
+                      "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 161123
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Why'd You Only Call Me When You're High?",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "2054035704",
+                "trackNumber": 9,
+                "uri": "spotify:track:086myS9r57YsLbJpU0TgK9"
+              }
+            },
+            "uid": "62353539366239633435316562343339"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Offspring"
+                        },
+                        "uri": "spotify:artist:5LfGQac0EIXyAN8aUwmNAQ"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02890ce61533a89e00ce593fcb",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851890ce61533a89e00ce593fcb",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273890ce61533a89e00ce593fcb",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Rise And Fall, Rage And Grace",
+                  "uri": "spotify:album:67v63ubEsvDUQkYMzI7A9t"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "The Offspring"
+                      },
+                      "uri": "spotify:artist:5LfGQac0EIXyAN8aUwmNAQ"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "EXPLICIT"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 177826
+                },
+                "mediaType": "UNKNOWN",
+                "name": "You're Gonna Go Far, Kid",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "1188044439",
+                "trackNumber": 3,
+                "uri": "spotify:track:6TfBA04WJ3X1d1wXhaCFVT"
+              }
+            },
+            "uid": "36663562373038323463326166333063"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Twenty One Pilots"
+                        },
+                        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Blurryface",
+                  "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 188493
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Tear in My Heart",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "621241420",
+                "trackNumber": 5,
+                "uri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+              }
+            },
+            "uid": "62356466346233626639383035353535"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Neighbourhood"
+                        },
+                        "uri": "spotify:artist:77SW9BnxLY8rJ0RciFqkHh"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e028265a736a1eb838ad5a0b921",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048518265a736a1eb838ad5a0b921",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2738265a736a1eb838ad5a0b921",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "I Love You.",
+                  "uri": "spotify:album:4xkM0BwLM9H2IUcbYzpcBI"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "The Neighbourhood"
+                      },
+                      "uri": "spotify:artist:77SW9BnxLY8rJ0RciFqkHh"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 240400
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Sweater Weather",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "3795662311",
+                "trackNumber": 4,
+                "uri": "spotify:track:2QjOHCTQ1Jl3zawyYOpxh6"
+              }
+            },
+            "uid": "38313231653830326664333431343031"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Måneskin"
+                        },
+                        "uri": "spotify:artist:0lAWpj5szCSwM4rUMHYmrr"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02c1b211b5fcdef31be5f806df",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851c1b211b5fcdef31be5f806df",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273c1b211b5fcdef31be5f806df",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "RUSH!",
+                  "uri": "spotify:album:2KUaR4K36tSliwAoUA1gcs"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Måneskin"
+                      },
+                      "uri": "spotify:artist:0lAWpj5szCSwM4rUMHYmrr"
+                    },
+                    {
+                      "profile": {
+                        "name": "Tom Morello"
+                      },
+                      "uri": "spotify:artist:74NBPbyyftqJ4SpDZ4c1Ed"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "EXPLICIT"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 168280
+                },
+                "mediaType": "UNKNOWN",
+                "name": "GOSSIP (feat. Tom Morello)",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "359311376",
+                "trackNumber": 2,
+                "uri": "spotify:track:44Xyja7xYPlVC6v2CeweSi"
+              }
+            },
+            "uid": "33376231363666633837613939386631"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Rare Occasions"
+                        },
+                        "uri": "spotify:artist:1QfpRUtH14JLoY6F6AYmwt"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02598721fc8c9dde3f65a73a08",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851598721fc8c9dde3f65a73a08",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273598721fc8c9dde3f65a73a08",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Notion",
+                  "uri": "spotify:album:4Uf8BVznefnd2xZm2nRFUx"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "The Rare Occasions"
+                      },
+                      "uri": "spotify:artist:1QfpRUtH14JLoY6F6AYmwt"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 195120
+                },
+                "mediaType": "UNKNOWN",
+                "name": "Notion",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "782004549",
+                "trackNumber": 1,
+                "uri": "spotify:track:0sTlGEld0h8kIPZaKDYUf4"
+              }
+            },
+            "uid": "38623361373236653132636262353631"
+          },
+          {
+            "addedAt": {
+              "isoString": "1970-01-01T00:00:00Z"
+            },
+            "addedBy": null,
+            "attributes": [
+              {
+                "key": "decision_id",
+                "value": "ssp~0636458292310c4ce0db03ac6a029be021a4"
+              }
+            ],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "albumOfTrack": {
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Two Door Cinema Club"
+                        },
+                        "uri": "spotify:artist:536BYVgOnRky0xjsPT96zl"
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02852930b799f484bf60faacb2",
+                        "width": 300
+                      },
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851852930b799f484bf60faacb2",
+                        "width": 64
+                      },
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273852930b799f484bf60faacb2",
+                        "width": 640
+                      }
+                    ]
+                  },
+                  "name": "Tourist History",
+                  "uri": "spotify:album:7DxmOS2dKJgTfLLRNOP4ch"
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "profile": {
+                        "name": "Two Door Cinema Club"
+                      },
+                      "uri": "spotify:artist:536BYVgOnRky0xjsPT96zl"
+                    }
+                  ]
+                },
+                "associationsV3": {
+                  "audioAssociations": {
+                    "__typename": "TrackAudioAssociationPage",
+                    "items": []
+                  },
+                  "videoAssociations": {
+                    "totalCount": 0
+                  }
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "discNumber": 1,
+                "trackDuration": {
+                  "totalMilliseconds": 191400
+                },
+                "mediaType": "UNKNOWN",
+                "name": "What You Know",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "playcount": "990795267",
+                "trackNumber": 8,
+                "uri": "spotify:track:4iZxeyibg6w4EFCOoAQ6Eh"
+              }
+            },
+            "uid": "39613830306530336133626537313535"
+          }
+        ],
+        "pagingInfo": {
+          "limit": 25,
+          "offset": 0
+        },
+        "totalCount": 50
+      },
+      "attributes": [
+        {
+          "key": "request_id",
+          "value": "ssp~063643d49409aa609b13d6d0a96a9025c35b"
+        },
+        {
+          "key": "madeFor.username",
+          "value": "31s6wf7qw4nhdqibvetysvx2rise"
+        },
+        {
+          "key": "correlation-id",
+          "value": "ssp~063643d49409aa609b13d6d0a96a9025c35b"
+        }
+      ],
+      "basePermission": "VIEWER",
+      "currentUserCapabilities": {
+        "canAdministratePermissions": false,
+        "canCancelMembership": false,
+        "canEditItems": false,
+        "canView": true
+      },
+      "description": "With Arctic Monkeys, Cage The Elephant, AJR and more",
+      "followers": 215783,
+      "following": false,
+      "format": "inspiredby-mix",
+      "images": {
+        "items": [
+          {
+            "extractedColors": {
+              "colorRaw": {
+                "hex": "#60C0F8",
+                "isFallback": false
+              }
+            },
+            "sources": [
+              {
+                "height": null,
+                "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3YQKmKGau1PzlVlkL1iodx/en-GB",
+                "width": null
+              }
+            ]
+          }
+        ]
+      },
+      "members": {
+        "items": [
+          {
+            "isOwner": true,
+            "permissionLevel": "CONTRIBUTOR",
+            "user": {
+              "data": {
+                "__typename": "User",
+                "avatar": {
+                  "sources": [
+                    {
+                      "height": 64,
+                      "url": "https://i.scdn.co/image/ab67757000003b8255c25988a6ac314394d3fbf5",
+                      "width": 64
+                    },
+                    {
+                      "height": 300,
+                      "url": "https://i.scdn.co/image/ab6775700000ee8555c25988a6ac314394d3fbf5",
+                      "width": 300
+                    }
+                  ]
+                },
+                "name": "Spotify",
+                "uri": "spotify:user:spotify",
+                "username": "spotify"
+              }
+            }
+          }
+        ],
+        "totalCount": 1
+      },
+      "name": "Twenty One Pilots Radio",
+      "ownerV2": {
+        "data": {
+          "__typename": "User",
+          "avatar": {
+            "sources": [
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67757000003b8255c25988a6ac314394d3fbf5",
+                "width": 64
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab6775700000ee8555c25988a6ac314394d3fbf5",
+                "width": 300
+              }
+            ]
+          },
+          "name": "Spotify",
+          "uri": "spotify:user:spotify",
+          "username": "spotify"
+        }
+      },
+      "revisionId": "aDg4AQAAAAC08q6EF2I3Ud5otuO2L2sJ",
+      "sharingInfo": {
+        "shareId": "wWc33i7XSeiLR6Lf0wOYIA",
+        "shareUrl": "https://open.spotify.com/playlist/37i9dQZF1E4yrYiQJfy370?si=wWc33i7XSeiLR6Lf0wOYIA"
+      },
+      "uri": "spotify:playlist:37i9dQZF1E4yrYiQJfy370",
+      "watchFeedEntrypoint": null
+    }
+  },
+  "extensions": {}
+}

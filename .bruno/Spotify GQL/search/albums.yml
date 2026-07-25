@@ -1,0 +1,1694 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: albums
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+          "variables": {
+              "includePreReleases": false,
+              "numberOfTopResults": 20,
+              "searchTerm": "twenty one pilots",
+              "offset": 0,
+              "limit": 30,
+              "includeAudiobooks": true,
+              "includeAuthors": false
+          },
+          "operationName": "searchAlbums",
+          "extensions": {
+              "persistedQuery": {
+                  "version": 1,
+                  "sha256Hash": "a71d2c993fc98e1c880093738a55a38b57e69cc4ce5a8c113e6c5920f9513ee2"
+              }
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: albums
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "includePreReleases": false,
+                  "numberOfTopResults": 20,
+                  "searchTerm": "twenty one pilots",
+                  "offset": 0,
+                  "limit": 30,
+                  "includeAudiobooks": true,
+                  "includeAuthors": false
+              },
+              "operationName": "searchAlbums",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "a71d2c993fc98e1c880093738a55a38b57e69cc4ce5a8c113e6c5920f9513ee2"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: access-control-allow-origin
+          value: "*"
+        - name: access-control-allow-headers
+          value: Accept, App-Platform, Authorization, client-token, content-access-token, Content-Type, Origin, Retry-After, SPA-Preferred-Publisher, Spotify-App, Spotify-App-Version, spotify-org-uri, X-ClientAttribute-Version, X-Client-Id, x-cloud-trace-context, X-Cloud-Trace-Context, X-Geo-Country, X-Installation-Id, x-permission-grant-token, X-Spotify-Additional-Idp, X-Spotify-Connection-Id, X-Spotify-Quicksilver-Uri, x-twitch-jwt
+        - name: access-control-allow-methods
+          value: POST, GET, OPTIONS, PUT, HEAD, DELETE, PATCH
+        - name: access-control-allow-credentials
+          value: "true"
+        - name: access-control-max-age
+          value: "604800"
+        - name: content-encoding
+          value: gzip
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: date
+          value: Fri, 30 May 2025 14:07:27 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: Transfer-Encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "searchV2": {
+                      "albumsV2": {
+                          "items": [
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D14631",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2015
+                                      },
+                                      "name": "Blurryface",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#C80810",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e022ca3ba8f334ca5a5f0312efb",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048512ca3ba8f334ca5a5f0312efb",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2732ca3ba8f334ca5a5f0312efb",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2016
+                                      },
+                                      "name": "Heathens",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:3J8W9AOjQhnBLCX33m3atT"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#527D83",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02ca964f2c3c069b3fb9ec11be",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851ca964f2c3c069b3fb9ec11be",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273ca964f2c3c069b3fb9ec11be",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2021
+                                      },
+                                      "name": "Scaled And Icy",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:0Q5XBpCYFgUWiG9DUWyAmJ"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D44233",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2024
+                                      },
+                                      "name": "Clancy",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#757582",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e026caad685af37c08063be928d",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048516caad685af37c08063be928d",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2736caad685af37c08063be928d",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2013
+                                      },
+                                      "name": "Vessel",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:2r2r78NE05YjyHyVbVgqFn"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#485040",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2018
+                                      },
+                                      "name": "Trench",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D44233",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02cc44556f98351de3b6047498",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851cc44556f98351de3b6047498",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273cc44556f98351de3b6047498",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2024
+                                      },
+                                      "name": "The Craving",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:7K7eWZNR5t9UBlrN2ltzLI"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#7D791A",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02ab2f8973949159695f65df7b",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851ab2f8973949159695f65df7b",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273ab2f8973949159695f65df7b",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2020
+                                      },
+                                      "name": "Level of Concern",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:4h3HXlnt6lryGzGbWmcFuY"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#2070B0",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e0262b60bfe9b3344965cfad6a8",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000485162b60bfe9b3344965cfad6a8",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b27362b60bfe9b3344965cfad6a8",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2021
+                                      },
+                                      "name": "Scaled And Icy (Livestream Version)",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:1B61NzknoGqafMfKLY7QtZ"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#1F7DB0",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e021de7ba86b187e313664da77a",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048511de7ba86b187e313664da77a",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2731de7ba86b187e313664da77a",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2023
+                                      },
+                                      "name": "MTV Unplugged (Live)",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:2kAer61g2HN6upL2zXAjzd"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#667F24",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02c349390bd863bf173eb077e9",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851c349390bd863bf173eb077e9",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273c349390bd863bf173eb077e9",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2009
+                                      },
+                                      "name": "Twenty One Pilots",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:6rgWZP4QFBjEFF0n6JWEOa"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#C94F41",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e029b0aa15c3f5e17fa8281aec7",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048519b0aa15c3f5e17fa8281aec7",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2739b0aa15c3f5e17fa8281aec7",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2025
+                                      },
+                                      "name": "Doubt (demo)",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:5qkGe4UpUa8dsokzuroQ72"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              },
+                                              {
+                                                  "profile": {
+                                                      "name": "Arcane"
+                                                  },
+                                                  "uri": "spotify:artist:57nPqD7z62gDdq37US9XJR"
+                                              },
+                                              {
+                                                  "profile": {
+                                                      "name": "League of Legends"
+                                                  },
+                                                  "uri": "spotify:artist:47mIJdHORyRerp4os813jD"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#003060",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e028a577010b0baa62c836e330b",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048518a577010b0baa62c836e330b",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2738a577010b0baa62c836e330b",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2024
+                                      },
+                                      "name": "The Line (from the series Arcane League of Legends)",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:4aE8ZrEif8MgWvFNIbz8I6"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D44233",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e0299bb3f025c3c637945080979",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000485199bb3f025c3c637945080979",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b27399bb3f025c3c637945080979",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2024
+                                      },
+                                      "name": "Overcompensate",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:5ZSqGFLuXUJUlIObSkN0Bz"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D14638",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02e53b78c6970bc2b206c78247",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851e53b78c6970bc2b206c78247",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273e53b78c6970bc2b206c78247",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2015
+                                      },
+                                      "name": "Ride",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:7L5AQ3eJDFyCaUODlzUWFT"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D04028",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e020fde79bfa5e23cb9cbdcd142",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048510fde79bfa5e23cb9cbdcd142",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2730fde79bfa5e23cb9cbdcd142",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2016
+                                      },
+                                      "name": "Cancer",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:22uQ3YSLjQJPNPkZQzdX2y"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Twenty One Pilots"
+                                                  },
+                                                  "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#D83E27",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02aa53cf116c616b262b59742a",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851aa53cf116c616b262b59742a",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273aa53cf116c616b262b59742a",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2016
+                                      },
+                                      "name": "TOPxMM",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "EP",
+                                      "uri": "spotify:album:1UIKUO8x3xAkQBnJghN41m"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Imagine Dragons"
+                                                  },
+                                                  "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#184060",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048515675e83f707f1d7271e5cf8a",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2017
+                                      },
+                                      "name": "Evolve",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:33pt9HBdGlAbRGBHQgsZsU"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Aftermath"
+                                                  },
+                                                  "uri": "spotify:artist:79iOqoOkavfzftyQjx21qp"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#B82028",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e024dd06369d05f36b910992b0d",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048514dd06369d05f36b910992b0d",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2734dd06369d05f36b910992b0d",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2021
+                                      },
+                                      "name": "Jed",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:7BIpxVzZrxj0r7dczRoJyK"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Aftermath"
+                                                  },
+                                                  "uri": "spotify:artist:79iOqoOkavfzftyQjx21qp"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#535353",
+                                                  "isFallback": true
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02102b676a4fc71447a2998c39",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851102b676a4fc71447a2998c39",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273102b676a4fc71447a2998c39",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2019
+                                      },
+                                      "name": "Moho",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:4LcS0FVjTgbOUl8E8EzQXg"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Ashes Bangladesh"
+                                                  },
+                                                  "uri": "spotify:artist:7dHv80FOCQj8SoWjREiojc"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#0860B8",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02eeabef21b0a957774cfc1853",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851eeabef21b0a957774cfc1853",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273eeabef21b0a957774cfc1853",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2024
+                                      },
+                                      "name": "Antosharshunno",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "EP",
+                                      "uri": "spotify:album:1P850go1ftPOLLXlim57G8"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "HIGHWAY"
+                                                  },
+                                                  "uri": "spotify:artist:62mZpB59RHyxLGNesP78Vg"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#387DA2",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02833d875f249e1efa49b56d31",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851833d875f249e1efa49b56d31",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273833d875f249e1efa49b56d31",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2016
+                                      },
+                                      "name": "Obosthan",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "SINGLE",
+                                      "uri": "spotify:album:3G19EnZhjQSyEGW1q5OQUq"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Ashes Bangladesh"
+                                                  },
+                                                  "uri": "spotify:artist:7dHv80FOCQj8SoWjREiojc"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#535353",
+                                                  "isFallback": true
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e029bc1d2af8fc32363f5f0e3a9",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048519bc1d2af8fc32363f5f0e3a9",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2739bc1d2af8fc32363f5f0e3a9",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2014
+                                      },
+                                      "name": "Charpoka",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:2PjGbiaHguVd2Q4ihXokdj"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Balam"
+                                                  },
+                                                  "uri": "spotify:artist:5io6IfbYy6t9IBtzYdOwN9"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#784060",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e0232c9930a6d47779dce6db1ea",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000485132c9930a6d47779dce6db1ea",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b27332c9930a6d47779dce6db1ea",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2008
+                                      },
+                                      "name": "Balam",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:7nvSTx0RbN7Z5gGnHmGPDx"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Popeye Bangladesh"
+                                                  },
+                                                  "uri": "spotify:artist:1tOl4RqWQOpbUiKqnP14GF"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#347F97",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02ff6da521e0cf5a9633ec6442",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851ff6da521e0cf5a9633ec6442",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273ff6da521e0cf5a9633ec6442",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2013
+                                      },
+                                      "name": "Ja Ichche Ta",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:59UftcMPrvkk10tbNsxyvB"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Tahsan"
+                                                  },
+                                                  "uri": "spotify:artist:69Tu9c0t0IOf0ipXnE74sQ"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#084850",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e0238b887e1ed8b9e426cfd022f",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000485138b887e1ed8b9e426cfd022f",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b27338b887e1ed8b9e426cfd022f",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2008
+                                      },
+                                      "name": "Ichche",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:0NMxTm1LT82lTfulaadLOd"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Shironamhin"
+                                                  },
+                                                  "uri": "spotify:artist:3zoceu8YD9dVjL4jaleJLg"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#383838",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02fd8f4f725e5a0c0c00d7885b",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851fd8f4f725e5a0c0c00d7885b",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273fd8f4f725e5a0c0c00d7885b",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2023
+                                      },
+                                      "name": "Perfume",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:6CL5dmZep8ThOIisw1vWR7"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Shunno"
+                                                  },
+                                                  "uri": "spotify:artist:2S7h1jilqmzK8iyU47nmSk"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#406830",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e02501261bb7b4afab32ef76174",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d00004851501261bb7b4afab32ef76174",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b273501261bb7b4afab32ef76174",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2011
+                                      },
+                                      "name": "Gorbo Bangladesh",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:0nAuXmUo9SZSLSgfeQdOfO"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Warfaze"
+                                                  },
+                                                  "uri": "spotify:artist:06eRdiCBgFUhiuFjei0eH2"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#C82010",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e028bda827ccf789af57e9587b1",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d000048518bda827ccf789af57e9587b1",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b2738bda827ccf789af57e9587b1",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2009
+                                      },
+                                      "name": "Pothchola",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:514MmB9zuWlAK3EEOwRiUu"
+                                  }
+                              },
+                              {
+                                  "__typename": "AlbumResponseWrapper",
+                                  "data": {
+                                      "__typename": "Album",
+                                      "artists": {
+                                          "items": [
+                                              {
+                                                  "profile": {
+                                                      "name": "Shonar Bangla Circus"
+                                                  },
+                                                  "uri": "spotify:artist:0VunpVWO2MCBMR1qwGRWzh"
+                                              }
+                                          ]
+                                      },
+                                      "coverArt": {
+                                          "extractedColors": {
+                                              "colorDark": {
+                                                  "hex": "#101840",
+                                                  "isFallback": false
+                                              }
+                                          },
+                                          "sources": [
+                                              {
+                                                  "height": 300,
+                                                  "url": "https://i.scdn.co/image/ab67616d00001e0205e6c12af5da92123c9f40eb",
+                                                  "width": 300
+                                              },
+                                              {
+                                                  "height": 64,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000485105e6c12af5da92123c9f40eb",
+                                                  "width": 64
+                                              },
+                                              {
+                                                  "height": 640,
+                                                  "url": "https://i.scdn.co/image/ab67616d0000b27305e6c12af5da92123c9f40eb",
+                                                  "width": 640
+                                              }
+                                          ]
+                                      },
+                                      "date": {
+                                          "year": 2020
+                                      },
+                                      "name": "Hyena Express",
+                                      "playability": {
+                                          "playable": true,
+                                          "reason": "PLAYABLE"
+                                      },
+                                      "type": "ALBUM",
+                                      "uri": "spotify:album:1y3dEPRfsbLgGelBKtXyuq"
+                                  }
+                              }
+                          ],
+                          "pagingInfo": {
+                              "limit": 30,
+                              "nextOffset": 30
+                          },
+                          "totalCount": 893
+                      },
+                      "query": "twenty+one+pilots"
+                  }
+              },
+              "extensions": {
+                  "requestIds": {
+                      "/searchV2": {
+                          "search-api": "74e11fee-dd26-58d3-e391-346763635be4/lSVK"
+                      }
+                  }
+              }
+          }

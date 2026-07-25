@@ -1,0 +1,2846 @@
+{
+  "data": {
+    "whatsNewFeedItems": {
+      "items": [
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Brandon Lake"
+                    },
+                    "uri": "spotify:artist:1bdnGJxkbIIys5Jhk1T74v"
+                  },
+                  {
+                    "profile": {
+                      "name": "Nick Jonas"
+                    },
+                    "uri": "spotify:artist:4Rxn7Im3LGfyRkY2FlHhWi"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0266edf662e0ba5bc63b0d3192",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485166edf662e0ba5bc63b0d3192",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27366edf662e0ba5bc63b0d3192",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-05-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "The Author",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:0dZEIWwlJsgywXmbYl8cd5"
+            }
+          },
+          "id": "music_release:5ab3b8c930bd7e098d9335b08faf02eabc53cf6fa1366e8909dd44a4df0e6075",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Maroon 5"
+                    },
+                    "uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02e26ed70ca976a8e72ac89dab",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851e26ed70ca976a8e72ac89dab",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273e26ed70ca976a8e72ac89dab",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-05-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Heroine",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:4xT3ryrqfutVzV1cJN79Ww"
+            }
+          },
+          "id": "music_release:7b23ee5692fba364d13e3b30029e6f1b7b1696d36236437043b5d30d4ca3bf04",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Nick Jonas"
+                    },
+                    "uri": "spotify:artist:4Rxn7Im3LGfyRkY2FlHhWi"
+                  },
+                  {
+                    "profile": {
+                      "name": "Brandon Lake"
+                    },
+                    "uri": "spotify:artist:1bdnGJxkbIIys5Jhk1T74v"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02b87ef4490c4fd61aa5d52d10",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851b87ef4490c4fd61aa5d52d10",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273b87ef4490c4fd61aa5d52d10",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-05-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Hope (Remix)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:50FQvTPT3n9wrQdxiA3Gtz"
+            }
+          },
+          "id": "music_release:b3fe5651b6d8a92ae5237024565a2b29bb35dc34f53b19c00dff609e10be4e7f",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Halsey"
+                    },
+                    "uri": "spotify:artist:26VFTg2z8YR0cCuwLzESi2"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e028ba601757702ea9092999600",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048518ba601757702ea9092999600",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2738ba601757702ea9092999600",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-05-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "The Great Impersonator (Deluxe)",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:6ehD64XkegXwfsA2hYhkKr"
+            }
+          },
+          "id": "music_release:ed908d7ed5f9ee38bbb43c44d7a0aa6ad337cd58c29c9896321373253abd848f",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Maroon 5"
+                    },
+                    "uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e027258a7adf6ae87d931d5e341",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048517258a7adf6ae87d931d5e341",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2737258a7adf6ae87d931d5e341",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-30T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Heroine",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:4g3zPaCDUkbToIB5te50jS"
+            }
+          },
+          "id": "music_release:dd3c7490b13024469ef6b09e667276add620d129897cb03c95c0cabefc380623",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-29T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "E.VAX"
+                    },
+                    "uri": "spotify:artist:12m4a5ljGoe6yyYPpVi7Hr"
+                  },
+                  {
+                    "profile": {
+                      "name": "Ratatat"
+                    },
+                    "uri": "spotify:artist:57dN52uHvrHOxijzpIgu3E"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02a9ca362d56049844dc700ae0",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851a9ca362d56049844dc700ae0",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273a9ca362d56049844dc700ae0",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-29T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "When I'm gone",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3RZCLzbJDbnZqSKJwaZmNE"
+            }
+          },
+          "id": "music_release:ccd2484c8d3ea05377feb42808549ae60ead9cc969a92be80a82aedbd669ba0c",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-28T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "John Michael Howell"
+                    },
+                    "uri": "spotify:artist:4BqK6JLgMwQ99hx85DxNhP"
+                  },
+                  {
+                    "profile": {
+                      "name": "JVKE"
+                    },
+                    "uri": "spotify:artist:164Uj4eKjl6zTBKfJLFKKK"
+                  },
+                  {
+                    "profile": {
+                      "name": "ZVC"
+                    },
+                    "uri": "spotify:artist:178yogXdTxSjPnonPUtnoI"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0251c2cac7e49b17dd29fc707c",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485151c2cac7e49b17dd29fc707c",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27351c2cac7e49b17dd29fc707c",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-28T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "A Thousand Years (Cinematic Version)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6KvELxHSaFXHrXaN7z0bAc"
+            }
+          },
+          "id": "music_release:d2c16480c5e32605fd498d97d72469804994edb267486764da3bdcce1df1e487",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-27T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Kygo"
+                    },
+                    "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
+                  },
+                  {
+                    "profile": {
+                      "name": "Khalid"
+                    },
+                    "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+                  },
+                  {
+                    "profile": {
+                      "name": "Gryffin"
+                    },
+                    "uri": "spotify:artist:2ZRQcIgzPCVaT9XKhXZIzh"
+                  },
+                  {
+                    "profile": {
+                      "name": "MEDUZA"
+                    },
+                    "uri": "spotify:artist:0xRXCcSX89eobfrshSVdyu"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e020f91e20d3c549233b6cf34fe",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048510f91e20d3c549233b6cf34fe",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2730f91e20d3c549233b6cf34fe",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-24T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Save My Love (MEDUZA Remix)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:1nTkAF1JlCXNPz0R51lHWN"
+            }
+          },
+          "id": "music_release:702bd47497e166211ec859f5ecf9505f128635b5895cb6efcce94622ca140559",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-23T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "The Chainsmokers"
+                    },
+                    "uri": "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+                  },
+                  {
+                    "profile": {
+                      "name": "Oaks"
+                    },
+                    "uri": "spotify:artist:1X2sRzO3K7Uvry9JWbG2iO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02ef093592019b3647a352dc56",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851ef093592019b3647a352dc56",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273ef093592019b3647a352dc56",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-24T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Already Know",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3xcgGpibAqoTYC1mhOO6SP"
+            }
+          },
+          "id": "music_release:98114fa69d143062b07e21e02edb36d333714938f71816db832ed9df3ca51780",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-23T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Demi Lovato"
+                    },
+                    "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e029982ec770c768e443649787a",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048519982ec770c768e443649787a",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2739982ec770c768e443649787a",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-24T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "It's Not That Deep (Unless You Want It To Be)",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:5tfhBGn7x0cYn9VMYhSnph"
+            }
+          },
+          "id": "music_release:f1f0e7b58f848663557d9a43c1bb6ada37cce8fca7433b8fc7c361e60bef0f4e",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-23T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "The Kid LAROI"
+                    },
+                    "uri": "spotify:artist:2tIP7SsRs7vjIcLrU85W8J"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02ee92b5f6b7140df498166f1a",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851ee92b5f6b7140df498166f1a",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273ee92b5f6b7140df498166f1a",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-24T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "BEFORE I FORGET (DELUXE)",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:6CACyqngQWTOAM1UpAtco3"
+            }
+          },
+          "id": "music_release:1833dbe9e38a7f2aea242273a043a7752094bc6ece778a32ad73822427b03f3b",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-23T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Sam Feldt"
+                    },
+                    "uri": "spotify:artist:20gsENnposVs2I4rQ5kvrf"
+                  },
+                  {
+                    "profile": {
+                      "name": "TAME"
+                    },
+                    "uri": "spotify:artist:4XVJFkO6gIO0LfchyJnP1r"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0215e2b13843a1e264db743632",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485115e2b13843a1e264db743632",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27315e2b13843a1e264db743632",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-24T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Lost in Desire",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6KdlENwRR1bF6tNkYdgtvF"
+            }
+          },
+          "id": "music_release:535fb9b423b25ed069ec9afe3d76b075f1e888b3810120562ba12e21af2c7377",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-23T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "JVKE"
+                    },
+                    "uri": "spotify:artist:164Uj4eKjl6zTBKfJLFKKK"
+                  },
+                  {
+                    "profile": {
+                      "name": "Kitsui Akira"
+                    },
+                    "uri": "spotify:artist:6BvTqC4B6wOX1RiUuY1vnG"
+                  },
+                  {
+                    "profile": {
+                      "name": "DJArceo"
+                    },
+                    "uri": "spotify:artist:5xMJANFUovb75SvUbxYIdB"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e026f5576dd56053cdff4f219c9",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048516f5576dd56053cdff4f219c9",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2736f5576dd56053cdff4f219c9",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-23T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "this is what falling in love feels like (Kitsui Akira and DJArceo Remix)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3X1Hw26Z15LYYKJixM1eK3"
+            }
+          },
+          "id": "music_release:0d606c80ddef33baf2e3ff47206b470051f973ade8d054175eb28cae6aac4522",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-22T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "The Glitch Mob"
+                    },
+                    "uri": "spotify:artist:3a9qv6NLHnsVxJUtKOMHvD"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e027c6465db4bf362392707231c",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048517c6465db4bf362392707231c",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2737c6465db4bf362392707231c",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-23T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Invincible VS (Original Game Soundtrack)",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:5QWOAA1LFyH3aGEuwIn04v"
+            }
+          },
+          "id": "music_release:18bf4f940b35c682d7da6e58e92764e23fefff64327e185d781dc76b944bbb90",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-22T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Habib Wahid"
+                    },
+                    "uri": "spotify:artist:60jYUgQzKAtnJoXKGk1GNn"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0236041c8447eadb720825eb4c",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485136041c8447eadb720825eb4c",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27336041c8447eadb720825eb4c",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-23T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Mitthe Noy",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:76dAWLpUIu6O3s35DK73Qn"
+            }
+          },
+          "id": "music_release:865b96e9425fc9ba5cb54ba6f09dfd6a84f700098e08df4c295fc8f2dfd7a9fe",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-22T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Manna Dey"
+                    },
+                    "uri": "spotify:artist:4kcoiVXIxvUoLUoHY1vJYU"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e025e0f2d8ee169ac3fcaa76e99",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048515e0f2d8ee169ac3fcaa76e99",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2735e0f2d8ee169ac3fcaa76e99",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-19T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Aaj Kotha Noy",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:7sFjInGhzcuSc0WwaEHjYE"
+            }
+          },
+          "id": "music_release:c545d37ec2c54e5b6a370fa54bcc24ef391605132234141519767dce70bc5c6d",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-18T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "ZAYN"
+                    },
+                    "uri": "spotify:artist:5ZsFI1h6hIdQRw2ti0hz81"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02cdc5d305c537648861945f0a",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851cdc5d305c537648861945f0a",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273cdc5d305c537648861945f0a",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "KONNAKOL",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:1gNQgz2ZDk9XNEBdJcs9zG"
+            }
+          },
+          "id": "music_release:90564c91301e5c6505948265305db314bdfc8d61fa3288ef27b744efefbc07d9",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Stephen Sanchez"
+                    },
+                    "uri": "spotify:artist:5XKFrudbV4IiuE5WuTPRmT"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02db8a5bc7a9f9def099b75cb8",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851db8a5bc7a9f9def099b75cb8",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273db8a5bc7a9f9def099b75cb8",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "CHUCK THE MONEY",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3CSeM9Ufgof02QTlzL5TEm"
+            }
+          },
+          "id": "music_release:c89e4831decab46c29afb2edcd420caf1624f546dc84298aedd9ce2ca4bab49c",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "The Kid LAROI"
+                    },
+                    "uri": "spotify:artist:2tIP7SsRs7vjIcLrU85W8J"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02e2dab0fcec6c4be76cdae071",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851e2dab0fcec6c4be76cdae071",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273e2dab0fcec6c4be76cdae071",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "I CONDEMN",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3GGPWismNDtBFF8EJxoiFI"
+            }
+          },
+          "id": "music_release:0f08d80146b01c8900012c60e0558193b8d28f463e64b74fa02828f0b70edfb8",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Miley Cyrus"
+                    },
+                    "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+                  },
+                  {
+                    "profile": {
+                      "name": "Lainey Wilson"
+                    },
+                    "uri": "spotify:artist:6tPHARSq45lQ8BSALCfkFC"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02e927f551b90c46fca8067bb1",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851e927f551b90c46fca8067bb1",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273e927f551b90c46fca8067bb1",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Younger You (featuring Lainey Wilson) [From the \"Hannah Montana 20th Anniversary Special\"]",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3vClILXGeaZyBu4IqdpDAG"
+            }
+          },
+          "id": "music_release:263b072d3cbee817f4bd73fcb83ac3078b299d3906bb662c180b73c8b9dfc0cd",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "TAEYONG"
+                    },
+                    "uri": "spotify:artist:6SKusTjOAPsTZ6kareKQdm"
+                  },
+                  {
+                    "profile": {
+                      "name": "Anderson .Paak"
+                    },
+                    "uri": "spotify:artist:3jK9MiCrA42lLAdMGUZpwa"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0248e51070062ac5cfb243de1c",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485148e51070062ac5cfb243de1c",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27348e51070062ac5cfb243de1c",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Rock Solid (feat. Anderson .Paak)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:4Yqwii1Awg1nTLcSOgL6el"
+            }
+          },
+          "id": "music_release:67ea156097cc774a1203f9a0ebeece82a8e457bcc97c5789086d88ae96fe75f7",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Demi Lovato"
+                    },
+                    "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02e0b92d53a8d772c7435ab4d7",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851e0b92d53a8d772c7435ab4d7",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273e0b92d53a8d772c7435ab4d7",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Low Rise Jeans",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6aS09iHBjpTatkojX4xdPY"
+            }
+          },
+          "id": "music_release:f70a25623395b4c8c505a70a32e5f46b28eb5503858f92180ffc64183b4327a3",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "ZAYN"
+                    },
+                    "uri": "spotify:artist:5ZsFI1h6hIdQRw2ti0hz81"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02790864548d16fc6b587b0a5a",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851790864548d16fc6b587b0a5a",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273790864548d16fc6b587b0a5a",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-17T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "KONNAKOL",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:7AZTPs9BGagkJslwPCOcxz"
+            }
+          },
+          "id": "music_release:ef0d6e318a59a10a60e62702ea1136d7a4c2498d11e451b62f47f9c3a9d862e6",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-16T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Minar Rahman"
+                    },
+                    "uri": "spotify:artist:39b8vxAORVsBRK782WLYSe"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02ed873d439b1684a0a4b25387",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851ed873d439b1684a0a4b25387",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273ed873d439b1684a0a4b25387",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-16T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ridoyer Opashe Tumi",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:06iHvtJhNgG6oPateLdbPe"
+            }
+          },
+          "id": "music_release:b2026841c56d1c16c86e4c71767847bec837b2968f2458daa2e36a76a8f61915",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-15T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Kygo"
+                    },
+                    "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
+                  },
+                  {
+                    "profile": {
+                      "name": "Carter Faith"
+                    },
+                    "uri": "spotify:artist:4X5CTYQmx1NNyz9S1IpNko"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02aa1c7abe19b13470c62cd213",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851aa1c7abe19b13470c62cd213",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273aa1c7abe19b13470c62cd213",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-10T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "That's When You Know",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:2XgEVPnq6LHLAKAIJXmlHZ"
+            }
+          },
+          "id": "music_release:14c77f9c94ff3e039c7307e9dc489a7091f0a5b9aa440d0b6168bd9e1cd9cb59",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-09T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "The Chainsmokers"
+                    },
+                    "uri": "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+                  },
+                  {
+                    "profile": {
+                      "name": "Oaks"
+                    },
+                    "uri": "spotify:artist:1X2sRzO3K7Uvry9JWbG2iO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02e474ab50fe85ba109b2bc6d6",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851e474ab50fe85ba109b2bc6d6",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273e474ab50fe85ba109b2bc6d6",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-10T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Echo",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:37CYoaYJA39qUt4zl00Dnp"
+            }
+          },
+          "id": "music_release:985076a8608c367a6622a02f85d82483a413b2b41a3e1a6dad8cae7a7444fa06",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-09T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Habib Wahid"
+                    },
+                    "uri": "spotify:artist:60jYUgQzKAtnJoXKGk1GNn"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02bed34d695b67258289cadd86",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851bed34d695b67258289cadd86",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273bed34d695b67258289cadd86",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-09T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ahoban",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:6igZ0TKKPQAA4ef8w4NvbV"
+            }
+          },
+          "id": "music_release:6088b85b326dbc2d56f7825d0c42f2d18212784e03c30abb6c52ee2dd7455b0a",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-08T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Habib Wahid"
+                    },
+                    "uri": "spotify:artist:60jYUgQzKAtnJoXKGk1GNn"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e027e05189fe8f5b537cd6236c4",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048517e05189fe8f5b537cd6236c4",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2737e05189fe8f5b537cd6236c4",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-05T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Shadhin",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:06jE7mcjfVv2WMzUBdOkP6"
+            }
+          },
+          "id": "music_release:44692d2a5d0cefc96627fedae86ee6a8175635d11a980236e93d54fff61378da",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-04T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Billy Ray Cyrus"
+                    },
+                    "uri": "spotify:artist:60rpJ9SgigSd16DOAG7GSa"
+                  },
+                  {
+                    "profile": {
+                      "name": "Noah Cyrus"
+                    },
+                    "uri": "spotify:artist:55fhWPvDiMpLnE4ZzNXZyW"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0208882e0616f4bf9a5cb8b52c",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485108882e0616f4bf9a5cb8b52c",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27308882e0616f4bf9a5cb8b52c",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-03T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "On Our Way Along",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:0M4O0DjFr8N3vNtdJviwya"
+            }
+          },
+          "id": "music_release:417751655b285d7871257c2ce850cd92af1bd78352405fae9f881e07a22a71cb",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-02T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Swae Lee"
+                    },
+                    "uri": "spotify:artist:1zNqQNIdeOUZHb8zbZRFMX"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e023dc16f4849bfdde93f10f6dd",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048513dc16f4849bfdde93f10f6dd",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2733dc16f4849bfdde93f10f6dd",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-03T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "SAME DIFFERENCE",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:3EUDvHdTIYlB3Hl1WFOIrS"
+            }
+          },
+          "id": "music_release:d1be235e875328eb18ef03fb5f2b22e3d11bd0cd7ae95645f918cbdad4b41f57",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-02T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "OneRepublic"
+                    },
+                    "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02ee6a59212d632b1c2945e0c0",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851ee6a59212d632b1c2945e0c0",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273ee6a59212d632b1c2945e0c0",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-03T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Need Your Love",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3UZVtXHg8FsA3Y9H1S1NbI"
+            }
+          },
+          "id": "music_release:3b109f59eb85ea2a1d1dc893d81c4884c38e6a951203af0955dc398f0113bd95",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-02T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Swae Lee"
+                    },
+                    "uri": "spotify:artist:1zNqQNIdeOUZHb8zbZRFMX"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02f4656c367785f9532baa69fc",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851f4656c367785f9532baa69fc",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273f4656c367785f9532baa69fc",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-02T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "SAME DIFFERENCE",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:5N4Ps5URfWbdgUiU2SGVE5"
+            }
+          },
+          "id": "music_release:f69d3dded0f4aa59897fa2affccf22845b7664a17b231758c2928611168261b5",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-04-01T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0291d0eed5ae10bc1604ecd2b3",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485191d0eed5ae10bc1604ecd2b3",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27391d0eed5ae10bc1604ecd2b3",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ki Ghor Banaiso Doyal Matiro Vitor (Pt.4)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:0FJkFli9Z4Fc5b4hJ7yFjp"
+            }
+          },
+          "id": "music_release:fb3d6036b7074c28ecaefe58dcc4f70c9d7d8812060d9a2fe95560dbcad25304",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-31T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0253bd1a0de17b7126394b1185",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485153bd1a0de17b7126394b1185",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27353bd1a0de17b7126394b1185",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ki Ghor Banaiso Doyal Matiro Vitor (Pt. 5)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:0lxd34w94t91am3FgTxaeE"
+            }
+          },
+          "id": "music_release:6d64bd86fd85c212dca9d2e53b3a5d2ac0c4fd9bb84d2fb378edac40d84ab2ae",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-31T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e022677d28b42d7866a5f377a06",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048512677d28b42d7866a5f377a06",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2732677d28b42d7866a5f377a06",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ki Ghor Banaicho Doyal Matiro Vitor",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:42b5CExyh4nU4Hlvx4aEeX"
+            }
+          },
+          "id": "music_release:32f73ac73ea6fd4744bae3f90c03b05d0254a65151b5f2f0fdb49a0f1127eac2",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-31T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02a29b20ee6b339f5604923ce3",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851a29b20ee6b339f5604923ce3",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273a29b20ee6b339f5604923ce3",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Chole Jao Priotoma",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:4dkXoOpuRQZc4opxZQDvyS"
+            }
+          },
+          "id": "music_release:90b7fd26474e30a793fd85b2546bfc651aa805ecdf09a8345245c8820a779741",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-31T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02620d45ea02430bd3e032bcc6",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851620d45ea02430bd3e032bcc6",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273620d45ea02430bd3e032bcc6",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ki Ghor Banaiso Doyal Matiro Vitor (Pt. 6)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6UZR3nzxuNmfouUukpOLz7"
+            }
+          },
+          "id": "music_release:879a2b3f0a52bb9d43dff28f7d67b38ff1a5e690d10228accf6f17ddb787197e",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-31T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e028c1b31143bde3383f96687b0",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048518c1b31143bde3383f96687b0",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2738c1b31143bde3383f96687b0",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-04-01T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Ki Ghor Banaiso Doyal Matiro Vitor (Pt.3)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6uFjLx8GaOVzURVr8L3fq6"
+            }
+          },
+          "id": "music_release:b967b9a1c8e519b1e464ac4de0ae92519790eef73cb1071a573d9bcbff01e7a4",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-31T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "The Glitch Mob"
+                    },
+                    "uri": "spotify:artist:3a9qv6NLHnsVxJUtKOMHvD"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02d524f67cd81a928a63fa5c84",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851d524f67cd81a928a63fa5c84",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d524f67cd81a928a63fa5c84",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-31T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Not Backing Down (VS Main Theme)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:17qhiD26QQiijfjKFxtTBc"
+            }
+          },
+          "id": "music_release:716a9243bf567f82e0c2a43b8281feedc83d4e9b051b7480dc38b982bc2ad9e8",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Taylor Swift"
+                    },
+                    "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02dc6e4c7774e0c77c210d3a31",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851dc6e4c7774e0c77c210d3a31",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273dc6e4c7774e0c77c210d3a31",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-31T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Elizabeth Taylor",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:71GTik4z9bbKKY2EmUvkDI"
+            }
+          },
+          "id": "music_release:543f7c7e71d788c6f9e0b2a5e14845cc2f0362369b5552459f73ae510c8850ce",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Charlie Puth"
+                    },
+                    "uri": "spotify:artist:6VuMaDnrHyPL1p4EHjYLi7"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02fb7dcc6287dca96c1c8eda29",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851fb7dcc6287dca96c1c8eda29",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273fb7dcc6287dca96c1c8eda29",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-31T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Whatever's Clever! (Expanded)",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:71f3n5jsStploGblACtTRs"
+            }
+          },
+          "id": "music_release:b81c2ba65d90e26f00abd8310a0fbe11a071b5cc25a7c4041862ccedc71e7fc6",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-30T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Kanye West"
+                    },
+                    "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+                  },
+                  {
+                    "profile": {
+                      "name": "Ye"
+                    },
+                    "uri": "spotify:artist:3NlsBPwqJuDgtXZ2rv5Dmq"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0295184f6a953569b683ca9a0d",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485195184f6a953569b683ca9a0d",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-28T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "BULLY",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:5poA9SAx0Xiz1cf17fWBLS"
+            }
+          },
+          "id": "music_release:b14039cce26b8ede99b11c6bf06933f80fe94a78c7fc59e30b2635f4e7a0d364",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-27T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Sam Feldt"
+                    },
+                    "uri": "spotify:artist:20gsENnposVs2I4rQ5kvrf"
+                  },
+                  {
+                    "profile": {
+                      "name": "Justin Jesso"
+                    },
+                    "uri": "spotify:artist:1QDrz3DMMaz3TB1cm0PGDu"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e025e04cbc19054340fc5e03bfc",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048515e04cbc19054340fc5e03bfc",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2735e04cbc19054340fc5e03bfc",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-27T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Sinners On The Moon (Feat. Justin Jesso)",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:0uUfuyBF4WoZOaC5I20vdh"
+            }
+          },
+          "id": "music_release:ce9b5073e893a57036e80c767bbd76a1416a457b8ce3c2e1a8021351fcc16a6e",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-26T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Charlie Puth"
+                    },
+                    "uri": "spotify:artist:6VuMaDnrHyPL1p4EHjYLi7"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02391d8b7f4d327cb0ec4f0aef",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851391d8b7f4d327cb0ec4f0aef",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-27T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Whatever's Clever!",
+              "albumType": "ALBUM",
+              "uri": "spotify:album:2ivbRaW10BVYVDTGRGDW6p"
+            }
+          },
+          "id": "music_release:c0661215deca3b940df12f9e32b25795d516a4c0c334775265fefd0d50b341a3",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-26T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Miley Cyrus"
+                    },
+                    "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02e43a5a0d757a4f6fc0f19069",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851e43a5a0d757a4f6fc0f19069",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273e43a5a0d757a4f6fc0f19069",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-27T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Younger You (From the \"Hannah Montana 20th Anniversary Special\")",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:3tlEOoxO3h3mkLyLgftdz6"
+            }
+          },
+          "id": "music_release:d75196b493aef7e55663da551769152de828911be400898e5dd2d594be7f6d60",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-26T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Noble Man"
+                    },
+                    "uri": "spotify:artist:3AsC2cKcBmoayjRPDMSMTO"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e029c91fba6abe5e5d3f834cf9c",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048519c91fba6abe5e5d3f834cf9c",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2739c91fba6abe5e5d3f834cf9c",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-27T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Bajabo Guitar",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:4AGZiGYRtoX5b3OWcrsjQM"
+            }
+          },
+          "id": "music_release:270f919a9b286da489fadd8b8d55b1a8f0bcbc15f58b54d69f39b146bcb32206",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-26T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "ZAYN"
+                    },
+                    "uri": "spotify:artist:5ZsFI1h6hIdQRw2ti0hz81"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02da81b20188d02dad0fc22ca0",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851da81b20188d02dad0fc22ca0",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273da81b20188d02dad0fc22ca0",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-27T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Sideways",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6NlUyo5ZQoHaDexCvKMKNX"
+            }
+          },
+          "id": "music_release:2cc89302795adee35fe8c08417e8fb93c417122d58eba1c1055991a9df0dd04d",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-26T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "John Summit"
+                    },
+                    "uri": "spotify:artist:7kNqXtgeIwFtelmRjWv205"
+                  },
+                  {
+                    "profile": {
+                      "name": "The Chainsmokers"
+                    },
+                    "uri": "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+                  },
+                  {
+                    "profile": {
+                      "name": "Ilsey"
+                    },
+                    "uri": "spotify:artist:2ZKzqJz3pPfWKVRgz9b39j"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02d81a25fa91f9cac66eeee336",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851d81a25fa91f9cac66eeee336",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d81a25fa91f9cac66eeee336",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-25T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "ALL THE TIME",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6wDs2CP86hhNiDlySlMgZy"
+            }
+          },
+          "id": "music_release:425b6a137354303621f584c17df3d570b1ef75a951ee092899b270f394dac8f6",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-24T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Habib Wahid"
+                    },
+                    "uri": "spotify:artist:60jYUgQzKAtnJoXKGk1GNn"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e025252d80f78972aa0f6d79f24",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048515252d80f78972aa0f6d79f24",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2735252d80f78972aa0f6d79f24",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-24T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Bujhi Nai Toh Agey",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:6zrkzRuvdRPA4YZ8sVodTy"
+            }
+          },
+          "id": "music_release:fd731ac675d6b350d81d6b6297d77e323b86382605cb2c186c80813b40d9ec9a",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-23T18:00:00Z"
+          }
+        },
+        {
+          "content": {
+            "__typename": "AlbumResponseWrapper",
+            "data": {
+              "__typename": "Album",
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "Minar Rahman"
+                    },
+                    "uri": "spotify:artist:39b8vxAORVsBRK782WLYSe"
+                  },
+                  {
+                    "profile": {
+                      "name": "Debapam Das"
+                    },
+                    "uri": "spotify:artist:28uW2IZo8dKI5wm1ln6sBG"
+                  }
+                ]
+              },
+              "coverArt": {
+                "sources": [
+                  {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e029fa80a9fc96176f4051f1d0d",
+                    "width": 300
+                  },
+                  {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d000048519fa80a9fc96176f4051f1d0d",
+                    "width": 64
+                  },
+                  {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2739fa80a9fc96176f4051f1d0d",
+                    "width": 640
+                  }
+                ]
+              },
+              "date": {
+                "isoString": "2026-03-20T00:00:00Z",
+                "precision": "DAY"
+              },
+              "name": "Abar",
+              "albumType": "SINGLE",
+              "uri": "spotify:album:2jhrkMwPWPaFxS4re5B5Vt"
+            }
+          },
+          "id": "music_release:9a99473d1b02fa00c2beded6da1f9a612b983208691cdcffa19e701251f69ea5",
+          "state": {
+            "state": "SEEN",
+            "timestamp": {
+              "isoString": "2026-05-03T04:51:09Z"
+            }
+          },
+          "timestamp": {
+            "isoString": "2026-03-19T18:00:00Z"
+          }
+        }
+      ],
+      "pagingInfo": {
+        "limit": 50,
+        "nextOffset": 50,
+        "offset": 0
+      },
+      "totalCount": 66
+    }
+  }
+}

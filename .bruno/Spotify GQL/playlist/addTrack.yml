@@ -1,0 +1,124 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: addTrack
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{base_gql_url}}"
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "playlistItemUris": [
+            "spotify:track:43ee3gqWBlPKe2MeGJ2S6I"
+          ],
+          "playlistUri": "spotify:playlist:26ElOYDflVLcKEH4ngO6Kj",
+          "newPosition": {
+            "moveType": "BOTTOM_OF_PLAYLIST",
+            "fromUid": null
+          }
+        },
+        "operationName": "addToPlaylist",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "47b2a1234b17748d332dd0431534f22450e9ecbb3d5ddcdacbd83368636a0990"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_gql_url}}"
+      method: POST
+      headers:
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "playlistItemUris": [
+                "spotify:track:43ee3gqWBlPKe2MeGJ2S6I"
+              ],
+              "playlistUri": "spotify:playlist:26ElOYDflVLcKEH4ngO6Kj",
+              "newPosition": {
+                "moveType": "BOTTOM_OF_PLAYLIST",
+                "fromUid": null
+              }
+            },
+            "operationName": "addToPlaylist",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "47b2a1234b17748d332dd0431534f22450e9ecbb3d5ddcdacbd83368636a0990"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: server-timing
+          value: edge;dur=68
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000
+        - name: vary
+          value: Accept-Encoding
+        - name: date
+          value: Fri, 01 May 2026 10:50:54 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "addItemsToPlaylist": {
+                "__typename": "AddItemsToPlaylistPayload"
+              }
+            }
+          }

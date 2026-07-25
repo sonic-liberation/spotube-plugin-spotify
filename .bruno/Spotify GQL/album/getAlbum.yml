@@ -1,0 +1,1171 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: getAlbum
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+          "locale": "",
+          "offset": 0,
+          "limit": 50
+        },
+        "operationName": "getAlbum",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "b9bfabef66ed756e5e13f68a942deb60bd4125ec1f1be8cc42769dc0259b4b10"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+              "locale": "",
+              "offset": 0,
+              "limit": 50
+            },
+            "operationName": "getAlbum",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "b9bfabef66ed756e5e13f68a942deb60bd4125ec1f1be8cc42769dc0259b4b10"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      body:
+        type: text
+        data: |-
+          {
+            "data": {
+              "albumUnion": {
+                "__typename": "Album",
+                "copyright": {
+                  "items": [
+                    {
+                      "text": "© 2025 Fueled By Ramen LLC",
+                      "type": "C"
+                    },
+                    {
+                      "text": "℗ 2025 Fueled By Ramen LLC",
+                      "type": "P"
+                    }
+                  ],
+                  "totalCount": 2
+                },
+                "courtesyLine": "",
+                "date": {
+                  "isoString": "2025-09-12T00:00:00Z",
+                  "precision": "DAY"
+                },
+                "isPreRelease": false,
+                "label": "Fueled By Ramen",
+                "name": "Breach",
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "preReleaseEndDateTime": {
+                  "isoString": "2025-09-11T18:00:00Z",
+                  "precision": "MINUTE"
+                },
+                "saved": true,
+                "sharingInfo": {
+                  "shareId": "rviq9xUoTV2xR5xHdwRgPg",
+                  "shareUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH?si=rviq9xUoTV2xR5xHdwRgPg"
+                },
+                "tracksV2": {
+                  "items": [
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 322066
+                        },
+                        "name": "City Walls",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "51196057",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 1,
+                        "uri": "spotify:track:0Ji9UonfwC90rbZ4IaQhOb"
+                      },
+                      "uid": "044c6cbc4d64db8f01b7"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 202266
+                        },
+                        "name": "RAWFEAR",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "41736865",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 2,
+                        "uri": "spotify:track:43ee3gqWBlPKe2MeGJ2S6I"
+                      },
+                      "uid": "48cbd1091401bf801c19"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 203826
+                        },
+                        "name": "Drum Show",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "61163687",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 3,
+                        "uri": "spotify:track:20BFo9REyGdCxrlPmD3xph"
+                      },
+                      "uid": "31686d9a7185dfa313ea"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 196666
+                        },
+                        "name": "Garbage",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "29119354",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 4,
+                        "uri": "spotify:track:6YJYhPKP7MRzJSHqe3QI9K"
+                      },
+                      "uid": "392dadb4824b7476890d"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 225520
+                        },
+                        "name": "The Contract",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "75591481",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 5,
+                        "uri": "spotify:track:22BA9h34P0Q2PGZudsEBco"
+                      },
+                      "uid": "ba6fd42b78d8399298d5"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 326333
+                        },
+                        "name": "Downstairs",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "28880768",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 6,
+                        "uri": "spotify:track:11QNo3ld81pncy71q6VIic"
+                      },
+                      "uid": "cb90bee5aa606062eb2a"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 237493
+                        },
+                        "name": "Robot Voices",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "26333986",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 7,
+                        "uri": "spotify:track:0d2Ik5rp9Icd1oqn4178x2"
+                      },
+                      "uid": "30b180c23cc54691acdc"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 228173
+                        },
+                        "name": "Center Mass",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "26529851",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 8,
+                        "uri": "spotify:track:2BHSRlGgJwzTPfYvAax28m"
+                      },
+                      "uid": "ab97f7c05d42e8798490"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 188106
+                        },
+                        "name": "Cottonwood",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "22048493",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 9,
+                        "uri": "spotify:track:1aVDGnB6ydtXwudYLgUB6h"
+                      },
+                      "uid": "4c47565c7600cd8ea8f4"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 163160
+                        },
+                        "name": "One Way",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "32773963",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 10,
+                        "uri": "spotify:track:5QzlDlRuT9D5LdpybJoNYi"
+                      },
+                      "uid": "1985020a502a9c7e2d88"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 206720
+                        },
+                        "name": "Days Lie Dormant",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "20499254",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 11,
+                        "uri": "spotify:track:3yKIL7niCEJajKlVmMNBZA"
+                      },
+                      "uid": "8814585e9e71680d115e"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 212760
+                        },
+                        "name": "Tally",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "30318351",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 12,
+                        "uri": "spotify:track:0DGf6s54MQ3Oht41mj6s6K"
+                      },
+                      "uid": "45decc5e94c4c0a143ad"
+                    },
+                    {
+                      "track": {
+                        "artists": {
+                          "items": [
+                            {
+                              "profile": {
+                                "name": "Twenty One Pilots"
+                              },
+                              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                            }
+                          ]
+                        },
+                        "associationsV3": {
+                          "videoAssociations": {
+                            "totalCount": 0
+                          }
+                        },
+                        "contentRating": {
+                          "label": "NONE"
+                        },
+                        "discNumber": 1,
+                        "duration": {
+                          "totalMilliseconds": 135693
+                        },
+                        "name": "Intentions",
+                        "playability": {
+                          "playable": true
+                        },
+                        "playcount": "15939213",
+                        "relinkingInformation": null,
+                        "saved": false,
+                        "trackNumber": 13,
+                        "uri": "spotify:track:3FbMtvXMcjmuAzlAhgwK0I"
+                      },
+                      "uid": "03eb8cea30d54a86d8d2"
+                    }
+                  ],
+                  "totalCount": 13
+                },
+                "type": "ALBUM",
+                "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+                "visualIdentity": {
+                  "squareCoverImage": {
+                    "__typename": "VisualIdentityImage",
+                    "extractedColorSet": {
+                      "encoreBaseSetTextColor": {
+                        "alpha": 255,
+                        "blue": 146,
+                        "green": 162,
+                        "red": 255
+                      },
+                      "highContrast": {
+                        "backgroundBase": {
+                          "alpha": 255,
+                          "blue": 0,
+                          "green": 0,
+                          "red": 159
+                        },
+                        "backgroundTintedBase": {
+                          "alpha": 255,
+                          "blue": 0,
+                          "green": 0,
+                          "red": 97
+                        },
+                        "textBase": {
+                          "alpha": 255,
+                          "blue": 255,
+                          "green": 255,
+                          "red": 255
+                        },
+                        "textBrightAccent": {
+                          "alpha": 255,
+                          "blue": 255,
+                          "green": 255,
+                          "red": 255
+                        },
+                        "textSubdued": {
+                          "alpha": 255,
+                          "blue": 177,
+                          "green": 190,
+                          "red": 255
+                        }
+                      },
+                      "higherContrast": {
+                        "backgroundBase": {
+                          "alpha": 255,
+                          "blue": 0,
+                          "green": 0,
+                          "red": 101
+                        },
+                        "backgroundTintedBase": {
+                          "alpha": 255,
+                          "blue": 41,
+                          "green": 52,
+                          "red": 147
+                        },
+                        "textBase": {
+                          "alpha": 255,
+                          "blue": 255,
+                          "green": 255,
+                          "red": 255
+                        },
+                        "textBrightAccent": {
+                          "alpha": 255,
+                          "blue": 96,
+                          "green": 215,
+                          "red": 30
+                        },
+                        "textSubdued": {
+                          "alpha": 255,
+                          "blue": 177,
+                          "green": 190,
+                          "red": 255
+                        }
+                      },
+                      "minContrast": {
+                        "backgroundBase": {
+                          "alpha": 255,
+                          "blue": 56,
+                          "green": 72,
+                          "red": 216
+                        },
+                        "backgroundTintedBase": {
+                          "alpha": 255,
+                          "blue": 24,
+                          "green": 36,
+                          "red": 181
+                        },
+                        "textBase": {
+                          "alpha": 255,
+                          "blue": 255,
+                          "green": 255,
+                          "red": 255
+                        },
+                        "textBrightAccent": {
+                          "alpha": 255,
+                          "blue": 255,
+                          "green": 255,
+                          "red": 255
+                        },
+                        "textSubdued": {
+                          "alpha": 255,
+                          "blue": 255,
+                          "green": 255,
+                          "red": 255
+                        }
+                      }
+                    }
+                  }
+                },
+                "watchFeedEntrypoint": null,
+                "artists": {
+                  "items": [
+                    {
+                      "id": "3YQKmKGau1PzlVlkL1iodx",
+                      "profile": {
+                        "name": "Twenty One Pilots"
+                      },
+                      "sharingInfo": {
+                        "shareUrl": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx?si=S1q4S_c7QHOYXDybE9_6bA"
+                      },
+                      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+                      "visuals": {
+                        "avatarImage": {
+                          "sources": [
+                            {
+                              "height": 640,
+                              "url": "https://i.scdn.co/image/ab6761610000e5eb61a7ea26d33ded218cd1e59d",
+                              "width": 640
+                            },
+                            {
+                              "height": 160,
+                              "url": "https://i.scdn.co/image/ab6761610000f17861a7ea26d33ded218cd1e59d",
+                              "width": 160
+                            },
+                            {
+                              "height": 320,
+                              "url": "https://i.scdn.co/image/ab6761610000517461a7ea26d33ded218cd1e59d",
+                              "width": 320
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "coverArt": {
+                  "extractedColors": {
+                    "colorDark": {
+                      "hex": "#D34637"
+                    },
+                    "colorLight": {
+                      "hex": "#D84838"
+                    },
+                    "colorRaw": {
+                      "hex": "#D84838"
+                    }
+                  },
+                  "sources": [
+                    {
+                      "height": 300,
+                      "url": "https://i.scdn.co/image/ab67616d00001e029c5a3160cc1a6ef5efdaf80a",
+                      "width": 300
+                    },
+                    {
+                      "height": 64,
+                      "url": "https://i.scdn.co/image/ab67616d000048519c5a3160cc1a6ef5efdaf80a",
+                      "width": 64
+                    },
+                    {
+                      "height": 640,
+                      "url": "https://i.scdn.co/image/ab67616d0000b2739c5a3160cc1a6ef5efdaf80a",
+                      "width": 640
+                    }
+                  ]
+                },
+                "discs": {
+                  "items": [
+                    {
+                      "number": 1,
+                      "tracks": {
+                        "totalCount": 13
+                      }
+                    }
+                  ],
+                  "totalCount": 1
+                },
+                "releases": {
+                  "items": [],
+                  "totalCount": 0
+                },
+                "moreAlbumsByArtist": {
+                  "items": [
+                    {
+                      "discography": {
+                        "popularReleasesAlbums": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2015
+                              },
+                              "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                              "name": "Blurryface",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "7VXDCYIVTDWysmWf2pRfhw",
+                                "shareUrl": "https://open.spotify.com/album/3cQO7jp5S9qLBoIVtbkSM1?si=7VXDCYIVTDWysmWf2pRfhw"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e029c5a3160cc1a6ef5efdaf80a",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048519c5a3160cc1a6ef5efdaf80a",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2739c5a3160cc1a6ef5efdaf80a",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2025
+                              },
+                              "id": "1El3k8dU3sKyoGUeuyrolH",
+                              "name": "Breach",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "U3gHPWCtSMSE0JF7JKGmpw",
+                                "shareUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH?si=U3gHPWCtSMSE0JF7JKGmpw"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02cc94dd4730132ccfbd617bf9",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851cc94dd4730132ccfbd617bf9",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273cc94dd4730132ccfbd617bf9",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2024
+                              },
+                              "id": "1KFWgQTw3EMTQebaaepVBI",
+                              "name": "Clancy",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "aGAUx10LQsmAZALKFPVfmg",
+                                "shareUrl": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI?si=aGAUx10LQsmAZALKFPVfmg"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2018
+                              },
+                              "id": "621cXqrTSSJi1WqDMSLmbL",
+                              "name": "Trench",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "MD1_kilERQWR5Rs1bEfy5Q",
+                                "shareUrl": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL?si=MD1_kilERQWR5Rs1bEfy5Q"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b5b991fd65053a3acb8c2db2",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b5b991fd65053a3acb8c2db2",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b5b991fd65053a3acb8c2db2",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2026
+                              },
+                              "id": "27KwvdCscr3IQtSbnyAZpo",
+                              "name": "Drag Path",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "4wBxNPQ9RE-36GdF_8O7Yw",
+                                "shareUrl": "https://open.spotify.com/album/27KwvdCscr3IQtSbnyAZpo?si=4wBxNPQ9RE-36GdF_8O7Yw"
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:27KwvdCscr3IQtSbnyAZpo"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e022ca3ba8f334ca5a5f0312efb",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048512ca3ba8f334ca5a5f0312efb",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2732ca3ba8f334ca5a5f0312efb",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2016
+                              },
+                              "id": "3J8W9AOjQhnBLCX33m3atT",
+                              "name": "Heathens",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "Cb3DXauoSI-5fyGRrkLcGA",
+                                "shareUrl": "https://open.spotify.com/album/3J8W9AOjQhnBLCX33m3atT?si=Cb3DXauoSI-5fyGRrkLcGA"
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:3J8W9AOjQhnBLCX33m3atT"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e026caad685af37c08063be928d",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048516caad685af37c08063be928d",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2736caad685af37c08063be928d",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2013
+                              },
+                              "id": "2r2r78NE05YjyHyVbVgqFn",
+                              "name": "Vessel",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "6p4dqqafQuiX50UAjXqKDw",
+                                "shareUrl": "https://open.spotify.com/album/2r2r78NE05YjyHyVbVgqFn?si=6p4dqqafQuiX50UAjXqKDw"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:2r2r78NE05YjyHyVbVgqFn"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e027c693d6ed6dff0d48cf15c23",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048517c693d6ed6dff0d48cf15c23",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2737c693d6ed6dff0d48cf15c23",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2021
+                              },
+                              "id": "0Q5XBpCYFgUWiG9DUWyAmJ",
+                              "name": "Scaled And Icy",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "K6SRqD_2RbK_lZ8zGHphqQ",
+                                "shareUrl": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ?si=K6SRqD_2RbK_lZ8zGHphqQ"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:0Q5XBpCYFgUWiG9DUWyAmJ"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02c349390bd863bf173eb077e9",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851c349390bd863bf173eb077e9",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273c349390bd863bf173eb077e9",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2009
+                              },
+                              "id": "6rgWZP4QFBjEFF0n6JWEOa",
+                              "name": "Twenty One Pilots",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "puodUcGPR061qVIUegVeHg",
+                                "shareUrl": "https://open.spotify.com/album/6rgWZP4QFBjEFF0n6JWEOa?si=puodUcGPR061qVIUegVeHg"
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:6rgWZP4QFBjEFF0n6JWEOa"
+                            },
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0298e1032a1e26048dd4e3bd52",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485198e1032a1e26048dd4e3bd52",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27398e1032a1e26048dd4e3bd52",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "year": 2025
+                              },
+                              "id": "5qkGe4UpUa8dsokzuroQ72",
+                              "name": "Doubt (demo)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "1NnZni_GRc6ziOunP5y1rw",
+                                "shareUrl": "https://open.spotify.com/album/5qkGe4UpUa8dsokzuroQ72?si=1NnZni_GRc6ziOunP5y1rw"
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:5qkGe4UpUa8dsokzuroQ72"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }

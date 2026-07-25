@@ -1,0 +1,1473 @@
+{
+    "data": {
+        "searchV2": {
+            "query": "twenty+one+pilots",
+            "tracksV2": {
+                "items": [
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D14631",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                                    "name": "Blurryface",
+                                    "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 202333
+                                },
+                                "id": "3CRDbSIZ4r5MsZ0YwxuEkn",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Stressed Out",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:3CRDbSIZ4r5MsZ0YwxuEkn"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#485040",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "621cXqrTSSJi1WqDMSLmbL",
+                                    "name": "Trench",
+                                    "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 324466
+                                },
+                                "id": "23OXdR7YuUBVWh5hSnYJau",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Chlorine",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:23OXdR7YuUBVWh5hSnYJau"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D14631",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                                    "name": "Blurryface",
+                                    "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 214506
+                                },
+                                "id": "2Z8WuEywRWYTKe1NybPQEW",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Ride",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:2Z8WuEywRWYTKe1NybPQEW"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#C80810",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e022ca3ba8f334ca5a5f0312efb",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048512ca3ba8f334ca5a5f0312efb",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2732ca3ba8f334ca5a5f0312efb",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3J8W9AOjQhnBLCX33m3atT",
+                                    "name": "Heathens",
+                                    "uri": "spotify:album:3J8W9AOjQhnBLCX33m3atT"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 195920
+                                },
+                                "id": "6i0V12jOa3mr6uu4WYhUBr",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Heathens",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:6i0V12jOa3mr6uu4WYhUBr"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D44233",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "1KFWgQTw3EMTQebaaepVBI",
+                                    "name": "Clancy",
+                                    "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 196266
+                                },
+                                "id": "7GVQS66ukm48XZVymA3ZUg",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Midwest Indigo",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:7GVQS66ukm48XZVymA3ZUg"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D14631",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                                    "name": "Blurryface",
+                                    "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 188493
+                                },
+                                "id": "3bnVBN67NBEzedqQuWrpP4",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Tear in My Heart",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:3bnVBN67NBEzedqQuWrpP4"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D14631",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                                    "name": "Blurryface",
+                                    "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 191493
+                                },
+                                "id": "57yL3161hUMuw06zzzUCHi",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Doubt",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:57yL3161hUMuw06zzzUCHi"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#757582",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e026caad685af37c08063be928d",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048516caad685af37c08063be928d",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2736caad685af37c08063be928d",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "2r2r78NE05YjyHyVbVgqFn",
+                                    "name": "Vessel",
+                                    "uri": "spotify:album:2r2r78NE05YjyHyVbVgqFn"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 267720
+                                },
+                                "id": "5cbpoIu3YjoOwbBDGUEp3P",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Car Radio",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:5cbpoIu3YjoOwbBDGUEp3P"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#C94F41",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e029b0aa15c3f5e17fa8281aec7",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048519b0aa15c3f5e17fa8281aec7",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2739b0aa15c3f5e17fa8281aec7",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "5qkGe4UpUa8dsokzuroQ72",
+                                    "name": "Doubt (demo)",
+                                    "uri": "spotify:album:5qkGe4UpUa8dsokzuroQ72"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 177940
+                                },
+                                "id": "0vsW1vAlNYiy9Y5briGT8Y",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Doubt (demo)",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:0vsW1vAlNYiy9Y5briGT8Y"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D44233",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "1KFWgQTw3EMTQebaaepVBI",
+                                    "name": "Clancy",
+                                    "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 202600
+                                },
+                                "id": "4bDIAWaOBGAAk95nyXI6zJ",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Routines In The Night",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:4bDIAWaOBGAAk95nyXI6zJ"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#003060",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e028a577010b0baa62c836e330b",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048518a577010b0baa62c836e330b",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2738a577010b0baa62c836e330b",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "4aE8ZrEif8MgWvFNIbz8I6",
+                                    "name": "The Line (from the series Arcane League of Legends)",
+                                    "uri": "spotify:album:4aE8ZrEif8MgWvFNIbz8I6"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        },
+                                        {
+                                            "profile": {
+                                                "name": "Arcane"
+                                            },
+                                            "uri": "spotify:artist:57nPqD7z62gDdq37US9XJR"
+                                        },
+                                        {
+                                            "profile": {
+                                                "name": "League of Legends"
+                                            },
+                                            "uri": "spotify:artist:47mIJdHORyRerp4os813jD"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 192000
+                                },
+                                "id": "3qrTll9OQ9wcejTxPFY0qg",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "The Line (from the series Arcane League of Legends)",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:3qrTll9OQ9wcejTxPFY0qg"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D14631",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e022df0d98a423025032d0db1f7",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048512df0d98a423025032d0db1f7",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3cQO7jp5S9qLBoIVtbkSM1",
+                                    "name": "Blurryface",
+                                    "uri": "spotify:album:3cQO7jp5S9qLBoIVtbkSM1"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 234946
+                                },
+                                "id": "40sRwFjfrRnaTdYPJIg4CP",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Hometown",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:40sRwFjfrRnaTdYPJIg4CP"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D44233",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "1KFWgQTw3EMTQebaaepVBI",
+                                    "name": "Clancy",
+                                    "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 236000
+                                },
+                                "id": "1LAlLBTGBUO0MDA8IbSysd",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Overcompensate",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:1LAlLBTGBUO0MDA8IbSysd"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#1F7DB0",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e021de7ba86b187e313664da77a",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048511de7ba86b187e313664da77a",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2731de7ba86b187e313664da77a",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "2kAer61g2HN6upL2zXAjzd",
+                                    "name": "MTV Unplugged (Live)",
+                                    "uri": "spotify:album:2kAer61g2HN6upL2zXAjzd"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 78691
+                                },
+                                "id": "2YWBOEAoZVVyKPNbhVDsfO",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Intro - MTV Unplugged Live",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:2YWBOEAoZVVyKPNbhVDsfO"
+                            }
+                        },
+                        "matchedFields": [
+                            "LYRICS"
+                        ]
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#003060",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d000048514aaf2413384c1efcc38353c6",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b2734aaf2413384c1efcc38353c6",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "2x6LWti2bjYS6AllSomoV7",
+                                    "name": "Arcane League of Legends: Season 2 (Soundtrack from the Animated Series)",
+                                    "uri": "spotify:album:2x6LWti2bjYS6AllSomoV7"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Arcane"
+                                            },
+                                            "uri": "spotify:artist:57nPqD7z62gDdq37US9XJR"
+                                        },
+                                        {
+                                            "profile": {
+                                                "name": "Twenty One Pilots"
+                                            },
+                                            "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 192000
+                                },
+                                "id": "1QJbDTZAO8rpGOMG4UahFM",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "The Line (from the series Arcane League of Legends)",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:1QJbDTZAO8rpGOMG4UahFM"
+                            }
+                        },
+                        "matchedFields": []
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#A04008",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e0218075f504794fa6989c73b85",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d0000485118075f504794fa6989c73b85",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b27318075f504794fa6989c73b85",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "2Tf6okz3AKF5NrhaTaoUPM",
+                                    "name": "The Hype",
+                                    "uri": "spotify:album:2Tf6okz3AKF5NrhaTaoUPM"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Hoodie Allen"
+                                            },
+                                            "uri": "spotify:artist:382aq8Pij5V2nE2JMHMoxl"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "EXPLICIT"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 178698
+                                },
+                                "id": "5OGIJnhky1kQVQJz33QR2W",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Sushi",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:5OGIJnhky1kQVQJz33QR2W"
+                            }
+                        },
+                        "matchedFields": [
+                            "LYRICS"
+                        ]
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#D1483A",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e02dea5f3864f581d3b67334d44",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d00004851dea5f3864f581d3b67334d44",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b273dea5f3864f581d3b67334d44",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "56QpPjaSgf8rIUk65BsS5T",
+                                    "name": "LONELY VIBES",
+                                    "uri": "spotify:album:56QpPjaSgf8rIUk65BsS5T"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Josh A"
+                                            },
+                                            "uri": "spotify:artist:2rWCIhENZyPVDAeFC0ESWN"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 138323
+                                },
+                                "id": "2hrQRrHSAUFKkczbsA6aSo",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "DOUBT ME",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:2hrQRrHSAUFKkczbsA6aSo"
+                            }
+                        },
+                        "matchedFields": [
+                            "LYRICS"
+                        ]
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#A80830",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e02d43d534b6f3498f61a867c5d",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d00004851d43d534b6f3498f61a867c5d",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b273d43d534b6f3498f61a867c5d",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "3QCtxmPdmORnziwS1oxcnj",
+                                    "name": "DOUBT ME",
+                                    "uri": "spotify:album:3QCtxmPdmORnziwS1oxcnj"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Josh A"
+                                            },
+                                            "uri": "spotify:artist:2rWCIhENZyPVDAeFC0ESWN"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 138323
+                                },
+                                "id": "2eFxVKPZmPXstRVjYWiM8U",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "DOUBT ME",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:2eFxVKPZmPXstRVjYWiM8U"
+                            }
+                        },
+                        "matchedFields": [
+                            "LYRICS"
+                        ]
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#547B94",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e02059c8b3cdcca259712223e5b",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d00004851059c8b3cdcca259712223e5b",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b273059c8b3cdcca259712223e5b",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "27LFuwUecYftURu6FtPigL",
+                                    "name": "Drive Away",
+                                    "uri": "spotify:album:27LFuwUecYftURu6FtPigL"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Mayarie"
+                                            },
+                                            "uri": "spotify:artist:5AXN8PuYHNmH6Cn1al6AQD"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "NONE"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 302299
+                                },
+                                "id": "2A4N3Sg0Tfpc35sfygymKI",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Drive Away",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:2A4N3Sg0Tfpc35sfygymKI"
+                            }
+                        },
+                        "matchedFields": [
+                            "LYRICS"
+                        ]
+                    },
+                    {
+                        "item": {
+                            "__typename": "TrackResponseWrapper",
+                            "data": {
+                                "__typename": "Track",
+                                "albumOfTrack": {
+                                    "coverArt": {
+                                        "extractedColors": {
+                                            "colorDark": {
+                                                "hex": "#B80000",
+                                                "isFallback": false
+                                            }
+                                        },
+                                        "sources": [
+                                            {
+                                                "height": 300,
+                                                "url": "https://i.scdn.co/image/ab67616d00001e02edc7114890800bd22236d3e3",
+                                                "width": 300
+                                            },
+                                            {
+                                                "height": 64,
+                                                "url": "https://i.scdn.co/image/ab67616d00004851edc7114890800bd22236d3e3",
+                                                "width": 64
+                                            },
+                                            {
+                                                "height": 640,
+                                                "url": "https://i.scdn.co/image/ab67616d0000b273edc7114890800bd22236d3e3",
+                                                "width": 640
+                                            }
+                                        ]
+                                    },
+                                    "id": "6rAk96T83GrxqlA51ecEwg",
+                                    "name": "The Revenge Of Hobo Johnson",
+                                    "uri": "spotify:album:6rAk96T83GrxqlA51ecEwg"
+                                },
+                                "artists": {
+                                    "items": [
+                                        {
+                                            "profile": {
+                                                "name": "Hobo Johnson"
+                                            },
+                                            "uri": "spotify:artist:05SdqPzK4m3k1ljK2wrTSP"
+                                        }
+                                    ]
+                                },
+                                "associationsV3": {
+                                    "audioAssociations": {
+                                        "totalCount": 0
+                                    },
+                                    "videoAssociations": {
+                                        "totalCount": 0
+                                    }
+                                },
+                                "contentRating": {
+                                    "label": "EXPLICIT"
+                                },
+                                "duration": {
+                                    "totalMilliseconds": 195502
+                                },
+                                "id": "371IT6eiJukb8yc4WrXqv3",
+                                "trackMediaType": "UNKNOWN",
+                                "name": "Song 9 (The Government’s Not Great)",
+                                "playability": {
+                                    "playable": true,
+                                    "reason": "PLAYABLE"
+                                },
+                                "uri": "spotify:track:371IT6eiJukb8yc4WrXqv3"
+                            }
+                        },
+                        "matchedFields": [
+                            "LYRICS"
+                        ]
+                    }
+                ],
+                "pagingInfo": {
+                    "limit": 20,
+                    "nextOffset": 20
+                },
+                "totalCount": 1000
+            }
+        }
+    },
+    "extensions": {
+        "requestIds": {
+            "/searchV2": {
+                "search-api": "44ba3f66-cf0f-c1f7-70b0-daff61a58f99/yXln"
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "data": {
+    "removeLibraryItems": {
+      "__typename": "RemoveLibraryItemsResponse"
+    }
+  }
+}

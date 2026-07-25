@@ -1,0 +1,235 @@
+{
+  "data": {
+    "artistUnion": {
+      "__typename": "Artist",
+      "id": "3YQKmKGau1PzlVlkL1iodx",
+      "profile": {
+        "name": "Twenty One Pilots"
+      },
+      "relatedContent": {
+        "featuringV2": {
+          "items": [
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "This is Twenty One Pilots. The essential tracks, all in one playlist.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/3YQKmKGau1PzlVlkL1iodx/en-GB",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "This Is Twenty One Pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DZ06evO2k3tf2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "With Arctic Monkeys, Panic! At The Disco, The Neighbourhood and more",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3YQKmKGau1PzlVlkL1iodx/en",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Twenty One Pilots Radio",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1E4yrYiQJfy370"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Celebrating all the songs with more than a billion streams on Spotify. Cover: Olivia Dean",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002830108a17decb571ed2a5449",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "BILLIONS CLUB",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX7iB3RCnBnN4"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The indie viral hits you can't escape. Cover: Dominic Fike",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f00e06ec6eda5b0232da1a35",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Indie that hits different ",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DXad2sxzzYX1N"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "iykyk",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000029caf3475274157254dab1dc2",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "big on the internet",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX5Vy6DFOcx00"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Rock & alternative classics and essential new cuts ft. Radiohead.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f11962ee086796626894f792",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Rock Solid",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX49jUV2NfGku"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Every legend has a beginning. Listen to music from Arcane, now streaming on Netflix. ",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f2be5217998da0aa377b3657",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Arcane Official Playlist",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX3KVUsNUmJc2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "rock never dies. Cover: Lip Critic",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002217a2748a334987ec888e95b",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "MARROW",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DXcF6B6QPhFDv"
+              }
+            }
+          ],
+          "totalCount": 8
+        }
+      },
+      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+    }
+  }
+}

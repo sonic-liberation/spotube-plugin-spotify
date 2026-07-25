@@ -1,0 +1,135 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: discographyOverview
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+        },
+        "operationName": "queryArtistDiscographyOverview",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "5e07d323febb57b4a56a42abbf781490e58764aa45feb6e3dc0591564fc56599"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+            },
+            "operationName": "queryArtistDiscographyOverview",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "5e07d323febb57b4a56a42abbf781490e58764aa45feb6e3dc0591564fc56599"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: server-timing
+          value: edge;dur=89
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 01 May 2026 05:51:04 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "artistUnion": {
+                "__typename": "Artist",
+                "discography": {
+                  "albums": {
+                    "totalCount": 9
+                  },
+                  "all": {
+                    "totalCount": 35
+                  },
+                  "compilations": {
+                    "totalCount": 0
+                  },
+                  "singles": {
+                    "totalCount": 26
+                  }
+                },
+                "id": "3YQKmKGau1PzlVlkL1iodx",
+                "profile": {
+                  "name": "Twenty One Pilots"
+                },
+                "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+              }
+            }
+          }

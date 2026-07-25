@@ -1,0 +1,31 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+name: Local
+variables:
+  - name: access_token
+    value: BQBOXVaMGWtf3OhVLQSySLf-LzteVdAgNbUYBaezeEhzNbrSOuk-iKOzvKLSTI9GP3LCIzHdNBSb_qR2alTWeeZKuPhCq_9KgjBJb1efZ5FsYEoK1_EF8D3QVhKY8vgQ2LnvAFiJQwtAtB3S8ZEL0lbAjqZNrtVHlw4a-sQgY1KY1SGmgA6FQtQzUFVw9MEaoup4_16Dwk0jhtPsJ_-3klr-__65gHQ7-xZpUyAK2E_JcCRPRkxh6S2DMUjRrtFRk47MOxueSgxw-TWlgj4Wn2eVRO2jquWCqn0DTXUXHyySB_ucxVgkheKxROlzZ269Z8qcwR_byCYRu5dPtjXV0SkvNA_xEFf6ijkHzRGXsA1D1zQuz8scK-fe1UtvnWoVppP6lvYjAgBrN_Y
+  - name: base_rest_url
+    value: https://spclient.wg.spotify.com
+  - name: base_gql_url
+    value: https://api-partner.spotify.com/pathfinder/v2/query
+  - name: sp_t
+    value: bde75865ee3572038aba7c74e7a59236
+  - name: time_zone
+    value: Asia/Dhaka
+  - name: browse_section
+    value: 0JQ5DAnM3wGh0gz1MXnu4h
+  - name: userAgent
+    value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36

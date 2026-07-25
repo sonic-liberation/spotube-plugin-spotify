@@ -1,0 +1,2146 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: section
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+          "variables": {
+              "uri": "spotify:section:{{browse_section}}",
+              "timeZone": "{{time_zone}}",
+              "sp_t": "{{sp_t}}",
+              "sectionItemsOffset": 0,
+              "sectionItemsLimit": 20
+          },
+          "operationName": "homeSection",
+          "extensions": {
+              "persistedQuery": {
+                  "version": 1,
+                  "sha256Hash": "d62af2714f2623c923cc9eeca4b9545b4363abaa9188a9e94e2b63b823419a2c"
+              }
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: playlist-type-section
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: content-type
+          value: application/json;charset=UTF-8
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "uri": "spotify:section:0JQ5DAuChZYPe9iDhh2mJz",
+                  "timeZone": "Asia/Dhaka",
+                  "sp_t": "5571fb5eaa9c8684e82a8b4362129473",
+                  "sectionItemsOffset": 0,
+                  "sectionItemsLimit": 20
+              },
+              "operationName": "homeSection",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "3357ffed7961629ba92b4e0a41514e4d5004a14355c964c23ce442205c9e44a1"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: content-encoding
+          value: br
+        - name: Content-Length
+          value: "3095"
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 13 Jun 2025 09:00:58 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "homeSections": {
+                      "__typename": "HomeSectionCollection",
+                      "sections": [
+                          {
+                              "__typename": "HomeSection",
+                              "data": {
+                                  "__typename": "HomeGenericSectionData",
+                                  "headerEntity": {
+                                      "__typename": "UnknownType"
+                                  },
+                                  "subtitle": {
+                                      "transformedLabel": "",
+                                      "translatedBaseText": null
+                                  },
+                                  "title": {
+                                      "transformedLabel": "Today in Music",
+                                      "translatedBaseText": "Today in Music"
+                                  }
+                              },
+                              "sectionItems": {
+                                  "items": [
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~0637704856d00195b53769f6525e2820e347"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX794NyvTu6nv"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:7uiRC0NlNdHQKVhjTztgrg,spotify:artist:037oCHf26WEq5mR05NoOO7,spotify:artist:06eRdiCBgFUhiuFjei0eH2,spotify:artist:4L8j8SN9LKAcKYq8oy4f5j,spotify:artist:2S7h1jilqmzK8iyU47nmSk"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~0637704856d00195b53769f6525e2820e347"
+                                                      }
+                                                  ],
+                                                  "description": "The hottest local and global tracks in Bangladesh. Cover: Bagdhara",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#4279B5",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002ee12e3d767ac38209b352326",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Hot Hits Bangladesh",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX794NyvTu6nv"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX794NyvTu6nv"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377048a7d3af3daa929c128456f56e4eeb"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX2RahGIyQXcJ"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:2oBG74gAocPMFv6Ij9ykdo,spotify:artist:0VAIiNSKG4DWkSaIy5qWz1,spotify:artist:5C1S9XwxMuuCciutwMhp5t,spotify:artist:5r3wPya2PpeTTsXsGhQU8O,spotify:artist:4nVa6XlBFlIkF6msW57PHp"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377048a7d3af3daa929c128456f56e4eeb"
+                                                      }
+                                                  ],
+                                                  "description": "Best of Desi Hip-Hop! Cover: Seedhe Maut",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#0068E0",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f0000000272404e92381bc9a3f8e0488b",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Desi Hip Hop",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX2RahGIyQXcJ"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX2RahGIyQXcJ"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377048c7f4c2ff18e2ffbddd875bc49544"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DWTwzVdyRpXm1"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#FFFFFF"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:5r3wPya2PpeTTsXsGhQU8O,spotify:artist:6DARBhWbfcS9E4yJzcliqQ,spotify:artist:0y59o4v8uw5crbN9M3JiL1,spotify:artist:7GquqOIWZX7FNjsUYNjOKy,spotify:artist:1pS0qiLG23HMMLFwsQALKx"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377048c7f4c2ff18e2ffbddd875bc49544"
+                                                      }
+                                                  ],
+                                                  "description": "Best of South Asian Music. Cover: Shubh",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#9464A4",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002fbc96e58862fcf0c6071ed0c",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Desi Hits",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DWTwzVdyRpXm1"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DWTwzVdyRpXm1"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377045381d966c64c421077f7798e3106f"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX2nX8HgBDmgL"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:2FKWNmZWDBZR4dE5KX4plR,spotify:artist:3scNK8e4mqnP6Rb8a3lwZY,spotify:artist:5rQoBDKFnd1n6BkdbgVaRL,spotify:artist:1qyXgLYCg0osV4glEYuQIv,spotify:artist:5r3wPya2PpeTTsXsGhQU8O"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377045381d966c64c421077f7798e3106f"
+                                                      }
+                                                  ],
+                                                  "description": "Home to the Desi Pop Bops. For more desi bangers check out <a href=\"https://open.spotify.com/playlist/37i9dQZF1DWTwzVdyRpXm1?si=b23337fc53aa44fa\">Desi Hits</a>.  Cover: Diljit Dosanjh",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#781840",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002c59668f130dc3c07d6e33dd9",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Desi Pop",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX2nX8HgBDmgL"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX2nX8HgBDmgL"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06376fb1b92c0309abcfcbf775c6325e7d85"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX4OjnaqVLSs7"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "true"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "madeFor.username",
+                                                          "value": "31tc677yo66bzqdu4eprfhz7zadm"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06376fb1b92c0309abcfcbf775c6325e7d85"
+                                                      }
+                                                  ],
+                                                  "description": "soundtrack your chaye time, picnic hangs, or just a cozy day in.",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#7C776C",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f000000024ae0329c4ae5587e43d40efd",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Chaye & Chill",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX4OjnaqVLSs7"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX4OjnaqVLSs7"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377048d6acf74ad121e303b9550f1e8db0"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DWWlfVnonJ8S6"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:6v5vYOydZ5MrA2qr6e4Lkc,spotify:artist:2oSONSC9zQ4UonDKnLqksx,spotify:artist:6Mv8GjQa7LKUGCAqa9qqdb,spotify:artist:1wRPtKGflJrBx9BmLsSwlU,spotify:artist:3OLGltG8UPIea8sA4w0yg0"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377048d6acf74ad121e303b9550f1e8db0"
+                                                      }
+                                                  ],
+                                                  "description": "*vibing in desi*",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#E4008B",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002b88797f6eb2a64bbb16b2a95",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "desi lofi",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DWWlfVnonJ8S6"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DWWlfVnonJ8S6"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~0637704874534ee4e21f0d29b03adae87973"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DWUu7pG6LwPJc"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:70v0TstWI53dPa43ZUfMKg,spotify:artist:0hroy4e9e0KjPtw6BQEFDx,spotify:artist:6qjhYs5KNSoSU6fNJqDGIo,spotify:artist:0I5QyR4xIAidbAVcJZn91E,spotify:artist:5J7YzJKS681wvKM9sKLtMq"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~0637704874534ee4e21f0d29b03adae87973"
+                                                      }
+                                                  ],
+                                                  "description": "Trending pop music in Bangladesh. Cover: Shitom Ahmed",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#707850",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002201424c27479f17fa63f8c51",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Bangla Pop",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DWUu7pG6LwPJc"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DWUu7pG6LwPJc"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377048660e6f513f7d5b8154b2a857a917"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX3MUQrfTBXMY"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:3zoceu8YD9dVjL4jaleJLg,spotify:artist:3CmrTjyQr0mLwtJO0uIrUq,spotify:artist:2S7h1jilqmzK8iyU47nmSk,spotify:artist:5ThqNILsplOvwjj9kx0Hnt,spotify:artist:694bRUlAdfIh4BpiMWI3FF"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377048660e6f513f7d5b8154b2a857a917"
+                                                      }
+                                                  ],
+                                                  "description": "Headbangers of Bangladesh. Cover : Shironamhin",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#484848",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f000000026503d6390c9098d5213bac76",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Bangla Rock",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX3MUQrfTBXMY"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX3MUQrfTBXMY"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377048660cf5422227ab1533ba305fa728"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX1ju4k3ta38q"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:7eOjJxCgS64XZQ67ulIN2V,spotify:artist:5v4ceNWjpPcck7V5tPbOn1,spotify:artist:5KQST9ferqWtr02OpnrrsA,spotify:artist:3rgl5maOkVyXSlgBTWxovp,spotify:artist:037oCHf26WEq5mR05NoOO7"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377048660cf5422227ab1533ba305fa728"
+                                                      }
+                                                  ],
+                                                  "description": "Hip hop jams from Bangladesh. Cover: Cfu36, Critical Mahmood, Shonnashi\n",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#385048",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002c498bfa114ead84e7ff7cc36",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Bangla Hip Hop Central",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX1ju4k3ta38q"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX1ju4k3ta38q"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~06377048c244e128aaf722d17d65efc6e25c"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DX9Kz7jBbxgYQ"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:3ozYqVCLohfpXIhalkhM8D,spotify:artist:7b6Ui7JVaBDEfZB9k6nHL0,spotify:artist:5lMNphVhMLvhFmTWiKiLA2,spotify:artist:4o0mCeiUIVdknPUMhpO0bd,spotify:artist:5tVEtYVMATyQ6OVOetuZlk"
+                                                      },
+                                                      {
+                                                          "key": "autoplay",
+                                                          "value": "spotify:playlist:37i9dQZF1DX2E5psOxzjXz"
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~06377048c244e128aaf722d17d65efc6e25c"
+                                                      }
+                                                  ],
+                                                  "description": "Home to the best of South Asian Indie scene. Cover: Aditya Rikhari",
+                                                  "format": "editorial",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#E13316",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f00000002a6c8010569be0568da535cda",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Desi Indie",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DX9Kz7jBbxgYQ"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DX9Kz7jBbxgYQ"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "PlaylistResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Playlist",
+                                                  "attributes": [
+                                                      {
+                                                          "key": "request_id",
+                                                          "value": "ssp~063770481ad4d621bd2db8ddf0c85c8de3b1"
+                                                      },
+                                                      {
+                                                          "key": "uri",
+                                                          "value": "spotify:user:spotify:playlist:37i9dQZF1DXbnBBzFWubbU"
+                                                      },
+                                                      {
+                                                          "key": "status",
+                                                          "value": "PUBLISHED"
+                                                      },
+                                                      {
+                                                          "key": "isAlgotorial",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "primary_color",
+                                                          "value": "#ffffff"
+                                                      },
+                                                      {
+                                                          "key": "recs.hasArtists",
+                                                          "value": "spotify:artist:1fu7plwfaglPCQU6y1RFfb,spotify:artist:40i8JD0t84iUXFC2Y2bNHO,spotify:artist:3SvsaUFZZNgVZYKrcFgzWW,spotify:artist:5he5w2lnU9x7JFhnwcekXX,spotify:artist:7DDdKIvTMJoVym9n4UOKYA"
+                                                      },
+                                                      {
+                                                          "key": "header_image_url_desktop",
+                                                          "value": "https://i.scdn.co/image/ab6768640000fe891d27c6f35b9f6a877a8d6e29"
+                                                      },
+                                                      {
+                                                          "key": "image_url",
+                                                          "value": "https://i.scdn.co/image/ab67686d00003ae0226ef04200c31635390919cb"
+                                                      },
+                                                      {
+                                                          "key": "episode_description",
+                                                          "value": "Electronic tunes brought to life by South Asian samples. Updated regularly. "
+                                                      },
+                                                      {
+                                                          "key": "is_video_first",
+                                                          "value": "false"
+                                                      },
+                                                      {
+                                                          "key": "correlation-id",
+                                                          "value": "ssp~063770481ad4d621bd2db8ddf0c85c8de3b1"
+                                                      }
+                                                  ],
+                                                  "description": "Electronic tunes brought to life by South Asian samples. Updated regularly. ",
+                                                  "format": "format-shows-shuffle",
+                                                  "images": {
+                                                      "items": [
+                                                          {
+                                                              "extractedColors": {
+                                                                  "colorDark": {
+                                                                      "hex": "#C83010",
+                                                                      "isFallback": false
+                                                                  }
+                                                              },
+                                                              "sources": [
+                                                                  {
+                                                                      "height": null,
+                                                                      "url": "https://i.scdn.co/image/ab67706f0000000298928fc3ca5c629db98feb80",
+                                                                      "width": null
+                                                                  }
+                                                              ]
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "desi crate diggin'",
+                                                  "ownerV2": {
+                                                      "data": {
+                                                          "__typename": "User",
+                                                          "name": "Spotify",
+                                                          "uri": "spotify:user:spotify"
+                                                      }
+                                                  },
+                                                  "uri": "spotify:playlist:37i9dQZF1DXbnBBzFWubbU"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:playlist:37i9dQZF1DXbnBBzFWubbU"
+                                      }
+                                  ],
+                                  "pagingInfo": {
+                                      "nextOffset": 0
+                                  },
+                                  "totalCount": 11
+                              },
+                              "uri": "spotify:section:0JQ5DAuChZYPe9iDhh2mJz"
+                          }
+                      ]
+                  }
+              },
+              "extensions": {}
+          }
+  - name: album-type-section
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: content-type
+          value: application/json;charset=UTF-8
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "uri": "spotify:section:0JQ5DAnM3wGh0gz1MXnu3B",
+                  "timeZone": "Asia/Dhaka",
+                  "sp_t": "5571fb5eaa9c8684e82a8b4362129473",
+                  "sectionItemsOffset": 0,
+                  "sectionItemsLimit": 20
+              },
+              "operationName": "homeSection",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "3357ffed7961629ba92b4e0a41514e4d5004a14355c964c23ce442205c9e44a1"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: content-encoding
+          value: br
+        - name: Content-Length
+          value: "2638"
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 13 Jun 2025 09:22:06 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "homeSections": {
+                      "__typename": "HomeSectionCollection",
+                      "sections": [
+                          {
+                              "__typename": "HomeSection",
+                              "data": {
+                                  "__typename": "HomeGenericSectionData",
+                                  "headerEntity": {
+                                      "__typename": "UnknownType"
+                                  },
+                                  "subtitle": {
+                                      "transformedLabel": "",
+                                      "translatedBaseText": null
+                                  },
+                                  "title": {
+                                      "transformedLabel": "Popular albums",
+                                      "translatedBaseText": "Popular albums"
+                                  }
+                              },
+                              "sectionItems": {
+                                  "items": [
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Jin"
+                                                              },
+                                                              "uri": "spotify:artist:5vV3bFXnN6D6N3Nj4xRvaV"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#3B818D",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e0289228504f700641956e29f5d",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000485189228504f700641956e29f5d",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b27389228504f700641956e29f5d",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Echo",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:3DmDoHxAeEiDFNWrHSKAdQ"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:3DmDoHxAeEiDFNWrHSKAdQ"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Maanu"
+                                                              },
+                                                              "uri": "spotify:artist:3scNK8e4mqnP6Rb8a3lwZY"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Annural Khalid"
+                                                              },
+                                                              "uri": "spotify:artist:1nCZUpBIcyOxufOx0lPeIW"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#304850",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048511344800458a38197bfc721f3",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2731344800458a38197bfc721f3",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Jhol",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "SINGLE",
+                                                  "uri": "spotify:album:7grtFo2pj5wwRTM7c6NI9y"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:7grtFo2pj5wwRTM7c6NI9y"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "The Weeknd"
+                                                              },
+                                                              "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#401800",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02982320da137d0de34410df61",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851982320da137d0de34410df61",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273982320da137d0de34410df61",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Hurry Up Tomorrow",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:3OxfaVgvTxUTy7276t7SPU"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:3OxfaVgvTxUTy7276t7SPU"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Afusic"
+                                                              },
+                                                              "uri": "spotify:artist:1pS0qiLG23HMMLFwsQALKx"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "AliSoomroMusic"
+                                                              },
+                                                              "uri": "spotify:artist:2hXbxDaLthfodvgEpP6Xpm"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#205880",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e0285c5968be0d0d9c545241124",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000485185c5968be0d0d9c545241124",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b27385c5968be0d0d9c545241124",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Pal Pal",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "SINGLE",
+                                                  "uri": "spotify:album:2PxW90KYw7dKSgRTwu45hS"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:2PxW90KYw7dKSgRTwu45hS"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Bayaan"
+                                                              },
+                                                              "uri": "spotify:artist:3atMq790wQ7IqjeSO0HFeP"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#184870",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02050a86ad4ac35aedb9b41d89",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851050a86ad4ac35aedb9b41d89",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273050a86ad4ac35aedb9b41d89",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Safar",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:3M8j6IwEcqDnf0V3y3ZI3C"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:3M8j6IwEcqDnf0V3y3ZI3C"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Mithoon"
+                                                              },
+                                                              "uri": "spotify:artist:09UmIX92EUH9hAK4bxvHx6"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Ankit Tiwari"
+                                                              },
+                                                              "uri": "spotify:artist:0E02VcvA5p1ndkLdqWD5JB"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Jeet Gannguli"
+                                                              },
+                                                              "uri": "spotify:artist:2kkQthS9OLpK4UqNWYqoVl"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#3D8282",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048516404721c1943d5069f0805f3",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Aashiqui 2",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:0Rkv5iqjF2uenfL0OVB8hg"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:0Rkv5iqjF2uenfL0OVB8hg"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Atif Aslam"
+                                                              },
+                                                              "uri": "spotify:artist:2oSONSC9zQ4UonDKnLqksx"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Pritam"
+                                                              },
+                                                              "uri": "spotify:artist:1wRPtKGflJrBx9BmLsSwlU"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#D03010",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02a1c00de3e08bfde2c646c7a3",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851a1c00de3e08bfde2c646c7a3",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273a1c00de3e08bfde2c646c7a3",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Best of Romance: Atif Aslam & Pritam",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "COMPILATION",
+                                                  "uri": "spotify:album:3vDIjYB1eatEoGlVoZWUFs"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:3vDIjYB1eatEoGlVoZWUFs"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Warfaze"
+                                                              },
+                                                              "uri": "spotify:artist:06eRdiCBgFUhiuFjei0eH2"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#087828",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02bc6d136d5d9ebdcd5db4bca7",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851bc6d136d5d9ebdcd5db4bca7",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273bc6d136d5d9ebdcd5db4bca7",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Shotto",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:6arzq3H2uuaYsfBBe2BYC3"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:6arzq3H2uuaYsfBBe2BYC3"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Faheem Abdullah"
+                                                              },
+                                                              "uri": "spotify:artist:05etL4pzWd6TSv1x5WrlG3"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#535353",
+                                                              "isFallback": true
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e020de04fd2c7c3bdc0a1d765f5",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048510de04fd2c7c3bdc0a1d765f5",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2730de04fd2c7c3bdc0a1d765f5",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Lost;Found",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:013jUXOfDFXnDMBetTdsiH"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:013jUXOfDFXnDMBetTdsiH"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Kushagra"
+                                                              },
+                                                              "uri": "spotify:artist:2IKfr1JgPRXmXKAWwrABc6"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Bharath"
+                                                              },
+                                                              "uri": "spotify:artist:1zD9gVg8wPOmVfYxTjMHaT"
+                                                          },
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Saaheal"
+                                                              },
+                                                              "uri": "spotify:artist:29S4JzoFUP1MCyMgKd83zM"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#438080",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e0283141000ee8ce3b893a0b425",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000485183141000ee8ce3b893a0b425",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b27383141000ee8ce3b893a0b425",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Finding Her",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "SINGLE",
+                                                  "uri": "spotify:album:69xcXWqK1aN73KgVA2i3Zq"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:69xcXWqK1aN73KgVA2i3Zq"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Jin"
+                                                              },
+                                                              "uri": "spotify:artist:5vV3bFXnN6D6N3Nj4xRvaV"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#577D87",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e025033078df5f93a7bb5326de6",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048515033078df5f93a7bb5326de6",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2735033078df5f93a7bb5326de6",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Don't Say You Love Me (Remixes)",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "SINGLE",
+                                                  "uri": "spotify:album:7zVuiqPK2tLtAxeX5pbH9e"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:7zVuiqPK2tLtAxeX5pbH9e"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Anuv Jain"
+                                                              },
+                                                              "uri": "spotify:artist:4gdMJYnopf2nEUcanAwstx"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#202848",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000485172a77d038887cdc425f5ee55",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b27372a77d038887cdc425f5ee55",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Jo Tum Mere Ho",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "SINGLE",
+                                                  "uri": "spotify:album:0upenH0uUT36nBbVM5mQhW"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:0upenH0uUT36nBbVM5mQhW"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Billie Eilish"
+                                                              },
+                                                              "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#082040",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000485171d62ea7ea8a5be92d3c1f62",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "HIT ME HARD AND SOFT",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:7aJuG4TFXa2hmE4z1yxc3n"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:7aJuG4TFXa2hmE4z1yxc3n"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Bayaan"
+                                                              },
+                                                              "uri": "spotify:artist:3atMq790wQ7IqjeSO0HFeP"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#687795",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02f9ea670afa6ad3f5cc553f20",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851f9ea670afa6ad3f5cc553f20",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273f9ea670afa6ad3f5cc553f20",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "4 Saal",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "EP",
+                                                  "uri": "spotify:album:5LiulhSHQrEXkYO63T5Z6Q"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:5LiulhSHQrEXkYO63T5Z6Q"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "TOMORROW X TOGETHER"
+                                                              },
+                                                              "uri": "spotify:artist:0ghlgldX5Dd6720Q3qFyQB"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#EB101F",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02bc23afc74585dc9ea1ae22c3",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851bc23afc74585dc9ea1ae22c3",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273bc23afc74585dc9ea1ae22c3",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Love Language",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "SINGLE",
+                                                  "uri": "spotify:album:5BeSpFkdJkSc9phzT3bJSs"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:5BeSpFkdJkSc9phzT3bJSs"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "The Local Train"
+                                                              },
+                                                              "uri": "spotify:artist:7b6Ui7JVaBDEfZB9k6nHL0"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#D81028",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e028e001d2d4b55039b545d047e",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048518e001d2d4b55039b545d047e",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2738e001d2d4b55039b545d047e",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Aalas Ka Pedh",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:5xOkxpVDHdpWkI9mNfYXab"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:5xOkxpVDHdpWkI9mNfYXab"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Pritam"
+                                                              },
+                                                              "uri": "spotify:artist:1wRPtKGflJrBx9BmLsSwlU"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#501810",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851707ea5b8023ac77d31756ed4",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Yeh Jawaani Hai Deewani",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:2Lxoc72vRTGdQfMvj7Ovi1"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:2Lxoc72vRTGdQfMvj7Ovi1"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "JENNIE"
+                                                              },
+                                                              "uri": "spotify:artist:250b0Wlc5Vk0CoUsaCY84M"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#C00808",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e025a43918ea90bf1e44b7bdcfd",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d000048515a43918ea90bf1e44b7bdcfd",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b2735a43918ea90bf1e44b7bdcfd",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Ruby",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:1vWMw6pu3err6qqZzI3RhH"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:1vWMw6pu3err6qqZzI3RhH"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Jung Kook"
+                                                              },
+                                                              "uri": "spotify:artist:6HaGTQPmzraVmaVxvz6EUc"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#003820",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e02741fd4807f442af3f7359316",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d00004851741fd4807f442af3f7359316",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b273741fd4807f442af3f7359316",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "GOLDEN",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:5pSk3c3wVwnb2arb6ohCPU"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:5pSk3c3wVwnb2arb6ohCPU"
+                                      },
+                                      {
+                                          "content": {
+                                              "__typename": "AlbumResponseWrapper",
+                                              "data": {
+                                                  "__typename": "Album",
+                                                  "artists": {
+                                                      "items": [
+                                                          {
+                                                              "profile": {
+                                                                  "name": "Arnob"
+                                                              },
+                                                              "uri": "spotify:artist:3DeHMjvYP73Pycy8va8RKY"
+                                                          }
+                                                      ]
+                                                  },
+                                                  "coverArt": {
+                                                      "extractedColors": {
+                                                          "colorDark": {
+                                                              "hex": "#302888",
+                                                              "isFallback": false
+                                                          }
+                                                      },
+                                                      "sources": [
+                                                          {
+                                                              "height": 300,
+                                                              "url": "https://i.scdn.co/image/ab67616d00001e0247f2a2cba60192e402766a94",
+                                                              "width": 300
+                                                          },
+                                                          {
+                                                              "height": 64,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000485147f2a2cba60192e402766a94",
+                                                              "width": 64
+                                                          },
+                                                          {
+                                                              "height": 640,
+                                                              "url": "https://i.scdn.co/image/ab67616d0000b27347f2a2cba60192e402766a94",
+                                                              "width": 640
+                                                          }
+                                                      ]
+                                                  },
+                                                  "name": "Hok Kolorob",
+                                                  "playability": {
+                                                      "playable": true,
+                                                      "reason": "PLAYABLE"
+                                                  },
+                                                  "albumType": "ALBUM",
+                                                  "uri": "spotify:album:2pAv3Ard0GkLzuDetq0AyD"
+                                              }
+                                          },
+                                          "data": null,
+                                          "uri": "spotify:album:2pAv3Ard0GkLzuDetq0AyD"
+                                      }
+                                  ],
+                                  "pagingInfo": {
+                                      "nextOffset": 20
+                                  },
+                                  "totalCount": 30
+                              },
+                              "uri": "spotify:section:0JQ5DAnM3wGh0gz1MXnu3B"
+                          }
+                      ]
+                  }
+              },
+              "extensions": {}
+          }

@@ -1,0 +1,26 @@
+{
+  "data": {
+    "artistUnion": {
+      "__typename": "Artist",
+      "discography": {
+        "albums": {
+          "totalCount": 9
+        },
+        "all": {
+          "totalCount": 35
+        },
+        "compilations": {
+          "totalCount": 0
+        },
+        "singles": {
+          "totalCount": 26
+        }
+      },
+      "id": "3YQKmKGau1PzlVlkL1iodx",
+      "profile": {
+        "name": "Twenty One Pilots"
+      },
+      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+    }
+  }
+}

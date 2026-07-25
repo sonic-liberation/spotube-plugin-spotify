@@ -1,0 +1,26 @@
+{
+  "data": {
+    "me": {
+      "profile": {
+        "avatar": {
+          "sources": [
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67757000004a68973762aec39f9528b415f190",
+              "width": 64
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67757000004a68973762aec39f9528b415f110",
+              "width": 300
+            }
+          ]
+        },
+        "avatarBackgroundColor": 11836360,
+        "name": "I am Groot",
+        "uri": "spotify:user:7xp96b5ec9w6mjjn9xuxt6oui",
+        "username": "7xp96b5ec9w6mjjn9xuxt6oui"
+      }
+    }
+  }
+}

@@ -1,0 +1,1239 @@
+{
+  "data": {
+    "artistUnion": {
+      "__typename": "Artist",
+      "id": "3YQKmKGau1PzlVlkL1iodx",
+      "profile": {
+        "name": "Twenty One Pilots"
+      },
+      "relatedContent": {
+        "discoveredOnV2": {
+          "items": [
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "This is Twenty One Pilots. The essential tracks, all in one playlist.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/3YQKmKGau1PzlVlkL1iodx/en-GB",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "This Is Twenty One Pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DZ06evO2k3tf2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c3e059c4b3d2876956a959987",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Twenty One Pilots Playlist ",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Twenty One Pilots"
+                  }
+                },
+                "uri": "spotify:playlist:1WCRwQ0f4yT8tuIUUxP5m1"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "This playlist includes every song by twenty one pilots :) @krbkjoshler on twt clikkietwt follow me",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84b0f01d515d20b59ddeecd47a",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "twenty one pilots - all songs",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Canis Prime"
+                  }
+                },
+                "uri": "spotify:playlist:2E6vAIGycJq6Oj8qixDEpa"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Inst: kitchensinktom1",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c7b1f2b138e971c75cc1b707e",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "All twenty one pilots songs (no live, mtv etc)",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Kitchensinktom1"
+                  }
+                },
+                "uri": "spotify:playlist:1zGPBE4uqo3p825smzALc2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "21 21 21",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e027c693d6ed6dff0d48cf15c23ab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Best of 21 Pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "brassmaster"
+                  }
+                },
+                "uri": "spotify:playlist:17bjIeMuccW9hTLB6C0cqp"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The biggest songs of the 2010s. Cover: Justin Bieber",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002ddeb90231491c14812b062ff",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "All Out 2010s",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX5Ejj0EkURtP"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Lo mejor en inglés de los últimos años. Para novedades, escucha <a href=\"spotify:playlist:37i9dQZF1DX6aTaZa0K6VA\">Pop Up</a>.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f0000000249e05c5a2e4e517d2599f30d",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Pop Internacional 2026",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX1ngEVM0lKrb"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The UK's biggest playlist. Cover: Noah Kahan",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f3406be810f80915455cd2b3",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Hot Hits UK",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DWY4lFlS4Pnso"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84fc1139d55164022b64c389aa",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "2016 vibes🫧",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "h"
+                  }
+                },
+                "uri": "spotify:playlist:3CdfoioAm3TCoieKyYPPys"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "La playlist survitaminée !",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000022c8c1bd4c38e8f2d2dbbbe71",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Garde la pêche !",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX8685vIIepKh"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "SING ALONG EVERYONE                                       #2010 #nostalgia",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cee060dba0b3d4ac759d4bf9c",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "SONGS WE ALL KNOW😛",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "ellie"
+                  }
+                },
+                "uri": "spotify:playlist:5CcCaUYWYgrYebCC50SnEF"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "old but gold, all the best throwback songs to new hits, pop, rnb, edm, rap, workout music and more! :)",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84a730bed7741fc8b1cc36b3f9",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Pop Hits 2000s – 2026",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "maka_97"
+                  }
+                },
+                "uri": "spotify:playlist:6mtYuOxzl58vSGnEDtZ9uB"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e0212a76d1b13ef07188f7dfbc9ab67616d00001e022a038d3bf875d23e4aeaa84eab67616d00001e028863bc11d2aa12b54f5aeb36ab67616d00001e02a91c10fe9472d9bd89802e5a",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e0212a76d1b13ef07188f7dfbc9ab67616d00001e022a038d3bf875d23e4aeaa84eab67616d00001e028863bc11d2aa12b54f5aeb36ab67616d00001e02a91c10fe9472d9bd89802e5a",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e0212a76d1b13ef07188f7dfbc9ab67616d00001e022a038d3bf875d23e4aeaa84eab67616d00001e028863bc11d2aa12b54f5aeb36ab67616d00001e02a91c10fe9472d9bd89802e5a",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Caciones en inglés♥️",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Bely"
+                  }
+                },
+                "uri": "spotify:playlist:4LmmlAnCosEtI6HBV9KdLP"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e02407bd04707c463bbb3410737ab67616d00001e024e0362c225863f6ae2432651ab67616d00001e029164bafe9aaa168d93f4816a",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e02407bd04707c463bbb3410737ab67616d00001e024e0362c225863f6ae2432651ab67616d00001e029164bafe9aaa168d93f4816a",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e02407bd04707c463bbb3410737ab67616d00001e024e0362c225863f6ae2432651ab67616d00001e029164bafe9aaa168d93f4816a",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Mix Coldplay, Twenty One Pilots, Imagine Dragons y más...",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Jorge Jaramillo"
+                  }
+                },
+                "uri": "spotify:playlist:4VqGSN0megEJPQfE0WLn4W"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Sonido contemporáneo y algunos clásicos. \nFoto: The Strokes",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000025459709626a8f046e719a624",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Rock Me",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DWUCQ155jGb0U"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Rewind and rediscover big songs of 2016. Cover: The Weeknd",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000022f7acf5c921cbf06cce48c72",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Top Hits of 2016",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX8XZ6AUo9R4R"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Every album, and single ever released (on spotify)",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cbfcceb45bf26887fa61e1786",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Twenty One Pilots - Discography",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Michael Ramos"
+                  }
+                },
+                "uri": "spotify:playlist:5r27pQLYg6GArC1rZc2T7i"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Rock out while you game.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f0000000236ca8ed1662ffe7103c75846",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Ultimate Rock Gaming",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DWZjmJmeiazwd"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "HITS 2026 🔥 All of today's top chart hits and hot new releases from around the world. Hit ♡ to hear the biggest new songs first! Cover: Bruno Mars",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c80ff79d686b0f1f5a45b7d7b",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "HITS 2026 - Today's Top Songs",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Topsify"
+                  }
+                },
+                "uri": "spotify:playlist:5iwkYfnHAGMEFLiHFFGnP4"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Mellow songs from the 2010s. ",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f956f931f3f83d5316bda8be",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Soft 10s",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX1uHCeFHcn8X"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Every legend has a beginning. Listen to music from Arcane, now streaming on Netflix. ",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f2be5217998da0aa377b3657",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Arcane Official Playlist",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX3KVUsNUmJc2"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The hottest 50. Cover: Tame Impala & JENNIE",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002b96a3bfea7beae76bb9c4195",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Today’s Top Hits",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Walk down memory lane with the biggest rock anthems.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002a92693a9051ab7df6ae28781",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Songs We Rocked Out To",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DWT3pfwRgyQMA"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "La playlist idéale pour prendre la route.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002504597a4e500c75c48ecaeb6",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Sur la route",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX1S89tRXh2OS"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Breach by Twenty One Pilots ",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cb2087564ec10586239624ce4",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Breach",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "lp"
+                  }
+                },
+                "uri": "spotify:playlist:2uK3Xl9LaLrbpKiKYz1Jll"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "21 PILOTS Greatest hits",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Esteban Schreen"
+                  }
+                },
+                "uri": "spotify:playlist:2Xzx566cjm9smWptyq6l5A"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e02667fc5cfc13eb88927265baaab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e02667fc5cfc13eb88927265baaab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e02667fc5cfc13eb88927265baaab67616d00001e02d1d301e737da4324479c6660",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Twenty one pilots as melhores",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Will Araujo"
+                  }
+                },
+                "uri": "spotify:playlist:6vXAUi3oFCNbONTKOKmSrL"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Season 1 and Season 2. All soundtrack songs from the series Arcane. Based on order of first appearance.  Ambessa&#x27;s trailer song included at the end.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84b68aec95d79b3dcdf0d23865",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "ALL Arcane  Songs in ACTUAL order - Season 1&2",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Swami"
+                  }
+                },
+                "uri": "spotify:playlist:6NumvpVG48KQqEv9wkJFYa"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c55b349035185c7908126d9a7",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Nostalgic Playlist 2015, 2016, 2017, 2018",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "LeLivenn"
+                  }
+                },
+                "uri": "spotify:playlist:27qET95DJqZLtNHmHSpuAG"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Twenty One Pilots' setlist for The Clancy World Tour and concerts!  🎵Updates after every show🎵",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cf8ac50489ad6347341ef4d05",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Twenty One Pilots Setlist - The Clancy World Tour: Breach 2026",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "The Setlist"
+                  }
+                },
+                "uri": "spotify:playlist:7EOLzZ9SMsxYKjD3nU2i9l"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Remember to like and subscribe and share to your friends. Each download is a child saved from my van",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Every Twenty One Pilots Song",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Mexi.cant"
+                  }
+                },
+                "uri": "spotify:playlist:5jnpa5eLoP2nK2sPTrp6Fm"
+              }
+            },
+            {
+              "data": {
+                "__typename": "GenericError"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e0269966efa45b125ed6711b43cab67616d00001e0271565eda831124be86c603d5ab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02db91b52ea052f3a6ad7bf8b1",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e0269966efa45b125ed6711b43cab67616d00001e0271565eda831124be86c603d5ab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02db91b52ea052f3a6ad7bf8b1",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e0269966efa45b125ed6711b43cab67616d00001e0271565eda831124be86c603d5ab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02db91b52ea052f3a6ad7bf8b1",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "old emo music 🖤",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "peachie.loser"
+                  }
+                },
+                "uri": "spotify:playlist:3Sv9pAcE7PWXcLO56ZPxsC"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Rock & alternative classics and essential new cuts ft. Radiohead.",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002f11962ee086796626894f792",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Rock Solid",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX49jUV2NfGku"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e022ca3ba8f334ca5a5f0312efbab67616d00001e022df0d98a423025032d0db1f7ab67616d00001e026caad685af37c08063be928dab67616d00001e02c349390bd863bf173eb077e9",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "old twenty one pilots",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "nico"
+                  }
+                },
+                "uri": "spotify:playlist:4bfF9yayXs7cNkR7R5g5EY"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The hottest tracks in the United States. Cover: Noah Kahan",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f000000027ac1293c127259d858d2c190",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Hot Hits USA",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DX0kbJZpiYdZl"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Viral sa Pinas! Cover: Justin Bieber",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f00000002b54d43512ea6fb799d258e3e",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Viral Hits Philippines",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DXe3Jzj3uus9u"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": 640,
+                          "url": "https://mosaic.scdn.co/640/ab67616d00001e021db908d5f66645cb158837caab67616d00001e02407bd04707c463bbb3410737ab67616d00001e02e63ac9f24aab9acc90f81960ab67616d00001e02e80e7dbce3996a1ae5967751",
+                          "width": 640
+                        },
+                        {
+                          "height": 300,
+                          "url": "https://mosaic.scdn.co/300/ab67616d00001e021db908d5f66645cb158837caab67616d00001e02407bd04707c463bbb3410737ab67616d00001e02e63ac9f24aab9acc90f81960ab67616d00001e02e80e7dbce3996a1ae5967751",
+                          "width": 300
+                        },
+                        {
+                          "height": 60,
+                          "url": "https://mosaic.scdn.co/60/ab67616d00001e021db908d5f66645cb158837caab67616d00001e02407bd04707c463bbb3410737ab67616d00001e02e63ac9f24aab9acc90f81960ab67616d00001e02e80e7dbce3996a1ae5967751",
+                          "width": 60
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Top Hits of the 2010s",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Ryan Milowicki"
+                  }
+                },
+                "uri": "spotify:playlist:5XALIurWS8TuF6kk8bj438"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "The 100 most streamed songs on Spotify ever, in correct order (last updated April 12:th 2026)",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c82a04c37e7ae0d899edb198e",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Top 100 most streamed songs on Spotify *Updated*",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "hoolgerssson"
+                  }
+                },
+                "uri": "spotify:playlist:5ABHKGoOzxkaa28ttQV9sE"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "You can also find us with: alternative rock hits - best alternative music - alt rock music - alternative rock csongs - alternative rock playlist - alt rock playlist - alternative rock hits - alt rock music playlist best rock songs - top alternative rock music - alt rock hits - best alt rock",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c2009310fbfcdb22aaa139d99",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Top 100 Alternative Rock Songs",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Redlist - Biggest Hits"
+                  }
+                },
+                "uri": "spotify:playlist:4q2NzGlz5Nn6kB6Dh2vBKX"
+              }
+            },
+            {
+              "data": {
+                "__typename": "Playlist",
+                "description": "Young the Giant along with the hottest alternative songs right now.\n",
+                "images": {
+                  "items": [
+                    {
+                      "sources": [
+                        {
+                          "height": null,
+                          "url": "https://i.scdn.co/image/ab67706f0000000227292a1bead23d6c726cc853",
+                          "width": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "ALT NOW",
+                "ownerV2": {
+                  "data": {
+                    "__typename": "User",
+                    "name": "Spotify"
+                  }
+                },
+                "uri": "spotify:playlist:37i9dQZF1DWVqJMsgEN0F4"
+              }
+            }
+          ],
+          "totalCount": 100
+        }
+      },
+      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: profile
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_gql_url}}"
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {},
+        "operationName": "profileAttributes",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "53bcb064f6cd18c23f752bc324a791194d20df612d8e1239c735144ab0399ced"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_gql_url}}"
+      method: POST
+      headers:
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {},
+            "operationName": "profileAttributes",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "53bcb064f6cd18c23f752bc324a791194d20df612d8e1239c735144ab0399ced"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      body:
+        type: text
+        data: |-
+          {
+            "data": {
+              "me": {
+                "profile": {
+                  "avatar": {
+                    "sources": [
+                      {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67757000004a68973762aec39f9528b415f190",
+                        "width": 64
+                      },
+                      {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67757000004a68973762aec39f9528b415f110",
+                        "width": 300
+                      }
+                    ]
+                  },
+                  "avatarBackgroundColor": 11836360,
+                  "name": "I am Groot",
+                  "uri": "spotify:user:7xp96b5ec9w6mjjn9xuxt6oui",
+                  "username": "7xp96b5ec9w6mjjn9xuxt6oui"
+                }
+              }
+            }
+          }

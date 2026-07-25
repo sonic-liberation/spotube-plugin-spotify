@@ -1,0 +1,82 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: Unfollow
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_gql_url}}"
+  headers:
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uris": [
+            "spotify:playlist:37i9dQZF1E4oLwlqvXisyU"
+          ]
+        },
+        "operationName": "removeItemsFromRootlist",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "3422f1866532820a1d8d0560f88542dbdbd35d0377ee5ecd49593590f5f1e86b"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_gql_url}}"
+      method: POST
+      headers:
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uris": [
+                "spotify:playlist:37i9dQZF1E4oLwlqvXisyU"
+              ]
+            },
+            "operationName": "removeItemsFromRootlist",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "3422f1866532820a1d8d0560f88542dbdbd35d0377ee5ecd49593590f5f1e86b"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      body:
+        type: text
+        data: '{"data":{"removeItemsFromRootlist":{"__typename":"RootlistItemMutationResult"}}}'

@@ -1,0 +1,24 @@
+{
+  "data": {
+    "lookup": [
+      {
+        "__typename": "AlbumResponseWrapper",
+        "data": {
+          "__typename": "Album",
+          "saved": false
+        }
+      },
+      {
+        "__typename": "ArtistResponseWrapper",
+        "data": {
+          "__typename": "Artist",
+          "saved": true
+        }
+      },
+      {
+        "__typename": "PlaylistResponseWrapper"
+      }
+    ]
+  },
+  "extensions": {}
+}

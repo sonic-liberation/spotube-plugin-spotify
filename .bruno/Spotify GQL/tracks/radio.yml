@@ -1,0 +1,88 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: radio
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{base_rest_url}}/inspiredby-mix/v2/seed_to_playlist/spotify:track:{{track_id}}?response-format=json"
+  params:
+    - name: response-format
+      value: json
+      type: query
+  auth: inherit
+
+runtime:
+  variables:
+    - name: track_id
+      value: 2YiCMmONQcoMPX2bV1LxE0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: "{{base_rest_url}}/inspiredby-mix/v2/seed_to_playlist/spotify:track:2YiCMmONQcoMPX2bV1LxE0?response-format=json"
+      method: GET
+      params:
+        - name: response-format
+          value: json
+          type: query
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=UTF8
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-correlation-id
+          value: 0650bc5bab263aa1214521df6bbf7ca6dcb9
+        - name: server-timing
+          value: edge;dur=2
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: vary
+          value: Accept-Encoding
+        - name: date
+          value: Fri, 01 May 2026 07:16:22 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "total": 1,
+            "mediaItems": [
+              {
+                "uri": "spotify:playlist:37i9dQZF1E8N1YZvPFRZm3"
+              }
+            ]
+          }

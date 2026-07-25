@@ -1,0 +1,133 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: areEntitiesInLibrary
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+          "variables": {
+              "uris": [
+                  "spotify:album:0Rkv5iqjF2uenfL0OVB8hg",
+                  "spotify:artist:06eRdiCBgFUhiuFjei0eH2"
+              ]
+          },
+          "operationName": "areEntitiesInLibrary",
+          "extensions": {
+              "persistedQuery": {
+                  "version": 1,
+                  "sha256Hash": "134337999233cc6fdd6b1e6dbf94841409f04a946c5c7b744b09ba0dfe5a85ed"
+              }
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: areEntitiesInLibrary
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: content-type
+          value: application/json;charset=UTF-8
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "uris": [
+                      "spotify:album:0Rkv5iqjF2uenfL0OVB8hg",
+                      "spotify:artist:06eRdiCBgFUhiuFjei0eH2"
+                  ]
+              },
+              "operationName": "areEntitiesInLibrary",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "134337999233cc6fdd6b1e6dbf94841409f04a946c5c7b744b09ba0dfe5a85ed"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: content-encoding
+          value: gzip
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: date
+          value: Fri, 30 May 2025 15:01:51 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: Transfer-Encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "lookup": [
+                      {
+                          "__typename": "AlbumResponseWrapper",
+                          "data": {
+                              "__typename": "Album",
+                              "saved": false
+                          }
+                      },
+                      {
+                          "__typename": "ArtistResponseWrapper",
+                          "data": {
+                              "__typename": "Artist",
+                              "saved": true
+                          }
+                      },
+                      {
+                          "__typename": "PlaylistResponseWrapper"
+                      }
+                  ]
+              },
+              "extensions": {}
+          }

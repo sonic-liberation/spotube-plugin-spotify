@@ -1,0 +1,1069 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: discographyAll
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6",
+          "offset": 0,
+          "limit": 20,
+          "order": "DATE_DESC"
+        },
+        "operationName": "queryArtistDiscographyAll",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "5e07d323febb57b4a56a42abbf781490e58764aa45feb6e3dc0591564fc56599"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+              "offset": 0,
+              "limit": 20,
+              "order": "DATE_DESC"
+            },
+            "operationName": "queryArtistDiscographyAll",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "5e07d323febb57b4a56a42abbf781490e58764aa45feb6e3dc0591564fc56599"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: server-timing
+          value: edge;dur=82
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Fri, 01 May 2026 05:51:27 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "artistUnion": {
+                "__typename": "Artist",
+                "discography": {
+                  "all": {
+                    "items": [
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b5b991fd65053a3acb8c2db2",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b5b991fd65053a3acb8c2db2",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b5b991fd65053a3acb8c2db2",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2026-02-17T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2026
+                              },
+                              "id": "27KwvdCscr3IQtSbnyAZpo",
+                              "name": "Drag Path",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "twcI-yA8T5ywmbkrrv2bDA",
+                                "shareUrl": "https://open.spotify.com/album/27KwvdCscr3IQtSbnyAZpo?si=twcI-yA8T5ywmbkrrv2bDA"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:27KwvdCscr3IQtSbnyAZpo"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e029c5a3160cc1a6ef5efdaf80a",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048519c5a3160cc1a6ef5efdaf80a",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2739c5a3160cc1a6ef5efdaf80a",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2025-09-12T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2025
+                              },
+                              "id": "1El3k8dU3sKyoGUeuyrolH",
+                              "name": "Breach",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "Cjpz7rcdTrys41rM-UkKCA",
+                                "shareUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH?si=Cjpz7rcdTrys41rM-UkKCA"
+                              },
+                              "tracks": {
+                                "totalCount": 13
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e020d6ca0fa9d9f97b4b61077da",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048510d6ca0fa9d9f97b4b61077da",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2730d6ca0fa9d9f97b4b61077da",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2025-08-18T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2025
+                              },
+                              "id": "2ua0DTF9uqI0AugOvNrumo",
+                              "name": "Drum Show",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "eFFEN1U4SbS3YLM0mgkp_Q",
+                                "shareUrl": "https://open.spotify.com/album/2ua0DTF9uqI0AugOvNrumo?si=eFFEN1U4SbS3YLM0mgkp_Q"
+                              },
+                              "tracks": {
+                                "totalCount": 2
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:2ua0DTF9uqI0AugOvNrumo"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02b31e1391eee9f695a6ba929d",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851b31e1391eee9f695a6ba929d",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273b31e1391eee9f695a6ba929d",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2025-06-12T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2025
+                              },
+                              "id": "2VHIo87YnEergnRfHnQN3J",
+                              "name": "The Contract",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "tSq90jwgQOKA6hq5KgZIJg",
+                                "shareUrl": "https://open.spotify.com/album/2VHIo87YnEergnRfHnQN3J?si=tSq90jwgQOKA6hq5KgZIJg"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:2VHIo87YnEergnRfHnQN3J"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e0298e1032a1e26048dd4e3bd52",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d0000485198e1032a1e26048dd4e3bd52",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b27398e1032a1e26048dd4e3bd52",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2025-04-09T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2025
+                              },
+                              "id": "5qkGe4UpUa8dsokzuroQ72",
+                              "name": "Doubt (demo)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "Ahu3zimBS9eBLKHu0psyMw",
+                                "shareUrl": "https://open.spotify.com/album/5qkGe4UpUa8dsokzuroQ72?si=Ahu3zimBS9eBLKHu0psyMw"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:5qkGe4UpUa8dsokzuroQ72"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e028a577010b0baa62c836e330b",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048518a577010b0baa62c836e330b",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2738a577010b0baa62c836e330b",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2024-11-22T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2024
+                              },
+                              "id": "4aE8ZrEif8MgWvFNIbz8I6",
+                              "name": "The Line (from the series Arcane League of Legends)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "1VDdnIfATMKSe10tbRQMEw",
+                                "shareUrl": "https://open.spotify.com/album/4aE8ZrEif8MgWvFNIbz8I6?si=1VDdnIfATMKSe10tbRQMEw"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:4aE8ZrEif8MgWvFNIbz8I6"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02cc94dd4730132ccfbd617bf9",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851cc94dd4730132ccfbd617bf9",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273cc94dd4730132ccfbd617bf9",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2024-05-24T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2024
+                              },
+                              "id": "1KFWgQTw3EMTQebaaepVBI",
+                              "name": "Clancy",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "AFdJZxjYRiKJse-EA6AzGA",
+                                "shareUrl": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI?si=AFdJZxjYRiKJse-EA6AzGA"
+                              },
+                              "tracks": {
+                                "totalCount": 13
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02d26fe1e29c8ccb9f5ccb4709",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851d26fe1e29c8ccb9f5ccb4709",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273d26fe1e29c8ccb9f5ccb4709",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2024-05-22T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2024
+                              },
+                              "id": "7K7eWZNR5t9UBlrN2ltzLI",
+                              "name": "The Craving",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "OZg7qPI6SBGb9W8s_n-J0g",
+                                "shareUrl": "https://open.spotify.com/album/7K7eWZNR5t9UBlrN2ltzLI?si=OZg7qPI6SBGb9W8s_n-J0g"
+                              },
+                              "tracks": {
+                                "totalCount": 4
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:7K7eWZNR5t9UBlrN2ltzLI"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e023391c2c087c77ae353dfdb04",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048513391c2c087c77ae353dfdb04",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2733391c2c087c77ae353dfdb04",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2024-02-29T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2024
+                              },
+                              "id": "5ZSqGFLuXUJUlIObSkN0Bz",
+                              "name": "Overcompensate",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "mTDXdE7dS_iwQ-21GbK0gw",
+                                "shareUrl": "https://open.spotify.com/album/5ZSqGFLuXUJUlIObSkN0Bz?si=mTDXdE7dS_iwQ-21GbK0gw"
+                              },
+                              "tracks": {
+                                "totalCount": 2
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:5ZSqGFLuXUJUlIObSkN0Bz"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02092d4c1db629499ac92d4b5e",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851092d4c1db629499ac92d4b5e",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273092d4c1db629499ac92d4b5e",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2023-04-21T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2023
+                              },
+                              "id": "2kAer61g2HN6upL2zXAjzd",
+                              "name": "MTV Unplugged (Live)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "rGjCfHZySgSGlRdQeJLDlA",
+                                "shareUrl": "https://open.spotify.com/album/2kAer61g2HN6upL2zXAjzd?si=rGjCfHZySgSGlRdQeJLDlA"
+                              },
+                              "tracks": {
+                                "totalCount": 7
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:2kAer61g2HN6upL2zXAjzd"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e024779225ee34403b3b393ddde",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048514779225ee34403b3b393ddde",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2734779225ee34403b3b393ddde",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2021-11-19T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2021
+                              },
+                              "id": "1B61NzknoGqafMfKLY7QtZ",
+                              "name": "Scaled And Icy (Livestream Version)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "hc6rDVfKTwiQIwYYk2lCJA",
+                                "shareUrl": "https://open.spotify.com/album/1B61NzknoGqafMfKLY7QtZ?si=hc6rDVfKTwiQIwYYk2lCJA"
+                              },
+                              "tracks": {
+                                "totalCount": 21
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:1B61NzknoGqafMfKLY7QtZ"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e025769c2e4b858fab5fa07152b",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048515769c2e4b858fab5fa07152b",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2735769c2e4b858fab5fa07152b",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2021-09-10T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2021
+                              },
+                              "id": "12ElyiIcWOKdZXOgPxJwPN",
+                              "name": "Heathens / Trees (Livestream Version)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "IMCwd7eFSB2Ok8p-po60fg",
+                                "shareUrl": "https://open.spotify.com/album/12ElyiIcWOKdZXOgPxJwPN?si=IMCwd7eFSB2Ok8p-po60fg"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:12ElyiIcWOKdZXOgPxJwPN"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02ece01469e9263a14ffdf522a",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851ece01469e9263a14ffdf522a",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273ece01469e9263a14ffdf522a",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2021-06-11T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2021
+                              },
+                              "id": "3lXhr0xJlvW6UUuUAM9hb2",
+                              "name": "Shy Away (Livestream Version)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "3BB6i0qrRr-6D3GW2ypLBA",
+                                "shareUrl": "https://open.spotify.com/album/3lXhr0xJlvW6UUuUAM9hb2?si=3BB6i0qrRr-6D3GW2ypLBA"
+                              },
+                              "tracks": {
+                                "totalCount": 2
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:3lXhr0xJlvW6UUuUAM9hb2"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e027c693d6ed6dff0d48cf15c23",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048517c693d6ed6dff0d48cf15c23",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2737c693d6ed6dff0d48cf15c23",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2021-05-21T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2021
+                              },
+                              "id": "0Q5XBpCYFgUWiG9DUWyAmJ",
+                              "name": "Scaled And Icy",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "nyxzBqvyQZ6JfD-pKKqXyw",
+                                "shareUrl": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ?si=nyxzBqvyQZ6JfD-pKKqXyw"
+                              },
+                              "tracks": {
+                                "totalCount": 11
+                              },
+                              "type": "ALBUM",
+                              "uri": "spotify:album:0Q5XBpCYFgUWiG9DUWyAmJ"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02958829fada56d73a6a35852d",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851958829fada56d73a6a35852d",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273958829fada56d73a6a35852d",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2020-12-08T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2020
+                              },
+                              "id": "5bh5kgZddiyd5ObXOP9Exu",
+                              "name": "Christmas Saves The Year",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "8l6W3oAHSVOrziBfIyIApQ",
+                                "shareUrl": "https://open.spotify.com/album/5bh5kgZddiyd5ObXOP9Exu?si=8l6W3oAHSVOrziBfIyIApQ"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:5bh5kgZddiyd5ObXOP9Exu"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e020784b8d528434849cd894806",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d000048510784b8d528434849cd894806",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b2730784b8d528434849cd894806",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2020-05-26T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2020
+                              },
+                              "id": "4gH0qokNrxFcg6iHF7mNd6",
+                              "name": "Level of Concern (live from outside)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "W0Egb953RbanUjPaZlpi1w",
+                                "shareUrl": "https://open.spotify.com/album/4gH0qokNrxFcg6iHF7mNd6?si=W0Egb953RbanUjPaZlpi1w"
+                              },
+                              "tracks": {
+                                "totalCount": 2
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:4gH0qokNrxFcg6iHF7mNd6"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02667fc5cfc13eb88927265baa",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851667fc5cfc13eb88927265baa",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273667fc5cfc13eb88927265baa",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2020-04-09T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2020
+                              },
+                              "id": "4h3HXlnt6lryGzGbWmcFuY",
+                              "name": "Level of Concern",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "KyJPT87xSS2045koIvxYPQ",
+                                "shareUrl": "https://open.spotify.com/album/4h3HXlnt6lryGzGbWmcFuY?si=KyJPT87xSS2045koIvxYPQ"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:4h3HXlnt6lryGzGbWmcFuY"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02be9ce1602f4d1dc238c5f7ab",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851be9ce1602f4d1dc238c5f7ab",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273be9ce1602f4d1dc238c5f7ab",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2019-10-16T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2019
+                              },
+                              "id": "29GQfbZF68zQAbyzKX8kq3",
+                              "name": "The Hype (Berlin)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "frzoPT8cTJmXn-PtE2BhtQ",
+                                "shareUrl": "https://open.spotify.com/album/29GQfbZF68zQAbyzKX8kq3?si=frzoPT8cTJmXn-PtE2BhtQ"
+                              },
+                              "tracks": {
+                                "totalCount": 3
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:29GQfbZF68zQAbyzKX8kq3"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02a71cdbbc060117fcddf76e66",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851a71cdbbc060117fcddf76e66",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273a71cdbbc060117fcddf76e66",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2019-07-26T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2019
+                              },
+                              "id": "36yNEpiZYBDNUAuhh7QhoQ",
+                              "name": "The Hype (Alt Mix)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "Fxman1FiS7OdP728v6QCJA",
+                                "shareUrl": "https://open.spotify.com/album/36yNEpiZYBDNUAuhh7QhoQ?si=Fxman1FiS7OdP728v6QCJA"
+                              },
+                              "tracks": {
+                                "totalCount": 2
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:36yNEpiZYBDNUAuhh7QhoQ"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "releases": {
+                          "items": [
+                            {
+                              "coverArt": {
+                                "sources": [
+                                  {
+                                    "height": 300,
+                                    "url": "https://i.scdn.co/image/ab67616d00001e02bc4702e35ab001884775be4e",
+                                    "width": 300
+                                  },
+                                  {
+                                    "height": 64,
+                                    "url": "https://i.scdn.co/image/ab67616d00004851bc4702e35ab001884775be4e",
+                                    "width": 64
+                                  },
+                                  {
+                                    "height": 640,
+                                    "url": "https://i.scdn.co/image/ab67616d0000b273bc4702e35ab001884775be4e",
+                                    "width": 640
+                                  }
+                                ]
+                              },
+                              "date": {
+                                "isoString": "2019-07-11T00:00:00Z",
+                                "precision": "DAY",
+                                "year": 2019
+                              },
+                              "id": "517BVw2CemFLW5p0wKLffT",
+                              "name": "Cut My Lip (Brooklyn)",
+                              "playability": {
+                                "playable": true,
+                                "reason": "PLAYABLE"
+                              },
+                              "sharingInfo": {
+                                "shareId": "5LKBMoOzRH6w8m8Y9PKF1w",
+                                "shareUrl": "https://open.spotify.com/album/517BVw2CemFLW5p0wKLffT?si=5LKBMoOzRH6w8m8Y9PKF1w"
+                              },
+                              "tracks": {
+                                "totalCount": 1
+                              },
+                              "type": "SINGLE",
+                              "uri": "spotify:album:517BVw2CemFLW5p0wKLffT"
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "totalCount": 35
+                  }
+                }
+              }
+            }
+          }

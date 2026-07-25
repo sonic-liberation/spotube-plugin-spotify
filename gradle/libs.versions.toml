@@ -1,0 +1,61 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+[versions]
+
+kotlin = "2.3.21"
+maven-publish = "0.34.0"
+kotlinx-coroutines = "1.10.2"
+kotlinx-serialization = "1.10.0"
+spotube-gradle = "0.1.1"
+spotube-plugin-interfaces = "0.1.0"
+ziplineVersion = "1.27.0"
+semver = "2.1.0"
+base32 = "1.0.1"
+agp = "9.2.0"
+kotlinStdlib = "2.3.21"
+kotlinTest = "2.3.21"
+runner = "1.7.0"
+core = "1.7.0"
+junit = "1.3.0"
+ktor = "3.4.3"
+
+
+[libraries]
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+spotube-plugin-interfaces = { module = "dev.krtirtho.spotube:plugin_interfaces", version.ref = "spotube-plugin-interfaces" }
+zipline-core = { module = "app.cash.zipline:zipline", version.ref = "ziplineVersion" }
+semver = { module = "net.swiftzer.semver:semver", version.ref = "semver" }
+base32 = { module = "com.osmerion.kotlin:kotlin-base32", version.ref = "base32" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlinTest" }
+runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+core = { group = "androidx.test", name = "core", version.ref = "core" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+
+[plugins]
+
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+spotubeGradle = { id = "dev.krtirtho.spotube.gradle-plugin", version.ref = "spotube-gradle" }
+zipline-gradle-plugin = { id = "app.cash.zipline", version.ref = "ziplineVersion" }
+android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+android-lint = { id = "com.android.lint", version.ref = "agp" }

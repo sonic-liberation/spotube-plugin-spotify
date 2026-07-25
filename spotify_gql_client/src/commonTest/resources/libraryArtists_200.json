@@ -1,0 +1,90 @@
+{
+  "data": {
+    "me": {
+      "libraryV3": {
+        "__typename": "LibraryPage",
+        "availableFilters": [],
+        "availableSortOrders": [
+          {
+            "id": "Recents",
+            "name": "Recents"
+          },
+          {
+            "id": "Recently Added",
+            "name": "Recently Added"
+          },
+          {
+            "id": "Alphabetical",
+            "name": "Alphabetical"
+          }
+        ],
+        "breadcrumbs": [],
+        "items": [
+          {
+            "addedAt": {
+              "isoString": "2025-05-01T18:00:32Z"
+            },
+            "depth": 0,
+            "item": {
+              "__typename": "ArtistResponseWrapper",
+              "_uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+              "data": {
+                "__typename": "Artist",
+                "profile": {
+                  "name": "Twenty One Pilots"
+                },
+                "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+                "visuals": {
+                  "avatarImage": {
+                    "extractedColors": {
+                      "colorDark": {
+                        "hex": "#DD3728",
+                        "isFallback": false
+                      }
+                    },
+                    "sources": [
+                      {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb61a7ea26d33ded218cd1e59d",
+                        "width": 640
+                      },
+                      {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f17861a7ea26d33ded218cd1e59d",
+                        "width": 160
+                      },
+                      {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab6761610000517461a7ea26d33ded218cd1e59d",
+                        "width": 320
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "pinnable": true,
+            "pinned": false,
+            "playedAt": null
+          }
+        ],
+        "pagingInfo": {
+          "limit": 50,
+          "offset": 0
+        },
+        "selectedFilters": [
+          {
+            "id": "Artists",
+            "name": "Artists"
+          }
+        ],
+        "selectedSortOrder": {
+          "id": "Recents",
+          "name": "Recents"
+        },
+        "totalCount": 1
+      }
+    }
+  },
+  "extensions": {}
+}

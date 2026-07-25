@@ -1,0 +1,78 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      nightly:
+        description: Nightly release (uses "nightly" tag)
+        type: boolean
+        default: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Checkout spotube gradle plugin
+        uses: actions/checkout@v7
+        with:
+          repository: team-spotube/gradle-plugin
+          path: spotube-gradle-plugin
+
+      - name: Publish spotube gradle plugin to maven local
+        run: |
+          chmod +x ./gradlew
+          ./gradlew publishToMavenLocal
+        working-directory: spotube-gradle-plugin
+
+      - name: Write buildkonfig placeholders
+        run: |
+          for dir in spotube_plugin_spotify spotify_gql_client; do
+            mkdir -p "$dir"
+            echo "accessToken=placeholder" >> "$dir/local.properties"
+            echo "spDcCookie=placeholder" >> "$dir/local.properties"
+            echo "spTCookie=placeholder" >> "$dir/local.properties"
+          done
+
+      - name: Build plugin
+        run: |
+          chmod +x ./gradlew
+          ./gradlew :spotube_plugin_spotify:packageProductionPlugin
+
+      - name: Read version from build.gradle.kts
+        if: ${{ !inputs.nightly }}
+        id: version
+        run: |
+          VERSION=$(sed -n '/spotubePlugin {/,/}/ { s/.*version = "\(.*\)"/\1/p }' spotube_plugin_spotify/build.gradle.kts | head -1)
+          echo "prop=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Set tag name
+        id: tag
+        run: |
+          if [ "${{ inputs.nightly }}" = "true" ]; then
+            echo "tag=nightly" >> $GITHUB_OUTPUT
+          else
+            echo "tag=${{ steps.version.outputs.prop }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Prepare release asset
+        run: cp spotube_plugin_spotify/build/distributions/plugin-production.smplug plugin.smplug
+
+      - name: Create release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          prerelease: ${{ inputs.nightly }}
+          files: plugin.smplug
+          fail_on_unmatched_files: true

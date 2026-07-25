@@ -1,0 +1,87 @@
+{
+  "data": {
+    "trackUnion": {
+      "__typename": "Track",
+      "associationsV3": {
+        "audioAssociations": {
+          "__typename": "TrackAudioAssociationPage",
+          "items": []
+        },
+        "videoAssociations": {
+          "totalCount": 0
+        }
+      },
+      "contentRating": {
+        "label": "NONE"
+      },
+      "duration": {
+        "totalMilliseconds": 322066
+      },
+      "id": "0Ji9UonfwC90rbZ4IaQhOb",
+      "mediaType": "AUDIO",
+      "name": "City Walls",
+      "playability": {
+        "playable": true,
+        "reason": "PLAYABLE"
+      },
+      "playcount": "51196057",
+      "saved": false,
+      "sharingInfo": {
+        "shareId": "1Xh6by3cRruUzmLkpAAVQw",
+        "shareUrl": "https://open.spotify.com/track/0Ji9UonfwC90rbZ4IaQhOb"
+      },
+      "trackNumber": 1,
+      "uri": "spotify:track:0Ji9UonfwC90rbZ4IaQhOb",
+      "albumOfTrack": {
+        "copyright": {
+          "items": [],
+          "totalCount": 0
+        },
+        "courtesyLine": "",
+        "id": "1El3k8dU3sKyoGUeuyrolH",
+        "date": {
+          "isoString": "2025-09-12T00:00:00Z",
+          "precision": "DAY",
+          "year": 2025
+        },
+        "name": "Breach",
+        "playability": {
+          "playable": true
+        },
+        "sharingInfo": {
+          "shareId": "-uv8M8myT3mOx4TuHlUgFQ",
+          "shareUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
+        },
+        "type": "ALBUM",
+        "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+        "coverArt": {
+          "extractedColors": {
+            "colorRaw": {
+              "hex": "#D84838"
+            }
+          },
+          "sources": [
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e029c5a3160cc1a6ef5efdaf80a",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048519c5a3160cc1a6ef5efdaf80a",
+              "width": 64
+            },
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2739c5a3160cc1a6ef5efdaf80a",
+              "width": 640
+            }
+          ]
+        }
+      },
+      "firstArtist": {
+        "items": []
+      }
+    }
+  }
+}

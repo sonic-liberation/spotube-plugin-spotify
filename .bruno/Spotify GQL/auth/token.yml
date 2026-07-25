@@ -1,0 +1,105 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: token
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://open.spotify.com/api/token?reason=init&productType=web-player&totp=117564&totpServer=117564&totpVer=5&sTime=1750326659&cTime=1750326538405&buildVer=unknown&buildDate=unknown&totpValidUntil=Wed+Jun+04+2025+21%3A04%3A15+GMT%2B0600+%28Bangladesh+Standard+Time%29
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: accept-language
+      value: en-GB,en;q=0.8
+    - name: baggage
+      value: sentry-environment=production,sentry-release=web-player_2025-06-19_1750320842969_f531604,sentry-public_key=de32132fc06e4b28965ecf25332c3a25,sentry-trace_id=03c458e7959b4f8997736cc8faaacf39,sentry-sample_rate=0.008,sentry-sampled=false
+      disabled: true
+    - name: dnt
+      value: "1"
+      disabled: true
+    - name: priority
+      value: u=1, i
+      disabled: true
+    - name: referer
+      value: https://open.spotify.com/
+    - name: sec-ch-ua
+      value: '"Brave";v="137", "Chromium";v="137", "Not/A)Brand";v="24"'
+      disabled: true
+    - name: sec-ch-ua-mobile
+      value: ?0
+      disabled: true
+    - name: sec-ch-ua-platform
+      value: '"Linux"'
+      disabled: true
+    - name: sec-fetch-dest
+      value: empty
+      disabled: true
+    - name: sec-fetch-mode
+      value: cors
+      disabled: true
+    - name: sec-fetch-site
+      value: same-origin
+      disabled: true
+    - name: sec-gpc
+      value: "1"
+      disabled: true
+    - name: sentry-trace
+      value: 03c458e7959b4f8997736cc8faaacf39-bdab40f2c219060d-0
+      disabled: true
+    - name: user-agent
+      value: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+    - name: Cookie
+      value: sp_t=5571fb5eaa9c8684e82a8b4362129473; sp_m=bd-en; sp_gaid=0088fc0192922a4a8326d45a808c74d28a6d232427b5d8200eaee3; sp_last_utm=%7B%22utm_campaign%22%3A%22your_account%22%2C%22utm_medium%22%3A%22menu%22%2C%22utm_source%22%3A%22spotify%22%7D; sp_dc=AQDBZu5c1TORY-vyFvoysIpCA2Ruir-t2UYdwt1FA0BiPrC3JUJ1k0kYo_E8Tn-BBLG7ZxfOSA8112uChjTeg8WtuxP1-x0weDi-D1gkXskCXUaWAxSk-rJNSO5m-5KIGTIgty7Zs-rqsw8EVEKDu9G4vR1m_3V2eokwrHL8mIU3msLKys3xKtjpU2S4VpKiRsR3mxndtWx0Nqom_oxBezncG6El8Xw_QGbw-bA11xj64y_CLuc-nIT7kfYGNHXdaX_93HRpn2ka9qI; sp_key=1cb1d638-c80f-4868-9b6f-615ec0a4bf81; sp_landing=https%3A%2F%2Fopen.spotify.com%2F%3Fsp_cid%3D5571fb5eaa9c8684e82a8b4362129473%26device%3Ddesktop
+      disabled: true
+  params:
+    - name: reason
+      value: init
+      type: query
+    - name: productType
+      value: web-player
+      type: query
+    - name: totp
+      value: "117564"
+      type: query
+    - name: totpServer
+      value: "117564"
+      type: query
+    - name: totpVer
+      value: "5"
+      type: query
+    - name: sTime
+      value: "1750326659"
+      type: query
+    - name: cTime
+      value: "1750326538405"
+      type: query
+    - name: buildVer
+      value: unknown
+      type: query
+    - name: buildDate
+      value: unknown
+      type: query
+    - name: totpValidUntil
+      value: Wed+Jun+04+2025+21%3A04%3A15+GMT%2B0600+%28Bangladesh+Standard+Time%29
+      type: query
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

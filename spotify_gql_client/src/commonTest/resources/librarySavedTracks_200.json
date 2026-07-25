@@ -1,0 +1,271 @@
+{
+  "data": {
+    "me": {
+      "library": {
+        "tracks": {
+          "__typename": "UserLibraryTrackPage",
+          "items": [
+            {
+              "__typename": "UserLibraryTrackResponse",
+              "addedAt": {
+                "isoString": "2025-05-01T18:03:41Z"
+              },
+              "track": {
+                "_uri": "spotify:track:7GVQS66ukm48XZVymA3ZUg",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Twenty One Pilots"
+                          },
+                          "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Clancy",
+                    "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Twenty One Pilots"
+                        },
+                        "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "audioAssociations": {
+                      "totalCount": 0
+                    },
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "duration": {
+                    "totalMilliseconds": 196266
+                  },
+                  "mediaType": "UNKNOWN",
+                  "name": "Midwest Indigo",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 4
+                }
+              }
+            },
+            {
+              "__typename": "UserLibraryTrackResponse",
+              "addedAt": {
+                "isoString": "2022-01-16T06:15:38Z"
+              },
+              "track": {
+                "_uri": "spotify:track:4qu63nuBpdn0qHUHuObEj1",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Marshmello"
+                          },
+                          "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+                        },
+                        {
+                          "profile": {
+                            "name": "Jonas Brothers"
+                          },
+                          "uri": "spotify:artist:7gOdHgIoIKoe4i9Tta6qdD"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ae40468931087f78919b86ce",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ae40468931087f78919b86ce",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ae40468931087f78919b86ce",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Leave Before You Love Me",
+                    "uri": "spotify:album:66JuK41D3LpkbX3HCTGcQk"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Marshmello"
+                        },
+                        "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+                      },
+                      {
+                        "profile": {
+                          "name": "Jonas Brothers"
+                        },
+                        "uri": "spotify:artist:7gOdHgIoIKoe4i9Tta6qdD"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "audioAssociations": {
+                      "totalCount": 0
+                    },
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "duration": {
+                    "totalMilliseconds": 154983
+                  },
+                  "mediaType": "UNKNOWN",
+                  "name": "Leave Before You Love Me (with Jonas Brothers)",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1
+                }
+              }
+            },
+            {
+              "__typename": "UserLibraryTrackResponse",
+              "addedAt": {
+                "isoString": "2022-01-16T06:13:13Z"
+              },
+              "track": {
+                "_uri": "spotify:track:0z8hI3OPS8ADPWtoCjjLl6",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Shawn Mendes"
+                          },
+                          "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+                        },
+                        {
+                          "profile": {
+                            "name": "Tainy"
+                          },
+                          "uri": "spotify:artist:0GM7qgcRCORpGnfcN2tCiB"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02a111c87c210cc9bff93948bd",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851a111c87c210cc9bff93948bd",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273a111c87c210cc9bff93948bd",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Summer Of Love",
+                    "uri": "spotify:album:4nProAxFavzKkbaRQ2Otyk"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Shawn Mendes"
+                        },
+                        "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+                      },
+                      {
+                        "profile": {
+                          "name": "Tainy"
+                        },
+                        "uri": "spotify:artist:0GM7qgcRCORpGnfcN2tCiB"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "audioAssociations": {
+                      "totalCount": 0
+                    },
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "duration": {
+                    "totalMilliseconds": 184104
+                  },
+                  "mediaType": "UNKNOWN",
+                  "name": "Summer of Love (Shawn Mendes & Tainy)",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1
+                }
+              }
+            }
+          ],
+          "pagingInfo": {
+            "limit": 50,
+            "offset": 0
+          },
+          "totalCount": 3
+        }
+      }
+    }
+  },
+  "extensions": {}
+}

@@ -1,0 +1,331 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: isSaved
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uris": [
+            "spotify:track:0Ji9UonfwC90rbZ4IaQhOb",
+            "spotify:track:4rPl7ezxtoqshKnI1kk3dX",
+            "spotify:track:6YJYhPKP7MRzJSHqe3QI9K",
+            "spotify:track:6DzXaIgVIH7oLA1pkUtFaG",
+            "spotify:track:11QNo3ld81pncy71q6VIic",
+            "spotify:track:0d2Ik5rp9Icd1oqn4178x2",
+            "spotify:track:2BHSRlGgJwzTPfYvAax28m",
+            "spotify:track:1aVDGnB6ydtXwudYLgUB6h",
+            "spotify:track:5QzlDlRuT9D5LdpybJoNYi",
+            "spotify:track:3yKIL7niCEJajKlVmMNBZA",
+            "spotify:track:0DGf6s54MQ3Oht41mj6s6K",
+            "spotify:track:3FbMtvXMcjmuAzlAhgwK0I",
+            "spotify:track:spotify:local:twenty+one+pilots:Breach%3A+Digital+Remains:Drag+Path:304",
+            "spotify:track:0vsW1vAlNYiy9Y5briGT8Y",
+            "spotify:track:3qrTll9OQ9wcejTxPFY0qg",
+            "spotify:track:0wEGo9LsSrSUz9HOtraWAO",
+            "spotify:track:4PCD9jZRM2VswisaTBhc25",
+            "spotify:track:7GVQS66ukm48XZVymA3ZUg",
+            "spotify:track:4bDIAWaOBGAAk95nyXI6zJ",
+            "spotify:track:3sEufjE0ITaW5qhtnW3avv",
+            "spotify:track:4hfqe20vqkuRv1RDsA1LbQ",
+            "spotify:track:49oxuPnuWOL793zpF6zgLQ",
+            "spotify:track:3gy21TwRSP40aUMwcY7Rtq",
+            "spotify:track:5QPGnFslbDUQ7mDteKn3By",
+            "spotify:track:7dI0mSvbdJTynUnEkWIom1",
+            "spotify:track:0ZucyPms79Cydv0RMYV2Oi",
+            "spotify:track:5HvDKyJlHWg42BdsE4ycSm",
+            "spotify:track:0S7lkKStHgfgjgwSFOvRNA",
+            "spotify:track:3ydI3CesHBnaY01Qff9jOr",
+            "spotify:track:2z0IupRlVRlDN5r2IVqHyN",
+            "spotify:track:0yzj6eBs5a6X6d3P5qaQ5J",
+            "spotify:track:3DVQRyBEhnRxz2bYqFNPEI",
+            "spotify:track:1edgaGx2x2AQeWtL2OPEMW",
+            "spotify:track:19kX6hSlYH31js2SL4jgrj",
+            "spotify:track:2jfyY5GIc7wsYVIrCnjblC",
+            "spotify:track:2OdfQjIJlomZFUBTEDKMre",
+            "spotify:track:6xZ4Q2k2ompmDppyeESIY8",
+            "spotify:track:6cQnrSlTxhHCCiUpKrs7g3",
+            "spotify:track:0bfKYrMLEDJ4fvcxzrMIwB",
+            "spotify:track:01vv2AjxgP4uUyb8waYO5Y",
+            "spotify:track:2nqwxzn7svkN30dVGbXdWf",
+            "spotify:track:5G6Gt9RtNaeIE418pd4yre",
+            "spotify:track:0sXvjZV7p4uvyPN4uQo3FH"
+          ]
+        },
+        "operationName": "isCurated",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "e4ed1f91a2cc5415befedb85acf8671dc1a4bf3ca1a5b945a6386101a22e28a6"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: isSaved
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: content-type
+          value: application/json;charset=UTF-8
+      body:
+        type: json
+        data: |-
+          {
+              "variables": {
+                  "uris": [
+                      "spotify:track:5CiPDLxXmUG7Fk5yjlNy9n",
+                      "spotify:track:0BBLwKdU4vn0HDSi1C8xDZ",
+                      "spotify:track:5rlOIBiFjCDV89ylwnBZPA",
+                      "spotify:track:5ieWsEv2u9vMHWB3uV3R5Z",
+                      "spotify:track:10Fl76ACsl7eeyUYd1HcoV",
+                      "spotify:track:4tdSojwmf4vNZMWS6HcQWb",
+                      "spotify:track:10WWosq6z75o3WGRjL4v2D",
+                      "spotify:track:0EGzHXU8cpLYgEq4mf2D0W",
+                      "spotify:track:63gioPx2WipyXiigLMf1nB",
+                      "spotify:track:3GZt2N9dSfNCL6ArCFDpOc",
+                      "spotify:track:2QcDEWNu8pvcfxmo3KHYRv",
+                      "spotify:track:4H448E9IQ0TV4nmLRMJ2BH",
+                      "spotify:track:1WspyI4fRrpfGAlPYdyCNq",
+                      "spotify:track:1sbgtxMmPxua3m0H2Gc1P1",
+                      "spotify:track:74tpC8vZ6DJUILzGG9uvp4",
+                      "spotify:track:594W6q1xGMKaMyyJi2kz2D",
+                      "spotify:track:2pkpE7lSFzVouRx9llzjTa",
+                      "spotify:track:45ewyxF625HzqLCKgZU0tp",
+                      "spotify:track:7BM311QgIRlXRTZsPCIsQP",
+                      "spotify:track:1iBYMUTBFJDkAW8zQQWGNl",
+                      "spotify:track:1w1bTqBDXvCv1tQqql8pSu",
+                      "spotify:track:6DD3DloL8AvZCI64707q5F"
+                  ]
+              },
+              "operationName": "isCurated",
+              "extensions": {
+                  "persistedQuery": {
+                      "version": 1,
+                      "sha256Hash": "e4ed1f91a2cc5415befedb85acf8671dc1a4bf3ca1a5b945a6386101a22e28a6"
+                  }
+              }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: content-encoding
+          value: gzip
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: date
+          value: Fri, 30 May 2025 14:50:58 GMT
+        - name: server
+          value: envoy
+        - name: Via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: Alt-Svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: Transfer-Encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+              "data": {
+                  "lookup": [
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": true
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      },
+                      {
+                          "__typename": "TrackResponseWrapper",
+                          "data": {
+                              "__typename": "Track",
+                              "isCurated": false
+                          }
+                      }
+                  ]
+              },
+              "extensions": {}
+          }

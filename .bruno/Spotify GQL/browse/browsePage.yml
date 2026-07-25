@@ -1,0 +1,3614 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: browsePage
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "pagePagination": {
+            "offset": 0,
+            "limit": 10
+          },
+          "sectionPagination": {
+            "offset": 0,
+            "limit": 10
+          },
+          "uri": "spotify:page:0JQ5DAqbMKFSi39LMRT0Cy",
+          "browseEndUserIntegration": "INTEGRATION_WEB_PLAYER",
+          "includeEpisodeContentRatingsV2": true
+        },
+        "operationName": "browsePage",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "f5c4e6d668f5716464a231c1cc8b22c1cbf6ad68b09929fd7de813a30581298b"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "pagePagination": {
+                "offset": 0,
+                "limit": 10
+              },
+              "sectionPagination": {
+                "offset": 0,
+                "limit": 10
+              },
+              "uri": "spotify:page:0JQ5DAqbMKFSi39LMRT0Cy",
+              "browseEndUserIntegration": "INTEGRATION_WEB_PLAYER",
+              "includeEpisodeContentRatingsV2": true
+            },
+            "operationName": "browsePage",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "f5c4e6d668f5716464a231c1cc8b22c1cbf6ad68b09929fd7de813a30581298b"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: server-timing
+          value: edge;dur=146
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+        - name: date
+          value: Tue, 07 Jul 2026 05:53:01 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "browse": {
+                "__typename": "BrowseSectionContainer",
+                "header": {
+                  "backgroundImage": null,
+                  "color": {
+                    "hex": "#DC148C"
+                  },
+                  "subtitle": null,
+                  "title": {
+                    "transformedLabel": "Music"
+                  }
+                },
+                "sections": {
+                  "items": [
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Discover new music"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX9H0t0BHx4Z4"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "editorial.series",
+                                    "value": "nmf"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:6tbjWDEIzxoDsBA1FuhfPW,spotify:artist:4sTQVOfp9vEMCemLw50sbu,spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai,spotify:artist:4t4tIl2hE43qSpYeYnUxuI,spotify:artist:6vZKj9U4vIetFGznCpxVN5"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef33da45da20b18f771e9825ba98c21"
+                                  }
+                                ],
+                                "description": "New music from Madonna, SIENNA SPIRO, David Guetta and more!",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000025c82e250c99b9309525f716c",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "New Music Friday Bangladesh",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX9H0t0BHx4Z4"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX9H0t0BHx4Z4"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0654fa17c713af4b779086d90e2958d951d7"
+                                  },
+                                  {
+                                    "key": "parallel-pool-discovery-count",
+                                    "value": "298"
+                                  },
+                                  {
+                                    "key": "country",
+                                    "value": "BD"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0654fa17c713af4b779086d90e2958d951d7"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "fetch-limit",
+                                    "value": "50"
+                                  },
+                                  {
+                                    "key": "source-loader",
+                                    "value": "recdex-dw"
+                                  },
+                                  {
+                                    "key": "took_time",
+                                    "value": "33"
+                                  },
+                                  {
+                                    "key": "parallel-pool-short-term-count",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "key": "parallel-pool-familiar-count",
+                                    "value": "52"
+                                  },
+                                  {
+                                    "key": "total_candidates",
+                                    "value": "eq 1504"
+                                  },
+                                  {
+                                    "key": "tag",
+                                    "value": "recdex-dw:1808875854"
+                                  },
+                                  {
+                                    "key": "resolved-source",
+                                    "value": "recdex-dw"
+                                  },
+                                  {
+                                    "key": "artist-listening-filter",
+                                    "value": "tag-only"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/dw/desktop/en"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/dw/mobile/en"
+                                  }
+                                ],
+                                "description": "Your shortcut to hidden gems, deep cuts, and future faves, updated every Monday. You’ll know when you hear it.",
+                                "format": "discover-weekly",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/dw/cover/en",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Discover Weekly",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZEVXcVbkHF5HQnd2"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZEVXcVbkHF5HQnd2"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef3d3bd95605ece87467c76ff0c8ac3"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "madeFor.displayed",
+                                    "value": "1"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3bd95605ece87467c76ff0c8ac3"
+                                  }
+                                ],
+                                "description": "Catch all the latest music from artists you follow, plus new singles picked for you. Updates every Friday.",
+                                "format": "release-radar",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5ebec28585ddac052aece0faae5/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Release Radar",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZEVXbmPL1tSmsojn"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZEVXbmPL1tSmsojn"
+                          }
+                        ],
+                        "totalCount": 3
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5IMCbQBLkEvckqOqavM"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Playlists from our Editors"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX794NyvTu6nv"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:7uiRC0NlNdHQKVhjTztgrg,spotify:artist:037oCHf26WEq5mR05NoOO7,spotify:artist:06eRdiCBgFUhiuFjei0eH2,spotify:artist:4L8j8SN9LKAcKYq8oy4f5j,spotify:artist:2S7h1jilqmzK8iyU47nmSk"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "The hottest local and global tracks in Bangladesh. Cover: Bagdhara",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f00000002ee12e3d767ac38209b352326",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Hot Hits Bangladesh",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX794NyvTu6nv"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX794NyvTu6nv"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWTwzVdyRpXm1"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#FFFFFF"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:1ZChN8G1Y7CJ0TXbrvblwS,spotify:artist:1wRPtKGflJrBx9BmLsSwlU,spotify:artist:6PdJJhJWHFRtoERTQ8JGq1,spotify:artist:465OXuCU8YZNmVG1leLwQ9,spotify:artist:7F5LO6TFFBGkRhsQdCcLVm"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef33afc8ea18493db53e58315475a4f"
+                                  }
+                                ],
+                                "description": "Best of South Asian Music. Cover: Asim Azhar",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f00000002fd9f3340a1bce9ec008107e3",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Desi Hits",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWTwzVdyRpXm1"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWTwzVdyRpXm1"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "moveFollowersJobId",
+                                    "value": "f4e857d1-a699-47fe-b5ea-d3d036ebc357"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#FFFFFF"
+                                  },
+                                  {
+                                    "key": "clips_header_entrypoint",
+                                    "value": "enabled"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:66CXWjxzNUsdJxJ2JdwvnR,spotify:artist:6BRxQ8cD3eqnrVj6WKDok8,spotify:artist:0EmeFodog0BfCgMzAIvKQp,spotify:artist:1McMsnEElThX1knmY4oliG,spotify:artist:06HL4z0CvFAxyc27GXpf02"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DX0kbJZpiYdZl"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe89063c66b70bdc068ea9cd6cc6"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae0d159c894bbdd8e25cd6b873d"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "The hottest 50. Cover: Ariana Grande"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "The hottest 50. Cover: Ariana Grande",
+                                "format": "format-shows-shuffle",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000026a4ce0270640ea2db34c5ab7",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Today’s Top Hits",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX9Kz7jBbxgYQ"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:12tOFlQDhU4Jx6wNb9XO87,spotify:artist:3atMq790wQ7IqjeSO0HFeP,spotify:artist:7IbxsPdlYelceWNyHAor55,spotify:artist:0DHOOKfXu4aU7LsWjTdrIN,spotify:artist:0diT32N2N04X4L7NK3AK5P"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DX2E5psOxzjXz"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Home to the best of South Asian Indie scene. Cover: Aksomaniac",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000023efce7c56a38876a99e37926",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Desi Indie",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX9Kz7jBbxgYQ"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX9Kz7jBbxgYQ"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWXVJK4aT7pmk"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "moveFollowersJobId",
+                                    "value": "f5fdcf2a-5bb2-42b8-b9d3-2063c3cd75ac"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:6IP4VnqS1pOiQcPVP4zx0H,spotify:artist:6DARBhWbfcS9E4yJzcliqQ,spotify:artist:2FKWNmZWDBZR4dE5KX4plR,spotify:artist:5r3wPya2PpeTTsXsGhQU8O,spotify:artist:6PdJJhJWHFRtoERTQ8JGq1"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Catch the hottest Punjabi tracks. Cover: Prem Dhillon",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000020ba56a1b85fdf54ff951e0ab",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Hot Hits Punjabi",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWXVJK4aT7pmk"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWXVJK4aT7pmk"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX9tPFwDMOaN1"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "moveFollowersJobId",
+                                    "value": "607c4142-475e-420c-bcb9-174f194ba842"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#FFFFFF"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:68KmkJeZGfwe1OUaivBa2L,spotify:artist:2dIgFjalVxs4ThymZ67YCE,spotify:artist:1ZLU77nRzQIaP23mVSYpCQ,spotify:artist:4SpbR6yFEvexJuaBpgAU5p,spotify:artist:3olOSNzFWX5z21YMEFFVMw"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DXdR77H5Z8MIM"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe89114a5c817d9f1512949ccb80"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae02150f7a331bbd4c8aa7fc83c"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "The new & hottest K-Pop is here! (Cover:  ATEEZ)"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "The new & hottest K-Pop is here! (Cover:  ATEEZ)",
+                                "format": "format-shows-shuffle",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f00000002819e960b8ff15f2b31a032c9",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "K-Pop ON! (온)",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX9tPFwDMOaN1"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX9tPFwDMOaN1"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX1lVhptIYRda"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#FFC864"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:1BjlNhp6EsDG0UMroeJbRM,spotify:artist:6BRxQ8cD3eqnrVj6WKDok8,spotify:artist:4oUHIQIBe0LHzYfvXNW4QM,spotify:artist:77kULmXAQ6vWer7IIHdGzI,spotify:artist:4sCKpwwEsgReZxjtKFm2A0"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DX1lVhptIYRda"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe89abfcd5241b1f54744e645f88"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae070aac2b66d47653477c80c60"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "Today's top country hits. Cover: Blake Whiten"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Today's top country hits. Cover: Blake Whiten",
+                                "format": "format-shows-shuffle",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000026ecd16d29d3ed211eb6414a4",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Hot Country",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX1lVhptIYRda"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX1lVhptIYRda"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWTkIwO2HDifB"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#eb1e32"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:6qrqAYlS6lUj2BVXax7SZW,spotify:artist:6sW5k31iA8sTy0i2goUKF9,spotify:artist:48yaM25WLHmQZXx5NN3DYH,spotify:artist:1mV9h1AwhRXSjBFcYpajgY,spotify:artist:1b8S7EPzdckRyIh0uSbOMI"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DWSlRNWoWejBr"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Os funks mais 🔑 do Brasil / Foto: MC Jacaré",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f0000000217d373ccd625e589a336e301",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Funk Hits",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWTkIwO2HDifB"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWTkIwO2HDifB"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX10zKzsJ2jva"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "moveFollowersJobId",
+                                    "value": "6a6a80f4-9caa-4c33-a623-84f05ddbcd3a"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#FFFFFF"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:0elWFr7TW8piilVRYJUe4P,spotify:artist:0EmeFodog0BfCgMzAIvKQp,spotify:artist:3qsKSpcV3ncke3hw52JSMB,spotify:artist:3Me35AWHCGqW4sZ7bWWJt1,spotify:artist:7iK8PXO48WeuP03g8YR51W"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DWY7IeIP1cdjF"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe89c34ae08e5cb3d0bb582318cd"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae09b3e8eea1a6596d04d3bdfea"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "Today's top Latin hits, elevando nuestra música. Cover: Natanael Cano"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Today's top Latin hits, elevando nuestra música. Cover: Natanael Cano",
+                                "format": "format-shows",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000021ba85ee3597b9ba2f6228d8d",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Viva Latino",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX10zKzsJ2jva"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX10zKzsJ2jva"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWTcqUzwhNmKv"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#FFFFFF"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:5KGNQQzk32VSQv9If4X7A6,spotify:artist:1Ffb6ejR6Fe5IamqA5oRUF,spotify:artist:6MwPCCR936cYfM1dLsGVnl,spotify:artist:3Uobr6LgQpBbk6k4QGAb3V,spotify:artist:5mlbvTfWUOfDrUIK6dkNzv"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DXdiUbJTV2anj"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe89a639d0e56a6b81fc82bd4758"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae069dc6a014a283bff1458eb4f"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "Ladrones are on top of today's best Metal playlist."
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Ladrones are on top of today's best Metal playlist.",
+                                "format": "format-shows-shuffle",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000020889d10b7b975082f3715e80",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Kickass Metal",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWTcqUzwhNmKv"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWTcqUzwhNmKv"
+                          }
+                        ],
+                        "totalCount": 30
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5IMCbQBLoTGHT2pACU8"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGridSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Browse all"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/pop/1McMsnEElThX1knmY4oliG/en",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#1e3264"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Made For You"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAt0tbjZptfcdMSKl3"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://i.scdn.co/image/ab67fb8200005caf194fec0fdc197fb9e4fe8e64",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#608108"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "New Releases"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAqbMKFz6FAsUtgAab"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://i.scdn.co/image/ab67fb8200005caf433b1d3680909c5f912d5780",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#503750"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Ramadan"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAqbMKFF1RzHG0HYAI"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://i.scdn.co/image/ab67fb8200005cafae8338a83b96acd1ab54416d",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#e13300"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Desi"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAqbMKFQVdc2eQoH2s"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://i.scdn.co/image/ab67fb8200005caf66d545e6a69d0bfe8bd1e825",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#477d95"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Pop"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAqbMKFEC4WFtoNRpw"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://i.scdn.co/image/ab67fb8200005caf1d858b423c5b3194d72c7c28",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#27856a"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Summer"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAqbMKFLVaM30PMBm4"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#8d67ab"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Charts"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAudkNjCgYMM0TZXDw"
+                          },
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": {
+                                      "sources": [
+                                        {
+                                          "height": 300,
+                                          "url": "https://i.scdn.co/image/ab676d630000e1f065710a92b40492f6e3dbb819",
+                                          "width": 300
+                                        }
+                                      ]
+                                    },
+                                    "backgroundColor": {
+                                      "hex": "#477d95"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Hip-Hop"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DAqbMKFQ00XGBls6ym"
+                          }
+                        ],
+                        "totalCount": 53
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5DAwD41iRZZRVB8eoeO"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseRelatedSectionData",
+                        "subtitle": null,
+                        "title": null
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "BrowseSectionContainerWrapper",
+                              "data": {
+                                "__typename": "BrowseSectionContainer",
+                                "data": {
+                                  "cardRepresentation": {
+                                    "artwork": null,
+                                    "backgroundColor": {
+                                      "hex": "#dc148c"
+                                    },
+                                    "title": {
+                                      "transformedLabel": "Explore all categories"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "uri": "spotify:page:0JQ5DArNBzkmxXHCqFLx3c"
+                          }
+                        ],
+                        "totalCount": 1
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5DAwD41iRZZRVB8eoeQ"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Uniquely yours"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "NotFound"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EYkqdzj48dyYq"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0731976a0021ce4c7b396a4bbc"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "seed_concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "seed_localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "anti_seed_concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "anti_seed_localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "nicheMixLinks",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "locale",
+                                    "value": "en-GB"
+                                  },
+                                  {
+                                    "key": "timestamp",
+                                    "value": "2026-07-07T11:49:38.267064109+06:00[Asia/Dhaka]"
+                                  },
+                                  {
+                                    "key": "local_timezone",
+                                    "value": "Asia/Dhaka"
+                                  },
+                                  {
+                                    "key": "daypart",
+                                    "value": "morning"
+                                  },
+                                  {
+                                    "key": "dayofweek",
+                                    "value": "Tuesday"
+                                  },
+                                  {
+                                    "key": "created",
+                                    "value": "2026-07-07T05:49:38.268090521Z"
+                                  },
+                                  {
+                                    "key": "expires",
+                                    "value": "2026-07-07T08:49:38.268090521Z"
+                                  },
+                                  {
+                                    "key": "media_list_config_uri",
+                                    "value": "spotify:medialistconfig:daylist:default"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://daylist.spotifycdn.com/headers/mobile/morning.jpg"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://daylist.spotifycdn.com/headers/desktop/morning.jpg"
+                                  },
+                                  {
+                                    "key": "title_concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "title_localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "description_concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "description_localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "recsplanation_concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "recsplanation_localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "negsplanation_concepts",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "negsplanation_localized_terms",
+                                    "value": ""
+                                  },
+                                  {
+                                    "key": "share_image_url_1",
+                                    "value": "https://shareables.spotify.com/publish/play-something-playlist/11:49/daylist?descriptors=&playlistTrackCount=0&username=zwp96b5ec9w7mjun9duxt6oui&shareCardId=2&locale=en-GB"
+                                  },
+                                  {
+                                    "key": "share_data",
+                                    "value": "IlEKG2RheWxpc3QtaGVhZGVyLXNoYXJlLWJ1dHRvbhIUZGF5bGlzdC1jb250ZXh0LW1lbnUaHGRheWxpc3Qtc2NyZWVuc2hvdC1kZXRlY3Rpb24="
+                                  },
+                                  {
+                                    "key": "sticker_background_color",
+                                    "value": "#FCE54F"
+                                  },
+                                  {
+                                    "key": "daylist_pretitle",
+                                    "value": "daylist"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0731976a0021ce4c7b396a4bbc"
+                                  }
+                                ],
+                                "description": "Your day in a playlist.",
+                                "format": "daylist",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://daylist.spotifycdn.com/playlist-covers-mix/en/morning_default.jpg",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "daylist",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EP6YuccBxUcC1"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EP6YuccBxUcC1"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  }
+                                ],
+                                "description": "Songs you love right now",
+                                "format": "on-repeat",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/repeat/or/en",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "On Repeat",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EpuTJUvx1bdlX"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EpuTJUvx1bdlX"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  }
+                                ],
+                                "description": "Your past favorites",
+                                "format": "repeat-rewind",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/repeat/rr/en",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Repeat Rewind",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EpANHFwnejq6P"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EpANHFwnejq6P"
+                          }
+                        ],
+                        "totalCount": 4
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5DACFo5h0jxzOyHOsIe"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Hand-picked new releases"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Spiritbox"
+                                      },
+                                      "uri": "spotify:artist:4MzJMcHQBl9SIYSjwWn8QW"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e020006a537a6e19505ca5593eb",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d000048510006a537a6e19505ca5593eb",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b2730006a537a6e19505ca5593eb",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Eternal Blue",
+                                "uri": "spotify:album:6cZ39G1mahxDAGfoPzDllb"
+                              }
+                            },
+                            "uri": "spotify:album:6cZ39G1mahxDAGfoPzDllb"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Drake"
+                                      },
+                                      "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d00004851cd945b4e3de57edd28481a3f",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Certified Lover Boy",
+                                "uri": "spotify:album:3SpBlxme9WbeQdI9kx7KAV"
+                              }
+                            },
+                            "uri": "spotify:album:3SpBlxme9WbeQdI9kx7KAV"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Kanye West"
+                                      },
+                                      "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e026ba1cffc9b2c5469503430b3",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d000048516ba1cffc9b2c5469503430b3",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b2736ba1cffc9b2c5469503430b3",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Donda",
+                                "uri": "spotify:album:340MjPcVdiQRnMigrPybZA"
+                              }
+                            },
+                            "uri": "spotify:album:340MjPcVdiQRnMigrPybZA"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Lady Gaga"
+                                      },
+                                      "uri": "spotify:artist:1HY2Jd0NmPuamShAr6KMms"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e02335b00966a9839d4dde60256",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d00004851335b00966a9839d4dde60256",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b273335b00966a9839d4dde60256",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Dawn Of Chromatica",
+                                "uri": "spotify:album:3OevODyllQCrhudfLLnV3y"
+                              }
+                            },
+                            "uri": "spotify:album:3OevODyllQCrhudfLLnV3y"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Imagine Dragons"
+                                      },
+                                      "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e028b0da998550d749d2e0b61d9",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d000048518b0da998550d749d2e0b61d9",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b2738b0da998550d749d2e0b61d9",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Mercury - Act 1",
+                                "uri": "spotify:album:6DdU5f52hpc2gfeLjK374Y"
+                              }
+                            },
+                            "uri": "spotify:album:6DdU5f52hpc2gfeLjK374Y"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "ABBA"
+                                      },
+                                      "uri": "spotify:artist:0LcJLqbBmaGUft1e9Mm8HV"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e0223533fedac2927315c55d34b",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d0000485123533fedac2927315c55d34b",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b27323533fedac2927315c55d34b",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "I Still Have Faith In You / Don't Shut Me Down",
+                                "uri": "spotify:album:02hUNciNYPRn4Fk5tY4toP"
+                              }
+                            },
+                            "uri": "spotify:album:02hUNciNYPRn4Fk5tY4toP"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "FINNEAS"
+                                      },
+                                      "uri": "spotify:artist:37M5pPGs6V1fchFJSgCguX"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e02e318f136e300a2eeeaf81ae2",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d00004851e318f136e300a2eeeaf81ae2",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b273e318f136e300a2eeeaf81ae2",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "The 90s",
+                                "uri": "spotify:album:19U5FODUkbk237dBgN7lQB"
+                              }
+                            },
+                            "uri": "spotify:album:19U5FODUkbk237dBgN7lQB"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "88rising"
+                                      },
+                                      "uri": "spotify:artist:1AhjOkOLkbHUfcHDSErXQs"
+                                    },
+                                    {
+                                      "profile": {
+                                        "name": "DJ Snake"
+                                      },
+                                      "uri": "spotify:artist:540vIaP2JwjQb9dm3aArA4"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e025843d11205f6dd6a2ab5f967",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d000048515843d11205f6dd6a2ab5f967",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b2735843d11205f6dd6a2ab5f967",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Shang-Chi and The Legend of The Ten Rings: The Album",
+                                "uri": "spotify:album:2kAqjStKcwlDD59H0llhGC"
+                              }
+                            },
+                            "uri": "spotify:album:2kAqjStKcwlDD59H0llhGC"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Charli xcx"
+                                      },
+                                      "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e02acf56e8c5d81a8884cc7e34b",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d00004851acf56e8c5d81a8884cc7e34b",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b273acf56e8c5d81a8884cc7e34b",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Good Ones",
+                                "uri": "spotify:album:6Z0w6c5y1hX7dYbdBe4XKt"
+                              }
+                            },
+                            "uri": "spotify:album:6Z0w6c5y1hX7dYbdBe4XKt"
+                          },
+                          {
+                            "content": {
+                              "__typename": "AlbumResponseWrapper",
+                              "data": {
+                                "__typename": "Album",
+                                "artists": {
+                                  "items": [
+                                    {
+                                      "profile": {
+                                        "name": "Surfaces"
+                                      },
+                                      "uri": "spotify:artist:4ETSs924pXMzjIeD6E9b4u"
+                                    }
+                                  ]
+                                },
+                                "coverArt": {
+                                  "sources": [
+                                    {
+                                      "height": 300,
+                                      "url": "https://i.scdn.co/image/ab67616d00001e0272724d65c5c0c5487d4987d8",
+                                      "width": 300
+                                    },
+                                    {
+                                      "height": 64,
+                                      "url": "https://i.scdn.co/image/ab67616d0000485172724d65c5c0c5487d4987d8",
+                                      "width": 64
+                                    },
+                                    {
+                                      "height": 640,
+                                      "url": "https://i.scdn.co/image/ab67616d0000b27372724d65c5c0c5487d4987d8",
+                                      "width": 640
+                                    }
+                                  ]
+                                },
+                                "name": "Pacifico (Deluxe)",
+                                "uri": "spotify:album:29srkzNK3ixAW0NLVlR59A"
+                              }
+                            },
+                            "uri": "spotify:album:29srkzNK3ixAW0NLVlR59A"
+                          }
+                        ],
+                        "totalCount": 52
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5IMCbQBLAlPhkJ41ypw"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Featured Charts"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "last_updated",
+                                    "value": "2026-07-03T15:03:43Z"
+                                  },
+                                  {
+                                    "key": "rank_type",
+                                    "value": "plays"
+                                  },
+                                  {
+                                    "key": "new_entries_count",
+                                    "value": "7"
+                                  },
+                                  {
+                                    "key": "chart_entity_type",
+                                    "value": "track"
+                                  }
+                                ],
+                                "description": "এই মুহূর্তে সর্বাধিক বাজানো ট্র্যাকগুলির জন্য আপনার সাপ্তাহিক আপডেট - গ্লোবাল।",
+                                "format": "chart",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "টপ গান - গ্লোবাল",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZEVXbNG2KDcFcKOF"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZEVXbNG2KDcFcKOF"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "last_updated",
+                                    "value": "2026-07-03T15:03:51Z"
+                                  },
+                                  {
+                                    "key": "rank_type",
+                                    "value": "plays"
+                                  },
+                                  {
+                                    "key": "new_entries_count",
+                                    "value": "3"
+                                  },
+                                  {
+                                    "key": "chart_entity_type",
+                                    "value": "track"
+                                  }
+                                ],
+                                "description": "এই মুহূর্তে সর্বাধিক বাজানো ট্র্যাকগুলির জন্য আপনার সাপ্তাহিক আপডেট - মার্কিন যুক্তরাষ্ট্র।",
+                                "format": "chart",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "টপ গান - মার্কিন যুক্তরাষ্ট্র",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZEVXbLp5XoPON0wI"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZEVXbLp5XoPON0wI"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "last_updated",
+                                    "value": "2026-07-06T16:17:19Z"
+                                  },
+                                  {
+                                    "key": "rank_type",
+                                    "value": "plays"
+                                  },
+                                  {
+                                    "key": "new_entries_count",
+                                    "value": "4"
+                                  },
+                                  {
+                                    "key": "chart_entity_type",
+                                    "value": "track"
+                                  }
+                                ],
+                                "description": "এই মুহূর্তে সর্বাধিক বাজানো ট্র্যাকগুলির জন্য আপনার দৈনিক আপডেট - গ্লোবাল।",
+                                "format": "chart",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "টপ 50 - গ্লোবাল",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "last_updated",
+                                    "value": "2026-07-06T16:17:24Z"
+                                  },
+                                  {
+                                    "key": "rank_type",
+                                    "value": "plays"
+                                  },
+                                  {
+                                    "key": "new_entries_count",
+                                    "value": "9"
+                                  },
+                                  {
+                                    "key": "chart_entity_type",
+                                    "value": "track"
+                                  }
+                                ],
+                                "description": "এই মুহূর্তে সর্বাধিক বাজানো ট্র্যাকগুলির জন্য আপনার দৈনিক আপডেট - মার্কিন যুক্তরাষ্ট্র।",
+                                "format": "chart",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "টপ 50 - মার্কিন যুক্তরাষ্ট্র",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZEVXbLRQDuF5jeBp"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZEVXbLRQDuF5jeBp"
+                          }
+                        ],
+                        "totalCount": 4
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5DAzQHECxDlYNI6xD1g"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Your Daily Mixes"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "canContainArtists.uris",
+                                    "value": "spotify:artist:06HL4z0CvFAxyc27GXpf02,spotify:artist:04gDigrS5kc9YWfZHwBETP,spotify:artist:69GGBxA162lTqCwzJG5jLp,spotify:artist:4IWBUUAFIplrNtaOHcJPRM,spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "temporary_hack_prefer_linear_playback",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef33d9a31fc248ef323f3e619be3718"
+                                  }
+                                ],
+                                "description": "Taylor Swift, Maroon 5, The Chainsmokers and more",
+                                "format": "daily-mix",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/1/ab6761610000e5ebe2e8e7ff002a4afda1c7147e/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Daily Mix 1",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1E38h0kDz4UFlS"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1E38h0kDz4UFlS"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "canContainArtists.uris",
+                                    "value": "spotify:artist:2oX42qP5ineK3hrhBECLmj,spotify:artist:6eUKZXaKkcviH0Ku9w2n3V,spotify:artist:6VuMaDnrHyPL1p4EHjYLi7,spotify:artist:4gzpq5DPGxSnKTe4SA8HAU,spotify:artist:6KImCVD70vtIoJWnq6nGn3"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "temporary_hack_prefer_linear_playback",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3bc6ea216a6db539154fd4da599"
+                                  }
+                                ],
+                                "description": "Andy Grammer, Ed Sheeran, Charlie Puth and more",
+                                "format": "daily-mix",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/2/ab6761610000e5eb9b03e22b3ba560ea3be87528/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Daily Mix 2",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1E37B11DtRHkYP"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1E37B11DtRHkYP"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "canContainArtists.uris",
+                                    "value": "spotify:artist:53XhwfbYqKCa1cC15pYq2q,spotify:artist:26T3LtbuGT1Fu9m0eRq5X3,spotify:artist:3YQKmKGau1PzlVlkL1iodx,spotify:artist:57nPqD7z62gDdq37US9XJR"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "temporary_hack_prefer_linear_playback",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3bc6ea216a6db539154fd4da599"
+                                  }
+                                ],
+                                "description": "Imagine Dragons, Cage The Elephant, Twenty One Pilots and more",
+                                "format": "daily-mix",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/3/ab6761610000e5ebab47d8dae2b24f5afe7f9d38/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Daily Mix 3",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1E35ae5bZo5bXv"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1E35ae5bZo5bXv"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "canContainArtists.uris",
+                                    "value": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T,spotify:artist:1vCWHaC5f2uS3yhpwWbIA6,spotify:artist:2qxJFvFYMEDqd7ui6kSAcq,spotify:artist:2o5jDhtHVPhrJdv3cEQ99Z,spotify:artist:2ZRQcIgzPCVaT9XKhXZIzh"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "temporary_hack_prefer_linear_playback",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3bc6ea216a6db539154fd4da599"
+                                  }
+                                ],
+                                "description": "Marshmello, Avicii, Zedd and more",
+                                "format": "daily-mix",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/4/ab6761610000e5ebfa62d7b4d09a4ea9b4c5f05d/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Daily Mix 4",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1E36hwYDL4ZyyQ"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1E36hwYDL4ZyyQ"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "canContainArtists.uris",
+                                    "value": "spotify:artist:1cZQSpDsxgKIX2yW5OR9Ot,spotify:artist:7n2wHs1TKAczGzO7Dd2rGr,spotify:artist:1uNFoZAHBGtllmzznpCI3s,spotify:artist:2wUjUUtkb5lvLKcGKsKqsR,spotify:artist:2qxJFvFYMEDqd7ui6kSAcq"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "temporary_hack_prefer_linear_playback",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3bc6ea216a6db539154fd4da599"
+                                  }
+                                ],
+                                "description": "Lennon Stella, Shawn Mendes, Justin Bieber and more",
+                                "format": "daily-mix",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/5/ab6761610000e5ebd28e3bcc85f25f2814aa3830/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Daily Mix 5",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1E37Sos3C7rGJr"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1E37Sos3C7rGJr"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "canContainArtists.uris",
+                                    "value": "spotify:artist:6lB8vOoI4DRrrVxXwuV19c,spotify:artist:1HBjj22wzbscIZ9sEb5dyf,spotify:artist:23fqKkggKUBHNkbKtXEls4,spotify:artist:2MbY32LPINIi9P6PCkrOJI,spotify:artist:20gsENnposVs2I4rQ5kvrf"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "temporary_hack_prefer_linear_playback",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3bc6ea216a6db539154fd4da599"
+                                  }
+                                ],
+                                "description": "Mike Perry, Jonas Blue, Kygo and more",
+                                "format": "daily-mix",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/6/ab6761610000e5eb4ca7ccebc2f9e6c281cd6ff3/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Daily Mix 6",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1E38AKOv4yJQ0h"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1E38AKOv4yJQ0h"
+                          }
+                        ],
+                        "totalCount": 6
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5DACFo5h0jxzOyHOsIo"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Popular EQUAL playlists"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWU8quswnFt3c"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "moveFollowersJobId",
+                                    "value": "e0a94ff7-4488-43bd-8113-ae7a312f4bde"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe8957b6bda6951be0d5313fecde"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae003d9d6410a165f76900a1773"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "Listen to women at full volume. Cover: Hearts2Hearts"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Listen to women at full volume. Cover: Hearts2Hearts",
+                                "format": "format-shows-shuffle",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f00000002865fd7f82ef6f3b0c91948aa",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "EQUAL",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWU8quswnFt3c"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWU8quswnFt3c"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWWwGws5Po6YO"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:5iZnl4zlbj4eLr52YnRaHl,spotify:artist:5C7POGyWtwj98P9yaabh4T,spotify:artist:3CNkbU1JbbStMaufusgDwq,spotify:artist:54twWvYmCkwvUftBtWyrt1,spotify:artist:5U2PKpLxoEwfOnPAwzPt5T"
+                                  },
+                                  {
+                                    "key": "autoplay",
+                                    "value": "spotify:playlist:37i9dQZF1DWUrPBdYfoJvz"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "The women at the forefront of ambient and experimental music. Cover: Kayla Pichichero",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f00000002fb0db536f46c3fb168bd6584",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Women of Ambient",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWWwGws5Po6YO"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWWwGws5Po6YO"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DXblYBkrEcpLK"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "madeFor.username",
+                                    "value": "KR.Tirtho"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Celebrate the great female artists from anime culture. アニメシーンを彩る女性アーティスト達を特集！ Cover: tuki.",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f00000002e205c95afada31c410f64c39",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Women of Anime",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DXblYBkrEcpLK"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DXblYBkrEcpLK"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX5hL1aT2vhMb"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "moveFollowersJobId",
+                                    "value": "dbb36abc-f916-4f38-87dc-b30f98c7d90d"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:0Pz79wagKnssEZImEgGGFv,spotify:artist:5TWpCLIhvGlbJmLK1zNpiL,spotify:artist:76s6KDHeBT20zvGDNVzNuK,spotify:artist:1LauM5YBWB1nIe6KRwKNdG,spotify:artist:41OHse5xHr1E6wceODGrPB"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Celebrate the great women composers and classical performers who continue to transform the classical world. Cover: Sueye Park",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000027fb3d49023e48d65320d2b44",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Women of Classical",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX5hL1aT2vhMb"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX5hL1aT2vhMb"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DWSxnGhnykt9Y"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:3ZpEKRjHaHANcpk10u6Ntq,spotify:artist:0ZvsEkINadmEV4qzS4ollh,spotify:artist:4szs3im3aqSWr8MbdoW1W2,spotify:artist:62MufOQctTd5rxW46i0ehY,spotify:artist:4QSTyDpxsKmv3UfavVUImR"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Some of the most influential and innovative voices in afrobeats, afropop, amapiano, hiplife and everything in between, from earliest acts to newest stars. \n\nCover: Bloody Civilian",
+                                "format": "editorial",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f0000000206f35bf114f67571f0af60d7",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Women of Afro",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DWSxnGhnykt9Y"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DWSxnGhnykt9Y"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "uri",
+                                    "value": "spotify:user:spotify:playlist:37i9dQZF1DX7JO5vzoPTXR"
+                                  },
+                                  {
+                                    "key": "status",
+                                    "value": "PUBLISHED"
+                                  },
+                                  {
+                                    "key": "isAlgotorial",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "primary_color",
+                                    "value": "#ffffff"
+                                  },
+                                  {
+                                    "key": "recs.hasArtists",
+                                    "value": "spotify:artist:6p6WfcngzvbVPbmV9HMb5l,spotify:artist:4iS7gVZUawLaXYADeRZL36,spotify:artist:4EnymklUyqZwvmHQGlRssl,spotify:artist:6Xb4ezwoAQC4516kI89nWz,spotify:artist:1h6v3Gd5Ub1xmiSMq0X5f3"
+                                  },
+                                  {
+                                    "key": "header_image_url_desktop",
+                                    "value": "https://i.scdn.co/image/ab6768640000fe89c1e639c71de48ac74342d8a7"
+                                  },
+                                  {
+                                    "key": "image_url",
+                                    "value": "https://i.scdn.co/image/ab67686d00003ae0c99d25e790c9cacbe227350f"
+                                  },
+                                  {
+                                    "key": "episode_description",
+                                    "value": "Songs that are 100% written, produced, and performed by Women! Co-Curated this month by:  Carrie K"
+                                  },
+                                  {
+                                    "key": "is_video_first",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da079cbfcefd920c42457859b970"
+                                  }
+                                ],
+                                "description": "Songs that are 100% written, produced, and performed by Women! Co-Curated this month by:  Carrie K",
+                                "format": "format-shows-shuffle",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://i.scdn.co/image/ab67706f000000027b49900707076dd4e07ae94b",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Created by Women",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1DX7JO5vzoPTXR"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1DX7JO5vzoPTXR"
+                          }
+                        ],
+                        "totalCount": 6
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5IMCbQBLmdV4K4hLrHt"
+                    },
+                    {
+                      "__typename": "BrowseSection",
+                      "data": {
+                        "__typename": "BrowseGenericSectionData",
+                        "subtitle": null,
+                        "title": {
+                          "transformedLabel": "Your Artist Mixes"
+                        }
+                      },
+                      "sectionItems": {
+                        "items": [
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIV2zKvHbX6jS>5 Seconds of Summer</a>, <a href=spotify:playlist:37i9dQZF1EIWGrsLMvYVIN>Becky G</a> and <a href=spotify:playlist:37i9dQZF1EIZFhEj3Qdecv>The Chainsmokers</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/2qxJFvFYMEDqd7ui6kSAcq/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Zedd Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIZhRMOyemy0K"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIZhRMOyemy0K"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef3d3c8c2a28fd9f771e7ddaa0dbe29"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3c8c2a28fd9f771e7ddaa0dbe29"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIV2zKvHbX6jS>5 Seconds of Summer</a>, <a href=spotify:playlist:37i9dQZF1EIYWwGqC3GC7o>Linkin Park</a> and <a href=spotify:playlist:37i9dQZF1EIWzzqJMERz0l>LEAP</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/3YQKmKGau1PzlVlkL1iodx/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Twenty One Pilots Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIVLRVklebOIE"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIVLRVklebOIE"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIVLRVklebOIE>Twenty One Pilots</a>, <a href=spotify:playlist:37i9dQZF1EIXGqb7XgGZf1>Nicky Youre</a> and <a href=spotify:playlist:37i9dQZF1EIV2zKvHbX6jS>5 Seconds of Summer</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/53XhwfbYqKCa1cC15pYq2q/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Imagine Dragons Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIWkN17HuTXyC"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIWkN17HuTXyC"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIYWkxnGh27kI>Brad Paisley</a>, <a href=spotify:playlist:37i9dQZF1EIXEsst69xVVD>Uncle Kracker</a> and <a href=spotify:playlist:37i9dQZF1EIW8Ws0Kihjwe>Josh Turner</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/0a1gHP0HAqALbEyxaD5Ngn/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Rascal Flatts Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIZp7o61L8T0u"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIZp7o61L8T0u"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIWt7lVt4lDPv>SYML</a>, <a href=spotify:playlist:37i9dQZF1EIWqwaD921NT7>Stephen Sanchez</a> and <a href=spotify:playlist:37i9dQZF1EIWOswAapGjF6>Soap&Skin</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/00FQb4jTyendYWaN8pK0wa/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Lana Del Rey Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIV5Po98yTZ2l"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIV5Po98yTZ2l"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIXVkyxvdCYRo>Evanescence</a>, <a href=spotify:playlist:37i9dQZF1EIUS4AX2TRHgq>Green Day</a> and <a href=spotify:playlist:37i9dQZF1EIV5N8bGKy1ng>Nickelback</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/6XyY86QOPPrYVGvF9ch6wz/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Linkin Park Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIYWwGqC3GC7o"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIYWwGqC3GC7o"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIUtKBU0VH3EA>Benson Boone</a>, <a href=spotify:playlist:37i9dQZF1EIWt7lVt4lDPv>SYML</a> and <a href=spotify:playlist:37i9dQZF1EIWqwaD921NT7>Stephen Sanchez</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/4Ly0KABsxlx4fNj63zJTrF/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Seafret Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIX0LDeMddZ5n"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIX0LDeMddZ5n"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIW3CeNGyf1nj>a-ha</a>, <a href=spotify:playlist:37i9dQZF1EIYURZtQul4Yu>TOTO</a> and <a href=spotify:playlist:37i9dQZF1EIWwyR3K8WKlr>The Police</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/4bthk9UfsYUYdcFyqxmSUU/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Tears For Fears Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIVOW9mgbYgVF"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIVOW9mgbYgVF"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef4da0a408a97fae0030e40000c3e38"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIXGqb7XgGZf1>Nicky Youre</a>, <a href=spotify:playlist:37i9dQZF1EIVyBIq9f8DAH>Charlie Puth</a> and <a href=spotify:playlist:37i9dQZF1EIUtKBU0VH3EA>Benson Boone</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/6eUKZXaKkcviH0Ku9w2n3V/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Ed Sheeran Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIWEZ8ZxSQLXq"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIWEZ8ZxSQLXq"
+                          },
+                          {
+                            "content": {
+                              "__typename": "PlaylistResponseWrapper",
+                              "data": {
+                                "__typename": "Playlist",
+                                "attributes": [
+                                  {
+                                    "key": "request_id",
+                                    "value": "ssp~0655fef3d3c8c2a28fd9f771e7ddaa0dbe29"
+                                  },
+                                  {
+                                    "key": "should_show_promo_disclosure",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "send-impression-for-rows",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "key": "correlation-id",
+                                    "value": "ssp~0655fef3d3c8c2a28fd9f771e7ddaa0dbe29"
+                                  }
+                                ],
+                                "description": "<a href=spotify:playlist:37i9dQZF1EIZhRMOyemy0K>Zedd</a>, <a href=spotify:playlist:37i9dQZF1EIWkN17HuTXyC>Imagine Dragons</a> and <a href=spotify:playlist:37i9dQZF1EIWGrsLMvYVIN>Becky G</a>",
+                                "format": "artist-mix-reader",
+                                "images": {
+                                  "items": [
+                                    {
+                                      "sources": [
+                                        {
+                                          "height": null,
+                                          "url": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/1vCWHaC5f2uS3yhpwWbIA6/en-GB",
+                                          "width": null
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "name": "Avicii Mix",
+                                "ownerV2": {
+                                  "data": {
+                                    "__typename": "User",
+                                    "name": "Spotify"
+                                  }
+                                },
+                                "uri": "spotify:playlist:37i9dQZF1EIUPq3zKiseOP"
+                              }
+                            },
+                            "uri": "spotify:playlist:37i9dQZF1EIUPq3zKiseOP"
+                          }
+                        ],
+                        "totalCount": 10
+                      },
+                      "targetLocation": "",
+                      "uri": "spotify:section:0JQ5DACFo5h0jxzOyHOsIa"
+                    }
+                  ],
+                  "pagingInfo": {
+                    "nextOffset": 10
+                  },
+                  "totalCount": 11
+                },
+                "uri": "spotify:page:0JQ5DAqbMKFSi39LMRT0Cy"
+              }
+            }
+          }

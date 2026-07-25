@@ -1,0 +1,2697 @@
+# Copyright (C) 2026 Sonic Liberation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+info:
+  name: getTracksByURIs
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://api-partner.spotify.com/pathfinder/v2/query
+  headers:
+    - name: accept
+      value: application/json
+    - name: content-type
+      value: application/json;charset=UTF-8
+    - name: User-Agent
+      value: "{{userAgent}}"
+  body:
+    type: json
+    data: |-
+      {
+        "variables": {
+          "uris": [
+            "spotify:track:2YiCMmONQcoMPX2bV1LxE0",
+            "spotify:track:6K4t31amVTZDgR3sKmwUJJ",
+            "spotify:track:1JSTJqkT5qHq8MDJnJbRE1",
+            "spotify:track:1SKPmfSYaPsETbRHaiA18G",
+            "spotify:track:3qhlB30KknSejmIvZZLjOD",
+            "spotify:track:7J1uxwnxfQLu4APicE5Rnj",
+            "spotify:track:4DPdJvSMB6hmrjgC5eC85d",
+            "spotify:track:0VjIjW4GlUZAMYd2vXMi3b",
+            "spotify:track:1qDrWA6lyx8cLECdZE7TV7",
+            "spotify:track:0yac0FPhLRH9i9lOng3f81",
+            "spotify:track:2WfaOiMkCvy7F5fcp2zZ8L",
+            "spotify:track:3BovdzfaX4jb5KFQwoPfAw",
+            "spotify:track:5JGEAz15LkPoOtFHttDtVs",
+            "spotify:track:5QO79kh1waicV47BqGRL3g",
+            "spotify:track:1mea3bSkSGXuIRvnydlB5b",
+            "spotify:track:4Dvkj6JhhA12EX05fT7y2e",
+            "spotify:track:4ercRiJZl8kBm8vfPaNjrl",
+            "spotify:track:0WQiDwKJclirSYG9v5tayI",
+            "spotify:track:5qqabIl2vWzo9ApSC317sa",
+            "spotify:track:5GXAXm5YOmYT0kL5jHvYBt",
+            "spotify:track:0BCPKOYdS2jbQ8iyB56Zns",
+            "spotify:track:5T7ywazdGIydr6JCW6t02j",
+            "spotify:track:0d28khcov6AiegSCpG5TuT",
+            "spotify:track:003vvx7Niy0yvhvHt4a68B",
+            "spotify:track:6dGnYIeXmHdcikdzNNDMm2",
+            "spotify:track:21DMNxn3lLWYqaTm3MeGAn",
+            "spotify:track:4ByEFOBuLXpCqvO1kw8Wdm",
+            "spotify:track:70LcF31zb1H0PyJoS1Sx1r",
+            "spotify:track:69uxyAqqPIsUyTO8txoP2M",
+            "spotify:track:2wBnZdVWa5jVpvYRfGU7rP",
+            "spotify:track:6GyFP1nfCDB8lbD2bG0Hq9",
+            "spotify:track:3oEkrIfXfSh9zGnE7eBzSV",
+            "spotify:track:4S1VYqwfkLit9mKVY3MXoo",
+            "spotify:track:57iDDD9N9tTWe75x6qhStw",
+            "spotify:track:3AJwUDP919kvQ9QcozQPxg",
+            "spotify:track:5r5cp9IpziiIsR6b93vcnQ",
+            "spotify:track:5lwQGZYF4BXOzFtXc5zk8q",
+            "spotify:track:3wuCCNCnBhJlwkIJTBZFiv",
+            "spotify:track:5T8EDUDqKcs6OSOwEsfqG7",
+            "spotify:track:0GONea6G2XdnHWjNZd6zt3",
+            "spotify:track:2AX5E86cn9n2dgioZEjirI",
+            "spotify:track:3zEN0ii6s4DHHBpnTp3RP7",
+            "spotify:track:2374M0fQpWi3dLnB54qaLX",
+            "spotify:track:2MLHyLy5z5l5YRp7momlgw",
+            "spotify:track:2fuCquhmrzHpu5xcA1ci9x",
+            "spotify:track:1PtQJZVZIdWIYdARpZRDFO",
+            "spotify:track:10nyNJ6zNy2YVYLrcwLccB",
+            "spotify:track:2aEuA8PSqLa17Y4hKPj5rr",
+            "spotify:track:44AyOl4qVkzS48vBsbNXaC",
+            "spotify:track:1jDJFeK9x3OZboIAHsY9k2"
+          ]
+        },
+        "operationName": "decorateContextTracks",
+        "extensions": {
+          "persistedQuery": {
+            "version": 1,
+            "sha256Hash": "383de00240775c39a6afe0b1055dc562b2a3930894201f9762f3fc32a74971c7"
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: "200"
+    request:
+      url: https://api-partner.spotify.com/pathfinder/v2/query
+      method: POST
+      headers:
+        - name: accept
+          value: application/json
+        - name: content-type
+          value: application/json;charset=UTF-8
+        - name: User-Agent
+          value: "{{userAgent}}"
+      body:
+        type: json
+        data: |-
+          {
+            "variables": {
+              "uris": [
+                "spotify:track:2YiCMmONQcoMPX2bV1LxE0",
+                "spotify:track:6K4t31amVTZDgR3sKmwUJJ",
+                "spotify:track:1JSTJqkT5qHq8MDJnJbRE1",
+                "spotify:track:1SKPmfSYaPsETbRHaiA18G",
+                "spotify:track:3qhlB30KknSejmIvZZLjOD",
+                "spotify:track:7J1uxwnxfQLu4APicE5Rnj",
+                "spotify:track:4DPdJvSMB6hmrjgC5eC85d",
+                "spotify:track:0VjIjW4GlUZAMYd2vXMi3b",
+                "spotify:track:1qDrWA6lyx8cLECdZE7TV7",
+                "spotify:track:0yac0FPhLRH9i9lOng3f81",
+                "spotify:track:2WfaOiMkCvy7F5fcp2zZ8L",
+                "spotify:track:3BovdzfaX4jb5KFQwoPfAw",
+                "spotify:track:5JGEAz15LkPoOtFHttDtVs",
+                "spotify:track:5QO79kh1waicV47BqGRL3g",
+                "spotify:track:1mea3bSkSGXuIRvnydlB5b",
+                "spotify:track:4Dvkj6JhhA12EX05fT7y2e",
+                "spotify:track:4ercRiJZl8kBm8vfPaNjrl",
+                "spotify:track:0WQiDwKJclirSYG9v5tayI",
+                "spotify:track:5qqabIl2vWzo9ApSC317sa",
+                "spotify:track:5GXAXm5YOmYT0kL5jHvYBt",
+                "spotify:track:0BCPKOYdS2jbQ8iyB56Zns",
+                "spotify:track:5T7ywazdGIydr6JCW6t02j",
+                "spotify:track:0d28khcov6AiegSCpG5TuT",
+                "spotify:track:003vvx7Niy0yvhvHt4a68B",
+                "spotify:track:6dGnYIeXmHdcikdzNNDMm2",
+                "spotify:track:21DMNxn3lLWYqaTm3MeGAn",
+                "spotify:track:4ByEFOBuLXpCqvO1kw8Wdm",
+                "spotify:track:70LcF31zb1H0PyJoS1Sx1r",
+                "spotify:track:69uxyAqqPIsUyTO8txoP2M",
+                "spotify:track:2wBnZdVWa5jVpvYRfGU7rP",
+                "spotify:track:6GyFP1nfCDB8lbD2bG0Hq9",
+                "spotify:track:3oEkrIfXfSh9zGnE7eBzSV",
+                "spotify:track:4S1VYqwfkLit9mKVY3MXoo",
+                "spotify:track:57iDDD9N9tTWe75x6qhStw",
+                "spotify:track:3AJwUDP919kvQ9QcozQPxg",
+                "spotify:track:5r5cp9IpziiIsR6b93vcnQ",
+                "spotify:track:5lwQGZYF4BXOzFtXc5zk8q",
+                "spotify:track:3wuCCNCnBhJlwkIJTBZFiv",
+                "spotify:track:5T8EDUDqKcs6OSOwEsfqG7",
+                "spotify:track:0GONea6G2XdnHWjNZd6zt3",
+                "spotify:track:2AX5E86cn9n2dgioZEjirI",
+                "spotify:track:3zEN0ii6s4DHHBpnTp3RP7",
+                "spotify:track:2374M0fQpWi3dLnB54qaLX",
+                "spotify:track:2MLHyLy5z5l5YRp7momlgw",
+                "spotify:track:2fuCquhmrzHpu5xcA1ci9x",
+                "spotify:track:1PtQJZVZIdWIYdARpZRDFO",
+                "spotify:track:10nyNJ6zNy2YVYLrcwLccB",
+                "spotify:track:2aEuA8PSqLa17Y4hKPj5rr",
+                "spotify:track:44AyOl4qVkzS48vBsbNXaC",
+                "spotify:track:1jDJFeK9x3OZboIAHsY9k2"
+              ]
+            },
+            "operationName": "decorateContextTracks",
+            "extensions": {
+              "persistedQuery": {
+                "version": 1,
+                "sha256Hash": "383de00240775c39a6afe0b1055dc562b2a3930894201f9762f3fc32a74971c7"
+              }
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json
+        - name: cache-control
+          value: private, max-age=0
+        - name: x-robots-tag
+          value: noindex, nofollow
+        - name: server-timing
+          value: edge;dur=118
+        - name: strict-transport-security
+          value: max-age=31536000
+        - name: x-content-type-options
+          value: nosniff
+        - name: alt-svc
+          value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000, h3=":443"; ma=2592000
+        - name: date
+          value: Fri, 01 May 2026 07:26:39 GMT
+        - name: server
+          value: envoy
+        - name: via
+          value: HTTP/2 edgeproxy, 1.1 google
+        - name: transfer-encoding
+          value: chunked
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "tracks": [
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e025e12c35cb4c848a927ef4b69",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048515e12c35cb4c848a927ef4b69",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2735e12c35cb4c848a927ef4b69",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Songs From The Big Chair",
+                    "uri": "spotify:album:5STbVtgFy6y7uPshY1RRqb"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Tears For Fears"
+                        },
+                        "uri": "spotify:artist:4bthk9UfsYUYdcFyqxmSUU"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 251480
+                  },
+                  "name": "Everybody Wants To Rule The World",
+                  "uri": "spotify:track:2YiCMmONQcoMPX2bV1LxE0"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e029e1cfc756886ac782e363d79",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048519e1cfc756886ac782e363d79",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739e1cfc756886ac782e363d79",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Currents",
+                    "uri": "spotify:album:79dL7FLiJFOO0EoehUHQBv"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Tame Impala"
+                        },
+                        "uri": "spotify:artist:5INjqkS1o8h1imAzPqGZBb"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "EXPLICIT"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 216320
+                  },
+                  "name": "The Less I Know The Better",
+                  "uri": "spotify:track:6K4t31amVTZDgR3sKmwUJJ"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02c8e97cafeb2acb85b21a777e",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851c8e97cafeb2acb85b21a777e",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273c8e97cafeb2acb85b21a777e",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Synchronicity (Remastered 2003)",
+                    "uri": "spotify:album:5W9OT0a5iZlBr83a9WMKFY"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Police"
+                        },
+                        "uri": "spotify:artist:5NGO30tJxFlKixkPSgXcFE"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 253920
+                  },
+                  "name": "Every Breath You Take",
+                  "uri": "spotify:track:1JSTJqkT5qHq8MDJnJbRE1"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e027d6cd95a046a3c0dacbc7d33",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048517d6cd95a046a3c0dacbc7d33",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2737d6cd95a046a3c0dacbc7d33",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hopes And Fears",
+                    "uri": "spotify:album:0MlTOiC5ZYKFGeZ8h3D4rd"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Keane"
+                        },
+                        "uri": "spotify:artist:53A0W3U0s8diEn9RhXQhVz"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 237146
+                  },
+                  "name": "Somewhere Only We Know",
+                  "uri": "spotify:track:1SKPmfSYaPsETbRHaiA18G"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02fddfffec51b4580acae727c1",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851fddfffec51b4580acae727c1",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273fddfffec51b4580acae727c1",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "DECIDE",
+                    "uri": "spotify:album:4JDXBZdRPId4devseaAOKH"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Djo"
+                        },
+                        "uri": "spotify:artist:5p9HO3XC5P3BLxJs5Mtrhm"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 159245
+                  },
+                  "name": "End of Beginning",
+                  "uri": "spotify:track:3qhlB30KknSejmIvZZLjOD"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0232a7d87248d1b75463483df5",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485132a7d87248d1b75463483df5",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Thriller",
+                    "uri": "spotify:album:2ANVost0y2y52ema1E9xAZ"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Michael Jackson"
+                        },
+                        "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 293802
+                  },
+                  "name": "Billie Jean",
+                  "uri": "spotify:track:7J1uxwnxfQLu4APicE5Rnj"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ce5e0c89b768384d45d9b0fa",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ce5e0c89b768384d45d9b0fa",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ce5e0c89b768384d45d9b0fa",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Stay with You",
+                    "uri": "spotify:album:7ttozw5DWCdQaqfzCMevPc"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Goo Goo Dolls"
+                        },
+                        "uri": "spotify:artist:2sil8z5kiy4r76CRTXxBCA"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 289533
+                  },
+                  "name": "Iris",
+                  "uri": "spotify:track:4DPdJvSMB6hmrjgC5eC85d"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048518863bc11d2aa12b54f5aeb36",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "After Hours",
+                    "uri": "spotify:album:4yP0hdKOZPNshxUOjY0cZj"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Weeknd"
+                        },
+                        "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 200040
+                  },
+                  "name": "Blinding Lights",
+                  "uri": "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e028ac5768205ad97df3f4f4c0e",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048518ac5768205ad97df3f4f4c0e",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2738ac5768205ad97df3f4f4c0e",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Making Mirrors",
+                    "uri": "spotify:album:4G2rJNhsKOE6iHgtUqZ0Ye"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Gotye"
+                        },
+                        "uri": "spotify:artist:2AsusXITU8P25dlRNhcAbG"
+                      },
+                      {
+                        "profile": {
+                          "name": "Kimbra"
+                        },
+                        "uri": "spotify:artist:6hk7Yq1DU9QcCCrz9uc0Ti"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 244884
+                  },
+                  "name": "Somebody That I Used To Know",
+                  "uri": "spotify:track:1qDrWA6lyx8cLECdZE7TV7"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e027d6cd95a046a3c0dacbc7d33",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048517d6cd95a046a3c0dacbc7d33",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2737d6cd95a046a3c0dacbc7d33",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hopes And Fears",
+                    "uri": "spotify:album:0MlTOiC5ZYKFGeZ8h3D4rd"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Keane"
+                        },
+                        "uri": "spotify:artist:53A0W3U0s8diEn9RhXQhVz"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 215880
+                  },
+                  "name": "Everybody's Changing",
+                  "uri": "spotify:track:0yac0FPhLRH9i9lOng3f81"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02e8dd4db47e7177c63b0b7d53",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851e8dd4db47e7177c63b0b7d53",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273e8dd4db47e7177c63b0b7d53",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hunting High and Low",
+                    "uri": "spotify:album:1ER3B6zev5JEAaqhnyyfbf"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "a-ha"
+                        },
+                        "uri": "spotify:artist:2jzc5TC5TVFLXQlBNiIUzE"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 225280
+                  },
+                  "name": "Take on Me",
+                  "uri": "spotify:track:2WfaOiMkCvy7F5fcp2zZ8L"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0232a7d87248d1b75463483df5",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485132a7d87248d1b75463483df5",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Thriller",
+                    "uri": "spotify:album:2ANVost0y2y52ema1E9xAZ"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Michael Jackson"
+                        },
+                        "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 258296
+                  },
+                  "name": "Beat It",
+                  "uri": "spotify:track:3BovdzfaX4jb5KFQwoPfAw"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02e2e8f804c2cdd5b3815adbf9",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851e2e8f804c2cdd5b3815adbf9",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273e2e8f804c2cdd5b3815adbf9",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "The Joshua Tree",
+                    "uri": "spotify:album:4mULDK6YXrFXTfSwvwm4M3"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "U2"
+                        },
+                        "uri": "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 295520
+                  },
+                  "name": "With Or Without You - Remastered 2007",
+                  "uri": "spotify:track:5JGEAz15LkPoOtFHttDtVs"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048518863bc11d2aa12b54f5aeb36",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "After Hours",
+                    "uri": "spotify:album:4yP0hdKOZPNshxUOjY0cZj"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Weeknd"
+                        },
+                        "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "EXPLICIT"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 215626
+                  },
+                  "name": "Save Your Tears",
+                  "uri": "spotify:track:5QO79kh1waicV47BqGRL3g"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851e21cc1db05580b6f2d2a3b6e",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Viva La Vida or Death and All His Friends",
+                    "uri": "spotify:album:1CEODgTmTwLyabvwd7HBty"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Coldplay"
+                        },
+                        "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 242373
+                  },
+                  "name": "Viva La Vida",
+                  "uri": "spotify:track:1mea3bSkSGXuIRvnydlB5b"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0282ce362511fb3d9dda6578ee",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485182ce362511fb3d9dda6578ee",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27382ce362511fb3d9dda6578ee",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Harry's House",
+                    "uri": "spotify:album:5r36AJ6VOJtp00oxSkBZ5h"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Harry Styles"
+                        },
+                        "uri": "spotify:artist:6KImCVD70vtIoJWnq6nGn3"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 167303
+                  },
+                  "name": "As It Was",
+                  "uri": "spotify:track:4Dvkj6JhhA12EX05fT7y2e"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e024960e8b13691e5570337d4d8",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048514960e8b13691e5570337d4d8",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2734960e8b13691e5570337d4d8",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Plastic Beach (Deluxe)",
+                    "uri": "spotify:album:4T95uimM0PQNgAkcyLTym0"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Gorillaz"
+                        },
+                        "uri": "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 233866
+                  },
+                  "name": "On Melancholy Hill",
+                  "uri": "spotify:track:4ercRiJZl8kBm8vfPaNjrl"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ada101c2e9e97feb8fae37a9",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ada101c2e9e97feb8fae37a9",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ada101c2e9e97feb8fae37a9",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "The Queen Is Dead",
+                    "uri": "spotify:album:5Y0p2XCgRRIjna91aQE8q7"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Smiths"
+                        },
+                        "uri": "spotify:artist:3yY2gUcIsjMr8hjo51PoJ8"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 244586
+                  },
+                  "name": "There Is a Light That Never Goes Out - 2011 Remaster",
+                  "uri": "spotify:track:0WQiDwKJclirSYG9v5tayI"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0285e5dcc05cc216a10f141480",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485185e5dcc05cc216a10f141480",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27385e5dcc05cc216a10f141480",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "(What's The Story) Morning Glory? [Remastered]",
+                    "uri": "spotify:album:1VW1MFNstaJuygaoTPkdCk"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Oasis"
+                        },
+                        "uri": "spotify:artist:2DaxqgrOhkeH0fpeiQq2f4"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 258773
+                  },
+                  "name": "Wonderwall - Remastered",
+                  "uri": "spotify:track:5qqabIl2vWzo9ApSC317sa"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02a048415db06a5b6fa7ec4e1a",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851a048415db06a5b6fa7ec4e1a",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273a048415db06a5b6fa7ec4e1a",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Starboy",
+                    "uri": "spotify:album:4AdZV63ycxFLF6Hcol0QnB"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Weeknd"
+                        },
+                        "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+                      },
+                      {
+                        "profile": {
+                          "name": "Daft Punk"
+                        },
+                        "uri": "spotify:artist:4tZwfgrHOc3mvqYlEYSvVi"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 269186
+                  },
+                  "name": "I Feel It Coming",
+                  "uri": "spotify:track:5GXAXm5YOmYT0kL5jHvYBt"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02de09e02aa7febf30b7c02d82",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851de09e02aa7febf30b7c02d82",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273de09e02aa7febf30b7c02d82",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "A Rush of Blood to the Head",
+                    "uri": "spotify:album:0RHX9XECH8IVI3LNgWDpmQ"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Coldplay"
+                        },
+                        "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 307879
+                  },
+                  "name": "Clocks",
+                  "uri": "spotify:track:0BCPKOYdS2jbQ8iyB56Zns"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02eb2087dcd1eb61f833bdedff",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851eb2087dcd1eb61f833bdedff",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273eb2087dcd1eb61f833bdedff",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Bad (Remastered)",
+                    "uri": "spotify:album:3Us57CjssWnHjTUIXBuIeH"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Michael Jackson"
+                        },
+                        "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 257766
+                  },
+                  "name": "Smooth Criminal - 2012 Remaster",
+                  "uri": "spotify:track:5T7ywazdGIydr6JCW6t02j"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02622aefd794f6fe4d8e714358",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851622aefd794f6fe4d8e714358",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273622aefd794f6fe4d8e714358",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Demon Days",
+                    "uri": "spotify:album:0bUTHlWbkSQysoM3VsWldT"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Gorillaz"
+                        },
+                        "uri": "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+                      },
+                      {
+                        "profile": {
+                          "name": "De La Soul"
+                        },
+                        "uri": "spotify:artist:1Z8ODXyhEBi3WynYw0Rya6"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 222640
+                  },
+                  "name": "Feel Good Inc.",
+                  "uri": "spotify:track:0d28khcov6AiegSCpG5TuT"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ccdddd46119a4ff53eaf1f5d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ccdddd46119a4ff53eaf1f5d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ccdddd46119a4ff53eaf1f5d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hot Fuss",
+                    "uri": "spotify:album:4piJq7R3gjUOxnYs6lDCTg"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Killers"
+                        },
+                        "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 222973
+                  },
+                  "name": "Mr. Brightside",
+                  "uri": "spotify:track:003vvx7Niy0yvhvHt4a68B"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02dc30583ba717007b00cceb25",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851dc30583ba717007b00cceb25",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Abbey Road (Remastered)",
+                    "uri": "spotify:album:0ETFjACtuP2ADo6LFhL6HN"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Beatles"
+                        },
+                        "uri": "spotify:artist:3WrFJ7ztbogyGnTHbHJFl2"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 185733
+                  },
+                  "name": "Here Comes The Sun - Remastered 2009",
+                  "uri": "spotify:track:6dGnYIeXmHdcikdzNNDMm2"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d666181ad183bf7efc7f4105",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851d666181ad183bf7efc7f4105",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d666181ad183bf7efc7f4105",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hotel California (40th Anniversary Expanded Edition)",
+                    "uri": "spotify:album:5NMAdQPrKw5nutWnGEzfpn"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Eagles"
+                        },
+                        "uri": "spotify:artist:0ECwFtbIWEVNwjlrfc6xoL"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 391376
+                  },
+                  "name": "Hotel California - 2013 Remaster",
+                  "uri": "spotify:track:21DMNxn3lLWYqaTm3MeGAn"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02fb2faa3ed46d1d0124ca325e",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851fb2faa3ed46d1d0124ca325e",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273fb2faa3ed46d1d0124ca325e",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Broadcast",
+                    "uri": "spotify:album:3wCe8HjHk6QNGcf5D3jgW1"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Cutting Crew"
+                        },
+                        "uri": "spotify:artist:3cniTumSiUysiPWXapGx1i"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 280400
+                  },
+                  "name": "(I Just) Died In Your Arms",
+                  "uri": "spotify:track:4ByEFOBuLXpCqvO1kw8Wdm"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ec548c00d3ac2f10be73366d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ec548c00d3ac2f10be73366d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ec548c00d3ac2f10be73366d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Pablo Honey",
+                    "uri": "spotify:album:3gBVdu4a1MMJVMy6vwPEb8"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Radiohead"
+                        },
+                        "uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "EXPLICIT"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 238640
+                  },
+                  "name": "Creep",
+                  "uri": "spotify:track:70LcF31zb1H0PyJoS1Sx1r"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048518ff7c3580d429c8212b9a3b6",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "A Head Full of Dreams",
+                    "uri": "spotify:album:3cfAM8b8KqJRoIzt3zLKqw"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Coldplay"
+                        },
+                        "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 263786
+                  },
+                  "name": "Adventure of a Lifetime",
+                  "uri": "spotify:track:69uxyAqqPIsUyTO8txoP2M"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e021d58cc1747d729aee98efe77",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048511d58cc1747d729aee98efe77",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2731d58cc1747d729aee98efe77",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Seven Inches of Satanic Panic",
+                    "uri": "spotify:album:0dfSsZm64lSVeIcbcS2cYi"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Ghost"
+                        },
+                        "uri": "spotify:artist:1Qp56T7n950O3EGMsSl81D"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 244804
+                  },
+                  "name": "Mary On A Cross",
+                  "uri": "spotify:track:2wBnZdVWa5jVpvYRfGU7rP"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0262100064780b1d919a95fcf4",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485162100064780b1d919a95fcf4",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27362100064780b1d919a95fcf4",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hurry up, We're Dreaming",
+                    "uri": "spotify:album:6EB14IXV5oyOiItGBv7mtG"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "M83"
+                        },
+                        "uri": "spotify:artist:63MQldklfxkjYDoUE4Tppz"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 243960
+                  },
+                  "name": "Midnight City",
+                  "uri": "spotify:track:6GyFP1nfCDB8lbD2bG0Hq9"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e024d08fc99eff4ed52dfce91fa",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048514d08fc99eff4ed52dfce91fa",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2734d08fc99eff4ed52dfce91fa",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Super Trouper",
+                    "uri": "spotify:album:3ZdkT5buYFi1WQaB0XNNtf"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "ABBA"
+                        },
+                        "uri": "spotify:artist:0LcJLqbBmaGUft1e9Mm8HV"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 294720
+                  },
+                  "name": "The Winner Takes It All",
+                  "uri": "spotify:track:3oEkrIfXfSh9zGnE7eBzSV"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b9c4979446c4d39bc08e9503",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b9c4979446c4d39bc08e9503",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b9c4979446c4d39bc08e9503",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Forever Young",
+                    "uri": "spotify:album:2256qKBSQdt53T5dz4Kdcs"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Alphaville"
+                        },
+                        "uri": "spotify:artist:0xliTEbFfy5HQHvsTknTkX"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 226706
+                  },
+                  "name": "Forever Young",
+                  "uri": "spotify:track:4S1VYqwfkLit9mKVY3MXoo"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02707d13d3f87652e737e94d45",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851707d13d3f87652e737e94d45",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273707d13d3f87652e737e94d45",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Urban Hymns (Remastered 2016)",
+                    "uri": "spotify:album:52AeC4gwbxDfFlLHgK1ByD"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Verve"
+                        },
+                        "uri": "spotify:artist:2cGwlqi3k18jFpUyTrsR84"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 357266
+                  },
+                  "name": "Bitter Sweet Symphony - Remastered 2016",
+                  "uri": "spotify:track:57iDDD9N9tTWe75x6qhStw"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e029164bafe9aaa168d93f4816a",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048519164bafe9aaa168d93f4816a",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Parachutes",
+                    "uri": "spotify:album:6ZG5lRT77aJ3btmArcykra"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Coldplay"
+                        },
+                        "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 266773
+                  },
+                  "name": "Yellow",
+                  "uri": "spotify:track:3AJwUDP919kvQ9QcozQPxg"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02f3aa0e6ca22a382007f61e4d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851f3aa0e6ca22a382007f61e4d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273f3aa0e6ca22a382007f61e4d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Walking On A Dream (10th Anniversary Edition)",
+                    "uri": "spotify:album:5B6XfyHHYawyLkEvNvhSPh"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Empire Of The Sun"
+                        },
+                        "uri": "spotify:artist:67hb7towEyKvt5Z8Bx306c"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 198440
+                  },
+                  "name": "Walking On A Dream",
+                  "uri": "spotify:track:5r5cp9IpziiIsR6b93vcnQ"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0206b6bd6a604768e044abbd38",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485106b6bd6a604768e044abbd38",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27306b6bd6a604768e044abbd38",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Songs From The Big Chair (Deluxe)",
+                    "uri": "spotify:album:06J93pgtDCUw6bsAQINhCs"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Tears For Fears"
+                        },
+                        "uri": "spotify:artist:4bthk9UfsYUYdcFyqxmSUU"
+                      },
+                      {
+                        "profile": {
+                          "name": "Dave Bascombe"
+                        },
+                        "uri": "spotify:artist:3pAVaThptde5bneOqDfY1I"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 257315
+                  },
+                  "name": "Head Over Heels - Dave Bascombe 7\" N.Mix",
+                  "uri": "spotify:track:5lwQGZYF4BXOzFtXc5zk8q"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b4a878f008a0eda552446701",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b4a878f008a0eda552446701",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b4a878f008a0eda552446701",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "HIStory - PAST, PRESENT AND FUTURE - BOOK I",
+                    "uri": "spotify:album:3OBhnTLrvkoEEETjFA3Qfk"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Michael Jackson"
+                        },
+                        "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 284310
+                  },
+                  "name": "They Don't Care About Us",
+                  "uri": "spotify:track:3wuCCNCnBhJlwkIJTBZFiv"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e027c39dd133836c2c1c87e34d6",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048517c39dd133836c2c1c87e34d6",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2737c39dd133836c2c1c87e34d6",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Jazz (2011 Remaster)",
+                    "uri": "spotify:album:2yuTRGIackbcReLUXOYBqU"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Queen"
+                        },
+                        "uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 209413
+                  },
+                  "name": "Don't Stop Me Now - Remastered 2011",
+                  "uri": "spotify:track:5T8EDUDqKcs6OSOwEsfqG7"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02cf1fee2a55e98e22bf358512",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851cf1fee2a55e98e22bf358512",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273cf1fee2a55e98e22bf358512",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Reckless (30th Anniversary / Deluxe Edition)",
+                    "uri": "spotify:album:2o2G49EPi4lua5zgxUKhLL"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Bryan Adams"
+                        },
+                        "uri": "spotify:artist:3Z02hBLubJxuFJfhacLSDc"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 216053
+                  },
+                  "name": "Summer Of '69",
+                  "uri": "spotify:track:0GONea6G2XdnHWjNZd6zt3"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0247066a9aac4e3493fe5b8677",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485147066a9aac4e3493fe5b8677",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27347066a9aac4e3493fe5b8677",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "La Folie",
+                    "uri": "spotify:album:3bosyDPGOYmLnwMNhU06Rx"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "The Stranglers"
+                        },
+                        "uri": "spotify:artist:0RUEHcBiENFEqxgicqS2ig"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 206760
+                  },
+                  "name": "Golden Brown",
+                  "uri": "spotify:track:2AX5E86cn9n2dgioZEjirI"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02f3aa0e6ca22a382007f61e4d",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851f3aa0e6ca22a382007f61e4d",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273f3aa0e6ca22a382007f61e4d",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Walking On A Dream (10th Anniversary Edition)",
+                    "uri": "spotify:album:5B6XfyHHYawyLkEvNvhSPh"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Empire Of The Sun"
+                        },
+                        "uri": "spotify:artist:67hb7towEyKvt5Z8Bx306c"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 267373
+                  },
+                  "name": "We Are The People",
+                  "uri": "spotify:track:3zEN0ii6s4DHHBpnTp3RP7"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ebd6d20c0082524244ef83df",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ebd6d20c0082524244ef83df",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ebd6d20c0082524244ef83df",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Toto IV",
+                    "uri": "spotify:album:62U7xIHcID94o20Of5ea4D"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "TOTO"
+                        },
+                        "uri": "spotify:artist:0PFtn5NtBbbUNbU9EAmIWF"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 295282
+                  },
+                  "name": "Africa",
+                  "uri": "spotify:track:2374M0fQpWi3dLnB54qaLX"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e021e0dc5baaabda304b0ad1815",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d000048511e0dc5baaabda304b0ad1815",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b2731e0dc5baaabda304b0ad1815",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Weezer",
+                    "uri": "spotify:album:2OBSz5Nlto0Q5CtYPzPY7c"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Weezer"
+                        },
+                        "uri": "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 200306
+                  },
+                  "name": "Island In The Sun",
+                  "uri": "spotify:track:2MLHyLy5z5l5YRp7momlgw"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d254ca497999ae980a5a38c5",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851d254ca497999ae980a5a38c5",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d254ca497999ae980a5a38c5",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hot Space (2011 Remaster)",
+                    "uri": "spotify:album:6reTSIf5MoBco62rk8T7Q1"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Queen"
+                        },
+                        "uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+                      },
+                      {
+                        "profile": {
+                          "name": "David Bowie"
+                        },
+                        "uri": "spotify:artist:0oSGxfWSnnOXhD2fKuz2Gy"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 248440
+                  },
+                  "name": "Under Pressure - Remastered 2011",
+                  "uri": "spotify:track:2fuCquhmrzHpu5xcA1ci9x"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02ad08f4b38efbff0c0da0f252",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851ad08f4b38efbff0c0da0f252",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273ad08f4b38efbff0c0da0f252",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Hounds Of Love",
+                    "uri": "spotify:album:5G5UwqPsxDKpxJLX4xsyuh"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Kate Bush"
+                        },
+                        "uri": "spotify:artist:1aSxMhuvixZ8h9dK9jIDwL"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 298933
+                  },
+                  "name": "Running Up That Hill (A Deal With God)",
+                  "uri": "spotify:track:1PtQJZVZIdWIYdARpZRDFO"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02c8b444df094279e70d0ed856",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851c8b444df094279e70d0ed856",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "OK Computer",
+                    "uri": "spotify:album:6dVIqQ8qmQ5GBnJ9shOYGE"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Radiohead"
+                        },
+                        "uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 229120
+                  },
+                  "name": "No Surprises",
+                  "uri": "spotify:track:10nyNJ6zNy2YVYLrcwLccB"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02aedd9728f5cc4b13ee49e061",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851aedd9728f5cc4b13ee49e061",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273aedd9728f5cc4b13ee49e061",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Let's Talk About Love",
+                    "uri": "spotify:album:1JDlLoZugxdneiaTnGyaKr"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Modern Talking"
+                        },
+                        "uri": "spotify:artist:79bxUQsBIXO8nVLB9fYKf7"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 226333
+                  },
+                  "name": "Cheri Cheri Lady",
+                  "uri": "spotify:track:2aEuA8PSqLa17Y4hKPj5rr"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02b184226408f981e3dd17c606",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851b184226408f981e3dd17c606",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273b184226408f981e3dd17c606",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Blue Hawaii",
+                    "uri": "spotify:album:7xe8VI48TxUpU1IIo0RfGi"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Elvis Presley"
+                        },
+                        "uri": "spotify:artist:43ZHCT0cAZBISjO8DG9PnE"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 185877
+                  },
+                  "name": "Can't Help Falling in Love",
+                  "uri": "spotify:track:44AyOl4qVkzS48vBsbNXaC"
+                },
+                {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e02eb11e2abccdca41f39ad3b89",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d00004851eb11e2abccdca41f39ad3b89",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b273eb11e2abccdca41f39ad3b89",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "name": "Too Low For Zero",
+                    "uri": "spotify:album:0OmYuz9hwn1XoqmDaU0yJ7"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Elton John"
+                        },
+                        "uri": "spotify:artist:3PhoLpVuITZKcymswpck5b"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 183440
+                  },
+                  "name": "I'm Still Standing",
+                  "uri": "spotify:track:1jDJFeK9x3OZboIAHsY9k2"
+                }
+              ]
+            }
+          }
