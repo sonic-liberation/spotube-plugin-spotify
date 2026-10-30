@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1
+
+### Fixes
+- Tolerate unknown home section types in `HomeSectionDataUnion` so the home feed no longer fails on new Spotify section types (#82) (`e946116`).
+
+### Chore
+- Bump plugin version to 1.0.1 (`2ed9349`).
+
 ## 1.0.0
 
 ### Highlights
