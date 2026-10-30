@@ -878,6 +878,12 @@ data class SectionItemContent(
 )
 
 @Serializable
+@SerialName("HomeUnsupportedSectionData")
+data class HomeUnsupportedSectionData(
+    override val __typename: String = "HomeUnsupportedSectionData",
+) : HomeSectionDataUnion
+
+@Serializable
 data class HomeRecsItemData(
     override val __typename: String = "HomeRecsItemData",
 ) : HomeSectionDataUnion

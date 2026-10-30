@@ -98,6 +98,7 @@ abstract class SpotifyGQLBaseClient(protected val client: HttpClientAPI) {
                     subclass(HomeGenericSectionData::class)
                     subclass(HomeRecentlyPlayedSectionData::class)
                     subclass(HomeRecsItemData::class)
+                    defaultDeserializer { HomeUnsupportedSectionData.serializer() }
                 }
                 polymorphic(BrowseSectionDataUnion::class) {
                     subclass(BrowseGenericSectionData::class)
