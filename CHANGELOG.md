@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0
+
+### Highlights
+- **Requires Spotube with plugin API 0.1.0.** Spotube now only lets a plugin read WebView cookies for domains it declares. This version declares `spotify.com`, the only domain whose cookies it reads at login, and Spotube shows it when installing or updating the plugin.
+
+### Features
+- Declare `cookieDomains` for the WebView login, target plugin API 0.1.0, and update `spotube-gradle` to 0.2.0 (`95bd4de`).
+
+### Chore
+- Bump plugin version to 1.1.0.
+
 ## 1.0.1
 
 ### Fixes
