@@ -36,7 +36,7 @@ plugins {
 spotubePlugin {
     name = "Spotify"
     version = "1.0.1"
-    apiVersion = "0.0.1"
+    apiVersion = "0.1.0"
     description = "Spotify plugin for Spotube metadata fetching"
     author = "Sonic Liberation"
     capabilities = listOf(
@@ -45,6 +45,8 @@ spotubePlugin {
         PluginCapability.WEBVIEW
     )
     abilities = listOf(PluginAbility.METADATA)
+    // getCookies("https://spotify.com") after login on accounts.spotify.com
+    cookieDomains = listOf("spotify.com")
     license = "AGPL-3.0-or-later"
     contact = "sonic.liberation.69@gmail.com"
     repository = "https://github.com/sonic-liberation/spotube-plugin-spotify"
