@@ -147,7 +147,7 @@ data class ArtistProfile(
 
 @Serializable
 data class ArtistBiography(
-    val text: String,
+    val text: String? = null,
 )
 
 @Serializable
